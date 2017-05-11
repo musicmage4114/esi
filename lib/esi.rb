@@ -1,2 +1,2 @@
-require "omniauth-esi/version"
+require "esi/version"
 require "omniauth/strategies/esi"
