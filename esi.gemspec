@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Swagger Codegen spec for EVE Online's EVE Swagger Interface with OmniAuth"
   spec.description   = "Swagger Codegen spec for EVE Online's EVE Swagger Interface with OmniAuth"
-  spec.homepage      = 'https://github.com/musicmage4114/omniauth-esi.git'
+  spec.homepage      = 'https://github.com/musicmage4114/esi.git'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test)}) }
