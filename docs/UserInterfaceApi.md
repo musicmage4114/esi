@@ -4,15 +4,15 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**post_ui_autopilot_waypoint**](UserInterfaceApi.md#post_ui_autopilot_waypoint) | **POST** /ui/autopilot/waypoint/ | Set Autopilot Waypoint
-[**post_ui_openwindow_contract**](UserInterfaceApi.md#post_ui_openwindow_contract) | **POST** /ui/openwindow/contract/ | Open Contract Window
-[**post_ui_openwindow_information**](UserInterfaceApi.md#post_ui_openwindow_information) | **POST** /ui/openwindow/information/ | Open Information Window
-[**post_ui_openwindow_marketdetails**](UserInterfaceApi.md#post_ui_openwindow_marketdetails) | **POST** /ui/openwindow/marketdetails/ | Open Market Details
-[**post_ui_openwindow_newmail**](UserInterfaceApi.md#post_ui_openwindow_newmail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
+[**set_autopilot_waypoint**](UserInterfaceApi.md#set_autopilot_waypoint) | **POST** /ui/autopilot/waypoint/ | Set Autopilot Waypoint
+[**open_contract_window**](UserInterfaceApi.md#open_contract_window) | **POST** /ui/openwindow/contract/ | Open Contract Window
+[**show_info_by_id**](UserInterfaceApi.md#show_info_by_id) | **POST** /ui/openwindow/information/ | Open Information Window
+[**open_market_details**](UserInterfaceApi.md#open_market_details) | **POST** /ui/openwindow/marketdetails/ | Open Market Details
+[**open_new_mail**](UserInterfaceApi.md#open_new_mail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
 
 
-# **post_ui_autopilot_waypoint**
-> post_ui_autopilot_waypoint(add_to_beginning, clear_other_waypoints, destination_id, opts)
+# **set_autopilot_waypoint**
+> set_autopilot_waypoint(add_to_beginning, clear_other_waypoints, destination_id, opts)
 
 Set Autopilot Waypoint
 
@@ -45,9 +45,9 @@ opts = {
 
 begin
   #Set Autopilot Waypoint
-  api_instance.post_ui_autopilot_waypoint(add_to_beginning, clear_other_waypoints, destination_id, opts)
+  api_instance.set_autopilot_waypoint(add_to_beginning, clear_other_waypoints, destination_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UserInterfaceApi->post_ui_autopilot_waypoint: #{e}"
+  puts "Exception when calling UserInterfaceApi->set_autopilot_waypoint: #{e}"
 end
 ```
 
@@ -78,8 +78,8 @@ nil (empty response body)
 
 
 
-# **post_ui_openwindow_contract**
-> post_ui_openwindow_contract(contract_id, opts)
+# **open_contract_window**
+> open_contract_window(contract_id, opts)
 
 Open Contract Window
 
@@ -108,9 +108,9 @@ opts = {
 
 begin
   #Open Contract Window
-  api_instance.post_ui_openwindow_contract(contract_id, opts)
+  api_instance.open_contract_window(contract_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UserInterfaceApi->post_ui_openwindow_contract: #{e}"
+  puts "Exception when calling UserInterfaceApi->open_contract_window: #{e}"
 end
 ```
 
@@ -139,8 +139,8 @@ nil (empty response body)
 
 
 
-# **post_ui_openwindow_information**
-> post_ui_openwindow_information(target_id, opts)
+# **show_info_by_id**
+> show_info_by_id(target_id, opts)
 
 Open Information Window
 
@@ -169,9 +169,9 @@ opts = {
 
 begin
   #Open Information Window
-  api_instance.post_ui_openwindow_information(target_id, opts)
+  api_instance.show_info_by_id(target_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UserInterfaceApi->post_ui_openwindow_information: #{e}"
+  puts "Exception when calling UserInterfaceApi->show_info_by_id: #{e}"
 end
 ```
 
@@ -200,8 +200,8 @@ nil (empty response body)
 
 
 
-# **post_ui_openwindow_marketdetails**
-> post_ui_openwindow_marketdetails(type_id, opts)
+# **open_market_details**
+> open_market_details(type_id, opts)
 
 Open Market Details
 
@@ -230,9 +230,9 @@ opts = {
 
 begin
   #Open Market Details
-  api_instance.post_ui_openwindow_marketdetails(type_id, opts)
+  api_instance.open_market_details(type_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UserInterfaceApi->post_ui_openwindow_marketdetails: #{e}"
+  puts "Exception when calling UserInterfaceApi->open_market_details: #{e}"
 end
 ```
 
@@ -261,8 +261,8 @@ nil (empty response body)
 
 
 
-# **post_ui_openwindow_newmail**
-> post_ui_openwindow_newmail(new_mail, opts)
+# **open_new_mail**
+> open_new_mail(new_mail, opts)
 
 Open New Mail Window
 
@@ -291,9 +291,9 @@ opts = {
 
 begin
   #Open New Mail Window
-  api_instance.post_ui_openwindow_newmail(new_mail, opts)
+  api_instance.open_new_mail(new_mail, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UserInterfaceApi->post_ui_openwindow_newmail: #{e}"
+  puts "Exception when calling UserInterfaceApi->open_new_mail: #{e}"
 end
 ```
 

@@ -205,11 +205,11 @@ Class | Method | HTTP request | Description
 *SwaggerClient::UniverseApi* | [**get_universe_types**](docs/UniverseApi.md#get_universe_types) | **GET** /universe/types/ | Get types
 *SwaggerClient::UniverseApi* | [**get_universe_type_by_id**](docs/UniverseApi.md#get_universe_type_by_id) | **GET** /universe/types/{type_id}/ | Get type information
 *SwaggerClient::UniverseApi* | [**lookup_id**](docs/UniverseApi.md#lookup_id) | **POST** /universe/names/ | Get names and categories for a set of ID's
-*SwaggerClient::UserInterfaceApi* | [**post_ui_autopilot_waypoint**](docs/UserInterfaceApi.md#post_ui_autopilot_waypoint) | **POST** /ui/autopilot/waypoint/ | Set Autopilot Waypoint
-*SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_contract**](docs/UserInterfaceApi.md#post_ui_openwindow_contract) | **POST** /ui/openwindow/contract/ | Open Contract Window
-*SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_information**](docs/UserInterfaceApi.md#post_ui_openwindow_information) | **POST** /ui/openwindow/information/ | Open Information Window
-*SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_marketdetails**](docs/UserInterfaceApi.md#post_ui_openwindow_marketdetails) | **POST** /ui/openwindow/marketdetails/ | Open Market Details
-*SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_newmail**](docs/UserInterfaceApi.md#post_ui_openwindow_newmail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
+*SwaggerClient::UserInterfaceApi* | [**set_autopilot_waypoint**](docs/UserInterfaceApi.md#set_autopilot_waypoint) | **POST** /ui/autopilot/waypoint/ | Set Autopilot Waypoint
+*SwaggerClient::UserInterfaceApi* | [**open_contract_window**](docs/UserInterfaceApi.md#open_contract_window) | **POST** /ui/openwindow/contract/ | Open Contract Window
+*SwaggerClient::UserInterfaceApi* | [**show_info_by_id**](docs/UserInterfaceApi.md#show_info_by_id) | **POST** /ui/openwindow/information/ | Open Information Window
+*SwaggerClient::UserInterfaceApi* | [**open_market_details**](docs/UserInterfaceApi.md#open_market_details) | **POST** /ui/openwindow/marketdetails/ | Open Market Details
+*SwaggerClient::UserInterfaceApi* | [**open_new_mail**](docs/UserInterfaceApi.md#open_new_mail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
 *SwaggerClient::WalletApi* | [**get_character_wallets**](docs/WalletApi.md#get_character_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
 *SwaggerClient::WarsApi* | [**get_wars**](docs/WarsApi.md#get_wars) | **GET** /wars/ | List wars
 *SwaggerClient::WarsApi* | [**get_wars_war_id**](docs/WarsApi.md#get_wars_war_id) | **GET** /wars/{war_id}/ | Get war information

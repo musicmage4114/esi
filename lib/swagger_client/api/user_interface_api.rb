@@ -30,8 +30,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def post_ui_autopilot_waypoint(add_to_beginning, clear_other_waypoints, destination_id, opts = {})
-      post_ui_autopilot_waypoint_with_http_info(add_to_beginning, clear_other_waypoints, destination_id, opts)
+    def set_autopilot_waypoint(add_to_beginning, clear_other_waypoints, destination_id, opts = {})
+      set_autopilot_waypoint_with_http_info(add_to_beginning, clear_other_waypoints, destination_id, opts)
       return nil
     end
 
@@ -46,16 +46,16 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def post_ui_autopilot_waypoint_with_http_info(add_to_beginning, clear_other_waypoints, destination_id, opts = {})
+    def set_autopilot_waypoint_with_http_info(add_to_beginning, clear_other_waypoints, destination_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UserInterfaceApi.post_ui_autopilot_waypoint ..."
+        @api_client.config.logger.debug "Calling API: UserInterfaceApi.set_autopilot_waypoint ..."
       end
       # verify the required parameter 'add_to_beginning' is set
-      fail ArgumentError, "Missing the required parameter 'add_to_beginning' when calling UserInterfaceApi.post_ui_autopilot_waypoint" if add_to_beginning.nil?
+      fail ArgumentError, "Missing the required parameter 'add_to_beginning' when calling UserInterfaceApi.set_autopilot_waypoint" if add_to_beginning.nil?
       # verify the required parameter 'clear_other_waypoints' is set
-      fail ArgumentError, "Missing the required parameter 'clear_other_waypoints' when calling UserInterfaceApi.post_ui_autopilot_waypoint" if clear_other_waypoints.nil?
+      fail ArgumentError, "Missing the required parameter 'clear_other_waypoints' when calling UserInterfaceApi.set_autopilot_waypoint" if clear_other_waypoints.nil?
       # verify the required parameter 'destination_id' is set
-      fail ArgumentError, "Missing the required parameter 'destination_id' when calling UserInterfaceApi.post_ui_autopilot_waypoint" if destination_id.nil?
+      fail ArgumentError, "Missing the required parameter 'destination_id' when calling UserInterfaceApi.set_autopilot_waypoint" if destination_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -90,7 +90,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UserInterfaceApi#post_ui_autopilot_waypoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UserInterfaceApi#set_autopilot_waypoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -104,8 +104,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def post_ui_openwindow_contract(contract_id, opts = {})
-      post_ui_openwindow_contract_with_http_info(contract_id, opts)
+    def open_contract_window(contract_id, opts = {})
+      open_contract_window_with_http_info(contract_id, opts)
       return nil
     end
 
@@ -118,12 +118,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def post_ui_openwindow_contract_with_http_info(contract_id, opts = {})
+    def open_contract_window_with_http_info(contract_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UserInterfaceApi.post_ui_openwindow_contract ..."
+        @api_client.config.logger.debug "Calling API: UserInterfaceApi.open_contract_window ..."
       end
       # verify the required parameter 'contract_id' is set
-      fail ArgumentError, "Missing the required parameter 'contract_id' when calling UserInterfaceApi.post_ui_openwindow_contract" if contract_id.nil?
+      fail ArgumentError, "Missing the required parameter 'contract_id' when calling UserInterfaceApi.open_contract_window" if contract_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -156,7 +156,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UserInterfaceApi#post_ui_openwindow_contract\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UserInterfaceApi#open_contract_window\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -170,8 +170,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def post_ui_openwindow_information(target_id, opts = {})
-      post_ui_openwindow_information_with_http_info(target_id, opts)
+    def show_info_by_id(target_id, opts = {})
+      show_info_by_id_with_http_info(target_id, opts)
       return nil
     end
 
@@ -184,12 +184,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def post_ui_openwindow_information_with_http_info(target_id, opts = {})
+    def show_info_by_id_with_http_info(target_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UserInterfaceApi.post_ui_openwindow_information ..."
+        @api_client.config.logger.debug "Calling API: UserInterfaceApi.show_info_by_id ..."
       end
       # verify the required parameter 'target_id' is set
-      fail ArgumentError, "Missing the required parameter 'target_id' when calling UserInterfaceApi.post_ui_openwindow_information" if target_id.nil?
+      fail ArgumentError, "Missing the required parameter 'target_id' when calling UserInterfaceApi.show_info_by_id" if target_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -222,7 +222,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UserInterfaceApi#post_ui_openwindow_information\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UserInterfaceApi#show_info_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -236,8 +236,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def post_ui_openwindow_marketdetails(type_id, opts = {})
-      post_ui_openwindow_marketdetails_with_http_info(type_id, opts)
+    def open_market_details(type_id, opts = {})
+      open_market_details_with_http_info(type_id, opts)
       return nil
     end
 
@@ -250,12 +250,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def post_ui_openwindow_marketdetails_with_http_info(type_id, opts = {})
+    def open_market_details_with_http_info(type_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UserInterfaceApi.post_ui_openwindow_marketdetails ..."
+        @api_client.config.logger.debug "Calling API: UserInterfaceApi.open_market_details ..."
       end
       # verify the required parameter 'type_id' is set
-      fail ArgumentError, "Missing the required parameter 'type_id' when calling UserInterfaceApi.post_ui_openwindow_marketdetails" if type_id.nil?
+      fail ArgumentError, "Missing the required parameter 'type_id' when calling UserInterfaceApi.open_market_details" if type_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -288,7 +288,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UserInterfaceApi#post_ui_openwindow_marketdetails\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UserInterfaceApi#open_market_details\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -302,8 +302,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def post_ui_openwindow_newmail(new_mail, opts = {})
-      post_ui_openwindow_newmail_with_http_info(new_mail, opts)
+    def open_new_mail(new_mail, opts = {})
+      open_new_mail_with_http_info(new_mail, opts)
       return nil
     end
 
@@ -316,12 +316,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def post_ui_openwindow_newmail_with_http_info(new_mail, opts = {})
+    def open_new_mail_with_http_info(new_mail, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UserInterfaceApi.post_ui_openwindow_newmail ..."
+        @api_client.config.logger.debug "Calling API: UserInterfaceApi.open_new_mail ..."
       end
       # verify the required parameter 'new_mail' is set
-      fail ArgumentError, "Missing the required parameter 'new_mail' when calling UserInterfaceApi.post_ui_openwindow_newmail" if new_mail.nil?
+      fail ArgumentError, "Missing the required parameter 'new_mail' when calling UserInterfaceApi.open_new_mail" if new_mail.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -353,7 +353,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UserInterfaceApi#post_ui_openwindow_newmail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UserInterfaceApi#open_new_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

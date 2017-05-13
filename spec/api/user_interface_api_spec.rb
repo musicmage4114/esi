@@ -31,7 +31,7 @@ describe 'UserInterfaceApi' do
     end
   end
 
-  # unit tests for post_ui_autopilot_waypoint
+  # unit tests for set_autopilot_waypoint
   # Set Autopilot Waypoint
   # Set a solar system as autopilot waypoint  ---  Alternate route: &#x60;/v2/ui/autopilot/waypoint/&#x60;  Alternate route: &#x60;/latest/ui/autopilot/waypoint/&#x60; 
   # @param add_to_beginning Whether this solar system should be added to the beginning of all waypoints
@@ -43,13 +43,13 @@ describe 'UserInterfaceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'post_ui_autopilot_waypoint test' do
+  describe 'set_autopilot_waypoint test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for post_ui_openwindow_contract
+  # unit tests for open_contract_window
   # Open Contract Window
   # Open the contract window inside the client  ---  Alternate route: &#x60;/v1/ui/openwindow/contract/&#x60;  Alternate route: &#x60;/legacy/ui/openwindow/contract/&#x60;  Alternate route: &#x60;/latest/ui/openwindow/contract/&#x60; 
   # @param contract_id The contract to open
@@ -59,13 +59,13 @@ describe 'UserInterfaceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'post_ui_openwindow_contract test' do
+  describe 'open_contract_window test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for post_ui_openwindow_information
+  # unit tests for show_info_by_id
   # Open Information Window
   # Open the information window for a character, corporation or alliance inside the client  ---  Alternate route: &#x60;/v1/ui/openwindow/information/&#x60;  Alternate route: &#x60;/legacy/ui/openwindow/information/&#x60;  Alternate route: &#x60;/latest/ui/openwindow/information/&#x60; 
   # @param target_id The target to open
@@ -75,13 +75,13 @@ describe 'UserInterfaceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'post_ui_openwindow_information test' do
+  describe 'show_info_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for post_ui_openwindow_marketdetails
+  # unit tests for open_market_details
   # Open Market Details
   # Open the market details window for a specific typeID inside the client  ---  Alternate route: &#x60;/v1/ui/openwindow/marketdetails/&#x60;  Alternate route: &#x60;/legacy/ui/openwindow/marketdetails/&#x60;  Alternate route: &#x60;/latest/ui/openwindow/marketdetails/&#x60; 
   # @param type_id The item type to open in market window
@@ -91,13 +91,13 @@ describe 'UserInterfaceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'post_ui_openwindow_marketdetails test' do
+  describe 'open_market_details test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for post_ui_openwindow_newmail
+  # unit tests for open_new_mail
   # Open New Mail Window
   # Open the New Mail window, according to settings from the request if applicable  ---  Alternate route: &#x60;/v1/ui/openwindow/newmail/&#x60;  Alternate route: &#x60;/legacy/ui/openwindow/newmail/&#x60;  Alternate route: &#x60;/latest/ui/openwindow/newmail/&#x60; 
   # @param new_mail The details of mail to create
@@ -107,7 +107,7 @@ describe 'UserInterfaceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'post_ui_openwindow_newmail test' do
+  describe 'open_new_mail test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
