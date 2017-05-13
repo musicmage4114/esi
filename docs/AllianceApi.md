@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_alliance_by_id**](AllianceApi.md#get_alliance_by_id) | **GET** /alliances/{alliance_id}/ | Get alliance information
 [**get_corporations_in_alliance**](AllianceApi.md#get_corporations_in_alliance) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
 [**get_alliance_icon**](AllianceApi.md#get_alliance_icon) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
-[**get_alliances_names**](AllianceApi.md#get_alliances_names) | **GET** /alliances/names/ | Get alliance names
+[**get_alliance_names**](AllianceApi.md#get_alliance_names) | **GET** /alliances/names/ | Get alliance names
 
 
 # **get_alliances**
@@ -228,8 +228,8 @@ No authorization required
 
 
 
-# **get_alliances_names**
-> Array&lt;GetAlliancesNames200Ok&gt; get_alliances_names(alliance_ids, opts)
+# **get_alliance_names**
+> Array&lt;GetAlliancesNames200Ok&gt; get_alliance_names(alliance_ids, opts)
 
 Get alliance names
 
@@ -252,10 +252,10 @@ opts = {
 
 begin
   #Get alliance names
-  result = api_instance.get_alliances_names(alliance_ids, opts)
+  result = api_instance.get_alliance_names(alliance_ids, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling AllianceApi->get_alliances_names: #{e}"
+  puts "Exception when calling AllianceApi->get_alliance_names: #{e}"
 end
 ```
 

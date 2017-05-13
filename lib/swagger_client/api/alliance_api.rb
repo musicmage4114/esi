@@ -275,8 +275,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetAlliancesNames200Ok>]
-    def get_alliances_names(alliance_ids, opts = {})
-      data, _status_code, _headers = get_alliances_names_with_http_info(alliance_ids, opts)
+    def get_alliance_names(alliance_ids, opts = {})
+      data, _status_code, _headers = get_alliance_names_with_http_info(alliance_ids, opts)
       return data
     end
 
@@ -288,14 +288,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetAlliancesNames200Ok>, Fixnum, Hash)>] Array<GetAlliancesNames200Ok> data, response status code and response headers
-    def get_alliances_names_with_http_info(alliance_ids, opts = {})
+    def get_alliance_names_with_http_info(alliance_ids, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliances_names ..."
+        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_names ..."
       end
       # verify the required parameter 'alliance_ids' is set
-      fail ArgumentError, "Missing the required parameter 'alliance_ids' when calling AllianceApi.get_alliances_names" if alliance_ids.nil?
+      fail ArgumentError, "Missing the required parameter 'alliance_ids' when calling AllianceApi.get_alliance_names" if alliance_ids.nil?
       if alliance_ids.length < 1
-        fail ArgumentError, 'invalid value for "alliance_ids" when calling AllianceApi.get_alliances_names, number of items must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "alliance_ids" when calling AllianceApi.get_alliance_names, number of items must be greater than or equal to 1.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -330,7 +330,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetAlliancesNames200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: AllianceApi#get_alliances_names\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AllianceApi#get_alliance_names\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

@@ -90,7 +90,7 @@ describe 'AllianceApi' do
     end
   end
 
-  # unit tests for get_alliances_names
+  # unit tests for get_alliance_names
   # Get alliance names
   # Resolve a set of alliance IDs to alliance names  ---  Alternate route: &#x60;/v1/alliances/names/&#x60;  Alternate route: &#x60;/legacy/alliances/names/&#x60;  Alternate route: &#x60;/latest/alliances/names/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param alliance_ids A comma separated list of alliance IDs
@@ -99,7 +99,7 @@ describe 'AllianceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetAlliancesNames200Ok>]
-  describe 'get_alliances_names test' do
+  describe 'get_alliance_names test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
