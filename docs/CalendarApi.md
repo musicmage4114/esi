@@ -4,13 +4,13 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_calendar**](CalendarApi.md#get_characters_character_id_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
-[**get_characters_character_id_calendar_event_id**](CalendarApi.md#get_characters_character_id_calendar_event_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
-[**put_characters_character_id_calendar_event_id**](CalendarApi.md#put_characters_character_id_calendar_event_id) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
+[**get_character_calendar**](CalendarApi.md#get_character_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
+[**get_calendar_event_by_id**](CalendarApi.md#get_calendar_event_by_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
+[**respond_to_calendar_event**](CalendarApi.md#respond_to_calendar_event) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
 
 
-# **get_characters_character_id_calendar**
-> Array&lt;GetCharactersCharacterIdCalendar200Ok&gt; get_characters_character_id_calendar(character_id, opts)
+# **get_character_calendar**
+> Array&lt;GetCharactersCharacterIdCalendar200Ok&gt; get_character_calendar(character_id, opts)
 
 List calendar event summaries
 
@@ -40,10 +40,10 @@ opts = {
 
 begin
   #List calendar event summaries
-  result = api_instance.get_characters_character_id_calendar(character_id, opts)
+  result = api_instance.get_character_calendar(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CalendarApi->get_characters_character_id_calendar: #{e}"
+  puts "Exception when calling CalendarApi->get_character_calendar: #{e}"
 end
 ```
 
@@ -73,8 +73,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_calendar_event_id**
-> GetCharactersCharacterIdCalendarEventIdOk get_characters_character_id_calendar_event_id(character_id, event_id, opts)
+# **get_calendar_event_by_id**
+> GetCharactersCharacterIdCalendarEventIdOk get_calendar_event_by_id(character_id, event_id, opts)
 
 Get an event
 
@@ -105,10 +105,10 @@ opts = {
 
 begin
   #Get an event
-  result = api_instance.get_characters_character_id_calendar_event_id(character_id, event_id, opts)
+  result = api_instance.get_calendar_event_by_id(character_id, event_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CalendarApi->get_characters_character_id_calendar_event_id: #{e}"
+  puts "Exception when calling CalendarApi->get_calendar_event_by_id: #{e}"
 end
 ```
 
@@ -138,8 +138,8 @@ Name | Type | Description  | Notes
 
 
 
-# **put_characters_character_id_calendar_event_id**
-> put_characters_character_id_calendar_event_id(character_id, event_id, response, opts)
+# **respond_to_calendar_event**
+> respond_to_calendar_event(character_id, event_id, response, opts)
 
 Respond to an event
 
@@ -172,9 +172,9 @@ opts = {
 
 begin
   #Respond to an event
-  api_instance.put_characters_character_id_calendar_event_id(character_id, event_id, response, opts)
+  api_instance.respond_to_calendar_event(character_id, event_id, response, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CalendarApi->put_characters_character_id_calendar_event_id: #{e}"
+  puts "Exception when calling CalendarApi->respond_to_calendar_event: #{e}"
 end
 ```
 

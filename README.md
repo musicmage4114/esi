@@ -86,9 +86,9 @@ Class | Method | HTTP request | Description
 *SwaggerClient::AssetsApi* | [**get_character_assets**](docs/AssetsApi.md#get_character_assets) | **GET** /characters/{character_id}/assets/ | Get character assets
 *SwaggerClient::BookmarksApi* | [**get_character_bookmarks**](docs/BookmarksApi.md#get_character_bookmarks) | **GET** /characters/{character_id}/bookmarks/ | List bookmarks
 *SwaggerClient::BookmarksApi* | [**get_character_bookmarks_folders**](docs/BookmarksApi.md#get_character_bookmarks_folders) | **GET** /characters/{character_id}/bookmarks/folders/ | List bookmark folders
-*SwaggerClient::CalendarApi* | [**get_characters_character_id_calendar**](docs/CalendarApi.md#get_characters_character_id_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
-*SwaggerClient::CalendarApi* | [**get_characters_character_id_calendar_event_id**](docs/CalendarApi.md#get_characters_character_id_calendar_event_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
-*SwaggerClient::CalendarApi* | [**put_characters_character_id_calendar_event_id**](docs/CalendarApi.md#put_characters_character_id_calendar_event_id) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
+*SwaggerClient::CalendarApi* | [**get_character_calendar**](docs/CalendarApi.md#get_character_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
+*SwaggerClient::CalendarApi* | [**get_calendar_event_by_id**](docs/CalendarApi.md#get_calendar_event_by_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
+*SwaggerClient::CalendarApi* | [**respond_to_calendar_event**](docs/CalendarApi.md#respond_to_calendar_event) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
 *SwaggerClient::CharacterApi* | [**get_characters_character_id**](docs/CharacterApi.md#get_characters_character_id) | **GET** /characters/{character_id}/ | Get character's public information
 *SwaggerClient::CharacterApi* | [**get_characters_character_id_agents_research**](docs/CharacterApi.md#get_characters_character_id_agents_research) | **GET** /characters/{character_id}/agents_research/ | Get agents research
 *SwaggerClient::CharacterApi* | [**get_characters_character_id_blueprints**](docs/CharacterApi.md#get_characters_character_id_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
