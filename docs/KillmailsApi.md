@@ -4,12 +4,12 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_killmails_recent**](KillmailsApi.md#get_characters_character_id_killmails_recent) | **GET** /characters/{character_id}/killmails/recent/ | List kills and losses
-[**get_killmails_killmail_id_killmail_hash**](KillmailsApi.md#get_killmails_killmail_id_killmail_hash) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
+[**get_character_recent_killmails**](KillmailsApi.md#get_character_recent_killmails) | **GET** /characters/{character_id}/killmails/recent/ | List kills and losses
+[**get_killmail**](KillmailsApi.md#get_killmail) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
 
 
-# **get_characters_character_id_killmails_recent**
-> Array&lt;GetCharactersCharacterIdKillmailsRecent200Ok&gt; get_characters_character_id_killmails_recent(character_id, opts)
+# **get_character_recent_killmails**
+> Array&lt;GetCharactersCharacterIdKillmailsRecent200Ok&gt; get_character_recent_killmails(character_id, opts)
 
 List kills and losses
 
@@ -40,10 +40,10 @@ opts = {
 
 begin
   #List kills and losses
-  result = api_instance.get_characters_character_id_killmails_recent(character_id, opts)
+  result = api_instance.get_character_recent_killmails(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling KillmailsApi->get_characters_character_id_killmails_recent: #{e}"
+  puts "Exception when calling KillmailsApi->get_character_recent_killmails: #{e}"
 end
 ```
 
@@ -74,8 +74,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_killmails_killmail_id_killmail_hash**
-> GetKillmailsKillmailIdKillmailHashOk get_killmails_killmail_id_killmail_hash(killmail_hash, killmail_id, opts)
+# **get_killmail**
+> GetKillmailsKillmailIdKillmailHashOk get_killmail(killmail_hash, killmail_id, opts)
 
 Get a single killmail
 
@@ -100,10 +100,10 @@ opts = {
 
 begin
   #Get a single killmail
-  result = api_instance.get_killmails_killmail_id_killmail_hash(killmail_hash, killmail_id, opts)
+  result = api_instance.get_killmail(killmail_hash, killmail_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling KillmailsApi->get_killmails_killmail_id_killmail_hash: #{e}"
+  puts "Exception when calling KillmailsApi->get_killmail: #{e}"
 end
 ```
 

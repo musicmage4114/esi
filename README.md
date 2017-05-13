@@ -140,8 +140,8 @@ Class | Method | HTTP request | Description
 *SwaggerClient::IndustryApi* | [**get_industry_facilities**](docs/IndustryApi.md#get_industry_facilities) | **GET** /industry/facilities/ | List industry facilities
 *SwaggerClient::IndustryApi* | [**get_industry_systems**](docs/IndustryApi.md#get_industry_systems) | **GET** /industry/systems/ | List solar system cost indices
 *SwaggerClient::InsuranceApi* | [**get_insurance_prices**](docs/InsuranceApi.md#get_insurance_prices) | **GET** /insurance/prices/ | List insurance levels
-*SwaggerClient::KillmailsApi* | [**get_characters_character_id_killmails_recent**](docs/KillmailsApi.md#get_characters_character_id_killmails_recent) | **GET** /characters/{character_id}/killmails/recent/ | List kills and losses
-*SwaggerClient::KillmailsApi* | [**get_killmails_killmail_id_killmail_hash**](docs/KillmailsApi.md#get_killmails_killmail_id_killmail_hash) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
+*SwaggerClient::KillmailsApi* | [**get_character_recent_killmails**](docs/KillmailsApi.md#get_character_recent_killmails) | **GET** /characters/{character_id}/killmails/recent/ | List kills and losses
+*SwaggerClient::KillmailsApi* | [**get_killmail**](docs/KillmailsApi.md#get_killmail) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
 *SwaggerClient::LocationApi* | [**get_characters_character_id_location**](docs/LocationApi.md#get_characters_character_id_location) | **GET** /characters/{character_id}/location/ | Get character location
 *SwaggerClient::LocationApi* | [**get_characters_character_id_ship**](docs/LocationApi.md#get_characters_character_id_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
 *SwaggerClient::LoyaltyApi* | [**get_character_loyalty_points**](docs/LoyaltyApi.md#get_character_loyalty_points) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points

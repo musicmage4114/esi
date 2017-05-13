@@ -31,7 +31,7 @@ describe 'KillmailsApi' do
     end
   end
 
-  # unit tests for get_characters_character_id_killmails_recent
+  # unit tests for get_character_recent_killmails
   # List kills and losses
   # Return a list of character&#39;s recent kills and losses  ---  Alternate route: &#x60;/v1/characters/{character_id}/killmails/recent/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/killmails/recent/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/killmails/recent/&#x60;   ---  This route is cached for up to 120 seconds
   # @param character_id An EVE character ID
@@ -43,13 +43,13 @@ describe 'KillmailsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdKillmailsRecent200Ok>]
-  describe 'get_characters_character_id_killmails_recent test' do
+  describe 'get_character_recent_killmails test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_killmails_killmail_id_killmail_hash
+  # unit tests for get_killmail
   # Get a single killmail
   # Return a single killmail from its ID and hash  ---  Alternate route: &#x60;/v1/killmails/{killmail_id}/{killmail_hash}/&#x60;  Alternate route: &#x60;/legacy/killmails/{killmail_id}/{killmail_hash}/&#x60;  Alternate route: &#x60;/latest/killmails/{killmail_id}/{killmail_hash}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param killmail_hash The killmail hash for verification
@@ -59,7 +59,7 @@ describe 'KillmailsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetKillmailsKillmailIdKillmailHashOk]
-  describe 'get_killmails_killmail_id_killmail_hash test' do
+  describe 'get_killmail test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

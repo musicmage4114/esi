@@ -30,8 +30,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdKillmailsRecent200Ok>]
-    def get_characters_character_id_killmails_recent(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_killmails_recent_with_http_info(character_id, opts)
+    def get_character_recent_killmails(character_id, opts = {})
+      data, _status_code, _headers = get_character_recent_killmails_with_http_info(character_id, opts)
       return data
     end
 
@@ -46,17 +46,17 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdKillmailsRecent200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdKillmailsRecent200Ok> data, response status code and response headers
-    def get_characters_character_id_killmails_recent_with_http_info(character_id, opts = {})
+    def get_character_recent_killmails_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: KillmailsApi.get_characters_character_id_killmails_recent ..."
+        @api_client.config.logger.debug "Calling API: KillmailsApi.get_character_recent_killmails ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling KillmailsApi.get_characters_character_id_killmails_recent" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling KillmailsApi.get_character_recent_killmails" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       if !opts[:'max_count'].nil? && opts[:'max_count'] > 5000
-        fail ArgumentError, 'invalid value for "opts[:"max_count"]" when calling KillmailsApi.get_characters_character_id_killmails_recent, must be smaller than or equal to 5000.'
+        fail ArgumentError, 'invalid value for "opts[:"max_count"]" when calling KillmailsApi.get_character_recent_killmails, must be smaller than or equal to 5000.'
       end
 
       # resource path
@@ -90,7 +90,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdKillmailsRecent200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: KillmailsApi#get_characters_character_id_killmails_recent\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: KillmailsApi#get_character_recent_killmails\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -104,8 +104,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetKillmailsKillmailIdKillmailHashOk]
-    def get_killmails_killmail_id_killmail_hash(killmail_hash, killmail_id, opts = {})
-      data, _status_code, _headers = get_killmails_killmail_id_killmail_hash_with_http_info(killmail_hash, killmail_id, opts)
+    def get_killmail(killmail_hash, killmail_id, opts = {})
+      data, _status_code, _headers = get_killmail_with_http_info(killmail_hash, killmail_id, opts)
       return data
     end
 
@@ -118,14 +118,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetKillmailsKillmailIdKillmailHashOk, Fixnum, Hash)>] GetKillmailsKillmailIdKillmailHashOk data, response status code and response headers
-    def get_killmails_killmail_id_killmail_hash_with_http_info(killmail_hash, killmail_id, opts = {})
+    def get_killmail_with_http_info(killmail_hash, killmail_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: KillmailsApi.get_killmails_killmail_id_killmail_hash ..."
+        @api_client.config.logger.debug "Calling API: KillmailsApi.get_killmail ..."
       end
       # verify the required parameter 'killmail_hash' is set
-      fail ArgumentError, "Missing the required parameter 'killmail_hash' when calling KillmailsApi.get_killmails_killmail_id_killmail_hash" if killmail_hash.nil?
+      fail ArgumentError, "Missing the required parameter 'killmail_hash' when calling KillmailsApi.get_killmail" if killmail_hash.nil?
       # verify the required parameter 'killmail_id' is set
-      fail ArgumentError, "Missing the required parameter 'killmail_id' when calling KillmailsApi.get_killmails_killmail_id_killmail_hash" if killmail_id.nil?
+      fail ArgumentError, "Missing the required parameter 'killmail_id' when calling KillmailsApi.get_killmail" if killmail_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -157,7 +157,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetKillmailsKillmailIdKillmailHashOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: KillmailsApi#get_killmails_killmail_id_killmail_hash\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: KillmailsApi#get_killmail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
