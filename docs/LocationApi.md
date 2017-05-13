@@ -4,12 +4,12 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_location**](LocationApi.md#get_characters_character_id_location) | **GET** /characters/{character_id}/location/ | Get character location
-[**get_characters_character_id_ship**](LocationApi.md#get_characters_character_id_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
+[**get_character_location**](LocationApi.md#get_character_location) | **GET** /characters/{character_id}/location/ | Get character location
+[**get_current_ship**](LocationApi.md#get_current_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
 
 
-# **get_characters_character_id_location**
-> GetCharactersCharacterIdLocationOk get_characters_character_id_location(character_id, opts)
+# **get_character_location**
+> GetCharactersCharacterIdLocationOk get_character_location(character_id, opts)
 
 Get character location
 
@@ -38,10 +38,10 @@ opts = {
 
 begin
   #Get character location
-  result = api_instance.get_characters_character_id_location(character_id, opts)
+  result = api_instance.get_character_location(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling LocationApi->get_characters_character_id_location: #{e}"
+  puts "Exception when calling LocationApi->get_character_location: #{e}"
 end
 ```
 
@@ -70,8 +70,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_ship**
-> GetCharactersCharacterIdShipOk get_characters_character_id_ship(character_id, opts)
+# **get_current_ship**
+> GetCharactersCharacterIdShipOk get_current_ship(character_id, opts)
 
 Get current ship
 
@@ -100,10 +100,10 @@ opts = {
 
 begin
   #Get current ship
-  result = api_instance.get_characters_character_id_ship(character_id, opts)
+  result = api_instance.get_current_ship(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling LocationApi->get_characters_character_id_ship: #{e}"
+  puts "Exception when calling LocationApi->get_current_ship: #{e}"
 end
 ```
 

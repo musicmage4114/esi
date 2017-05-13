@@ -4,7 +4,7 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id**](CharacterApi.md#get_characters_character_id) | **GET** /characters/{character_id}/ | Get character&#39;s public information
+[**get_character_by_id**](CharacterApi.md#get_character_by_id) | **GET** /characters/{character_id}/ | Get character&#39;s public information
 [**get_character_research_agents**](CharacterApi.md#get_character_research_agents) | **GET** /characters/{character_id}/agents_research/ | Get agents research
 [**get_character_blueprints**](CharacterApi.md#get_character_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
 [**get_character_chat_channels**](CharacterApi.md#get_character_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
@@ -17,8 +17,8 @@ Method | HTTP request | Description
 [**calculate_cspa_charge**](CharacterApi.md#calculate_cspa_charge) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
 
 
-# **get_characters_character_id**
-> GetCharactersCharacterIdOk get_characters_character_id(character_id, opts)
+# **get_character_by_id**
+> GetCharactersCharacterIdOk get_character_by_id(character_id, opts)
 
 Get character's public information
 
@@ -41,10 +41,10 @@ opts = {
 
 begin
   #Get character's public information
-  result = api_instance.get_characters_character_id(character_id, opts)
+  result = api_instance.get_character_by_id(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id: #{e}"
+  puts "Exception when calling CharacterApi->get_character_by_id: #{e}"
 end
 ```
 

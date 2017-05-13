@@ -28,8 +28,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetCharactersCharacterIdLocationOk]
-    def get_characters_character_id_location(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_location_with_http_info(character_id, opts)
+    def get_character_location(character_id, opts = {})
+      data, _status_code, _headers = get_character_location_with_http_info(character_id, opts)
       return data
     end
 
@@ -42,12 +42,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetCharactersCharacterIdLocationOk, Fixnum, Hash)>] GetCharactersCharacterIdLocationOk data, response status code and response headers
-    def get_characters_character_id_location_with_http_info(character_id, opts = {})
+    def get_character_location_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: LocationApi.get_characters_character_id_location ..."
+        @api_client.config.logger.debug "Calling API: LocationApi.get_character_location ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling LocationApi.get_characters_character_id_location" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling LocationApi.get_character_location" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -80,7 +80,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetCharactersCharacterIdLocationOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: LocationApi#get_characters_character_id_location\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: LocationApi#get_character_location\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -94,8 +94,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetCharactersCharacterIdShipOk]
-    def get_characters_character_id_ship(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_ship_with_http_info(character_id, opts)
+    def get_current_ship(character_id, opts = {})
+      data, _status_code, _headers = get_current_ship_with_http_info(character_id, opts)
       return data
     end
 
@@ -108,12 +108,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetCharactersCharacterIdShipOk, Fixnum, Hash)>] GetCharactersCharacterIdShipOk data, response status code and response headers
-    def get_characters_character_id_ship_with_http_info(character_id, opts = {})
+    def get_current_ship_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: LocationApi.get_characters_character_id_ship ..."
+        @api_client.config.logger.debug "Calling API: LocationApi.get_current_ship ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling LocationApi.get_characters_character_id_ship" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling LocationApi.get_current_ship" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -146,7 +146,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetCharactersCharacterIdShipOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: LocationApi#get_characters_character_id_ship\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: LocationApi#get_current_ship\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

@@ -89,7 +89,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::CalendarApi* | [**get_character_calendar**](docs/CalendarApi.md#get_character_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
 *SwaggerClient::CalendarApi* | [**get_calendar_event_by_id**](docs/CalendarApi.md#get_calendar_event_by_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
 *SwaggerClient::CalendarApi* | [**respond_to_calendar_event**](docs/CalendarApi.md#respond_to_calendar_event) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
-*SwaggerClient::CharacterApi* | [**get_characters_character_id**](docs/CharacterApi.md#get_characters_character_id) | **GET** /characters/{character_id}/ | Get character's public information
+*SwaggerClient::CharacterApi* | [**get_character_by_id**](docs/CharacterApi.md#get_character_by_id) | **GET** /characters/{character_id}/ | Get character's public information
 *SwaggerClient::CharacterApi* | [**get_character_research_agents**](docs/CharacterApi.md#get_character_research_agents) | **GET** /characters/{character_id}/agents_research/ | Get agents research
 *SwaggerClient::CharacterApi* | [**get_character_blueprints**](docs/CharacterApi.md#get_character_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
 *SwaggerClient::CharacterApi* | [**get_character_chat_channels**](docs/CharacterApi.md#get_character_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
@@ -142,8 +142,8 @@ Class | Method | HTTP request | Description
 *SwaggerClient::InsuranceApi* | [**get_insurance_prices**](docs/InsuranceApi.md#get_insurance_prices) | **GET** /insurance/prices/ | List insurance levels
 *SwaggerClient::KillmailsApi* | [**get_character_recent_killmails**](docs/KillmailsApi.md#get_character_recent_killmails) | **GET** /characters/{character_id}/killmails/recent/ | List kills and losses
 *SwaggerClient::KillmailsApi* | [**get_killmail**](docs/KillmailsApi.md#get_killmail) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
-*SwaggerClient::LocationApi* | [**get_characters_character_id_location**](docs/LocationApi.md#get_characters_character_id_location) | **GET** /characters/{character_id}/location/ | Get character location
-*SwaggerClient::LocationApi* | [**get_characters_character_id_ship**](docs/LocationApi.md#get_characters_character_id_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
+*SwaggerClient::LocationApi* | [**get_character_location**](docs/LocationApi.md#get_character_location) | **GET** /characters/{character_id}/location/ | Get character location
+*SwaggerClient::LocationApi* | [**get_current_ship**](docs/LocationApi.md#get_current_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
 *SwaggerClient::LoyaltyApi* | [**get_character_loyalty_points**](docs/LoyaltyApi.md#get_character_loyalty_points) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points
 *SwaggerClient::LoyaltyApi* | [**get_corporation_loyalty_store_by_id**](docs/LoyaltyApi.md#get_corporation_loyalty_store_by_id) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
 *SwaggerClient::MailApi* | [**delete_character_mail_label**](docs/MailApi.md#delete_character_mail_label) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
