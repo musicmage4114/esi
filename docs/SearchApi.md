@@ -4,12 +4,12 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_search**](SearchApi.md#get_characters_character_id_search) | **GET** /characters/{character_id}/search/ | Search on a string
-[**get_search**](SearchApi.md#get_search) | **GET** /search/ | Search on a string
+[**search_character_by_string**](SearchApi.md#search_character_by_string) | **GET** /characters/{character_id}/search/ | Search on a string
+[**find_entity_by_string**](SearchApi.md#find_entity_by_string) | **GET** /search/ | Search on a string
 
 
-# **get_characters_character_id_search**
-> GetCharactersCharacterIdSearchOk get_characters_character_id_search(categories, character_id, search, opts)
+# **search_character_by_string**
+> GetCharactersCharacterIdSearchOk search_character_by_string(categories, character_id, search, opts)
 
 Search on a string
 
@@ -44,10 +44,10 @@ opts = {
 
 begin
   #Search on a string
-  result = api_instance.get_characters_character_id_search(categories, character_id, search, opts)
+  result = api_instance.search_character_by_string(categories, character_id, search, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling SearchApi->get_characters_character_id_search: #{e}"
+  puts "Exception when calling SearchApi->search_character_by_string: #{e}"
 end
 ```
 
@@ -80,8 +80,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_search**
-> GetSearchOk get_search(categories, search, opts)
+# **find_entity_by_string**
+> GetSearchOk find_entity_by_string(categories, search, opts)
 
 Search on a string
 
@@ -108,10 +108,10 @@ opts = {
 
 begin
   #Search on a string
-  result = api_instance.get_search(categories, search, opts)
+  result = api_instance.find_entity_by_string(categories, search, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling SearchApi->get_search: #{e}"
+  puts "Exception when calling SearchApi->find_entity_by_string: #{e}"
 end
 ```
 

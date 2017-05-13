@@ -31,7 +31,7 @@ describe 'SearchApi' do
     end
   end
 
-  # unit tests for get_characters_character_id_search
+  # unit tests for search_character_by_string
   # Search on a string
   # Search for entities that match a given sub-string.  ---  Alternate route: &#x60;/v3/characters/{character_id}/search/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param categories Type of entities to search for
@@ -45,13 +45,13 @@ describe 'SearchApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetCharactersCharacterIdSearchOk]
-  describe 'get_characters_character_id_search test' do
+  describe 'search_character_by_string test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_search
+  # unit tests for find_entity_by_string
   # Search on a string
   # Search for entities that match a given sub-string.  ---  Alternate route: &#x60;/v2/search/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param categories Type of entities to search for
@@ -63,7 +63,7 @@ describe 'SearchApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetSearchOk]
-  describe 'get_search test' do
+  describe 'find_entity_by_string test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
