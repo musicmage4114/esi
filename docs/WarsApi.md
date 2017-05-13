@@ -5,8 +5,8 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_wars**](WarsApi.md#get_wars) | **GET** /wars/ | List wars
-[**get_wars_war_id**](WarsApi.md#get_wars_war_id) | **GET** /wars/{war_id}/ | Get war information
-[**get_wars_war_id_killmails**](WarsApi.md#get_wars_war_id_killmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war
+[**get_war_by_id**](WarsApi.md#get_war_by_id) | **GET** /wars/{war_id}/ | Get war information
+[**get_war_killmails**](WarsApi.md#get_war_killmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war
 
 
 # **get_wars**
@@ -63,8 +63,8 @@ No authorization required
 
 
 
-# **get_wars_war_id**
-> GetWarsWarIdOk get_wars_war_id(war_id, opts)
+# **get_war_by_id**
+> GetWarsWarIdOk get_war_by_id(war_id, opts)
 
 Get war information
 
@@ -87,10 +87,10 @@ opts = {
 
 begin
   #Get war information
-  result = api_instance.get_wars_war_id(war_id, opts)
+  result = api_instance.get_war_by_id(war_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling WarsApi->get_wars_war_id: #{e}"
+  puts "Exception when calling WarsApi->get_war_by_id: #{e}"
 end
 ```
 
@@ -118,8 +118,8 @@ No authorization required
 
 
 
-# **get_wars_war_id_killmails**
-> Array&lt;GetWarsWarIdKillmails200Ok&gt; get_wars_war_id_killmails(war_id, opts)
+# **get_war_killmails**
+> Array&lt;GetWarsWarIdKillmails200Ok&gt; get_war_killmails(war_id, opts)
 
 List kills for a war
 
@@ -143,10 +143,10 @@ opts = {
 
 begin
   #List kills for a war
-  result = api_instance.get_wars_war_id_killmails(war_id, opts)
+  result = api_instance.get_war_killmails(war_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling WarsApi->get_wars_war_id_killmails: #{e}"
+  puts "Exception when calling WarsApi->get_war_killmails: #{e}"
 end
 ```
 

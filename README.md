@@ -212,8 +212,8 @@ Class | Method | HTTP request | Description
 *SwaggerClient::UserInterfaceApi* | [**open_new_mail**](docs/UserInterfaceApi.md#open_new_mail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
 *SwaggerClient::WalletApi* | [**get_character_wallets**](docs/WalletApi.md#get_character_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
 *SwaggerClient::WarsApi* | [**get_wars**](docs/WarsApi.md#get_wars) | **GET** /wars/ | List wars
-*SwaggerClient::WarsApi* | [**get_wars_war_id**](docs/WarsApi.md#get_wars_war_id) | **GET** /wars/{war_id}/ | Get war information
-*SwaggerClient::WarsApi* | [**get_wars_war_id_killmails**](docs/WarsApi.md#get_wars_war_id_killmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war
+*SwaggerClient::WarsApi* | [**get_war_by_id**](docs/WarsApi.md#get_war_by_id) | **GET** /wars/{war_id}/ | Get war information
+*SwaggerClient::WarsApi* | [**get_war_killmails**](docs/WarsApi.md#get_war_killmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war
 
 
 ## Documentation for Models

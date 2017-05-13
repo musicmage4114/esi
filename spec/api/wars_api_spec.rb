@@ -46,7 +46,7 @@ describe 'WarsApi' do
     end
   end
 
-  # unit tests for get_wars_war_id
+  # unit tests for get_war_by_id
   # Get war information
   # Return details about a war  ---  Alternate route: &#x60;/v1/wars/{war_id}/&#x60;  Alternate route: &#x60;/legacy/wars/{war_id}/&#x60;  Alternate route: &#x60;/latest/wars/{war_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param war_id ID for a war
@@ -55,13 +55,13 @@ describe 'WarsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetWarsWarIdOk]
-  describe 'get_wars_war_id test' do
+  describe 'get_war_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_wars_war_id_killmails
+  # unit tests for get_war_killmails
   # List kills for a war
   # Return a list of kills related to a war  ---  Alternate route: &#x60;/v1/wars/{war_id}/killmails/&#x60;  Alternate route: &#x60;/legacy/wars/{war_id}/killmails/&#x60;  Alternate route: &#x60;/latest/wars/{war_id}/killmails/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param war_id A valid war ID
@@ -71,7 +71,7 @@ describe 'WarsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetWarsWarIdKillmails200Ok>]
-  describe 'get_wars_war_id_killmails test' do
+  describe 'get_war_killmails test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
