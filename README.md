@@ -100,7 +100,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::CharacterApi* | [**get_character_names**](docs/CharacterApi.md#get_character_names) | **GET** /characters/names/ | Get character names
 *SwaggerClient::CharacterApi* | [**get_characters_affiliation_by_id**](docs/CharacterApi.md#get_characters_affiliation_by_id) | **POST** /characters/affiliation/ | Character affiliation
 *SwaggerClient::CharacterApi* | [**calculate_cspa_charge**](docs/CharacterApi.md#calculate_cspa_charge) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
-*SwaggerClient::ClonesApi* | [**get_characters_character_id_clones**](docs/ClonesApi.md#get_characters_character_id_clones) | **GET** /characters/{character_id}/clones/ | Get clones
+*SwaggerClient::ClonesApi* | [**get_character_clones**](docs/ClonesApi.md#get_character_clones) | **GET** /characters/{character_id}/clones/ | Get clones
 *SwaggerClient::ContactsApi* | [**delete_characters_character_id_contacts**](docs/ContactsApi.md#delete_characters_character_id_contacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts
 *SwaggerClient::ContactsApi* | [**get_characters_character_id_contacts**](docs/ContactsApi.md#get_characters_character_id_contacts) | **GET** /characters/{character_id}/contacts/ | Get contacts
 *SwaggerClient::ContactsApi* | [**get_characters_character_id_contacts_labels**](docs/ContactsApi.md#get_characters_character_id_contacts_labels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels

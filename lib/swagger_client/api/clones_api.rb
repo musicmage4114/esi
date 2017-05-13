@@ -28,8 +28,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetCharactersCharacterIdClonesOk]
-    def get_characters_character_id_clones(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_clones_with_http_info(character_id, opts)
+    def get_character_clones(character_id, opts = {})
+      data, _status_code, _headers = get_character_clones_with_http_info(character_id, opts)
       return data
     end
 
@@ -42,12 +42,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetCharactersCharacterIdClonesOk, Fixnum, Hash)>] GetCharactersCharacterIdClonesOk data, response status code and response headers
-    def get_characters_character_id_clones_with_http_info(character_id, opts = {})
+    def get_character_clones_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: ClonesApi.get_characters_character_id_clones ..."
+        @api_client.config.logger.debug "Calling API: ClonesApi.get_character_clones ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling ClonesApi.get_characters_character_id_clones" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling ClonesApi.get_character_clones" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -80,7 +80,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetCharactersCharacterIdClonesOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ClonesApi#get_characters_character_id_clones\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ClonesApi#get_character_clones\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
