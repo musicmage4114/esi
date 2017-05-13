@@ -122,19 +122,19 @@ Class | Method | HTTP request | Description
 *SwaggerClient::FittingsApi* | [**delete_character_fitting**](docs/FittingsApi.md#delete_character_fitting) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
 *SwaggerClient::FittingsApi* | [**get_character_fittings**](docs/FittingsApi.md#get_character_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
 *SwaggerClient::FittingsApi* | [**add_character_fitting**](docs/FittingsApi.md#add_character_fitting) | **POST** /characters/{character_id}/fittings/ | Create fitting
-*SwaggerClient::FleetsApi* | [**delete_fleets_fleet_id_members_member_id**](docs/FleetsApi.md#delete_fleets_fleet_id_members_member_id) | **DELETE** /fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
-*SwaggerClient::FleetsApi* | [**delete_fleets_fleet_id_squads_squad_id**](docs/FleetsApi.md#delete_fleets_fleet_id_squads_squad_id) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
-*SwaggerClient::FleetsApi* | [**delete_fleets_fleet_id_wings_wing_id**](docs/FleetsApi.md#delete_fleets_fleet_id_wings_wing_id) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
-*SwaggerClient::FleetsApi* | [**get_fleets_fleet_id**](docs/FleetsApi.md#get_fleets_fleet_id) | **GET** /fleets/{fleet_id}/ | Get fleet information
-*SwaggerClient::FleetsApi* | [**get_fleets_fleet_id_members**](docs/FleetsApi.md#get_fleets_fleet_id_members) | **GET** /fleets/{fleet_id}/members/ | Get fleet members
-*SwaggerClient::FleetsApi* | [**get_fleets_fleet_id_wings**](docs/FleetsApi.md#get_fleets_fleet_id_wings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings
-*SwaggerClient::FleetsApi* | [**post_fleets_fleet_id_members**](docs/FleetsApi.md#post_fleets_fleet_id_members) | **POST** /fleets/{fleet_id}/members/ | Create fleet invitation
-*SwaggerClient::FleetsApi* | [**post_fleets_fleet_id_wings**](docs/FleetsApi.md#post_fleets_fleet_id_wings) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing
-*SwaggerClient::FleetsApi* | [**post_fleets_fleet_id_wings_wing_id_squads**](docs/FleetsApi.md#post_fleets_fleet_id_wings_wing_id_squads) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
-*SwaggerClient::FleetsApi* | [**put_fleets_fleet_id**](docs/FleetsApi.md#put_fleets_fleet_id) | **PUT** /fleets/{fleet_id}/ | Update fleet
-*SwaggerClient::FleetsApi* | [**put_fleets_fleet_id_members_member_id**](docs/FleetsApi.md#put_fleets_fleet_id_members_member_id) | **PUT** /fleets/{fleet_id}/members/{member_id}/ | Move fleet member
-*SwaggerClient::FleetsApi* | [**put_fleets_fleet_id_squads_squad_id**](docs/FleetsApi.md#put_fleets_fleet_id_squads_squad_id) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
-*SwaggerClient::FleetsApi* | [**put_fleets_fleet_id_wings_wing_id**](docs/FleetsApi.md#put_fleets_fleet_id_wings_wing_id) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
+*SwaggerClient::FleetsApi* | [**kick_fleet_member**](docs/FleetsApi.md#kick_fleet_member) | **DELETE** /fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
+*SwaggerClient::FleetsApi* | [**delete_fleet_squad**](docs/FleetsApi.md#delete_fleet_squad) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
+*SwaggerClient::FleetsApi* | [**delete_fleet_wing**](docs/FleetsApi.md#delete_fleet_wing) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
+*SwaggerClient::FleetsApi* | [**get_fleet**](docs/FleetsApi.md#get_fleet) | **GET** /fleets/{fleet_id}/ | Get fleet information
+*SwaggerClient::FleetsApi* | [**get_fleet_members**](docs/FleetsApi.md#get_fleet_members) | **GET** /fleets/{fleet_id}/members/ | Get fleet members
+*SwaggerClient::FleetsApi* | [**get_fleet_wings**](docs/FleetsApi.md#get_fleet_wings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings
+*SwaggerClient::FleetsApi* | [**invite_to_fleet**](docs/FleetsApi.md#invite_to_fleet) | **POST** /fleets/{fleet_id}/members/ | Create fleet invitation
+*SwaggerClient::FleetsApi* | [**create_fleet_wing**](docs/FleetsApi.md#create_fleet_wing) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing
+*SwaggerClient::FleetsApi* | [**create_fleet_squad**](docs/FleetsApi.md#create_fleet_squad) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
+*SwaggerClient::FleetsApi* | [**update_fleet**](docs/FleetsApi.md#update_fleet) | **PUT** /fleets/{fleet_id}/ | Update fleet
+*SwaggerClient::FleetsApi* | [**move_fleet_member**](docs/FleetsApi.md#move_fleet_member) | **PUT** /fleets/{fleet_id}/members/{member_id}/ | Move fleet member
+*SwaggerClient::FleetsApi* | [**rename_fleet_squad**](docs/FleetsApi.md#rename_fleet_squad) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
+*SwaggerClient::FleetsApi* | [**rename_fleet_wing**](docs/FleetsApi.md#rename_fleet_wing) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
 *SwaggerClient::IncursionsApi* | [**get_incursions**](docs/IncursionsApi.md#get_incursions) | **GET** /incursions/ | List incursions
 *SwaggerClient::IndustryApi* | [**get_character_industry_jobs**](docs/IndustryApi.md#get_character_industry_jobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
 *SwaggerClient::IndustryApi* | [**get_industry_facilities**](docs/IndustryApi.md#get_industry_facilities) | **GET** /industry/facilities/ | List industry facilities

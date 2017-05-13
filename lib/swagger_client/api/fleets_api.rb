@@ -29,8 +29,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def delete_fleets_fleet_id_members_member_id(fleet_id, member_id, opts = {})
-      delete_fleets_fleet_id_members_member_id_with_http_info(fleet_id, member_id, opts)
+    def kick_fleet_member(fleet_id, member_id, opts = {})
+      kick_fleet_member_with_http_info(fleet_id, member_id, opts)
       return nil
     end
 
@@ -44,14 +44,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def delete_fleets_fleet_id_members_member_id_with_http_info(fleet_id, member_id, opts = {})
+    def kick_fleet_member_with_http_info(fleet_id, member_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.delete_fleets_fleet_id_members_member_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.kick_fleet_member ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.delete_fleets_fleet_id_members_member_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.kick_fleet_member" if fleet_id.nil?
       # verify the required parameter 'member_id' is set
-      fail ArgumentError, "Missing the required parameter 'member_id' when calling FleetsApi.delete_fleets_fleet_id_members_member_id" if member_id.nil?
+      fail ArgumentError, "Missing the required parameter 'member_id' when calling FleetsApi.kick_fleet_member" if member_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -83,7 +83,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#delete_fleets_fleet_id_members_member_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#kick_fleet_member\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -98,8 +98,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def delete_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, opts = {})
-      delete_fleets_fleet_id_squads_squad_id_with_http_info(fleet_id, squad_id, opts)
+    def delete_fleet_squad(fleet_id, squad_id, opts = {})
+      delete_fleet_squad_with_http_info(fleet_id, squad_id, opts)
       return nil
     end
 
@@ -113,14 +113,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def delete_fleets_fleet_id_squads_squad_id_with_http_info(fleet_id, squad_id, opts = {})
+    def delete_fleet_squad_with_http_info(fleet_id, squad_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.delete_fleets_fleet_id_squads_squad_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.delete_fleet_squad ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.delete_fleets_fleet_id_squads_squad_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.delete_fleet_squad" if fleet_id.nil?
       # verify the required parameter 'squad_id' is set
-      fail ArgumentError, "Missing the required parameter 'squad_id' when calling FleetsApi.delete_fleets_fleet_id_squads_squad_id" if squad_id.nil?
+      fail ArgumentError, "Missing the required parameter 'squad_id' when calling FleetsApi.delete_fleet_squad" if squad_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -152,7 +152,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#delete_fleets_fleet_id_squads_squad_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#delete_fleet_squad\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -167,8 +167,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def delete_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, opts = {})
-      delete_fleets_fleet_id_wings_wing_id_with_http_info(fleet_id, wing_id, opts)
+    def delete_fleet_wing(fleet_id, wing_id, opts = {})
+      delete_fleet_wing_with_http_info(fleet_id, wing_id, opts)
       return nil
     end
 
@@ -182,14 +182,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def delete_fleets_fleet_id_wings_wing_id_with_http_info(fleet_id, wing_id, opts = {})
+    def delete_fleet_wing_with_http_info(fleet_id, wing_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.delete_fleets_fleet_id_wings_wing_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.delete_fleet_wing ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.delete_fleets_fleet_id_wings_wing_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.delete_fleet_wing" if fleet_id.nil?
       # verify the required parameter 'wing_id' is set
-      fail ArgumentError, "Missing the required parameter 'wing_id' when calling FleetsApi.delete_fleets_fleet_id_wings_wing_id" if wing_id.nil?
+      fail ArgumentError, "Missing the required parameter 'wing_id' when calling FleetsApi.delete_fleet_wing" if wing_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -221,7 +221,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#delete_fleets_fleet_id_wings_wing_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#delete_fleet_wing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -235,8 +235,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetFleetsFleetIdOk]
-    def get_fleets_fleet_id(fleet_id, opts = {})
-      data, _status_code, _headers = get_fleets_fleet_id_with_http_info(fleet_id, opts)
+    def get_fleet(fleet_id, opts = {})
+      data, _status_code, _headers = get_fleet_with_http_info(fleet_id, opts)
       return data
     end
 
@@ -249,12 +249,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetFleetsFleetIdOk, Fixnum, Hash)>] GetFleetsFleetIdOk data, response status code and response headers
-    def get_fleets_fleet_id_with_http_info(fleet_id, opts = {})
+    def get_fleet_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.get_fleets_fleet_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.get_fleet ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.get_fleets_fleet_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.get_fleet" if fleet_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -287,7 +287,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetFleetsFleetIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#get_fleets_fleet_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#get_fleet\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -302,8 +302,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetFleetsFleetIdMembers200Ok>]
-    def get_fleets_fleet_id_members(fleet_id, opts = {})
-      data, _status_code, _headers = get_fleets_fleet_id_members_with_http_info(fleet_id, opts)
+    def get_fleet_members(fleet_id, opts = {})
+      data, _status_code, _headers = get_fleet_members_with_http_info(fleet_id, opts)
       return data
     end
 
@@ -317,12 +317,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetFleetsFleetIdMembers200Ok>, Fixnum, Hash)>] Array<GetFleetsFleetIdMembers200Ok> data, response status code and response headers
-    def get_fleets_fleet_id_members_with_http_info(fleet_id, opts = {})
+    def get_fleet_members_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.get_fleets_fleet_id_members ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.get_fleet_members ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.get_fleets_fleet_id_members" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.get_fleet_members" if fleet_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -359,7 +359,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetFleetsFleetIdMembers200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#get_fleets_fleet_id_members\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#get_fleet_members\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -374,8 +374,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetFleetsFleetIdWings200Ok>]
-    def get_fleets_fleet_id_wings(fleet_id, opts = {})
-      data, _status_code, _headers = get_fleets_fleet_id_wings_with_http_info(fleet_id, opts)
+    def get_fleet_wings(fleet_id, opts = {})
+      data, _status_code, _headers = get_fleet_wings_with_http_info(fleet_id, opts)
       return data
     end
 
@@ -389,12 +389,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetFleetsFleetIdWings200Ok>, Fixnum, Hash)>] Array<GetFleetsFleetIdWings200Ok> data, response status code and response headers
-    def get_fleets_fleet_id_wings_with_http_info(fleet_id, opts = {})
+    def get_fleet_wings_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.get_fleets_fleet_id_wings ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.get_fleet_wings ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.get_fleets_fleet_id_wings" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.get_fleet_wings" if fleet_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -431,7 +431,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetFleetsFleetIdWings200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#get_fleets_fleet_id_wings\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#get_fleet_wings\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -446,8 +446,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def post_fleets_fleet_id_members(fleet_id, invitation, opts = {})
-      post_fleets_fleet_id_members_with_http_info(fleet_id, invitation, opts)
+    def invite_to_fleet(fleet_id, invitation, opts = {})
+      invite_to_fleet_with_http_info(fleet_id, invitation, opts)
       return nil
     end
 
@@ -461,14 +461,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def post_fleets_fleet_id_members_with_http_info(fleet_id, invitation, opts = {})
+    def invite_to_fleet_with_http_info(fleet_id, invitation, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.post_fleets_fleet_id_members ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.invite_to_fleet ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.post_fleets_fleet_id_members" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.invite_to_fleet" if fleet_id.nil?
       # verify the required parameter 'invitation' is set
-      fail ArgumentError, "Missing the required parameter 'invitation' when calling FleetsApi.post_fleets_fleet_id_members" if invitation.nil?
+      fail ArgumentError, "Missing the required parameter 'invitation' when calling FleetsApi.invite_to_fleet" if invitation.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -500,7 +500,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#post_fleets_fleet_id_members\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#invite_to_fleet\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -514,8 +514,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [PostFleetsFleetIdWingsCreated]
-    def post_fleets_fleet_id_wings(fleet_id, opts = {})
-      data, _status_code, _headers = post_fleets_fleet_id_wings_with_http_info(fleet_id, opts)
+    def create_fleet_wing(fleet_id, opts = {})
+      data, _status_code, _headers = create_fleet_wing_with_http_info(fleet_id, opts)
       return data
     end
 
@@ -528,12 +528,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(PostFleetsFleetIdWingsCreated, Fixnum, Hash)>] PostFleetsFleetIdWingsCreated data, response status code and response headers
-    def post_fleets_fleet_id_wings_with_http_info(fleet_id, opts = {})
+    def create_fleet_wing_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.post_fleets_fleet_id_wings ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.create_fleet_wing ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.post_fleets_fleet_id_wings" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.create_fleet_wing" if fleet_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -566,7 +566,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'PostFleetsFleetIdWingsCreated')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#post_fleets_fleet_id_wings\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#create_fleet_wing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -581,8 +581,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [PostFleetsFleetIdWingsWingIdSquadsCreated]
-    def post_fleets_fleet_id_wings_wing_id_squads(fleet_id, wing_id, opts = {})
-      data, _status_code, _headers = post_fleets_fleet_id_wings_wing_id_squads_with_http_info(fleet_id, wing_id, opts)
+    def create_fleet_squad(fleet_id, wing_id, opts = {})
+      data, _status_code, _headers = create_fleet_squad_with_http_info(fleet_id, wing_id, opts)
       return data
     end
 
@@ -596,14 +596,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(PostFleetsFleetIdWingsWingIdSquadsCreated, Fixnum, Hash)>] PostFleetsFleetIdWingsWingIdSquadsCreated data, response status code and response headers
-    def post_fleets_fleet_id_wings_wing_id_squads_with_http_info(fleet_id, wing_id, opts = {})
+    def create_fleet_squad_with_http_info(fleet_id, wing_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.post_fleets_fleet_id_wings_wing_id_squads ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.create_fleet_squad ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.post_fleets_fleet_id_wings_wing_id_squads" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.create_fleet_squad" if fleet_id.nil?
       # verify the required parameter 'wing_id' is set
-      fail ArgumentError, "Missing the required parameter 'wing_id' when calling FleetsApi.post_fleets_fleet_id_wings_wing_id_squads" if wing_id.nil?
+      fail ArgumentError, "Missing the required parameter 'wing_id' when calling FleetsApi.create_fleet_squad" if wing_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -636,7 +636,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'PostFleetsFleetIdWingsWingIdSquadsCreated')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#post_fleets_fleet_id_wings_wing_id_squads\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#create_fleet_squad\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -651,8 +651,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def put_fleets_fleet_id(fleet_id, new_settings, opts = {})
-      put_fleets_fleet_id_with_http_info(fleet_id, new_settings, opts)
+    def update_fleet(fleet_id, new_settings, opts = {})
+      update_fleet_with_http_info(fleet_id, new_settings, opts)
       return nil
     end
 
@@ -666,14 +666,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def put_fleets_fleet_id_with_http_info(fleet_id, new_settings, opts = {})
+    def update_fleet_with_http_info(fleet_id, new_settings, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.put_fleets_fleet_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.update_fleet ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.put_fleets_fleet_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.update_fleet" if fleet_id.nil?
       # verify the required parameter 'new_settings' is set
-      fail ArgumentError, "Missing the required parameter 'new_settings' when calling FleetsApi.put_fleets_fleet_id" if new_settings.nil?
+      fail ArgumentError, "Missing the required parameter 'new_settings' when calling FleetsApi.update_fleet" if new_settings.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -705,7 +705,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#put_fleets_fleet_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#update_fleet\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -721,8 +721,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def put_fleets_fleet_id_members_member_id(fleet_id, member_id, movement, opts = {})
-      put_fleets_fleet_id_members_member_id_with_http_info(fleet_id, member_id, movement, opts)
+    def move_fleet_member(fleet_id, member_id, movement, opts = {})
+      move_fleet_member_with_http_info(fleet_id, member_id, movement, opts)
       return nil
     end
 
@@ -737,16 +737,16 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def put_fleets_fleet_id_members_member_id_with_http_info(fleet_id, member_id, movement, opts = {})
+    def move_fleet_member_with_http_info(fleet_id, member_id, movement, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.put_fleets_fleet_id_members_member_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.move_fleet_member ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.put_fleets_fleet_id_members_member_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.move_fleet_member" if fleet_id.nil?
       # verify the required parameter 'member_id' is set
-      fail ArgumentError, "Missing the required parameter 'member_id' when calling FleetsApi.put_fleets_fleet_id_members_member_id" if member_id.nil?
+      fail ArgumentError, "Missing the required parameter 'member_id' when calling FleetsApi.move_fleet_member" if member_id.nil?
       # verify the required parameter 'movement' is set
-      fail ArgumentError, "Missing the required parameter 'movement' when calling FleetsApi.put_fleets_fleet_id_members_member_id" if movement.nil?
+      fail ArgumentError, "Missing the required parameter 'movement' when calling FleetsApi.move_fleet_member" if movement.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -778,7 +778,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#put_fleets_fleet_id_members_member_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#move_fleet_member\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -794,8 +794,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def put_fleets_fleet_id_squads_squad_id(fleet_id, naming, squad_id, opts = {})
-      put_fleets_fleet_id_squads_squad_id_with_http_info(fleet_id, naming, squad_id, opts)
+    def rename_fleet_squad(fleet_id, naming, squad_id, opts = {})
+      rename_fleet_squad_with_http_info(fleet_id, naming, squad_id, opts)
       return nil
     end
 
@@ -810,16 +810,16 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def put_fleets_fleet_id_squads_squad_id_with_http_info(fleet_id, naming, squad_id, opts = {})
+    def rename_fleet_squad_with_http_info(fleet_id, naming, squad_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.put_fleets_fleet_id_squads_squad_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.rename_fleet_squad ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.put_fleets_fleet_id_squads_squad_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.rename_fleet_squad" if fleet_id.nil?
       # verify the required parameter 'naming' is set
-      fail ArgumentError, "Missing the required parameter 'naming' when calling FleetsApi.put_fleets_fleet_id_squads_squad_id" if naming.nil?
+      fail ArgumentError, "Missing the required parameter 'naming' when calling FleetsApi.rename_fleet_squad" if naming.nil?
       # verify the required parameter 'squad_id' is set
-      fail ArgumentError, "Missing the required parameter 'squad_id' when calling FleetsApi.put_fleets_fleet_id_squads_squad_id" if squad_id.nil?
+      fail ArgumentError, "Missing the required parameter 'squad_id' when calling FleetsApi.rename_fleet_squad" if squad_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -851,7 +851,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#put_fleets_fleet_id_squads_squad_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#rename_fleet_squad\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -867,8 +867,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def put_fleets_fleet_id_wings_wing_id(fleet_id, naming, wing_id, opts = {})
-      put_fleets_fleet_id_wings_wing_id_with_http_info(fleet_id, naming, wing_id, opts)
+    def rename_fleet_wing(fleet_id, naming, wing_id, opts = {})
+      rename_fleet_wing_with_http_info(fleet_id, naming, wing_id, opts)
       return nil
     end
 
@@ -883,16 +883,16 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def put_fleets_fleet_id_wings_wing_id_with_http_info(fleet_id, naming, wing_id, opts = {})
+    def rename_fleet_wing_with_http_info(fleet_id, naming, wing_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: FleetsApi.put_fleets_fleet_id_wings_wing_id ..."
+        @api_client.config.logger.debug "Calling API: FleetsApi.rename_fleet_wing ..."
       end
       # verify the required parameter 'fleet_id' is set
-      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.put_fleets_fleet_id_wings_wing_id" if fleet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'fleet_id' when calling FleetsApi.rename_fleet_wing" if fleet_id.nil?
       # verify the required parameter 'naming' is set
-      fail ArgumentError, "Missing the required parameter 'naming' when calling FleetsApi.put_fleets_fleet_id_wings_wing_id" if naming.nil?
+      fail ArgumentError, "Missing the required parameter 'naming' when calling FleetsApi.rename_fleet_wing" if naming.nil?
       # verify the required parameter 'wing_id' is set
-      fail ArgumentError, "Missing the required parameter 'wing_id' when calling FleetsApi.put_fleets_fleet_id_wings_wing_id" if wing_id.nil?
+      fail ArgumentError, "Missing the required parameter 'wing_id' when calling FleetsApi.rename_fleet_wing" if wing_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -924,7 +924,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: FleetsApi#put_fleets_fleet_id_wings_wing_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FleetsApi#rename_fleet_wing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
