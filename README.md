@@ -170,7 +170,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::PlanetaryInteractionApi* | [**get_character_colonies**](docs/PlanetaryInteractionApi.md#get_character_colonies) | **GET** /characters/{character_id}/planets/ | Get colonies
 *SwaggerClient::PlanetaryInteractionApi* | [**get_character_colony_by_id**](docs/PlanetaryInteractionApi.md#get_character_colony_by_id) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
 *SwaggerClient::PlanetaryInteractionApi* | [**get_schematic_by_id**](docs/PlanetaryInteractionApi.md#get_schematic_by_id) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
-*SwaggerClient::RoutesApi* | [**get_route_origin_destination**](docs/RoutesApi.md#get_route_origin_destination) | **GET** /route/{origin}/{destination}/ | Get route
+*SwaggerClient::RoutesApi* | [**set_route**](docs/RoutesApi.md#set_route) | **GET** /route/{origin}/{destination}/ | Get route
 *SwaggerClient::SearchApi* | [**search_character_by_string**](docs/SearchApi.md#search_character_by_string) | **GET** /characters/{character_id}/search/ | Search on a string
 *SwaggerClient::SearchApi* | [**find_entity_by_string**](docs/SearchApi.md#find_entity_by_string) | **GET** /search/ | Search on a string
 *SwaggerClient::SkillsApi* | [**get_character_skill_queue**](docs/SkillsApi.md#get_character_skill_queue) | **GET** /characters/{character_id}/skillqueue/ | Get character's skill queue
