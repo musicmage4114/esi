@@ -4,11 +4,11 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_assets**](AssetsApi.md#get_characters_character_id_assets) | **GET** /characters/{character_id}/assets/ | Get character assets
+[**get_character_assets**](AssetsApi.md#get_character_assets) | **GET** /characters/{character_id}/assets/ | Get character assets
 
 
-# **get_characters_character_id_assets**
-> Array&lt;GetCharactersCharacterIdAssets200Ok&gt; get_characters_character_id_assets(character_id, opts)
+# **get_character_assets**
+> Array&lt;GetCharactersCharacterIdAssets200Ok&gt; get_character_assets(character_id, opts)
 
 Get character assets
 
@@ -37,10 +37,10 @@ opts = {
 
 begin
   #Get character assets
-  result = api_instance.get_characters_character_id_assets(character_id, opts)
+  result = api_instance.get_character_assets(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling AssetsApi->get_characters_character_id_assets: #{e}"
+  puts "Exception when calling AssetsApi->get_character_assets: #{e}"
 end
 ```
 

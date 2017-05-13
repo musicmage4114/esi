@@ -83,7 +83,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::AllianceApi* | [**get_corporations_in_alliance**](docs/AllianceApi.md#get_corporations_in_alliance) | **GET** /alliances/{alliance_id}/corporations/ | List alliance's corporations
 *SwaggerClient::AllianceApi* | [**get_alliance_icon**](docs/AllianceApi.md#get_alliance_icon) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
 *SwaggerClient::AllianceApi* | [**get_alliances_names**](docs/AllianceApi.md#get_alliances_names) | **GET** /alliances/names/ | Get alliance names
-*SwaggerClient::AssetsApi* | [**get_characters_character_id_assets**](docs/AssetsApi.md#get_characters_character_id_assets) | **GET** /characters/{character_id}/assets/ | Get character assets
+*SwaggerClient::AssetsApi* | [**get_character_assets**](docs/AssetsApi.md#get_character_assets) | **GET** /characters/{character_id}/assets/ | Get character assets
 *SwaggerClient::BookmarksApi* | [**get_characters_character_id_bookmarks**](docs/BookmarksApi.md#get_characters_character_id_bookmarks) | **GET** /characters/{character_id}/bookmarks/ | List bookmarks
 *SwaggerClient::BookmarksApi* | [**get_characters_character_id_bookmarks_folders**](docs/BookmarksApi.md#get_characters_character_id_bookmarks_folders) | **GET** /characters/{character_id}/bookmarks/folders/ | List bookmark folders
 *SwaggerClient::CalendarApi* | [**get_characters_character_id_calendar**](docs/CalendarApi.md#get_characters_character_id_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries

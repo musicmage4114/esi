@@ -31,7 +31,7 @@ describe 'AssetsApi' do
     end
   end
 
-  # unit tests for get_characters_character_id_assets
+  # unit tests for get_character_assets
   # Get character assets
   # Return a list of the characters assets  ---  Alternate route: &#x60;/v1/characters/{character_id}/assets/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/assets/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/assets/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param character_id Character id of the target character
@@ -41,7 +41,7 @@ describe 'AssetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdAssets200Ok>]
-  describe 'get_characters_character_id_assets test' do
+  describe 'get_character_assets test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
