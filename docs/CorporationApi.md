@@ -4,19 +4,19 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_corporations_corporation_id**](CorporationApi.md#get_corporations_corporation_id) | **GET** /corporations/{corporation_id}/ | Get corporation information
-[**get_corporations_corporation_id_alliancehistory**](CorporationApi.md#get_corporations_corporation_id_alliancehistory) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
-[**get_corporations_corporation_id_icons**](CorporationApi.md#get_corporations_corporation_id_icons) | **GET** /corporations/{corporation_id}/icons/ | Get corporation icon
-[**get_corporations_corporation_id_members**](CorporationApi.md#get_corporations_corporation_id_members) | **GET** /corporations/{corporation_id}/members/ | Get corporation members
-[**get_corporations_corporation_id_roles**](CorporationApi.md#get_corporations_corporation_id_roles) | **GET** /corporations/{corporation_id}/roles/ | Get corporation member roles
-[**get_corporations_corporation_id_structures**](CorporationApi.md#get_corporations_corporation_id_structures) | **GET** /corporations/{corporation_id}/structures/ | Get corporation structures
-[**get_corporations_names**](CorporationApi.md#get_corporations_names) | **GET** /corporations/names/ | Get corporation names
-[**get_corporations_npccorps**](CorporationApi.md#get_corporations_npccorps) | **GET** /corporations/npccorps/ | Get npc corporations
-[**put_corporations_corporation_id_structures_structure_id**](CorporationApi.md#put_corporations_corporation_id_structures_structure_id) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
+[**get_corporation_by_id**](CorporationApi.md#get_corporation_by_id) | **GET** /corporations/{corporation_id}/ | Get corporation information
+[**get_corporation_alliance_history**](CorporationApi.md#get_corporation_alliance_history) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
+[**get_corporation_icon**](CorporationApi.md#get_corporation_icon) | **GET** /corporations/{corporation_id}/icons/ | Get corporation icon
+[**get_corporation_members**](CorporationApi.md#get_corporation_members) | **GET** /corporations/{corporation_id}/members/ | Get corporation members
+[**get_corporation_roles**](CorporationApi.md#get_corporation_roles) | **GET** /corporations/{corporation_id}/roles/ | Get corporation member roles
+[**get_corporation_structures**](CorporationApi.md#get_corporation_structures) | **GET** /corporations/{corporation_id}/structures/ | Get corporation structures
+[**get_corporation_names**](CorporationApi.md#get_corporation_names) | **GET** /corporations/names/ | Get corporation names
+[**get_npc_corporations**](CorporationApi.md#get_npc_corporations) | **GET** /corporations/npccorps/ | Get npc corporations
+[**update_structure_vulnerability**](CorporationApi.md#update_structure_vulnerability) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
 
 
-# **get_corporations_corporation_id**
-> GetCorporationsCorporationIdOk get_corporations_corporation_id(corporation_id, opts)
+# **get_corporation_by_id**
+> GetCorporationsCorporationIdOk get_corporation_by_id(corporation_id, opts)
 
 Get corporation information
 
@@ -39,10 +39,10 @@ opts = {
 
 begin
   #Get corporation information
-  result = api_instance.get_corporations_corporation_id(corporation_id, opts)
+  result = api_instance.get_corporation_by_id(corporation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_corporation_id: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_by_id: #{e}"
 end
 ```
 
@@ -70,8 +70,8 @@ No authorization required
 
 
 
-# **get_corporations_corporation_id_alliancehistory**
-> Array&lt;GetCorporationsCorporationIdAlliancehistory200Ok&gt; get_corporations_corporation_id_alliancehistory(corporation_id, opts)
+# **get_corporation_alliance_history**
+> Array&lt;GetCorporationsCorporationIdAlliancehistory200Ok&gt; get_corporation_alliance_history(corporation_id, opts)
 
 Get alliance history
 
@@ -94,10 +94,10 @@ opts = {
 
 begin
   #Get alliance history
-  result = api_instance.get_corporations_corporation_id_alliancehistory(corporation_id, opts)
+  result = api_instance.get_corporation_alliance_history(corporation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_corporation_id_alliancehistory: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_alliance_history: #{e}"
 end
 ```
 
@@ -125,8 +125,8 @@ No authorization required
 
 
 
-# **get_corporations_corporation_id_icons**
-> GetCorporationsCorporationIdIconsOk get_corporations_corporation_id_icons(corporation_id, opts)
+# **get_corporation_icon**
+> GetCorporationsCorporationIdIconsOk get_corporation_icon(corporation_id, opts)
 
 Get corporation icon
 
@@ -149,10 +149,10 @@ opts = {
 
 begin
   #Get corporation icon
-  result = api_instance.get_corporations_corporation_id_icons(corporation_id, opts)
+  result = api_instance.get_corporation_icon(corporation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_corporation_id_icons: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_icon: #{e}"
 end
 ```
 
@@ -180,8 +180,8 @@ No authorization required
 
 
 
-# **get_corporations_corporation_id_members**
-> Array&lt;GetCorporationsCorporationIdMembers200Ok&gt; get_corporations_corporation_id_members(corporation_id, opts)
+# **get_corporation_members**
+> Array&lt;GetCorporationsCorporationIdMembers200Ok&gt; get_corporation_members(corporation_id, opts)
 
 Get corporation members
 
@@ -210,10 +210,10 @@ opts = {
 
 begin
   #Get corporation members
-  result = api_instance.get_corporations_corporation_id_members(corporation_id, opts)
+  result = api_instance.get_corporation_members(corporation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_corporation_id_members: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_members: #{e}"
 end
 ```
 
@@ -242,8 +242,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_corporations_corporation_id_roles**
-> Array&lt;GetCorporationsCorporationIdRoles200Ok&gt; get_corporations_corporation_id_roles(corporation_id, opts)
+# **get_corporation_roles**
+> Array&lt;GetCorporationsCorporationIdRoles200Ok&gt; get_corporation_roles(corporation_id, opts)
 
 Get corporation member roles
 
@@ -272,10 +272,10 @@ opts = {
 
 begin
   #Get corporation member roles
-  result = api_instance.get_corporations_corporation_id_roles(corporation_id, opts)
+  result = api_instance.get_corporation_roles(corporation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_corporation_id_roles: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_roles: #{e}"
 end
 ```
 
@@ -304,8 +304,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_corporations_corporation_id_structures**
-> Array&lt;GetCorporationsCorporationIdStructures200Ok&gt; get_corporations_corporation_id_structures(corporation_id, opts)
+# **get_corporation_structures**
+> Array&lt;GetCorporationsCorporationIdStructures200Ok&gt; get_corporation_structures(corporation_id, opts)
 
 Get corporation structures
 
@@ -336,10 +336,10 @@ opts = {
 
 begin
   #Get corporation structures
-  result = api_instance.get_corporations_corporation_id_structures(corporation_id, opts)
+  result = api_instance.get_corporation_structures(corporation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_corporation_id_structures: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_structures: #{e}"
 end
 ```
 
@@ -370,8 +370,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_corporations_names**
-> Array&lt;GetCorporationsNames200Ok&gt; get_corporations_names(corporation_ids, opts)
+# **get_corporation_names**
+> Array&lt;GetCorporationsNames200Ok&gt; get_corporation_names(corporation_ids, opts)
 
 Get corporation names
 
@@ -394,10 +394,10 @@ opts = {
 
 begin
   #Get corporation names
-  result = api_instance.get_corporations_names(corporation_ids, opts)
+  result = api_instance.get_corporation_names(corporation_ids, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_names: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_names: #{e}"
 end
 ```
 
@@ -425,8 +425,8 @@ No authorization required
 
 
 
-# **get_corporations_npccorps**
-> Array&lt;Integer&gt; get_corporations_npccorps(opts)
+# **get_npc_corporations**
+> Array&lt;Integer&gt; get_npc_corporations(opts)
 
 Get npc corporations
 
@@ -447,10 +447,10 @@ opts = {
 
 begin
   #Get npc corporations
-  result = api_instance.get_corporations_npccorps(opts)
+  result = api_instance.get_npc_corporations(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporations_npccorps: #{e}"
+  puts "Exception when calling CorporationApi->get_npc_corporations: #{e}"
 end
 ```
 
@@ -477,8 +477,8 @@ No authorization required
 
 
 
-# **put_corporations_corporation_id_structures_structure_id**
-> put_corporations_corporation_id_structures_structure_id(corporation_id, new_schedule, structure_id, opts)
+# **update_structure_vulnerability**
+> update_structure_vulnerability(corporation_id, new_schedule, structure_id, opts)
 
 Update structure vulnerability schedule
 
@@ -511,9 +511,9 @@ opts = {
 
 begin
   #Update structure vulnerability schedule
-  api_instance.put_corporations_corporation_id_structures_structure_id(corporation_id, new_schedule, structure_id, opts)
+  api_instance.update_structure_vulnerability(corporation_id, new_schedule, structure_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->put_corporations_corporation_id_structures_structure_id: #{e}"
+  puts "Exception when calling CorporationApi->update_structure_vulnerability: #{e}"
 end
 ```
 

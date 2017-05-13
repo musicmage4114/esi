@@ -106,15 +106,15 @@ Class | Method | HTTP request | Description
 *SwaggerClient::ContactsApi* | [**get_character_contacts_labels**](docs/ContactsApi.md#get_character_contacts_labels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels
 *SwaggerClient::ContactsApi* | [**add_character_contacts**](docs/ContactsApi.md#add_character_contacts) | **POST** /characters/{character_id}/contacts/ | Add contacts
 *SwaggerClient::ContactsApi* | [**edit_character_contacts**](docs/ContactsApi.md#edit_character_contacts) | **PUT** /characters/{character_id}/contacts/ | Edit contacts
-*SwaggerClient::CorporationApi* | [**get_corporations_corporation_id**](docs/CorporationApi.md#get_corporations_corporation_id) | **GET** /corporations/{corporation_id}/ | Get corporation information
-*SwaggerClient::CorporationApi* | [**get_corporations_corporation_id_alliancehistory**](docs/CorporationApi.md#get_corporations_corporation_id_alliancehistory) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
-*SwaggerClient::CorporationApi* | [**get_corporations_corporation_id_icons**](docs/CorporationApi.md#get_corporations_corporation_id_icons) | **GET** /corporations/{corporation_id}/icons/ | Get corporation icon
-*SwaggerClient::CorporationApi* | [**get_corporations_corporation_id_members**](docs/CorporationApi.md#get_corporations_corporation_id_members) | **GET** /corporations/{corporation_id}/members/ | Get corporation members
-*SwaggerClient::CorporationApi* | [**get_corporations_corporation_id_roles**](docs/CorporationApi.md#get_corporations_corporation_id_roles) | **GET** /corporations/{corporation_id}/roles/ | Get corporation member roles
-*SwaggerClient::CorporationApi* | [**get_corporations_corporation_id_structures**](docs/CorporationApi.md#get_corporations_corporation_id_structures) | **GET** /corporations/{corporation_id}/structures/ | Get corporation structures
-*SwaggerClient::CorporationApi* | [**get_corporations_names**](docs/CorporationApi.md#get_corporations_names) | **GET** /corporations/names/ | Get corporation names
-*SwaggerClient::CorporationApi* | [**get_corporations_npccorps**](docs/CorporationApi.md#get_corporations_npccorps) | **GET** /corporations/npccorps/ | Get npc corporations
-*SwaggerClient::CorporationApi* | [**put_corporations_corporation_id_structures_structure_id**](docs/CorporationApi.md#put_corporations_corporation_id_structures_structure_id) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
+*SwaggerClient::CorporationApi* | [**get_corporation_by_id**](docs/CorporationApi.md#get_corporation_by_id) | **GET** /corporations/{corporation_id}/ | Get corporation information
+*SwaggerClient::CorporationApi* | [**get_corporation_alliance_history**](docs/CorporationApi.md#get_corporation_alliance_history) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
+*SwaggerClient::CorporationApi* | [**get_corporation_icon**](docs/CorporationApi.md#get_corporation_icon) | **GET** /corporations/{corporation_id}/icons/ | Get corporation icon
+*SwaggerClient::CorporationApi* | [**get_corporation_members**](docs/CorporationApi.md#get_corporation_members) | **GET** /corporations/{corporation_id}/members/ | Get corporation members
+*SwaggerClient::CorporationApi* | [**get_corporation_roles**](docs/CorporationApi.md#get_corporation_roles) | **GET** /corporations/{corporation_id}/roles/ | Get corporation member roles
+*SwaggerClient::CorporationApi* | [**get_corporation_structures**](docs/CorporationApi.md#get_corporation_structures) | **GET** /corporations/{corporation_id}/structures/ | Get corporation structures
+*SwaggerClient::CorporationApi* | [**get_corporation_names**](docs/CorporationApi.md#get_corporation_names) | **GET** /corporations/names/ | Get corporation names
+*SwaggerClient::CorporationApi* | [**get_npc_corporations**](docs/CorporationApi.md#get_npc_corporations) | **GET** /corporations/npccorps/ | Get npc corporations
+*SwaggerClient::CorporationApi* | [**update_structure_vulnerability**](docs/CorporationApi.md#update_structure_vulnerability) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
 *SwaggerClient::DogmaApi* | [**get_dogma_attributes**](docs/DogmaApi.md#get_dogma_attributes) | **GET** /dogma/attributes/ | Get attributes
 *SwaggerClient::DogmaApi* | [**get_dogma_attributes_attribute_id**](docs/DogmaApi.md#get_dogma_attributes_attribute_id) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
 *SwaggerClient::DogmaApi* | [**get_dogma_effects**](docs/DogmaApi.md#get_dogma_effects) | **GET** /dogma/effects/ | Get effects
