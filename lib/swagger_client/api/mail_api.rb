@@ -29,8 +29,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def delete_characters_character_id_mail_labels_label_id(character_id, label_id, opts = {})
-      delete_characters_character_id_mail_labels_label_id_with_http_info(character_id, label_id, opts)
+    def delete_character_mail_label(character_id, label_id, opts = {})
+      delete_character_mail_label_with_http_info(character_id, label_id, opts)
       return nil
     end
 
@@ -44,14 +44,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def delete_characters_character_id_mail_labels_label_id_with_http_info(character_id, label_id, opts = {})
+    def delete_character_mail_label_with_http_info(character_id, label_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.delete_characters_character_id_mail_labels_label_id ..."
+        @api_client.config.logger.debug "Calling API: MailApi.delete_character_mail_label ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.delete_characters_character_id_mail_labels_label_id" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.delete_character_mail_label" if character_id.nil?
       # verify the required parameter 'label_id' is set
-      fail ArgumentError, "Missing the required parameter 'label_id' when calling MailApi.delete_characters_character_id_mail_labels_label_id" if label_id.nil?
+      fail ArgumentError, "Missing the required parameter 'label_id' when calling MailApi.delete_character_mail_label" if label_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -83,7 +83,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#delete_characters_character_id_mail_labels_label_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#delete_character_mail_label\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -98,8 +98,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def delete_characters_character_id_mail_mail_id(character_id, mail_id, opts = {})
-      delete_characters_character_id_mail_mail_id_with_http_info(character_id, mail_id, opts)
+    def delete_character_mail(character_id, mail_id, opts = {})
+      delete_character_mail_with_http_info(character_id, mail_id, opts)
       return nil
     end
 
@@ -113,14 +113,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def delete_characters_character_id_mail_mail_id_with_http_info(character_id, mail_id, opts = {})
+    def delete_character_mail_with_http_info(character_id, mail_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.delete_characters_character_id_mail_mail_id ..."
+        @api_client.config.logger.debug "Calling API: MailApi.delete_character_mail ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.delete_characters_character_id_mail_mail_id" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.delete_character_mail" if character_id.nil?
       # verify the required parameter 'mail_id' is set
-      fail ArgumentError, "Missing the required parameter 'mail_id' when calling MailApi.delete_characters_character_id_mail_mail_id" if mail_id.nil?
+      fail ArgumentError, "Missing the required parameter 'mail_id' when calling MailApi.delete_character_mail" if mail_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -152,7 +152,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#delete_characters_character_id_mail_mail_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#delete_character_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -168,8 +168,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdMail200Ok>]
-    def get_characters_character_id_mail(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_mail_with_http_info(character_id, opts)
+    def get_character_mail(character_id, opts = {})
+      data, _status_code, _headers = get_character_mail_with_http_info(character_id, opts)
       return data
     end
 
@@ -184,17 +184,17 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdMail200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdMail200Ok> data, response status code and response headers
-    def get_characters_character_id_mail_with_http_info(character_id, opts = {})
+    def get_character_mail_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.get_characters_character_id_mail ..."
+        @api_client.config.logger.debug "Calling API: MailApi.get_character_mail ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.get_characters_character_id_mail" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.get_character_mail" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       if !opts[:'labels'].nil? && opts[:'labels'].length < 1
-        fail ArgumentError, 'invalid value for "opts[:"labels"]" when calling MailApi.get_characters_character_id_mail, number of items must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "opts[:"labels"]" when calling MailApi.get_character_mail, number of items must be greater than or equal to 1.'
       end
 
       # resource path
@@ -228,7 +228,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdMail200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#get_characters_character_id_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#get_character_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -242,8 +242,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetCharactersCharacterIdMailLabelsOk]
-    def get_characters_character_id_mail_labels(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_mail_labels_with_http_info(character_id, opts)
+    def get_character_mail_labels(character_id, opts = {})
+      data, _status_code, _headers = get_character_mail_labels_with_http_info(character_id, opts)
       return data
     end
 
@@ -256,12 +256,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetCharactersCharacterIdMailLabelsOk, Fixnum, Hash)>] GetCharactersCharacterIdMailLabelsOk data, response status code and response headers
-    def get_characters_character_id_mail_labels_with_http_info(character_id, opts = {})
+    def get_character_mail_labels_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.get_characters_character_id_mail_labels ..."
+        @api_client.config.logger.debug "Calling API: MailApi.get_character_mail_labels ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.get_characters_character_id_mail_labels" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.get_character_mail_labels" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -294,7 +294,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetCharactersCharacterIdMailLabelsOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#get_characters_character_id_mail_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#get_character_mail_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -308,8 +308,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdMailLists200Ok>]
-    def get_characters_character_id_mail_lists(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_mail_lists_with_http_info(character_id, opts)
+    def get_character_mail_lists(character_id, opts = {})
+      data, _status_code, _headers = get_character_mail_lists_with_http_info(character_id, opts)
       return data
     end
 
@@ -322,12 +322,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdMailLists200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdMailLists200Ok> data, response status code and response headers
-    def get_characters_character_id_mail_lists_with_http_info(character_id, opts = {})
+    def get_character_mail_lists_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.get_characters_character_id_mail_lists ..."
+        @api_client.config.logger.debug "Calling API: MailApi.get_character_mail_lists ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.get_characters_character_id_mail_lists" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.get_character_mail_lists" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -360,7 +360,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdMailLists200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#get_characters_character_id_mail_lists\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#get_character_mail_lists\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -375,8 +375,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetCharactersCharacterIdMailMailIdOk]
-    def get_characters_character_id_mail_mail_id(character_id, mail_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_mail_mail_id_with_http_info(character_id, mail_id, opts)
+    def read_character_mail(character_id, mail_id, opts = {})
+      data, _status_code, _headers = read_character_mail_with_http_info(character_id, mail_id, opts)
       return data
     end
 
@@ -390,14 +390,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetCharactersCharacterIdMailMailIdOk, Fixnum, Hash)>] GetCharactersCharacterIdMailMailIdOk data, response status code and response headers
-    def get_characters_character_id_mail_mail_id_with_http_info(character_id, mail_id, opts = {})
+    def read_character_mail_with_http_info(character_id, mail_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.get_characters_character_id_mail_mail_id ..."
+        @api_client.config.logger.debug "Calling API: MailApi.read_character_mail ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.get_characters_character_id_mail_mail_id" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.read_character_mail" if character_id.nil?
       # verify the required parameter 'mail_id' is set
-      fail ArgumentError, "Missing the required parameter 'mail_id' when calling MailApi.get_characters_character_id_mail_mail_id" if mail_id.nil?
+      fail ArgumentError, "Missing the required parameter 'mail_id' when calling MailApi.read_character_mail" if mail_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -430,7 +430,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetCharactersCharacterIdMailMailIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#get_characters_character_id_mail_mail_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#read_character_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -445,8 +445,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Integer]
-    def post_characters_character_id_mail(character_id, mail, opts = {})
-      data, _status_code, _headers = post_characters_character_id_mail_with_http_info(character_id, mail, opts)
+    def send_mail(character_id, mail, opts = {})
+      data, _status_code, _headers = send_mail_with_http_info(character_id, mail, opts)
       return data
     end
 
@@ -460,14 +460,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Integer, Fixnum, Hash)>] Integer data, response status code and response headers
-    def post_characters_character_id_mail_with_http_info(character_id, mail, opts = {})
+    def send_mail_with_http_info(character_id, mail, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.post_characters_character_id_mail ..."
+        @api_client.config.logger.debug "Calling API: MailApi.send_mail ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.post_characters_character_id_mail" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.send_mail" if character_id.nil?
       # verify the required parameter 'mail' is set
-      fail ArgumentError, "Missing the required parameter 'mail' when calling MailApi.post_characters_character_id_mail" if mail.nil?
+      fail ArgumentError, "Missing the required parameter 'mail' when calling MailApi.send_mail" if mail.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -500,7 +500,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Integer')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#post_characters_character_id_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#send_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -515,8 +515,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Integer]
-    def post_characters_character_id_mail_labels(character_id, opts = {})
-      data, _status_code, _headers = post_characters_character_id_mail_labels_with_http_info(character_id, opts)
+    def add_character_mail_label(character_id, opts = {})
+      data, _status_code, _headers = add_character_mail_label_with_http_info(character_id, opts)
       return data
     end
 
@@ -530,12 +530,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Integer, Fixnum, Hash)>] Integer data, response status code and response headers
-    def post_characters_character_id_mail_labels_with_http_info(character_id, opts = {})
+    def add_character_mail_label_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.post_characters_character_id_mail_labels ..."
+        @api_client.config.logger.debug "Calling API: MailApi.add_character_mail_label ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.post_characters_character_id_mail_labels" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.add_character_mail_label" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -568,7 +568,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Integer')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#post_characters_character_id_mail_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#add_character_mail_label\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -584,8 +584,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def put_characters_character_id_mail_mail_id(character_id, contents, mail_id, opts = {})
-      put_characters_character_id_mail_mail_id_with_http_info(character_id, contents, mail_id, opts)
+    def update_mail(character_id, contents, mail_id, opts = {})
+      update_mail_with_http_info(character_id, contents, mail_id, opts)
       return nil
     end
 
@@ -600,16 +600,16 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def put_characters_character_id_mail_mail_id_with_http_info(character_id, contents, mail_id, opts = {})
+    def update_mail_with_http_info(character_id, contents, mail_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MailApi.put_characters_character_id_mail_mail_id ..."
+        @api_client.config.logger.debug "Calling API: MailApi.update_mail ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.put_characters_character_id_mail_mail_id" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MailApi.update_mail" if character_id.nil?
       # verify the required parameter 'contents' is set
-      fail ArgumentError, "Missing the required parameter 'contents' when calling MailApi.put_characters_character_id_mail_mail_id" if contents.nil?
+      fail ArgumentError, "Missing the required parameter 'contents' when calling MailApi.update_mail" if contents.nil?
       # verify the required parameter 'mail_id' is set
-      fail ArgumentError, "Missing the required parameter 'mail_id' when calling MailApi.put_characters_character_id_mail_mail_id" if mail_id.nil?
+      fail ArgumentError, "Missing the required parameter 'mail_id' when calling MailApi.update_mail" if mail_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -641,7 +641,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MailApi#put_characters_character_id_mail_mail_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MailApi#update_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

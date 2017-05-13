@@ -146,15 +146,15 @@ Class | Method | HTTP request | Description
 *SwaggerClient::LocationApi* | [**get_characters_character_id_ship**](docs/LocationApi.md#get_characters_character_id_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
 *SwaggerClient::LoyaltyApi* | [**get_character_loyalty_points**](docs/LoyaltyApi.md#get_character_loyalty_points) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points
 *SwaggerClient::LoyaltyApi* | [**get_corporation_loyalty_store_by_id**](docs/LoyaltyApi.md#get_corporation_loyalty_store_by_id) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
-*SwaggerClient::MailApi* | [**delete_characters_character_id_mail_labels_label_id**](docs/MailApi.md#delete_characters_character_id_mail_labels_label_id) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
-*SwaggerClient::MailApi* | [**delete_characters_character_id_mail_mail_id**](docs/MailApi.md#delete_characters_character_id_mail_mail_id) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
-*SwaggerClient::MailApi* | [**get_characters_character_id_mail**](docs/MailApi.md#get_characters_character_id_mail) | **GET** /characters/{character_id}/mail/ | Return mail headers
-*SwaggerClient::MailApi* | [**get_characters_character_id_mail_labels**](docs/MailApi.md#get_characters_character_id_mail_labels) | **GET** /characters/{character_id}/mail/labels/ | Get mail labels and unread counts
-*SwaggerClient::MailApi* | [**get_characters_character_id_mail_lists**](docs/MailApi.md#get_characters_character_id_mail_lists) | **GET** /characters/{character_id}/mail/lists/ | Return mailing list subscriptions
-*SwaggerClient::MailApi* | [**get_characters_character_id_mail_mail_id**](docs/MailApi.md#get_characters_character_id_mail_mail_id) | **GET** /characters/{character_id}/mail/{mail_id}/ | Return a mail
-*SwaggerClient::MailApi* | [**post_characters_character_id_mail**](docs/MailApi.md#post_characters_character_id_mail) | **POST** /characters/{character_id}/mail/ | Send a new mail
-*SwaggerClient::MailApi* | [**post_characters_character_id_mail_labels**](docs/MailApi.md#post_characters_character_id_mail_labels) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
-*SwaggerClient::MailApi* | [**put_characters_character_id_mail_mail_id**](docs/MailApi.md#put_characters_character_id_mail_mail_id) | **PUT** /characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
+*SwaggerClient::MailApi* | [**delete_character_mail_label**](docs/MailApi.md#delete_character_mail_label) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
+*SwaggerClient::MailApi* | [**delete_character_mail**](docs/MailApi.md#delete_character_mail) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
+*SwaggerClient::MailApi* | [**get_character_mail**](docs/MailApi.md#get_character_mail) | **GET** /characters/{character_id}/mail/ | Return mail headers
+*SwaggerClient::MailApi* | [**get_character_mail_labels**](docs/MailApi.md#get_character_mail_labels) | **GET** /characters/{character_id}/mail/labels/ | Get mail labels and unread counts
+*SwaggerClient::MailApi* | [**get_character_mail_lists**](docs/MailApi.md#get_character_mail_lists) | **GET** /characters/{character_id}/mail/lists/ | Return mailing list subscriptions
+*SwaggerClient::MailApi* | [**read_character_mail**](docs/MailApi.md#read_character_mail) | **GET** /characters/{character_id}/mail/{mail_id}/ | Return a mail
+*SwaggerClient::MailApi* | [**send_mail**](docs/MailApi.md#send_mail) | **POST** /characters/{character_id}/mail/ | Send a new mail
+*SwaggerClient::MailApi* | [**add_character_mail_label**](docs/MailApi.md#add_character_mail_label) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
+*SwaggerClient::MailApi* | [**update_mail**](docs/MailApi.md#update_mail) | **PUT** /characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
 *SwaggerClient::MarketApi* | [**get_character_market_orders**](docs/MarketApi.md#get_character_market_orders) | **GET** /characters/{character_id}/orders/ | List orders from a character
 *SwaggerClient::MarketApi* | [**get_market_groups**](docs/MarketApi.md#get_market_groups) | **GET** /markets/groups/ | Get item groups
 *SwaggerClient::MarketApi* | [**get_market_group_by_id**](docs/MarketApi.md#get_market_group_by_id) | **GET** /markets/groups/{market_group_id}/ | Get item group information

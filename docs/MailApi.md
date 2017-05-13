@@ -4,19 +4,19 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**delete_characters_character_id_mail_labels_label_id**](MailApi.md#delete_characters_character_id_mail_labels_label_id) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
-[**delete_characters_character_id_mail_mail_id**](MailApi.md#delete_characters_character_id_mail_mail_id) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
-[**get_characters_character_id_mail**](MailApi.md#get_characters_character_id_mail) | **GET** /characters/{character_id}/mail/ | Return mail headers
-[**get_characters_character_id_mail_labels**](MailApi.md#get_characters_character_id_mail_labels) | **GET** /characters/{character_id}/mail/labels/ | Get mail labels and unread counts
-[**get_characters_character_id_mail_lists**](MailApi.md#get_characters_character_id_mail_lists) | **GET** /characters/{character_id}/mail/lists/ | Return mailing list subscriptions
-[**get_characters_character_id_mail_mail_id**](MailApi.md#get_characters_character_id_mail_mail_id) | **GET** /characters/{character_id}/mail/{mail_id}/ | Return a mail
-[**post_characters_character_id_mail**](MailApi.md#post_characters_character_id_mail) | **POST** /characters/{character_id}/mail/ | Send a new mail
-[**post_characters_character_id_mail_labels**](MailApi.md#post_characters_character_id_mail_labels) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
-[**put_characters_character_id_mail_mail_id**](MailApi.md#put_characters_character_id_mail_mail_id) | **PUT** /characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
+[**delete_character_mail_label**](MailApi.md#delete_character_mail_label) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
+[**delete_character_mail**](MailApi.md#delete_character_mail) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
+[**get_character_mail**](MailApi.md#get_character_mail) | **GET** /characters/{character_id}/mail/ | Return mail headers
+[**get_character_mail_labels**](MailApi.md#get_character_mail_labels) | **GET** /characters/{character_id}/mail/labels/ | Get mail labels and unread counts
+[**get_character_mail_lists**](MailApi.md#get_character_mail_lists) | **GET** /characters/{character_id}/mail/lists/ | Return mailing list subscriptions
+[**read_character_mail**](MailApi.md#read_character_mail) | **GET** /characters/{character_id}/mail/{mail_id}/ | Return a mail
+[**send_mail**](MailApi.md#send_mail) | **POST** /characters/{character_id}/mail/ | Send a new mail
+[**add_character_mail_label**](MailApi.md#add_character_mail_label) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
+[**update_mail**](MailApi.md#update_mail) | **PUT** /characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
 
 
-# **delete_characters_character_id_mail_labels_label_id**
-> delete_characters_character_id_mail_labels_label_id(character_id, label_id, opts)
+# **delete_character_mail_label**
+> delete_character_mail_label(character_id, label_id, opts)
 
 Delete a mail label
 
@@ -47,9 +47,9 @@ opts = {
 
 begin
   #Delete a mail label
-  api_instance.delete_characters_character_id_mail_labels_label_id(character_id, label_id, opts)
+  api_instance.delete_character_mail_label(character_id, label_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->delete_characters_character_id_mail_labels_label_id: #{e}"
+  puts "Exception when calling MailApi->delete_character_mail_label: #{e}"
 end
 ```
 
@@ -79,8 +79,8 @@ nil (empty response body)
 
 
 
-# **delete_characters_character_id_mail_mail_id**
-> delete_characters_character_id_mail_mail_id(character_id, mail_id, opts)
+# **delete_character_mail**
+> delete_character_mail(character_id, mail_id, opts)
 
 Delete a mail
 
@@ -111,9 +111,9 @@ opts = {
 
 begin
   #Delete a mail
-  api_instance.delete_characters_character_id_mail_mail_id(character_id, mail_id, opts)
+  api_instance.delete_character_mail(character_id, mail_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->delete_characters_character_id_mail_mail_id: #{e}"
+  puts "Exception when calling MailApi->delete_character_mail: #{e}"
 end
 ```
 
@@ -143,8 +143,8 @@ nil (empty response body)
 
 
 
-# **get_characters_character_id_mail**
-> Array&lt;GetCharactersCharacterIdMail200Ok&gt; get_characters_character_id_mail(character_id, opts)
+# **get_character_mail**
+> Array&lt;GetCharactersCharacterIdMail200Ok&gt; get_character_mail(character_id, opts)
 
 Return mail headers
 
@@ -175,10 +175,10 @@ opts = {
 
 begin
   #Return mail headers
-  result = api_instance.get_characters_character_id_mail(character_id, opts)
+  result = api_instance.get_character_mail(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->get_characters_character_id_mail: #{e}"
+  puts "Exception when calling MailApi->get_character_mail: #{e}"
 end
 ```
 
@@ -209,8 +209,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_mail_labels**
-> GetCharactersCharacterIdMailLabelsOk get_characters_character_id_mail_labels(character_id, opts)
+# **get_character_mail_labels**
+> GetCharactersCharacterIdMailLabelsOk get_character_mail_labels(character_id, opts)
 
 Get mail labels and unread counts
 
@@ -239,10 +239,10 @@ opts = {
 
 begin
   #Get mail labels and unread counts
-  result = api_instance.get_characters_character_id_mail_labels(character_id, opts)
+  result = api_instance.get_character_mail_labels(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->get_characters_character_id_mail_labels: #{e}"
+  puts "Exception when calling MailApi->get_character_mail_labels: #{e}"
 end
 ```
 
@@ -271,8 +271,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_mail_lists**
-> Array&lt;GetCharactersCharacterIdMailLists200Ok&gt; get_characters_character_id_mail_lists(character_id, opts)
+# **get_character_mail_lists**
+> Array&lt;GetCharactersCharacterIdMailLists200Ok&gt; get_character_mail_lists(character_id, opts)
 
 Return mailing list subscriptions
 
@@ -301,10 +301,10 @@ opts = {
 
 begin
   #Return mailing list subscriptions
-  result = api_instance.get_characters_character_id_mail_lists(character_id, opts)
+  result = api_instance.get_character_mail_lists(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->get_characters_character_id_mail_lists: #{e}"
+  puts "Exception when calling MailApi->get_character_mail_lists: #{e}"
 end
 ```
 
@@ -333,8 +333,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_mail_mail_id**
-> GetCharactersCharacterIdMailMailIdOk get_characters_character_id_mail_mail_id(character_id, mail_id, opts)
+# **read_character_mail**
+> GetCharactersCharacterIdMailMailIdOk read_character_mail(character_id, mail_id, opts)
 
 Return a mail
 
@@ -365,10 +365,10 @@ opts = {
 
 begin
   #Return a mail
-  result = api_instance.get_characters_character_id_mail_mail_id(character_id, mail_id, opts)
+  result = api_instance.read_character_mail(character_id, mail_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->get_characters_character_id_mail_mail_id: #{e}"
+  puts "Exception when calling MailApi->read_character_mail: #{e}"
 end
 ```
 
@@ -398,8 +398,8 @@ Name | Type | Description  | Notes
 
 
 
-# **post_characters_character_id_mail**
-> Integer post_characters_character_id_mail(character_id, mail, opts)
+# **send_mail**
+> Integer send_mail(character_id, mail, opts)
 
 Send a new mail
 
@@ -430,10 +430,10 @@ opts = {
 
 begin
   #Send a new mail
-  result = api_instance.post_characters_character_id_mail(character_id, mail, opts)
+  result = api_instance.send_mail(character_id, mail, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->post_characters_character_id_mail: #{e}"
+  puts "Exception when calling MailApi->send_mail: #{e}"
 end
 ```
 
@@ -463,8 +463,8 @@ Name | Type | Description  | Notes
 
 
 
-# **post_characters_character_id_mail_labels**
-> Integer post_characters_character_id_mail_labels(character_id, opts)
+# **add_character_mail_label**
+> Integer add_character_mail_label(character_id, opts)
 
 Create a mail label
 
@@ -494,10 +494,10 @@ opts = {
 
 begin
   #Create a mail label
-  result = api_instance.post_characters_character_id_mail_labels(character_id, opts)
+  result = api_instance.add_character_mail_label(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->post_characters_character_id_mail_labels: #{e}"
+  puts "Exception when calling MailApi->add_character_mail_label: #{e}"
 end
 ```
 
@@ -527,8 +527,8 @@ Name | Type | Description  | Notes
 
 
 
-# **put_characters_character_id_mail_mail_id**
-> put_characters_character_id_mail_mail_id(character_id, contents, mail_id, opts)
+# **update_mail**
+> update_mail(character_id, contents, mail_id, opts)
 
 Update metadata about a mail
 
@@ -561,9 +561,9 @@ opts = {
 
 begin
   #Update metadata about a mail
-  api_instance.put_characters_character_id_mail_mail_id(character_id, contents, mail_id, opts)
+  api_instance.update_mail(character_id, contents, mail_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MailApi->put_characters_character_id_mail_mail_id: #{e}"
+  puts "Exception when calling MailApi->update_mail: #{e}"
 end
 ```
 
