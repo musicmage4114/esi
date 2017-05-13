@@ -4,15 +4,15 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_opportunities**](OpportunitiesApi.md#get_characters_character_id_opportunities) | **GET** /characters/{character_id}/opportunities/ | Get a character&#39;s completed tasks
+[**get_character_completed_opportunities**](OpportunitiesApi.md#get_character_completed_opportunities) | **GET** /characters/{character_id}/opportunities/ | Get a character&#39;s completed tasks
 [**get_opportunities_groups**](OpportunitiesApi.md#get_opportunities_groups) | **GET** /opportunities/groups/ | Get opportunities groups
-[**get_opportunities_groups_group_id**](OpportunitiesApi.md#get_opportunities_groups_group_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group
+[**get_opportunities_group_by_id**](OpportunitiesApi.md#get_opportunities_group_by_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group
 [**get_opportunities_tasks**](OpportunitiesApi.md#get_opportunities_tasks) | **GET** /opportunities/tasks/ | Get opportunities tasks
-[**get_opportunities_tasks_task_id**](OpportunitiesApi.md#get_opportunities_tasks_task_id) | **GET** /opportunities/tasks/{task_id}/ | Get opportunities task
+[**get_opportunities_task_by_id**](OpportunitiesApi.md#get_opportunities_task_by_id) | **GET** /opportunities/tasks/{task_id}/ | Get opportunities task
 
 
-# **get_characters_character_id_opportunities**
-> Array&lt;GetCharactersCharacterIdOpportunities200Ok&gt; get_characters_character_id_opportunities(character_id, opts)
+# **get_character_completed_opportunities**
+> Array&lt;GetCharactersCharacterIdOpportunities200Ok&gt; get_character_completed_opportunities(character_id, opts)
 
 Get a character's completed tasks
 
@@ -41,10 +41,10 @@ opts = {
 
 begin
   #Get a character's completed tasks
-  result = api_instance.get_characters_character_id_opportunities(character_id, opts)
+  result = api_instance.get_character_completed_opportunities(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling OpportunitiesApi->get_characters_character_id_opportunities: #{e}"
+  puts "Exception when calling OpportunitiesApi->get_character_completed_opportunities: #{e}"
 end
 ```
 
@@ -125,8 +125,8 @@ No authorization required
 
 
 
-# **get_opportunities_groups_group_id**
-> GetOpportunitiesGroupsGroupIdOk get_opportunities_groups_group_id(group_id, opts)
+# **get_opportunities_group_by_id**
+> GetOpportunitiesGroupsGroupIdOk get_opportunities_group_by_id(group_id, opts)
 
 Get opportunities group
 
@@ -150,10 +150,10 @@ opts = {
 
 begin
   #Get opportunities group
-  result = api_instance.get_opportunities_groups_group_id(group_id, opts)
+  result = api_instance.get_opportunities_group_by_id(group_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling OpportunitiesApi->get_opportunities_groups_group_id: #{e}"
+  puts "Exception when calling OpportunitiesApi->get_opportunities_group_by_id: #{e}"
 end
 ```
 
@@ -234,8 +234,8 @@ No authorization required
 
 
 
-# **get_opportunities_tasks_task_id**
-> GetOpportunitiesTasksTaskIdOk get_opportunities_tasks_task_id(task_id, opts)
+# **get_opportunities_task_by_id**
+> GetOpportunitiesTasksTaskIdOk get_opportunities_task_by_id(task_id, opts)
 
 Get opportunities task
 
@@ -258,10 +258,10 @@ opts = {
 
 begin
   #Get opportunities task
-  result = api_instance.get_opportunities_tasks_task_id(task_id, opts)
+  result = api_instance.get_opportunities_task_by_id(task_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling OpportunitiesApi->get_opportunities_tasks_task_id: #{e}"
+  puts "Exception when calling OpportunitiesApi->get_opportunities_task_by_id: #{e}"
 end
 ```
 

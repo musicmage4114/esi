@@ -162,11 +162,11 @@ Class | Method | HTTP request | Description
 *SwaggerClient::MarketApi* | [**get_markets_region_id_history**](docs/MarketApi.md#get_markets_region_id_history) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
 *SwaggerClient::MarketApi* | [**get_markets_region_id_orders**](docs/MarketApi.md#get_markets_region_id_orders) | **GET** /markets/{region_id}/orders/ | List orders in a region
 *SwaggerClient::MarketApi* | [**get_markets_structures_structure_id**](docs/MarketApi.md#get_markets_structures_structure_id) | **GET** /markets/structures/{structure_id}/ | List orders in a structure
-*SwaggerClient::OpportunitiesApi* | [**get_characters_character_id_opportunities**](docs/OpportunitiesApi.md#get_characters_character_id_opportunities) | **GET** /characters/{character_id}/opportunities/ | Get a character's completed tasks
+*SwaggerClient::OpportunitiesApi* | [**get_character_completed_opportunities**](docs/OpportunitiesApi.md#get_character_completed_opportunities) | **GET** /characters/{character_id}/opportunities/ | Get a character's completed tasks
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_groups**](docs/OpportunitiesApi.md#get_opportunities_groups) | **GET** /opportunities/groups/ | Get opportunities groups
-*SwaggerClient::OpportunitiesApi* | [**get_opportunities_groups_group_id**](docs/OpportunitiesApi.md#get_opportunities_groups_group_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group
+*SwaggerClient::OpportunitiesApi* | [**get_opportunities_group_by_id**](docs/OpportunitiesApi.md#get_opportunities_group_by_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_tasks**](docs/OpportunitiesApi.md#get_opportunities_tasks) | **GET** /opportunities/tasks/ | Get opportunities tasks
-*SwaggerClient::OpportunitiesApi* | [**get_opportunities_tasks_task_id**](docs/OpportunitiesApi.md#get_opportunities_tasks_task_id) | **GET** /opportunities/tasks/{task_id}/ | Get opportunities task
+*SwaggerClient::OpportunitiesApi* | [**get_opportunities_task_by_id**](docs/OpportunitiesApi.md#get_opportunities_task_by_id) | **GET** /opportunities/tasks/{task_id}/ | Get opportunities task
 *SwaggerClient::PlanetaryInteractionApi* | [**get_characters_character_id_planets**](docs/PlanetaryInteractionApi.md#get_characters_character_id_planets) | **GET** /characters/{character_id}/planets/ | Get colonies
 *SwaggerClient::PlanetaryInteractionApi* | [**get_characters_character_id_planets_planet_id**](docs/PlanetaryInteractionApi.md#get_characters_character_id_planets_planet_id) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
 *SwaggerClient::PlanetaryInteractionApi* | [**get_universe_schematics_schematic_id**](docs/PlanetaryInteractionApi.md#get_universe_schematics_schematic_id) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information

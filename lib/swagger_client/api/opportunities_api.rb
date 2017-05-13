@@ -28,8 +28,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdOpportunities200Ok>]
-    def get_characters_character_id_opportunities(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_opportunities_with_http_info(character_id, opts)
+    def get_character_completed_opportunities(character_id, opts = {})
+      data, _status_code, _headers = get_character_completed_opportunities_with_http_info(character_id, opts)
       return data
     end
 
@@ -42,12 +42,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdOpportunities200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdOpportunities200Ok> data, response status code and response headers
-    def get_characters_character_id_opportunities_with_http_info(character_id, opts = {})
+    def get_character_completed_opportunities_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_characters_character_id_opportunities ..."
+        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_character_completed_opportunities ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling OpportunitiesApi.get_characters_character_id_opportunities" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling OpportunitiesApi.get_character_completed_opportunities" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -80,7 +80,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdOpportunities200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: OpportunitiesApi#get_characters_character_id_opportunities\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OpportunitiesApi#get_character_completed_opportunities\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -153,8 +153,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetOpportunitiesGroupsGroupIdOk]
-    def get_opportunities_groups_group_id(group_id, opts = {})
-      data, _status_code, _headers = get_opportunities_groups_group_id_with_http_info(group_id, opts)
+    def get_opportunities_group_by_id(group_id, opts = {})
+      data, _status_code, _headers = get_opportunities_group_by_id_with_http_info(group_id, opts)
       return data
     end
 
@@ -167,12 +167,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetOpportunitiesGroupsGroupIdOk, Fixnum, Hash)>] GetOpportunitiesGroupsGroupIdOk data, response status code and response headers
-    def get_opportunities_groups_group_id_with_http_info(group_id, opts = {})
+    def get_opportunities_group_by_id_with_http_info(group_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_opportunities_groups_group_id ..."
+        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_opportunities_group_by_id ..."
       end
       # verify the required parameter 'group_id' is set
-      fail ArgumentError, "Missing the required parameter 'group_id' when calling OpportunitiesApi.get_opportunities_groups_group_id" if group_id.nil?
+      fail ArgumentError, "Missing the required parameter 'group_id' when calling OpportunitiesApi.get_opportunities_group_by_id" if group_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -208,7 +208,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetOpportunitiesGroupsGroupIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: OpportunitiesApi#get_opportunities_groups_group_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OpportunitiesApi#get_opportunities_group_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -280,8 +280,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetOpportunitiesTasksTaskIdOk]
-    def get_opportunities_tasks_task_id(task_id, opts = {})
-      data, _status_code, _headers = get_opportunities_tasks_task_id_with_http_info(task_id, opts)
+    def get_opportunities_task_by_id(task_id, opts = {})
+      data, _status_code, _headers = get_opportunities_task_by_id_with_http_info(task_id, opts)
       return data
     end
 
@@ -293,12 +293,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetOpportunitiesTasksTaskIdOk, Fixnum, Hash)>] GetOpportunitiesTasksTaskIdOk data, response status code and response headers
-    def get_opportunities_tasks_task_id_with_http_info(task_id, opts = {})
+    def get_opportunities_task_by_id_with_http_info(task_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_opportunities_tasks_task_id ..."
+        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_opportunities_task_by_id ..."
       end
       # verify the required parameter 'task_id' is set
-      fail ArgumentError, "Missing the required parameter 'task_id' when calling OpportunitiesApi.get_opportunities_tasks_task_id" if task_id.nil?
+      fail ArgumentError, "Missing the required parameter 'task_id' when calling OpportunitiesApi.get_opportunities_task_by_id" if task_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -330,7 +330,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetOpportunitiesTasksTaskIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: OpportunitiesApi#get_opportunities_tasks_task_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OpportunitiesApi#get_opportunities_task_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
