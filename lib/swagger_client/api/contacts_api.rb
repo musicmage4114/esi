@@ -29,8 +29,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def delete_characters_character_id_contacts(character_id, contact_ids, opts = {})
-      delete_characters_character_id_contacts_with_http_info(character_id, contact_ids, opts)
+    def delete_character_contacts(character_id, contact_ids, opts = {})
+      delete_character_contacts_with_http_info(character_id, contact_ids, opts)
       return nil
     end
 
@@ -44,14 +44,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def delete_characters_character_id_contacts_with_http_info(character_id, contact_ids, opts = {})
+    def delete_character_contacts_with_http_info(character_id, contact_ids, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: ContactsApi.delete_characters_character_id_contacts ..."
+        @api_client.config.logger.debug "Calling API: ContactsApi.delete_character_contacts ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.delete_characters_character_id_contacts" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.delete_character_contacts" if character_id.nil?
       # verify the required parameter 'contact_ids' is set
-      fail ArgumentError, "Missing the required parameter 'contact_ids' when calling ContactsApi.delete_characters_character_id_contacts" if contact_ids.nil?
+      fail ArgumentError, "Missing the required parameter 'contact_ids' when calling ContactsApi.delete_character_contacts" if contact_ids.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -83,7 +83,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ContactsApi#delete_characters_character_id_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ContactsApi#delete_character_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -98,8 +98,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdContacts200Ok>]
-    def get_characters_character_id_contacts(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_contacts_with_http_info(character_id, opts)
+    def get_character_contacts(character_id, opts = {})
+      data, _status_code, _headers = get_character_contacts_with_http_info(character_id, opts)
       return data
     end
 
@@ -113,17 +113,17 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdContacts200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdContacts200Ok> data, response status code and response headers
-    def get_characters_character_id_contacts_with_http_info(character_id, opts = {})
+    def get_character_contacts_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: ContactsApi.get_characters_character_id_contacts ..."
+        @api_client.config.logger.debug "Calling API: ContactsApi.get_character_contacts ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.get_characters_character_id_contacts" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.get_character_contacts" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       if !opts[:'page'].nil? && opts[:'page'] < 1
-        fail ArgumentError, 'invalid value for "opts[:"page"]" when calling ContactsApi.get_characters_character_id_contacts, must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "opts[:"page"]" when calling ContactsApi.get_character_contacts, must be greater than or equal to 1.'
       end
 
       # resource path
@@ -156,7 +156,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdContacts200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ContactsApi#get_characters_character_id_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ContactsApi#get_character_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -170,8 +170,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdContactsLabels200Ok>]
-    def get_characters_character_id_contacts_labels(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_contacts_labels_with_http_info(character_id, opts)
+    def get_character_contacts_labels(character_id, opts = {})
+      data, _status_code, _headers = get_character_contacts_labels_with_http_info(character_id, opts)
       return data
     end
 
@@ -184,12 +184,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdContactsLabels200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdContactsLabels200Ok> data, response status code and response headers
-    def get_characters_character_id_contacts_labels_with_http_info(character_id, opts = {})
+    def get_character_contacts_labels_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: ContactsApi.get_characters_character_id_contacts_labels ..."
+        @api_client.config.logger.debug "Calling API: ContactsApi.get_character_contacts_labels ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.get_characters_character_id_contacts_labels" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.get_character_contacts_labels" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -222,7 +222,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdContactsLabels200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ContactsApi#get_characters_character_id_contacts_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ContactsApi#get_character_contacts_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -240,8 +240,8 @@ module SwaggerClient
     # @option opts [BOOLEAN] :watched Whether the new contact should be watched, note this is only effective on characters (default to false)
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def post_characters_character_id_contacts(character_id, contact_ids, standing, opts = {})
-      data, _status_code, _headers = post_characters_character_id_contacts_with_http_info(character_id, contact_ids, standing, opts)
+    def add_character_contacts(character_id, contact_ids, standing, opts = {})
+      data, _status_code, _headers = add_character_contacts_with_http_info(character_id, contact_ids, standing, opts)
       return data
     end
 
@@ -258,22 +258,22 @@ module SwaggerClient
     # @option opts [BOOLEAN] :watched Whether the new contact should be watched, note this is only effective on characters
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def post_characters_character_id_contacts_with_http_info(character_id, contact_ids, standing, opts = {})
+    def add_character_contacts_with_http_info(character_id, contact_ids, standing, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: ContactsApi.post_characters_character_id_contacts ..."
+        @api_client.config.logger.debug "Calling API: ContactsApi.add_character_contacts ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.post_characters_character_id_contacts" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.add_character_contacts" if character_id.nil?
       # verify the required parameter 'contact_ids' is set
-      fail ArgumentError, "Missing the required parameter 'contact_ids' when calling ContactsApi.post_characters_character_id_contacts" if contact_ids.nil?
+      fail ArgumentError, "Missing the required parameter 'contact_ids' when calling ContactsApi.add_character_contacts" if contact_ids.nil?
       # verify the required parameter 'standing' is set
-      fail ArgumentError, "Missing the required parameter 'standing' when calling ContactsApi.post_characters_character_id_contacts" if standing.nil?
+      fail ArgumentError, "Missing the required parameter 'standing' when calling ContactsApi.add_character_contacts" if standing.nil?
       if standing > 10
-        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.post_characters_character_id_contacts, must be smaller than or equal to 10.'
+        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.add_character_contacts, must be smaller than or equal to 10.'
       end
 
       if standing < -10
-        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.post_characters_character_id_contacts, must be greater than or equal to -10.'
+        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.add_character_contacts, must be greater than or equal to -10.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -311,7 +311,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ContactsApi#post_characters_character_id_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ContactsApi#add_character_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -329,8 +329,8 @@ module SwaggerClient
     # @option opts [BOOLEAN] :watched Whether the contact should be watched, note this is only effective on characters (default to false)
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def put_characters_character_id_contacts(character_id, contact_ids, standing, opts = {})
-      put_characters_character_id_contacts_with_http_info(character_id, contact_ids, standing, opts)
+    def edit_character_contacts(character_id, contact_ids, standing, opts = {})
+      edit_character_contacts_with_http_info(character_id, contact_ids, standing, opts)
       return nil
     end
 
@@ -347,22 +347,22 @@ module SwaggerClient
     # @option opts [BOOLEAN] :watched Whether the contact should be watched, note this is only effective on characters
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def put_characters_character_id_contacts_with_http_info(character_id, contact_ids, standing, opts = {})
+    def edit_character_contacts_with_http_info(character_id, contact_ids, standing, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: ContactsApi.put_characters_character_id_contacts ..."
+        @api_client.config.logger.debug "Calling API: ContactsApi.edit_character_contacts ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.put_characters_character_id_contacts" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling ContactsApi.edit_character_contacts" if character_id.nil?
       # verify the required parameter 'contact_ids' is set
-      fail ArgumentError, "Missing the required parameter 'contact_ids' when calling ContactsApi.put_characters_character_id_contacts" if contact_ids.nil?
+      fail ArgumentError, "Missing the required parameter 'contact_ids' when calling ContactsApi.edit_character_contacts" if contact_ids.nil?
       # verify the required parameter 'standing' is set
-      fail ArgumentError, "Missing the required parameter 'standing' when calling ContactsApi.put_characters_character_id_contacts" if standing.nil?
+      fail ArgumentError, "Missing the required parameter 'standing' when calling ContactsApi.edit_character_contacts" if standing.nil?
       if standing > 10
-        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.put_characters_character_id_contacts, must be smaller than or equal to 10.'
+        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.edit_character_contacts, must be smaller than or equal to 10.'
       end
 
       if standing < -10
-        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.put_characters_character_id_contacts, must be greater than or equal to -10.'
+        fail ArgumentError, 'invalid value for "standing" when calling ContactsApi.edit_character_contacts, must be greater than or equal to -10.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -399,7 +399,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ContactsApi#put_characters_character_id_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ContactsApi#edit_character_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
