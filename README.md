@@ -144,8 +144,8 @@ Class | Method | HTTP request | Description
 *SwaggerClient::KillmailsApi* | [**get_killmails_killmail_id_killmail_hash**](docs/KillmailsApi.md#get_killmails_killmail_id_killmail_hash) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
 *SwaggerClient::LocationApi* | [**get_characters_character_id_location**](docs/LocationApi.md#get_characters_character_id_location) | **GET** /characters/{character_id}/location/ | Get character location
 *SwaggerClient::LocationApi* | [**get_characters_character_id_ship**](docs/LocationApi.md#get_characters_character_id_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
-*SwaggerClient::LoyaltyApi* | [**get_characters_character_id_loyalty_points**](docs/LoyaltyApi.md#get_characters_character_id_loyalty_points) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points
-*SwaggerClient::LoyaltyApi* | [**get_loyalty_stores_corporation_id_offers**](docs/LoyaltyApi.md#get_loyalty_stores_corporation_id_offers) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
+*SwaggerClient::LoyaltyApi* | [**get_character_loyalty_points**](docs/LoyaltyApi.md#get_character_loyalty_points) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points
+*SwaggerClient::LoyaltyApi* | [**get_corporation_loyalty_store_by_id**](docs/LoyaltyApi.md#get_corporation_loyalty_store_by_id) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
 *SwaggerClient::MailApi* | [**delete_characters_character_id_mail_labels_label_id**](docs/MailApi.md#delete_characters_character_id_mail_labels_label_id) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
 *SwaggerClient::MailApi* | [**delete_characters_character_id_mail_mail_id**](docs/MailApi.md#delete_characters_character_id_mail_mail_id) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
 *SwaggerClient::MailApi* | [**get_characters_character_id_mail**](docs/MailApi.md#get_characters_character_id_mail) | **GET** /characters/{character_id}/mail/ | Return mail headers

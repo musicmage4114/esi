@@ -28,8 +28,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdLoyaltyPoints200Ok>]
-    def get_characters_character_id_loyalty_points(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_loyalty_points_with_http_info(character_id, opts)
+    def get_character_loyalty_points(character_id, opts = {})
+      data, _status_code, _headers = get_character_loyalty_points_with_http_info(character_id, opts)
       return data
     end
 
@@ -42,12 +42,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdLoyaltyPoints200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdLoyaltyPoints200Ok> data, response status code and response headers
-    def get_characters_character_id_loyalty_points_with_http_info(character_id, opts = {})
+    def get_character_loyalty_points_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: LoyaltyApi.get_characters_character_id_loyalty_points ..."
+        @api_client.config.logger.debug "Calling API: LoyaltyApi.get_character_loyalty_points ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling LoyaltyApi.get_characters_character_id_loyalty_points" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling LoyaltyApi.get_character_loyalty_points" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -80,7 +80,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdLoyaltyPoints200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: LoyaltyApi#get_characters_character_id_loyalty_points\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: LoyaltyApi#get_character_loyalty_points\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -93,8 +93,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetLoyaltyStoresCorporationIdOffers200Ok>]
-    def get_loyalty_stores_corporation_id_offers(corporation_id, opts = {})
-      data, _status_code, _headers = get_loyalty_stores_corporation_id_offers_with_http_info(corporation_id, opts)
+    def get_corporation_loyalty_store_by_id(corporation_id, opts = {})
+      data, _status_code, _headers = get_corporation_loyalty_store_by_id_with_http_info(corporation_id, opts)
       return data
     end
 
@@ -106,12 +106,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetLoyaltyStoresCorporationIdOffers200Ok>, Fixnum, Hash)>] Array<GetLoyaltyStoresCorporationIdOffers200Ok> data, response status code and response headers
-    def get_loyalty_stores_corporation_id_offers_with_http_info(corporation_id, opts = {})
+    def get_corporation_loyalty_store_by_id_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: LoyaltyApi.get_loyalty_stores_corporation_id_offers ..."
+        @api_client.config.logger.debug "Calling API: LoyaltyApi.get_corporation_loyalty_store_by_id ..."
       end
       # verify the required parameter 'corporation_id' is set
-      fail ArgumentError, "Missing the required parameter 'corporation_id' when calling LoyaltyApi.get_loyalty_stores_corporation_id_offers" if corporation_id.nil?
+      fail ArgumentError, "Missing the required parameter 'corporation_id' when calling LoyaltyApi.get_corporation_loyalty_store_by_id" if corporation_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -143,7 +143,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetLoyaltyStoresCorporationIdOffers200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: LoyaltyApi#get_loyalty_stores_corporation_id_offers\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: LoyaltyApi#get_corporation_loyalty_store_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
