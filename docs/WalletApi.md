@@ -4,11 +4,11 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_wallets**](WalletApi.md#get_characters_character_id_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
+[**get_character_wallets**](WalletApi.md#get_character_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
 
 
-# **get_characters_character_id_wallets**
-> Array&lt;GetCharactersCharacterIdWallets200Ok&gt; get_characters_character_id_wallets(character_id, opts)
+# **get_character_wallets**
+> Array&lt;GetCharactersCharacterIdWallets200Ok&gt; get_character_wallets(character_id, opts)
 
 List wallets and balances
 
@@ -37,10 +37,10 @@ opts = {
 
 begin
   #List wallets and balances
-  result = api_instance.get_characters_character_id_wallets(character_id, opts)
+  result = api_instance.get_character_wallets(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling WalletApi->get_characters_character_id_wallets: #{e}"
+  puts "Exception when calling WalletApi->get_character_wallets: #{e}"
 end
 ```
 

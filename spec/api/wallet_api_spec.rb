@@ -31,7 +31,7 @@ describe 'WalletApi' do
     end
   end
 
-  # unit tests for get_characters_character_id_wallets
+  # unit tests for get_character_wallets
   # List wallets and balances
   # List your wallets and their balances. Characters typically have only one wallet, with wallet_id 1000 being the master wallet.  ---  Alternate route: &#x60;/v1/characters/{character_id}/wallets/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/wallets/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/wallets/&#x60;   ---  This route is cached for up to 120 seconds
   # @param character_id An EVE character ID
@@ -41,7 +41,7 @@ describe 'WalletApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdWallets200Ok>]
-  describe 'get_characters_character_id_wallets test' do
+  describe 'get_character_wallets test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

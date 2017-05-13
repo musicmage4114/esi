@@ -210,7 +210,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_information**](docs/UserInterfaceApi.md#post_ui_openwindow_information) | **POST** /ui/openwindow/information/ | Open Information Window
 *SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_marketdetails**](docs/UserInterfaceApi.md#post_ui_openwindow_marketdetails) | **POST** /ui/openwindow/marketdetails/ | Open Market Details
 *SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_newmail**](docs/UserInterfaceApi.md#post_ui_openwindow_newmail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
-*SwaggerClient::WalletApi* | [**get_characters_character_id_wallets**](docs/WalletApi.md#get_characters_character_id_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
+*SwaggerClient::WalletApi* | [**get_character_wallets**](docs/WalletApi.md#get_character_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
 *SwaggerClient::WarsApi* | [**get_wars**](docs/WarsApi.md#get_wars) | **GET** /wars/ | List wars
 *SwaggerClient::WarsApi* | [**get_wars_war_id**](docs/WarsApi.md#get_wars_war_id) | **GET** /wars/{war_id}/ | Get war information
 *SwaggerClient::WarsApi* | [**get_wars_war_id_killmails**](docs/WarsApi.md#get_wars_war_id_killmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war
