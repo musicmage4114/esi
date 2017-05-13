@@ -4,12 +4,12 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_bookmarks**](BookmarksApi.md#get_characters_character_id_bookmarks) | **GET** /characters/{character_id}/bookmarks/ | List bookmarks
-[**get_characters_character_id_bookmarks_folders**](BookmarksApi.md#get_characters_character_id_bookmarks_folders) | **GET** /characters/{character_id}/bookmarks/folders/ | List bookmark folders
+[**get_character_bookmarks**](BookmarksApi.md#get_character_bookmarks) | **GET** /characters/{character_id}/bookmarks/ | List bookmarks
+[**get_character_bookmarks_folders**](BookmarksApi.md#get_character_bookmarks_folders) | **GET** /characters/{character_id}/bookmarks/folders/ | List bookmark folders
 
 
-# **get_characters_character_id_bookmarks**
-> Array&lt;GetCharactersCharacterIdBookmarks200Ok&gt; get_characters_character_id_bookmarks(character_id, opts)
+# **get_character_bookmarks**
+> Array&lt;GetCharactersCharacterIdBookmarks200Ok&gt; get_character_bookmarks(character_id, opts)
 
 List bookmarks
 
@@ -38,10 +38,10 @@ opts = {
 
 begin
   #List bookmarks
-  result = api_instance.get_characters_character_id_bookmarks(character_id, opts)
+  result = api_instance.get_character_bookmarks(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling BookmarksApi->get_characters_character_id_bookmarks: #{e}"
+  puts "Exception when calling BookmarksApi->get_character_bookmarks: #{e}"
 end
 ```
 
@@ -70,8 +70,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_bookmarks_folders**
-> Array&lt;GetCharactersCharacterIdBookmarksFolders200Ok&gt; get_characters_character_id_bookmarks_folders(character_id, opts)
+# **get_character_bookmarks_folders**
+> Array&lt;GetCharactersCharacterIdBookmarksFolders200Ok&gt; get_character_bookmarks_folders(character_id, opts)
 
 List bookmark folders
 
@@ -100,10 +100,10 @@ opts = {
 
 begin
   #List bookmark folders
-  result = api_instance.get_characters_character_id_bookmarks_folders(character_id, opts)
+  result = api_instance.get_character_bookmarks_folders(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling BookmarksApi->get_characters_character_id_bookmarks_folders: #{e}"
+  puts "Exception when calling BookmarksApi->get_character_bookmarks_folders: #{e}"
 end
 ```
 

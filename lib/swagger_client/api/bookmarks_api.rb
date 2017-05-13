@@ -28,8 +28,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdBookmarks200Ok>]
-    def get_characters_character_id_bookmarks(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_bookmarks_with_http_info(character_id, opts)
+    def get_character_bookmarks(character_id, opts = {})
+      data, _status_code, _headers = get_character_bookmarks_with_http_info(character_id, opts)
       return data
     end
 
@@ -42,12 +42,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdBookmarks200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdBookmarks200Ok> data, response status code and response headers
-    def get_characters_character_id_bookmarks_with_http_info(character_id, opts = {})
+    def get_character_bookmarks_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: BookmarksApi.get_characters_character_id_bookmarks ..."
+        @api_client.config.logger.debug "Calling API: BookmarksApi.get_character_bookmarks ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling BookmarksApi.get_characters_character_id_bookmarks" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling BookmarksApi.get_character_bookmarks" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -80,7 +80,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdBookmarks200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: BookmarksApi#get_characters_character_id_bookmarks\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: BookmarksApi#get_character_bookmarks\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -94,8 +94,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdBookmarksFolders200Ok>]
-    def get_characters_character_id_bookmarks_folders(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_bookmarks_folders_with_http_info(character_id, opts)
+    def get_character_bookmarks_folders(character_id, opts = {})
+      data, _status_code, _headers = get_character_bookmarks_folders_with_http_info(character_id, opts)
       return data
     end
 
@@ -108,12 +108,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdBookmarksFolders200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdBookmarksFolders200Ok> data, response status code and response headers
-    def get_characters_character_id_bookmarks_folders_with_http_info(character_id, opts = {})
+    def get_character_bookmarks_folders_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: BookmarksApi.get_characters_character_id_bookmarks_folders ..."
+        @api_client.config.logger.debug "Calling API: BookmarksApi.get_character_bookmarks_folders ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling BookmarksApi.get_characters_character_id_bookmarks_folders" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling BookmarksApi.get_character_bookmarks_folders" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -146,7 +146,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdBookmarksFolders200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: BookmarksApi#get_characters_character_id_bookmarks_folders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: BookmarksApi#get_character_bookmarks_folders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

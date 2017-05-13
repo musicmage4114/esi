@@ -84,8 +84,8 @@ Class | Method | HTTP request | Description
 *SwaggerClient::AllianceApi* | [**get_alliance_icon**](docs/AllianceApi.md#get_alliance_icon) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
 *SwaggerClient::AllianceApi* | [**get_alliances_names**](docs/AllianceApi.md#get_alliances_names) | **GET** /alliances/names/ | Get alliance names
 *SwaggerClient::AssetsApi* | [**get_character_assets**](docs/AssetsApi.md#get_character_assets) | **GET** /characters/{character_id}/assets/ | Get character assets
-*SwaggerClient::BookmarksApi* | [**get_characters_character_id_bookmarks**](docs/BookmarksApi.md#get_characters_character_id_bookmarks) | **GET** /characters/{character_id}/bookmarks/ | List bookmarks
-*SwaggerClient::BookmarksApi* | [**get_characters_character_id_bookmarks_folders**](docs/BookmarksApi.md#get_characters_character_id_bookmarks_folders) | **GET** /characters/{character_id}/bookmarks/folders/ | List bookmark folders
+*SwaggerClient::BookmarksApi* | [**get_character_bookmarks**](docs/BookmarksApi.md#get_character_bookmarks) | **GET** /characters/{character_id}/bookmarks/ | List bookmarks
+*SwaggerClient::BookmarksApi* | [**get_character_bookmarks_folders**](docs/BookmarksApi.md#get_character_bookmarks_folders) | **GET** /characters/{character_id}/bookmarks/folders/ | List bookmark folders
 *SwaggerClient::CalendarApi* | [**get_characters_character_id_calendar**](docs/CalendarApi.md#get_characters_character_id_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
 *SwaggerClient::CalendarApi* | [**get_characters_character_id_calendar_event_id**](docs/CalendarApi.md#get_characters_character_id_calendar_event_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
 *SwaggerClient::CalendarApi* | [**put_characters_character_id_calendar_event_id**](docs/CalendarApi.md#put_characters_character_id_calendar_event_id) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
