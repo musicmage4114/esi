@@ -5,16 +5,16 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_characters_character_id**](CharacterApi.md#get_characters_character_id) | **GET** /characters/{character_id}/ | Get character&#39;s public information
-[**get_characters_character_id_agents_research**](CharacterApi.md#get_characters_character_id_agents_research) | **GET** /characters/{character_id}/agents_research/ | Get agents research
-[**get_characters_character_id_blueprints**](CharacterApi.md#get_characters_character_id_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
-[**get_characters_character_id_chat_channels**](CharacterApi.md#get_characters_character_id_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
-[**get_characters_character_id_corporationhistory**](CharacterApi.md#get_characters_character_id_corporationhistory) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
-[**get_characters_character_id_medals**](CharacterApi.md#get_characters_character_id_medals) | **GET** /characters/{character_id}/medals/ | Get medals
-[**get_characters_character_id_portrait**](CharacterApi.md#get_characters_character_id_portrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
-[**get_characters_character_id_standings**](CharacterApi.md#get_characters_character_id_standings) | **GET** /characters/{character_id}/standings/ | Get standings
-[**get_characters_names**](CharacterApi.md#get_characters_names) | **GET** /characters/names/ | Get character names
-[**post_characters_affiliation**](CharacterApi.md#post_characters_affiliation) | **POST** /characters/affiliation/ | Character affiliation
-[**post_characters_character_id_cspa**](CharacterApi.md#post_characters_character_id_cspa) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
+[**get_character_research_agents**](CharacterApi.md#get_character_research_agents) | **GET** /characters/{character_id}/agents_research/ | Get agents research
+[**get_character_blueprints**](CharacterApi.md#get_character_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
+[**get_character_chat_channels**](CharacterApi.md#get_character_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
+[**get_character_employment_history**](CharacterApi.md#get_character_employment_history) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
+[**get_character_medals**](CharacterApi.md#get_character_medals) | **GET** /characters/{character_id}/medals/ | Get medals
+[**get_character_portrait**](CharacterApi.md#get_character_portrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
+[**get_character_standings**](CharacterApi.md#get_character_standings) | **GET** /characters/{character_id}/standings/ | Get standings
+[**get_character_names**](CharacterApi.md#get_character_names) | **GET** /characters/names/ | Get character names
+[**get_characters_affiliation_by_id**](CharacterApi.md#get_characters_affiliation_by_id) | **POST** /characters/affiliation/ | Character affiliation
+[**calculate_cspa_charge**](CharacterApi.md#calculate_cspa_charge) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
 
 
 # **get_characters_character_id**
@@ -72,8 +72,8 @@ No authorization required
 
 
 
-# **get_characters_character_id_agents_research**
-> Array&lt;GetCharactersCharacterIdAgentsResearch200Ok&gt; get_characters_character_id_agents_research(character_id, opts)
+# **get_character_research_agents**
+> Array&lt;GetCharactersCharacterIdAgentsResearch200Ok&gt; get_character_research_agents(character_id, opts)
 
 Get agents research
 
@@ -102,10 +102,10 @@ opts = {
 
 begin
   #Get agents research
-  result = api_instance.get_characters_character_id_agents_research(character_id, opts)
+  result = api_instance.get_character_research_agents(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id_agents_research: #{e}"
+  puts "Exception when calling CharacterApi->get_character_research_agents: #{e}"
 end
 ```
 
@@ -134,8 +134,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_blueprints**
-> Array&lt;GetCharactersCharacterIdBlueprints200Ok&gt; get_characters_character_id_blueprints(character_id, opts)
+# **get_character_blueprints**
+> Array&lt;GetCharactersCharacterIdBlueprints200Ok&gt; get_character_blueprints(character_id, opts)
 
 Get blueprints
 
@@ -164,10 +164,10 @@ opts = {
 
 begin
   #Get blueprints
-  result = api_instance.get_characters_character_id_blueprints(character_id, opts)
+  result = api_instance.get_character_blueprints(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id_blueprints: #{e}"
+  puts "Exception when calling CharacterApi->get_character_blueprints: #{e}"
 end
 ```
 
@@ -196,8 +196,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_chat_channels**
-> Array&lt;GetCharactersCharacterIdChatChannels200Ok&gt; get_characters_character_id_chat_channels(character_id, opts)
+# **get_character_chat_channels**
+> Array&lt;GetCharactersCharacterIdChatChannels200Ok&gt; get_character_chat_channels(character_id, opts)
 
 Get chat channels
 
@@ -226,10 +226,10 @@ opts = {
 
 begin
   #Get chat channels
-  result = api_instance.get_characters_character_id_chat_channels(character_id, opts)
+  result = api_instance.get_character_chat_channels(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id_chat_channels: #{e}"
+  puts "Exception when calling CharacterApi->get_character_chat_channels: #{e}"
 end
 ```
 
@@ -258,8 +258,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_corporationhistory**
-> Array&lt;GetCharactersCharacterIdCorporationhistory200Ok&gt; get_characters_character_id_corporationhistory(character_id, opts)
+# **get_character_employment_history**
+> Array&lt;GetCharactersCharacterIdCorporationhistory200Ok&gt; get_character_employment_history(character_id, opts)
 
 Get corporation history
 
@@ -282,10 +282,10 @@ opts = {
 
 begin
   #Get corporation history
-  result = api_instance.get_characters_character_id_corporationhistory(character_id, opts)
+  result = api_instance.get_character_employment_history(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id_corporationhistory: #{e}"
+  puts "Exception when calling CharacterApi->get_character_employment_history: #{e}"
 end
 ```
 
@@ -313,8 +313,8 @@ No authorization required
 
 
 
-# **get_characters_character_id_medals**
-> Array&lt;GetCharactersCharacterIdMedals200Ok&gt; get_characters_character_id_medals(character_id, opts)
+# **get_character_medals**
+> Array&lt;GetCharactersCharacterIdMedals200Ok&gt; get_character_medals(character_id, opts)
 
 Get medals
 
@@ -343,10 +343,10 @@ opts = {
 
 begin
   #Get medals
-  result = api_instance.get_characters_character_id_medals(character_id, opts)
+  result = api_instance.get_character_medals(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id_medals: #{e}"
+  puts "Exception when calling CharacterApi->get_character_medals: #{e}"
 end
 ```
 
@@ -375,8 +375,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_portrait**
-> GetCharactersCharacterIdPortraitOk get_characters_character_id_portrait(character_id, opts)
+# **get_character_portrait**
+> GetCharactersCharacterIdPortraitOk get_character_portrait(character_id, opts)
 
 Get character portraits
 
@@ -399,10 +399,10 @@ opts = {
 
 begin
   #Get character portraits
-  result = api_instance.get_characters_character_id_portrait(character_id, opts)
+  result = api_instance.get_character_portrait(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id_portrait: #{e}"
+  puts "Exception when calling CharacterApi->get_character_portrait: #{e}"
 end
 ```
 
@@ -430,8 +430,8 @@ No authorization required
 
 
 
-# **get_characters_character_id_standings**
-> Array&lt;GetCharactersCharacterIdStandings200Ok&gt; get_characters_character_id_standings(character_id, opts)
+# **get_character_standings**
+> Array&lt;GetCharactersCharacterIdStandings200Ok&gt; get_character_standings(character_id, opts)
 
 Get standings
 
@@ -460,10 +460,10 @@ opts = {
 
 begin
   #Get standings
-  result = api_instance.get_characters_character_id_standings(character_id, opts)
+  result = api_instance.get_character_standings(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_character_id_standings: #{e}"
+  puts "Exception when calling CharacterApi->get_character_standings: #{e}"
 end
 ```
 
@@ -492,8 +492,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_names**
-> Array&lt;GetCharactersNames200Ok&gt; get_characters_names(character_ids, opts)
+# **get_character_names**
+> Array&lt;GetCharactersNames200Ok&gt; get_character_names(character_ids, opts)
 
 Get character names
 
@@ -516,10 +516,10 @@ opts = {
 
 begin
   #Get character names
-  result = api_instance.get_characters_names(character_ids, opts)
+  result = api_instance.get_character_names(character_ids, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_names: #{e}"
+  puts "Exception when calling CharacterApi->get_character_names: #{e}"
 end
 ```
 
@@ -547,8 +547,8 @@ No authorization required
 
 
 
-# **post_characters_affiliation**
-> Array&lt;PostCharactersAffiliation200Ok&gt; post_characters_affiliation(characters, opts)
+# **get_characters_affiliation_by_id**
+> Array&lt;PostCharactersAffiliation200Ok&gt; get_characters_affiliation_by_id(characters, opts)
 
 Character affiliation
 
@@ -571,10 +571,10 @@ opts = {
 
 begin
   #Character affiliation
-  result = api_instance.post_characters_affiliation(characters, opts)
+  result = api_instance.get_characters_affiliation_by_id(characters, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->post_characters_affiliation: #{e}"
+  puts "Exception when calling CharacterApi->get_characters_affiliation_by_id: #{e}"
 end
 ```
 
@@ -602,8 +602,8 @@ No authorization required
 
 
 
-# **post_characters_character_id_cspa**
-> PostCharactersCharacterIdCspaCreated post_characters_character_id_cspa(character_id, characters, opts)
+# **calculate_cspa_charge**
+> PostCharactersCharacterIdCspaCreated calculate_cspa_charge(character_id, characters, opts)
 
 Calculate a CSPA charge cost
 
@@ -634,10 +634,10 @@ opts = {
 
 begin
   #Calculate a CSPA charge cost
-  result = api_instance.post_characters_character_id_cspa(character_id, characters, opts)
+  result = api_instance.calculate_cspa_charge(character_id, characters, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->post_characters_character_id_cspa: #{e}"
+  puts "Exception when calling CharacterApi->calculate_cspa_charge: #{e}"
 end
 ```
 

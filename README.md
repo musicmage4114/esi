@@ -90,16 +90,16 @@ Class | Method | HTTP request | Description
 *SwaggerClient::CalendarApi* | [**get_calendar_event_by_id**](docs/CalendarApi.md#get_calendar_event_by_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
 *SwaggerClient::CalendarApi* | [**respond_to_calendar_event**](docs/CalendarApi.md#respond_to_calendar_event) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
 *SwaggerClient::CharacterApi* | [**get_characters_character_id**](docs/CharacterApi.md#get_characters_character_id) | **GET** /characters/{character_id}/ | Get character's public information
-*SwaggerClient::CharacterApi* | [**get_characters_character_id_agents_research**](docs/CharacterApi.md#get_characters_character_id_agents_research) | **GET** /characters/{character_id}/agents_research/ | Get agents research
-*SwaggerClient::CharacterApi* | [**get_characters_character_id_blueprints**](docs/CharacterApi.md#get_characters_character_id_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
-*SwaggerClient::CharacterApi* | [**get_characters_character_id_chat_channels**](docs/CharacterApi.md#get_characters_character_id_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
-*SwaggerClient::CharacterApi* | [**get_characters_character_id_corporationhistory**](docs/CharacterApi.md#get_characters_character_id_corporationhistory) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
-*SwaggerClient::CharacterApi* | [**get_characters_character_id_medals**](docs/CharacterApi.md#get_characters_character_id_medals) | **GET** /characters/{character_id}/medals/ | Get medals
-*SwaggerClient::CharacterApi* | [**get_characters_character_id_portrait**](docs/CharacterApi.md#get_characters_character_id_portrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
-*SwaggerClient::CharacterApi* | [**get_characters_character_id_standings**](docs/CharacterApi.md#get_characters_character_id_standings) | **GET** /characters/{character_id}/standings/ | Get standings
-*SwaggerClient::CharacterApi* | [**get_characters_names**](docs/CharacterApi.md#get_characters_names) | **GET** /characters/names/ | Get character names
-*SwaggerClient::CharacterApi* | [**post_characters_affiliation**](docs/CharacterApi.md#post_characters_affiliation) | **POST** /characters/affiliation/ | Character affiliation
-*SwaggerClient::CharacterApi* | [**post_characters_character_id_cspa**](docs/CharacterApi.md#post_characters_character_id_cspa) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
+*SwaggerClient::CharacterApi* | [**get_character_research_agents**](docs/CharacterApi.md#get_character_research_agents) | **GET** /characters/{character_id}/agents_research/ | Get agents research
+*SwaggerClient::CharacterApi* | [**get_character_blueprints**](docs/CharacterApi.md#get_character_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
+*SwaggerClient::CharacterApi* | [**get_character_chat_channels**](docs/CharacterApi.md#get_character_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
+*SwaggerClient::CharacterApi* | [**get_character_employment_history**](docs/CharacterApi.md#get_character_employment_history) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
+*SwaggerClient::CharacterApi* | [**get_character_medals**](docs/CharacterApi.md#get_character_medals) | **GET** /characters/{character_id}/medals/ | Get medals
+*SwaggerClient::CharacterApi* | [**get_character_portrait**](docs/CharacterApi.md#get_character_portrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
+*SwaggerClient::CharacterApi* | [**get_character_standings**](docs/CharacterApi.md#get_character_standings) | **GET** /characters/{character_id}/standings/ | Get standings
+*SwaggerClient::CharacterApi* | [**get_character_names**](docs/CharacterApi.md#get_character_names) | **GET** /characters/names/ | Get character names
+*SwaggerClient::CharacterApi* | [**get_characters_affiliation_by_id**](docs/CharacterApi.md#get_characters_affiliation_by_id) | **POST** /characters/affiliation/ | Character affiliation
+*SwaggerClient::CharacterApi* | [**calculate_cspa_charge**](docs/CharacterApi.md#calculate_cspa_charge) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
 *SwaggerClient::ClonesApi* | [**get_characters_character_id_clones**](docs/ClonesApi.md#get_characters_character_id_clones) | **GET** /characters/{character_id}/clones/ | Get clones
 *SwaggerClient::ContactsApi* | [**delete_characters_character_id_contacts**](docs/ContactsApi.md#delete_characters_character_id_contacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts
 *SwaggerClient::ContactsApi* | [**get_characters_character_id_contacts**](docs/ContactsApi.md#get_characters_character_id_contacts) | **GET** /characters/{character_id}/contacts/ | Get contacts
