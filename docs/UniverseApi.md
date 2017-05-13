@@ -4,36 +4,36 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_universe_bloodlines**](UniverseApi.md#get_universe_bloodlines) | **GET** /universe/bloodlines/ | Get bloodlines
-[**get_universe_categories**](UniverseApi.md#get_universe_categories) | **GET** /universe/categories/ | Get item categories
-[**get_universe_categories_category_id**](UniverseApi.md#get_universe_categories_category_id) | **GET** /universe/categories/{category_id}/ | Get item category information
-[**get_universe_constellations**](UniverseApi.md#get_universe_constellations) | **GET** /universe/constellations/ | Get constellations
-[**get_universe_constellations_constellation_id**](UniverseApi.md#get_universe_constellations_constellation_id) | **GET** /universe/constellations/{constellation_id}/ | Get constellation information
-[**get_universe_factions**](UniverseApi.md#get_universe_factions) | **GET** /universe/factions/ | Get factions
-[**get_universe_graphics**](UniverseApi.md#get_universe_graphics) | **GET** /universe/graphics/ | Get graphics
-[**get_universe_graphics_graphic_id**](UniverseApi.md#get_universe_graphics_graphic_id) | **GET** /universe/graphics/{graphic_id}/ | Get graphic information
-[**get_universe_groups**](UniverseApi.md#get_universe_groups) | **GET** /universe/groups/ | Get item groups
-[**get_universe_groups_group_id**](UniverseApi.md#get_universe_groups_group_id) | **GET** /universe/groups/{group_id}/ | Get item group information
-[**get_universe_moons_moon_id**](UniverseApi.md#get_universe_moons_moon_id) | **GET** /universe/moons/{moon_id}/ | Get moon information
-[**get_universe_planets_planet_id**](UniverseApi.md#get_universe_planets_planet_id) | **GET** /universe/planets/{planet_id}/ | Get planet information
-[**get_universe_races**](UniverseApi.md#get_universe_races) | **GET** /universe/races/ | Get character races
-[**get_universe_regions**](UniverseApi.md#get_universe_regions) | **GET** /universe/regions/ | Get regions
-[**get_universe_regions_region_id**](UniverseApi.md#get_universe_regions_region_id) | **GET** /universe/regions/{region_id}/ | Get region information
-[**get_universe_stargates_stargate_id**](UniverseApi.md#get_universe_stargates_stargate_id) | **GET** /universe/stargates/{stargate_id}/ | Get stargate information
-[**get_universe_stations_station_id**](UniverseApi.md#get_universe_stations_station_id) | **GET** /universe/stations/{station_id}/ | Get station information
-[**get_universe_structures**](UniverseApi.md#get_universe_structures) | **GET** /universe/structures/ | List all public structures
-[**get_universe_structures_structure_id**](UniverseApi.md#get_universe_structures_structure_id) | **GET** /universe/structures/{structure_id}/ | Get structure information
-[**get_universe_system_jumps**](UniverseApi.md#get_universe_system_jumps) | **GET** /universe/system_jumps/ | Get system jumps
-[**get_universe_system_kills**](UniverseApi.md#get_universe_system_kills) | **GET** /universe/system_kills/ | Get system kills
-[**get_universe_systems**](UniverseApi.md#get_universe_systems) | **GET** /universe/systems/ | Get solar systems
-[**get_universe_systems_system_id**](UniverseApi.md#get_universe_systems_system_id) | **GET** /universe/systems/{system_id}/ | Get solar system information
+[**get_bloodlines**](UniverseApi.md#get_bloodlines) | **GET** /universe/bloodlines/ | Get bloodlines
+[**get_item_categories**](UniverseApi.md#get_item_categories) | **GET** /universe/categories/ | Get item categories
+[**get_item_category_by_id**](UniverseApi.md#get_item_category_by_id) | **GET** /universe/categories/{category_id}/ | Get item category information
+[**get_constellations**](UniverseApi.md#get_constellations) | **GET** /universe/constellations/ | Get constellations
+[**get_constellation_by_id**](UniverseApi.md#get_constellation_by_id) | **GET** /universe/constellations/{constellation_id}/ | Get constellation information
+[**get_factions**](UniverseApi.md#get_factions) | **GET** /universe/factions/ | Get factions
+[**get_game_graphics**](UniverseApi.md#get_game_graphics) | **GET** /universe/graphics/ | Get graphics
+[**get_game_graphic_by_id**](UniverseApi.md#get_game_graphic_by_id) | **GET** /universe/graphics/{graphic_id}/ | Get graphic information
+[**get_item_groups**](UniverseApi.md#get_item_groups) | **GET** /universe/groups/ | Get item groups
+[**get_item_group_by_id**](UniverseApi.md#get_item_group_by_id) | **GET** /universe/groups/{group_id}/ | Get item group information
+[**get_moon_by_id**](UniverseApi.md#get_moon_by_id) | **GET** /universe/moons/{moon_id}/ | Get moon information
+[**get_planet_by_id**](UniverseApi.md#get_planet_by_id) | **GET** /universe/planets/{planet_id}/ | Get planet information
+[**get_races**](UniverseApi.md#get_races) | **GET** /universe/races/ | Get character races
+[**get_regions**](UniverseApi.md#get_regions) | **GET** /universe/regions/ | Get regions
+[**get_region_by_id**](UniverseApi.md#get_region_by_id) | **GET** /universe/regions/{region_id}/ | Get region information
+[**get_stargate_by_id**](UniverseApi.md#get_stargate_by_id) | **GET** /universe/stargates/{stargate_id}/ | Get stargate information
+[**get_station_by_id**](UniverseApi.md#get_station_by_id) | **GET** /universe/stations/{station_id}/ | Get station information
+[**get_public_structures**](UniverseApi.md#get_public_structures) | **GET** /universe/structures/ | List all public structures
+[**get_structure_by_id**](UniverseApi.md#get_structure_by_id) | **GET** /universe/structures/{structure_id}/ | Get structure information
+[**get_system_jumps**](UniverseApi.md#get_system_jumps) | **GET** /universe/system_jumps/ | Get system jumps
+[**get_system_kills**](UniverseApi.md#get_system_kills) | **GET** /universe/system_kills/ | Get system kills
+[**get_systems**](UniverseApi.md#get_systems) | **GET** /universe/systems/ | Get solar systems
+[**get_system_by_id**](UniverseApi.md#get_system_by_id) | **GET** /universe/systems/{system_id}/ | Get solar system information
 [**get_universe_types**](UniverseApi.md#get_universe_types) | **GET** /universe/types/ | Get types
-[**get_universe_types_type_id**](UniverseApi.md#get_universe_types_type_id) | **GET** /universe/types/{type_id}/ | Get type information
-[**post_universe_names**](UniverseApi.md#post_universe_names) | **POST** /universe/names/ | Get names and categories for a set of ID&#39;s
+[**get_universe_type_by_id**](UniverseApi.md#get_universe_type_by_id) | **GET** /universe/types/{type_id}/ | Get type information
+[**lookup_id**](UniverseApi.md#lookup_id) | **POST** /universe/names/ | Get names and categories for a set of ID&#39;s
 
 
-# **get_universe_bloodlines**
-> Array&lt;GetUniverseBloodlines200Ok&gt; get_universe_bloodlines(opts)
+# **get_bloodlines**
+> Array&lt;GetUniverseBloodlines200Ok&gt; get_bloodlines(opts)
 
 Get bloodlines
 
@@ -55,10 +55,10 @@ opts = {
 
 begin
   #Get bloodlines
-  result = api_instance.get_universe_bloodlines(opts)
+  result = api_instance.get_bloodlines(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_bloodlines: #{e}"
+  puts "Exception when calling UniverseApi->get_bloodlines: #{e}"
 end
 ```
 
@@ -86,8 +86,8 @@ No authorization required
 
 
 
-# **get_universe_categories**
-> Array&lt;Integer&gt; get_universe_categories(opts)
+# **get_item_categories**
+> Array&lt;Integer&gt; get_item_categories(opts)
 
 Get item categories
 
@@ -108,10 +108,10 @@ opts = {
 
 begin
   #Get item categories
-  result = api_instance.get_universe_categories(opts)
+  result = api_instance.get_item_categories(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_categories: #{e}"
+  puts "Exception when calling UniverseApi->get_item_categories: #{e}"
 end
 ```
 
@@ -138,8 +138,8 @@ No authorization required
 
 
 
-# **get_universe_categories_category_id**
-> GetUniverseCategoriesCategoryIdOk get_universe_categories_category_id(category_id, opts)
+# **get_item_category_by_id**
+> GetUniverseCategoriesCategoryIdOk get_item_category_by_id(category_id, opts)
 
 Get item category information
 
@@ -163,10 +163,10 @@ opts = {
 
 begin
   #Get item category information
-  result = api_instance.get_universe_categories_category_id(category_id, opts)
+  result = api_instance.get_item_category_by_id(category_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_categories_category_id: #{e}"
+  puts "Exception when calling UniverseApi->get_item_category_by_id: #{e}"
 end
 ```
 
@@ -195,8 +195,8 @@ No authorization required
 
 
 
-# **get_universe_constellations**
-> Array&lt;Integer&gt; get_universe_constellations(opts)
+# **get_constellations**
+> Array&lt;Integer&gt; get_constellations(opts)
 
 Get constellations
 
@@ -217,10 +217,10 @@ opts = {
 
 begin
   #Get constellations
-  result = api_instance.get_universe_constellations(opts)
+  result = api_instance.get_constellations(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_constellations: #{e}"
+  puts "Exception when calling UniverseApi->get_constellations: #{e}"
 end
 ```
 
@@ -247,8 +247,8 @@ No authorization required
 
 
 
-# **get_universe_constellations_constellation_id**
-> GetUniverseConstellationsConstellationIdOk get_universe_constellations_constellation_id(constellation_id, opts)
+# **get_constellation_by_id**
+> GetUniverseConstellationsConstellationIdOk get_constellation_by_id(constellation_id, opts)
 
 Get constellation information
 
@@ -272,10 +272,10 @@ opts = {
 
 begin
   #Get constellation information
-  result = api_instance.get_universe_constellations_constellation_id(constellation_id, opts)
+  result = api_instance.get_constellation_by_id(constellation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_constellations_constellation_id: #{e}"
+  puts "Exception when calling UniverseApi->get_constellation_by_id: #{e}"
 end
 ```
 
@@ -304,8 +304,8 @@ No authorization required
 
 
 
-# **get_universe_factions**
-> Array&lt;GetUniverseFactions200Ok&gt; get_universe_factions(opts)
+# **get_factions**
+> Array&lt;GetUniverseFactions200Ok&gt; get_factions(opts)
 
 Get factions
 
@@ -327,10 +327,10 @@ opts = {
 
 begin
   #Get factions
-  result = api_instance.get_universe_factions(opts)
+  result = api_instance.get_factions(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_factions: #{e}"
+  puts "Exception when calling UniverseApi->get_factions: #{e}"
 end
 ```
 
@@ -358,8 +358,8 @@ No authorization required
 
 
 
-# **get_universe_graphics**
-> Array&lt;Integer&gt; get_universe_graphics(opts)
+# **get_game_graphics**
+> Array&lt;Integer&gt; get_game_graphics(opts)
 
 Get graphics
 
@@ -380,10 +380,10 @@ opts = {
 
 begin
   #Get graphics
-  result = api_instance.get_universe_graphics(opts)
+  result = api_instance.get_game_graphics(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_graphics: #{e}"
+  puts "Exception when calling UniverseApi->get_game_graphics: #{e}"
 end
 ```
 
@@ -410,8 +410,8 @@ No authorization required
 
 
 
-# **get_universe_graphics_graphic_id**
-> GetUniverseGraphicsGraphicIdOk get_universe_graphics_graphic_id(graphic_id, opts)
+# **get_game_graphic_by_id**
+> GetUniverseGraphicsGraphicIdOk get_game_graphic_by_id(graphic_id, opts)
 
 Get graphic information
 
@@ -434,10 +434,10 @@ opts = {
 
 begin
   #Get graphic information
-  result = api_instance.get_universe_graphics_graphic_id(graphic_id, opts)
+  result = api_instance.get_game_graphic_by_id(graphic_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_graphics_graphic_id: #{e}"
+  puts "Exception when calling UniverseApi->get_game_graphic_by_id: #{e}"
 end
 ```
 
@@ -465,8 +465,8 @@ No authorization required
 
 
 
-# **get_universe_groups**
-> Array&lt;Integer&gt; get_universe_groups(opts)
+# **get_item_groups**
+> Array&lt;Integer&gt; get_item_groups(opts)
 
 Get item groups
 
@@ -488,10 +488,10 @@ opts = {
 
 begin
   #Get item groups
-  result = api_instance.get_universe_groups(opts)
+  result = api_instance.get_item_groups(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_groups: #{e}"
+  puts "Exception when calling UniverseApi->get_item_groups: #{e}"
 end
 ```
 
@@ -519,8 +519,8 @@ No authorization required
 
 
 
-# **get_universe_groups_group_id**
-> GetUniverseGroupsGroupIdOk get_universe_groups_group_id(group_id, opts)
+# **get_item_group_by_id**
+> GetUniverseGroupsGroupIdOk get_item_group_by_id(group_id, opts)
 
 Get item group information
 
@@ -544,10 +544,10 @@ opts = {
 
 begin
   #Get item group information
-  result = api_instance.get_universe_groups_group_id(group_id, opts)
+  result = api_instance.get_item_group_by_id(group_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_groups_group_id: #{e}"
+  puts "Exception when calling UniverseApi->get_item_group_by_id: #{e}"
 end
 ```
 
@@ -576,8 +576,8 @@ No authorization required
 
 
 
-# **get_universe_moons_moon_id**
-> GetUniverseMoonsMoonIdOk get_universe_moons_moon_id(moon_id, opts)
+# **get_moon_by_id**
+> GetUniverseMoonsMoonIdOk get_moon_by_id(moon_id, opts)
 
 Get moon information
 
@@ -600,10 +600,10 @@ opts = {
 
 begin
   #Get moon information
-  result = api_instance.get_universe_moons_moon_id(moon_id, opts)
+  result = api_instance.get_moon_by_id(moon_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_moons_moon_id: #{e}"
+  puts "Exception when calling UniverseApi->get_moon_by_id: #{e}"
 end
 ```
 
@@ -631,8 +631,8 @@ No authorization required
 
 
 
-# **get_universe_planets_planet_id**
-> GetUniversePlanetsPlanetIdOk get_universe_planets_planet_id(planet_id, opts)
+# **get_planet_by_id**
+> GetUniversePlanetsPlanetIdOk get_planet_by_id(planet_id, opts)
 
 Get planet information
 
@@ -655,10 +655,10 @@ opts = {
 
 begin
   #Get planet information
-  result = api_instance.get_universe_planets_planet_id(planet_id, opts)
+  result = api_instance.get_planet_by_id(planet_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_planets_planet_id: #{e}"
+  puts "Exception when calling UniverseApi->get_planet_by_id: #{e}"
 end
 ```
 
@@ -686,8 +686,8 @@ No authorization required
 
 
 
-# **get_universe_races**
-> Array&lt;GetUniverseRaces200Ok&gt; get_universe_races(opts)
+# **get_races**
+> Array&lt;GetUniverseRaces200Ok&gt; get_races(opts)
 
 Get character races
 
@@ -709,10 +709,10 @@ opts = {
 
 begin
   #Get character races
-  result = api_instance.get_universe_races(opts)
+  result = api_instance.get_races(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_races: #{e}"
+  puts "Exception when calling UniverseApi->get_races: #{e}"
 end
 ```
 
@@ -740,8 +740,8 @@ No authorization required
 
 
 
-# **get_universe_regions**
-> Array&lt;Integer&gt; get_universe_regions(opts)
+# **get_regions**
+> Array&lt;Integer&gt; get_regions(opts)
 
 Get regions
 
@@ -762,10 +762,10 @@ opts = {
 
 begin
   #Get regions
-  result = api_instance.get_universe_regions(opts)
+  result = api_instance.get_regions(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_regions: #{e}"
+  puts "Exception when calling UniverseApi->get_regions: #{e}"
 end
 ```
 
@@ -792,8 +792,8 @@ No authorization required
 
 
 
-# **get_universe_regions_region_id**
-> GetUniverseRegionsRegionIdOk get_universe_regions_region_id(region_id, opts)
+# **get_region_by_id**
+> GetUniverseRegionsRegionIdOk get_region_by_id(region_id, opts)
 
 Get region information
 
@@ -817,10 +817,10 @@ opts = {
 
 begin
   #Get region information
-  result = api_instance.get_universe_regions_region_id(region_id, opts)
+  result = api_instance.get_region_by_id(region_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_regions_region_id: #{e}"
+  puts "Exception when calling UniverseApi->get_region_by_id: #{e}"
 end
 ```
 
@@ -849,8 +849,8 @@ No authorization required
 
 
 
-# **get_universe_stargates_stargate_id**
-> GetUniverseStargatesStargateIdOk get_universe_stargates_stargate_id(stargate_id, opts)
+# **get_stargate_by_id**
+> GetUniverseStargatesStargateIdOk get_stargate_by_id(stargate_id, opts)
 
 Get stargate information
 
@@ -873,10 +873,10 @@ opts = {
 
 begin
   #Get stargate information
-  result = api_instance.get_universe_stargates_stargate_id(stargate_id, opts)
+  result = api_instance.get_stargate_by_id(stargate_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_stargates_stargate_id: #{e}"
+  puts "Exception when calling UniverseApi->get_stargate_by_id: #{e}"
 end
 ```
 
@@ -904,8 +904,8 @@ No authorization required
 
 
 
-# **get_universe_stations_station_id**
-> GetUniverseStationsStationIdOk get_universe_stations_station_id(station_id, opts)
+# **get_station_by_id**
+> GetUniverseStationsStationIdOk get_station_by_id(station_id, opts)
 
 Get station information
 
@@ -928,10 +928,10 @@ opts = {
 
 begin
   #Get station information
-  result = api_instance.get_universe_stations_station_id(station_id, opts)
+  result = api_instance.get_station_by_id(station_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_stations_station_id: #{e}"
+  puts "Exception when calling UniverseApi->get_station_by_id: #{e}"
 end
 ```
 
@@ -959,8 +959,8 @@ No authorization required
 
 
 
-# **get_universe_structures**
-> Array&lt;Integer&gt; get_universe_structures(opts)
+# **get_public_structures**
+> Array&lt;Integer&gt; get_public_structures(opts)
 
 List all public structures
 
@@ -981,10 +981,10 @@ opts = {
 
 begin
   #List all public structures
-  result = api_instance.get_universe_structures(opts)
+  result = api_instance.get_public_structures(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_structures: #{e}"
+  puts "Exception when calling UniverseApi->get_public_structures: #{e}"
 end
 ```
 
@@ -1011,8 +1011,8 @@ No authorization required
 
 
 
-# **get_universe_structures_structure_id**
-> GetUniverseStructuresStructureIdOk get_universe_structures_structure_id(structure_id, opts)
+# **get_structure_by_id**
+> GetUniverseStructuresStructureIdOk get_structure_by_id(structure_id, opts)
 
 Get structure information
 
@@ -1041,10 +1041,10 @@ opts = {
 
 begin
   #Get structure information
-  result = api_instance.get_universe_structures_structure_id(structure_id, opts)
+  result = api_instance.get_structure_by_id(structure_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_structures_structure_id: #{e}"
+  puts "Exception when calling UniverseApi->get_structure_by_id: #{e}"
 end
 ```
 
@@ -1073,8 +1073,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_universe_system_jumps**
-> Array&lt;GetUniverseSystemJumps200Ok&gt; get_universe_system_jumps(opts)
+# **get_system_jumps**
+> Array&lt;GetUniverseSystemJumps200Ok&gt; get_system_jumps(opts)
 
 Get system jumps
 
@@ -1095,10 +1095,10 @@ opts = {
 
 begin
   #Get system jumps
-  result = api_instance.get_universe_system_jumps(opts)
+  result = api_instance.get_system_jumps(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_system_jumps: #{e}"
+  puts "Exception when calling UniverseApi->get_system_jumps: #{e}"
 end
 ```
 
@@ -1125,8 +1125,8 @@ No authorization required
 
 
 
-# **get_universe_system_kills**
-> Array&lt;GetUniverseSystemKills200Ok&gt; get_universe_system_kills(opts)
+# **get_system_kills**
+> Array&lt;GetUniverseSystemKills200Ok&gt; get_system_kills(opts)
 
 Get system kills
 
@@ -1147,10 +1147,10 @@ opts = {
 
 begin
   #Get system kills
-  result = api_instance.get_universe_system_kills(opts)
+  result = api_instance.get_system_kills(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_system_kills: #{e}"
+  puts "Exception when calling UniverseApi->get_system_kills: #{e}"
 end
 ```
 
@@ -1177,8 +1177,8 @@ No authorization required
 
 
 
-# **get_universe_systems**
-> Array&lt;Integer&gt; get_universe_systems(opts)
+# **get_systems**
+> Array&lt;Integer&gt; get_systems(opts)
 
 Get solar systems
 
@@ -1199,10 +1199,10 @@ opts = {
 
 begin
   #Get solar systems
-  result = api_instance.get_universe_systems(opts)
+  result = api_instance.get_systems(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_systems: #{e}"
+  puts "Exception when calling UniverseApi->get_systems: #{e}"
 end
 ```
 
@@ -1229,8 +1229,8 @@ No authorization required
 
 
 
-# **get_universe_systems_system_id**
-> GetUniverseSystemsSystemIdOk get_universe_systems_system_id(system_id, opts)
+# **get_system_by_id**
+> GetUniverseSystemsSystemIdOk get_system_by_id(system_id, opts)
 
 Get solar system information
 
@@ -1254,10 +1254,10 @@ opts = {
 
 begin
   #Get solar system information
-  result = api_instance.get_universe_systems_system_id(system_id, opts)
+  result = api_instance.get_system_by_id(system_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_systems_system_id: #{e}"
+  puts "Exception when calling UniverseApi->get_system_by_id: #{e}"
 end
 ```
 
@@ -1340,8 +1340,8 @@ No authorization required
 
 
 
-# **get_universe_types_type_id**
-> GetUniverseTypesTypeIdOk get_universe_types_type_id(type_id, opts)
+# **get_universe_type_by_id**
+> GetUniverseTypesTypeIdOk get_universe_type_by_id(type_id, opts)
 
 Get type information
 
@@ -1365,10 +1365,10 @@ opts = {
 
 begin
   #Get type information
-  result = api_instance.get_universe_types_type_id(type_id, opts)
+  result = api_instance.get_universe_type_by_id(type_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->get_universe_types_type_id: #{e}"
+  puts "Exception when calling UniverseApi->get_universe_type_by_id: #{e}"
 end
 ```
 
@@ -1397,8 +1397,8 @@ No authorization required
 
 
 
-# **post_universe_names**
-> Array&lt;PostUniverseNames200Ok&gt; post_universe_names(ids, opts)
+# **lookup_id**
+> Array&lt;PostUniverseNames200Ok&gt; lookup_id(ids, opts)
 
 Get names and categories for a set of ID's
 
@@ -1421,10 +1421,10 @@ opts = {
 
 begin
   #Get names and categories for a set of ID's
-  result = api_instance.post_universe_names(ids, opts)
+  result = api_instance.lookup_id(ids, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling UniverseApi->post_universe_names: #{e}"
+  puts "Exception when calling UniverseApi->lookup_id: #{e}"
 end
 ```
 

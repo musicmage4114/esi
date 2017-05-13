@@ -31,7 +31,7 @@ describe 'UniverseApi' do
     end
   end
 
-  # unit tests for get_universe_bloodlines
+  # unit tests for get_bloodlines
   # Get bloodlines
   # Get a list of bloodlines  ---  Alternate route: &#x60;/v1/universe/bloodlines/&#x60;  Alternate route: &#x60;/legacy/universe/bloodlines/&#x60;  Alternate route: &#x60;/latest/universe/bloodlines/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -40,13 +40,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetUniverseBloodlines200Ok>]
-  describe 'get_universe_bloodlines test' do
+  describe 'get_bloodlines test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_categories
+  # unit tests for get_item_categories
   # Get item categories
   # Get a list of item categories  ---  Alternate route: &#x60;/v1/universe/categories/&#x60;  Alternate route: &#x60;/legacy/universe/categories/&#x60;  Alternate route: &#x60;/latest/universe/categories/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -54,13 +54,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_universe_categories test' do
+  describe 'get_item_categories test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_categories_category_id
+  # unit tests for get_item_category_by_id
   # Get item category information
   # Get information of an item category  ---  Alternate route: &#x60;/v1/universe/categories/{category_id}/&#x60;  Alternate route: &#x60;/legacy/universe/categories/{category_id}/&#x60;  Alternate route: &#x60;/latest/universe/categories/{category_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param category_id An Eve item category ID
@@ -70,13 +70,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseCategoriesCategoryIdOk]
-  describe 'get_universe_categories_category_id test' do
+  describe 'get_item_category_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_constellations
+  # unit tests for get_constellations
   # Get constellations
   # Get a list of constellations  ---  Alternate route: &#x60;/v1/universe/constellations/&#x60;  Alternate route: &#x60;/legacy/universe/constellations/&#x60;  Alternate route: &#x60;/latest/universe/constellations/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -84,13 +84,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_universe_constellations test' do
+  describe 'get_constellations test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_constellations_constellation_id
+  # unit tests for get_constellation_by_id
   # Get constellation information
   # Get information on a constellation  ---  Alternate route: &#x60;/v1/universe/constellations/{constellation_id}/&#x60;  Alternate route: &#x60;/legacy/universe/constellations/{constellation_id}/&#x60;  Alternate route: &#x60;/latest/universe/constellations/{constellation_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param constellation_id constellation_id integer
@@ -100,13 +100,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseConstellationsConstellationIdOk]
-  describe 'get_universe_constellations_constellation_id test' do
+  describe 'get_constellation_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_factions
+  # unit tests for get_factions
   # Get factions
   # Get a list of factions  ---  Alternate route: &#x60;/v1/universe/factions/&#x60;  Alternate route: &#x60;/legacy/universe/factions/&#x60;  Alternate route: &#x60;/latest/universe/factions/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -115,13 +115,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetUniverseFactions200Ok>]
-  describe 'get_universe_factions test' do
+  describe 'get_factions test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_graphics
+  # unit tests for get_game_graphics
   # Get graphics
   # Get a list of graphics  ---  Alternate route: &#x60;/v1/universe/graphics/&#x60;  Alternate route: &#x60;/legacy/universe/graphics/&#x60;  Alternate route: &#x60;/latest/universe/graphics/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -129,13 +129,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_universe_graphics test' do
+  describe 'get_game_graphics test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_graphics_graphic_id
+  # unit tests for get_game_graphic_by_id
   # Get graphic information
   # Get information on a graphic  ---  Alternate route: &#x60;/v1/universe/graphics/{graphic_id}/&#x60;  Alternate route: &#x60;/legacy/universe/graphics/{graphic_id}/&#x60;  Alternate route: &#x60;/latest/universe/graphics/{graphic_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param graphic_id graphic_id integer
@@ -144,13 +144,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseGraphicsGraphicIdOk]
-  describe 'get_universe_graphics_graphic_id test' do
+  describe 'get_game_graphic_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_groups
+  # unit tests for get_item_groups
   # Get item groups
   # Get a list of item groups  ---  Alternate route: &#x60;/v1/universe/groups/&#x60;  Alternate route: &#x60;/legacy/universe/groups/&#x60;  Alternate route: &#x60;/latest/universe/groups/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -159,13 +159,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_universe_groups test' do
+  describe 'get_item_groups test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_groups_group_id
+  # unit tests for get_item_group_by_id
   # Get item group information
   # Get information on an item group  ---  Alternate route: &#x60;/v1/universe/groups/{group_id}/&#x60;  Alternate route: &#x60;/legacy/universe/groups/{group_id}/&#x60;  Alternate route: &#x60;/latest/universe/groups/{group_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param group_id An Eve item group ID
@@ -175,13 +175,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseGroupsGroupIdOk]
-  describe 'get_universe_groups_group_id test' do
+  describe 'get_item_group_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_moons_moon_id
+  # unit tests for get_moon_by_id
   # Get moon information
   # Get information on a moon  ---  Alternate route: &#x60;/v1/universe/moons/{moon_id}/&#x60;  Alternate route: &#x60;/legacy/universe/moons/{moon_id}/&#x60;  Alternate route: &#x60;/latest/universe/moons/{moon_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param moon_id moon_id integer
@@ -190,13 +190,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseMoonsMoonIdOk]
-  describe 'get_universe_moons_moon_id test' do
+  describe 'get_moon_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_planets_planet_id
+  # unit tests for get_planet_by_id
   # Get planet information
   # Get information on a planet  ---  Alternate route: &#x60;/v1/universe/planets/{planet_id}/&#x60;  Alternate route: &#x60;/legacy/universe/planets/{planet_id}/&#x60;  Alternate route: &#x60;/latest/universe/planets/{planet_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param planet_id planet_id integer
@@ -205,13 +205,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniversePlanetsPlanetIdOk]
-  describe 'get_universe_planets_planet_id test' do
+  describe 'get_planet_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_races
+  # unit tests for get_races
   # Get character races
   # Get a list of character races  ---  Alternate route: &#x60;/v1/universe/races/&#x60;  Alternate route: &#x60;/legacy/universe/races/&#x60;  Alternate route: &#x60;/latest/universe/races/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -220,13 +220,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetUniverseRaces200Ok>]
-  describe 'get_universe_races test' do
+  describe 'get_races test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_regions
+  # unit tests for get_regions
   # Get regions
   # Get a list of regions  ---  Alternate route: &#x60;/v1/universe/regions/&#x60;  Alternate route: &#x60;/legacy/universe/regions/&#x60;  Alternate route: &#x60;/latest/universe/regions/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -234,13 +234,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_universe_regions test' do
+  describe 'get_regions test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_regions_region_id
+  # unit tests for get_region_by_id
   # Get region information
   # Get information on a region  ---  Alternate route: &#x60;/v1/universe/regions/{region_id}/&#x60;  Alternate route: &#x60;/legacy/universe/regions/{region_id}/&#x60;  Alternate route: &#x60;/latest/universe/regions/{region_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param region_id region_id integer
@@ -250,13 +250,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseRegionsRegionIdOk]
-  describe 'get_universe_regions_region_id test' do
+  describe 'get_region_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_stargates_stargate_id
+  # unit tests for get_stargate_by_id
   # Get stargate information
   # Get information on a stargate  ---  Alternate route: &#x60;/v1/universe/stargates/{stargate_id}/&#x60;  Alternate route: &#x60;/legacy/universe/stargates/{stargate_id}/&#x60;  Alternate route: &#x60;/latest/universe/stargates/{stargate_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param stargate_id stargate_id integer
@@ -265,13 +265,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseStargatesStargateIdOk]
-  describe 'get_universe_stargates_stargate_id test' do
+  describe 'get_stargate_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_stations_station_id
+  # unit tests for get_station_by_id
   # Get station information
   # Get information on a station  ---  Alternate route: &#x60;/v2/universe/stations/{station_id}/&#x60;  Alternate route: &#x60;/latest/universe/stations/{station_id}/&#x60;   ---  This route is cached for up to 300 seconds
   # @param station_id station_id integer
@@ -280,13 +280,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseStationsStationIdOk]
-  describe 'get_universe_stations_station_id test' do
+  describe 'get_station_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_structures
+  # unit tests for get_public_structures
   # List all public structures
   # List all public structures  ---  Alternate route: &#x60;/v1/universe/structures/&#x60;  Alternate route: &#x60;/latest/universe/structures/&#x60;  Alternate route: &#x60;/legacy/universe/structures/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -294,13 +294,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_universe_structures test' do
+  describe 'get_public_structures test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_structures_structure_id
+  # unit tests for get_structure_by_id
   # Get structure information
   # Returns information on requested structure, if you are on the ACL. Otherwise, returns \&quot;Forbidden\&quot; for all inputs.  ---  Alternate route: &#x60;/v1/universe/structures/{structure_id}/&#x60;  Alternate route: &#x60;/legacy/universe/structures/{structure_id}/&#x60;  Alternate route: &#x60;/latest/universe/structures/{structure_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param structure_id An Eve structure ID
@@ -310,13 +310,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseStructuresStructureIdOk]
-  describe 'get_universe_structures_structure_id test' do
+  describe 'get_structure_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_system_jumps
+  # unit tests for get_system_jumps
   # Get system jumps
   # Get the number of jumps in solar systems within the last hour, excluding wormhole space. Only systems with jumps will be listed  ---  Alternate route: &#x60;/v1/universe/system_jumps/&#x60;  Alternate route: &#x60;/legacy/universe/system_jumps/&#x60;  Alternate route: &#x60;/latest/universe/system_jumps/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -324,13 +324,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetUniverseSystemJumps200Ok>]
-  describe 'get_universe_system_jumps test' do
+  describe 'get_system_jumps test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_system_kills
+  # unit tests for get_system_kills
   # Get system kills
   # Get the number of ship, pod and NPC kills per solar system within the last hour, excluding wormhole space. Only systems with kills will be listed  ---  Alternate route: &#x60;/v1/universe/system_kills/&#x60;  Alternate route: &#x60;/legacy/universe/system_kills/&#x60;  Alternate route: &#x60;/latest/universe/system_kills/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -338,13 +338,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetUniverseSystemKills200Ok>]
-  describe 'get_universe_system_kills test' do
+  describe 'get_system_kills test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_systems
+  # unit tests for get_systems
   # Get solar systems
   # Get a list of solar systems  ---  Alternate route: &#x60;/v1/universe/systems/&#x60;  Alternate route: &#x60;/legacy/universe/systems/&#x60;  Alternate route: &#x60;/latest/universe/systems/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -352,13 +352,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_universe_systems test' do
+  describe 'get_systems test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_universe_systems_system_id
+  # unit tests for get_system_by_id
   # Get solar system information
   # Get information on a solar system  ---  Alternate route: &#x60;/v2/universe/systems/{system_id}/&#x60;  Alternate route: &#x60;/latest/universe/systems/{system_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param system_id system_id integer
@@ -368,7 +368,7 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseSystemsSystemIdOk]
-  describe 'get_universe_systems_system_id test' do
+  describe 'get_system_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -389,7 +389,7 @@ describe 'UniverseApi' do
     end
   end
 
-  # unit tests for get_universe_types_type_id
+  # unit tests for get_universe_type_by_id
   # Get type information
   # Get information on a type  ---  Alternate route: &#x60;/v3/universe/types/{type_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param type_id An Eve item type ID
@@ -399,13 +399,13 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetUniverseTypesTypeIdOk]
-  describe 'get_universe_types_type_id test' do
+  describe 'get_universe_type_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for post_universe_names
+  # unit tests for lookup_id
   # Get names and categories for a set of ID&#39;s
   # Resolve a set of IDs to names and categories. Supported ID&#39;s for resolving are: Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types.  ---  Alternate route: &#x60;/v2/universe/names/&#x60;  Alternate route: &#x60;/latest/universe/names/&#x60; 
   # @param ids The ids to resolve
@@ -414,7 +414,7 @@ describe 'UniverseApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<PostUniverseNames200Ok>]
-  describe 'post_universe_names test' do
+  describe 'lookup_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

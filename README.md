@@ -179,32 +179,32 @@ Class | Method | HTTP request | Description
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_map**](docs/SovereigntyApi.md#get_sovereignty_map) | **GET** /sovereignty/map/ | List sovereignty of systems
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_structures**](docs/SovereigntyApi.md#get_sovereignty_structures) | **GET** /sovereignty/structures/ | List sovereignty structures
 *SwaggerClient::StatusApi* | [**get_server_status**](docs/StatusApi.md#get_server_status) | **GET** /status/ | Retrieve the uptime and player counts
-*SwaggerClient::UniverseApi* | [**get_universe_bloodlines**](docs/UniverseApi.md#get_universe_bloodlines) | **GET** /universe/bloodlines/ | Get bloodlines
-*SwaggerClient::UniverseApi* | [**get_universe_categories**](docs/UniverseApi.md#get_universe_categories) | **GET** /universe/categories/ | Get item categories
-*SwaggerClient::UniverseApi* | [**get_universe_categories_category_id**](docs/UniverseApi.md#get_universe_categories_category_id) | **GET** /universe/categories/{category_id}/ | Get item category information
-*SwaggerClient::UniverseApi* | [**get_universe_constellations**](docs/UniverseApi.md#get_universe_constellations) | **GET** /universe/constellations/ | Get constellations
-*SwaggerClient::UniverseApi* | [**get_universe_constellations_constellation_id**](docs/UniverseApi.md#get_universe_constellations_constellation_id) | **GET** /universe/constellations/{constellation_id}/ | Get constellation information
-*SwaggerClient::UniverseApi* | [**get_universe_factions**](docs/UniverseApi.md#get_universe_factions) | **GET** /universe/factions/ | Get factions
-*SwaggerClient::UniverseApi* | [**get_universe_graphics**](docs/UniverseApi.md#get_universe_graphics) | **GET** /universe/graphics/ | Get graphics
-*SwaggerClient::UniverseApi* | [**get_universe_graphics_graphic_id**](docs/UniverseApi.md#get_universe_graphics_graphic_id) | **GET** /universe/graphics/{graphic_id}/ | Get graphic information
-*SwaggerClient::UniverseApi* | [**get_universe_groups**](docs/UniverseApi.md#get_universe_groups) | **GET** /universe/groups/ | Get item groups
-*SwaggerClient::UniverseApi* | [**get_universe_groups_group_id**](docs/UniverseApi.md#get_universe_groups_group_id) | **GET** /universe/groups/{group_id}/ | Get item group information
-*SwaggerClient::UniverseApi* | [**get_universe_moons_moon_id**](docs/UniverseApi.md#get_universe_moons_moon_id) | **GET** /universe/moons/{moon_id}/ | Get moon information
-*SwaggerClient::UniverseApi* | [**get_universe_planets_planet_id**](docs/UniverseApi.md#get_universe_planets_planet_id) | **GET** /universe/planets/{planet_id}/ | Get planet information
-*SwaggerClient::UniverseApi* | [**get_universe_races**](docs/UniverseApi.md#get_universe_races) | **GET** /universe/races/ | Get character races
-*SwaggerClient::UniverseApi* | [**get_universe_regions**](docs/UniverseApi.md#get_universe_regions) | **GET** /universe/regions/ | Get regions
-*SwaggerClient::UniverseApi* | [**get_universe_regions_region_id**](docs/UniverseApi.md#get_universe_regions_region_id) | **GET** /universe/regions/{region_id}/ | Get region information
-*SwaggerClient::UniverseApi* | [**get_universe_stargates_stargate_id**](docs/UniverseApi.md#get_universe_stargates_stargate_id) | **GET** /universe/stargates/{stargate_id}/ | Get stargate information
-*SwaggerClient::UniverseApi* | [**get_universe_stations_station_id**](docs/UniverseApi.md#get_universe_stations_station_id) | **GET** /universe/stations/{station_id}/ | Get station information
-*SwaggerClient::UniverseApi* | [**get_universe_structures**](docs/UniverseApi.md#get_universe_structures) | **GET** /universe/structures/ | List all public structures
-*SwaggerClient::UniverseApi* | [**get_universe_structures_structure_id**](docs/UniverseApi.md#get_universe_structures_structure_id) | **GET** /universe/structures/{structure_id}/ | Get structure information
-*SwaggerClient::UniverseApi* | [**get_universe_system_jumps**](docs/UniverseApi.md#get_universe_system_jumps) | **GET** /universe/system_jumps/ | Get system jumps
-*SwaggerClient::UniverseApi* | [**get_universe_system_kills**](docs/UniverseApi.md#get_universe_system_kills) | **GET** /universe/system_kills/ | Get system kills
-*SwaggerClient::UniverseApi* | [**get_universe_systems**](docs/UniverseApi.md#get_universe_systems) | **GET** /universe/systems/ | Get solar systems
-*SwaggerClient::UniverseApi* | [**get_universe_systems_system_id**](docs/UniverseApi.md#get_universe_systems_system_id) | **GET** /universe/systems/{system_id}/ | Get solar system information
+*SwaggerClient::UniverseApi* | [**get_bloodlines**](docs/UniverseApi.md#get_bloodlines) | **GET** /universe/bloodlines/ | Get bloodlines
+*SwaggerClient::UniverseApi* | [**get_item_categories**](docs/UniverseApi.md#get_item_categories) | **GET** /universe/categories/ | Get item categories
+*SwaggerClient::UniverseApi* | [**get_item_category_by_id**](docs/UniverseApi.md#get_item_category_by_id) | **GET** /universe/categories/{category_id}/ | Get item category information
+*SwaggerClient::UniverseApi* | [**get_constellations**](docs/UniverseApi.md#get_constellations) | **GET** /universe/constellations/ | Get constellations
+*SwaggerClient::UniverseApi* | [**get_constellation_by_id**](docs/UniverseApi.md#get_constellation_by_id) | **GET** /universe/constellations/{constellation_id}/ | Get constellation information
+*SwaggerClient::UniverseApi* | [**get_factions**](docs/UniverseApi.md#get_factions) | **GET** /universe/factions/ | Get factions
+*SwaggerClient::UniverseApi* | [**get_game_graphics**](docs/UniverseApi.md#get_game_graphics) | **GET** /universe/graphics/ | Get graphics
+*SwaggerClient::UniverseApi* | [**get_game_graphic_by_id**](docs/UniverseApi.md#get_game_graphic_by_id) | **GET** /universe/graphics/{graphic_id}/ | Get graphic information
+*SwaggerClient::UniverseApi* | [**get_item_groups**](docs/UniverseApi.md#get_item_groups) | **GET** /universe/groups/ | Get item groups
+*SwaggerClient::UniverseApi* | [**get_item_group_by_id**](docs/UniverseApi.md#get_item_group_by_id) | **GET** /universe/groups/{group_id}/ | Get item group information
+*SwaggerClient::UniverseApi* | [**get_moon_by_id**](docs/UniverseApi.md#get_moon_by_id) | **GET** /universe/moons/{moon_id}/ | Get moon information
+*SwaggerClient::UniverseApi* | [**get_planet_by_id**](docs/UniverseApi.md#get_planet_by_id) | **GET** /universe/planets/{planet_id}/ | Get planet information
+*SwaggerClient::UniverseApi* | [**get_races**](docs/UniverseApi.md#get_races) | **GET** /universe/races/ | Get character races
+*SwaggerClient::UniverseApi* | [**get_regions**](docs/UniverseApi.md#get_regions) | **GET** /universe/regions/ | Get regions
+*SwaggerClient::UniverseApi* | [**get_region_by_id**](docs/UniverseApi.md#get_region_by_id) | **GET** /universe/regions/{region_id}/ | Get region information
+*SwaggerClient::UniverseApi* | [**get_stargate_by_id**](docs/UniverseApi.md#get_stargate_by_id) | **GET** /universe/stargates/{stargate_id}/ | Get stargate information
+*SwaggerClient::UniverseApi* | [**get_station_by_id**](docs/UniverseApi.md#get_station_by_id) | **GET** /universe/stations/{station_id}/ | Get station information
+*SwaggerClient::UniverseApi* | [**get_public_structures**](docs/UniverseApi.md#get_public_structures) | **GET** /universe/structures/ | List all public structures
+*SwaggerClient::UniverseApi* | [**get_structure_by_id**](docs/UniverseApi.md#get_structure_by_id) | **GET** /universe/structures/{structure_id}/ | Get structure information
+*SwaggerClient::UniverseApi* | [**get_system_jumps**](docs/UniverseApi.md#get_system_jumps) | **GET** /universe/system_jumps/ | Get system jumps
+*SwaggerClient::UniverseApi* | [**get_system_kills**](docs/UniverseApi.md#get_system_kills) | **GET** /universe/system_kills/ | Get system kills
+*SwaggerClient::UniverseApi* | [**get_systems**](docs/UniverseApi.md#get_systems) | **GET** /universe/systems/ | Get solar systems
+*SwaggerClient::UniverseApi* | [**get_system_by_id**](docs/UniverseApi.md#get_system_by_id) | **GET** /universe/systems/{system_id}/ | Get solar system information
 *SwaggerClient::UniverseApi* | [**get_universe_types**](docs/UniverseApi.md#get_universe_types) | **GET** /universe/types/ | Get types
-*SwaggerClient::UniverseApi* | [**get_universe_types_type_id**](docs/UniverseApi.md#get_universe_types_type_id) | **GET** /universe/types/{type_id}/ | Get type information
-*SwaggerClient::UniverseApi* | [**post_universe_names**](docs/UniverseApi.md#post_universe_names) | **POST** /universe/names/ | Get names and categories for a set of ID's
+*SwaggerClient::UniverseApi* | [**get_universe_type_by_id**](docs/UniverseApi.md#get_universe_type_by_id) | **GET** /universe/types/{type_id}/ | Get type information
+*SwaggerClient::UniverseApi* | [**lookup_id**](docs/UniverseApi.md#lookup_id) | **POST** /universe/names/ | Get names and categories for a set of ID's
 *SwaggerClient::UserInterfaceApi* | [**post_ui_autopilot_waypoint**](docs/UserInterfaceApi.md#post_ui_autopilot_waypoint) | **POST** /ui/autopilot/waypoint/ | Set Autopilot Waypoint
 *SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_contract**](docs/UserInterfaceApi.md#post_ui_openwindow_contract) | **POST** /ui/openwindow/contract/ | Open Contract Window
 *SwaggerClient::UserInterfaceApi* | [**post_ui_openwindow_information**](docs/UserInterfaceApi.md#post_ui_openwindow_information) | **POST** /ui/openwindow/information/ | Open Information Window

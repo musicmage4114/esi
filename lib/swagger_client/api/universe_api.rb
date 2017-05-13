@@ -27,8 +27,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetUniverseBloodlines200Ok>]
-    def get_universe_bloodlines(opts = {})
-      data, _status_code, _headers = get_universe_bloodlines_with_http_info(opts)
+    def get_bloodlines(opts = {})
+      data, _status_code, _headers = get_bloodlines_with_http_info(opts)
       return data
     end
 
@@ -40,9 +40,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetUniverseBloodlines200Ok>, Fixnum, Hash)>] Array<GetUniverseBloodlines200Ok> data, response status code and response headers
-    def get_universe_bloodlines_with_http_info(opts = {})
+    def get_bloodlines_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_bloodlines ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_bloodlines ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -79,7 +79,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetUniverseBloodlines200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_bloodlines\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_bloodlines\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -91,8 +91,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_universe_categories(opts = {})
-      data, _status_code, _headers = get_universe_categories_with_http_info(opts)
+    def get_item_categories(opts = {})
+      data, _status_code, _headers = get_item_categories_with_http_info(opts)
       return data
     end
 
@@ -103,9 +103,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_universe_categories_with_http_info(opts = {})
+    def get_item_categories_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_categories ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_item_categories ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -138,7 +138,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_categories\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_item_categories\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -152,8 +152,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseCategoriesCategoryIdOk]
-    def get_universe_categories_category_id(category_id, opts = {})
-      data, _status_code, _headers = get_universe_categories_category_id_with_http_info(category_id, opts)
+    def get_item_category_by_id(category_id, opts = {})
+      data, _status_code, _headers = get_item_category_by_id_with_http_info(category_id, opts)
       return data
     end
 
@@ -166,12 +166,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseCategoriesCategoryIdOk, Fixnum, Hash)>] GetUniverseCategoriesCategoryIdOk data, response status code and response headers
-    def get_universe_categories_category_id_with_http_info(category_id, opts = {})
+    def get_item_category_by_id_with_http_info(category_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_categories_category_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_item_category_by_id ..."
       end
       # verify the required parameter 'category_id' is set
-      fail ArgumentError, "Missing the required parameter 'category_id' when calling UniverseApi.get_universe_categories_category_id" if category_id.nil?
+      fail ArgumentError, "Missing the required parameter 'category_id' when calling UniverseApi.get_item_category_by_id" if category_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -207,7 +207,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseCategoriesCategoryIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_categories_category_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_item_category_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -219,8 +219,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_universe_constellations(opts = {})
-      data, _status_code, _headers = get_universe_constellations_with_http_info(opts)
+    def get_constellations(opts = {})
+      data, _status_code, _headers = get_constellations_with_http_info(opts)
       return data
     end
 
@@ -231,9 +231,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_universe_constellations_with_http_info(opts = {})
+    def get_constellations_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_constellations ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_constellations ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -266,7 +266,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_constellations\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_constellations\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -280,8 +280,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseConstellationsConstellationIdOk]
-    def get_universe_constellations_constellation_id(constellation_id, opts = {})
-      data, _status_code, _headers = get_universe_constellations_constellation_id_with_http_info(constellation_id, opts)
+    def get_constellation_by_id(constellation_id, opts = {})
+      data, _status_code, _headers = get_constellation_by_id_with_http_info(constellation_id, opts)
       return data
     end
 
@@ -294,12 +294,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseConstellationsConstellationIdOk, Fixnum, Hash)>] GetUniverseConstellationsConstellationIdOk data, response status code and response headers
-    def get_universe_constellations_constellation_id_with_http_info(constellation_id, opts = {})
+    def get_constellation_by_id_with_http_info(constellation_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_constellations_constellation_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_constellation_by_id ..."
       end
       # verify the required parameter 'constellation_id' is set
-      fail ArgumentError, "Missing the required parameter 'constellation_id' when calling UniverseApi.get_universe_constellations_constellation_id" if constellation_id.nil?
+      fail ArgumentError, "Missing the required parameter 'constellation_id' when calling UniverseApi.get_constellation_by_id" if constellation_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -335,7 +335,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseConstellationsConstellationIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_constellations_constellation_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_constellation_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -348,8 +348,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetUniverseFactions200Ok>]
-    def get_universe_factions(opts = {})
-      data, _status_code, _headers = get_universe_factions_with_http_info(opts)
+    def get_factions(opts = {})
+      data, _status_code, _headers = get_factions_with_http_info(opts)
       return data
     end
 
@@ -361,9 +361,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetUniverseFactions200Ok>, Fixnum, Hash)>] Array<GetUniverseFactions200Ok> data, response status code and response headers
-    def get_universe_factions_with_http_info(opts = {})
+    def get_factions_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_factions ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_factions ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -400,7 +400,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetUniverseFactions200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_factions\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_factions\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -412,8 +412,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_universe_graphics(opts = {})
-      data, _status_code, _headers = get_universe_graphics_with_http_info(opts)
+    def get_game_graphics(opts = {})
+      data, _status_code, _headers = get_game_graphics_with_http_info(opts)
       return data
     end
 
@@ -424,9 +424,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_universe_graphics_with_http_info(opts = {})
+    def get_game_graphics_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_graphics ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_game_graphics ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -459,7 +459,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_graphics\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_game_graphics\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -472,8 +472,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseGraphicsGraphicIdOk]
-    def get_universe_graphics_graphic_id(graphic_id, opts = {})
-      data, _status_code, _headers = get_universe_graphics_graphic_id_with_http_info(graphic_id, opts)
+    def get_game_graphic_by_id(graphic_id, opts = {})
+      data, _status_code, _headers = get_game_graphic_by_id_with_http_info(graphic_id, opts)
       return data
     end
 
@@ -485,12 +485,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseGraphicsGraphicIdOk, Fixnum, Hash)>] GetUniverseGraphicsGraphicIdOk data, response status code and response headers
-    def get_universe_graphics_graphic_id_with_http_info(graphic_id, opts = {})
+    def get_game_graphic_by_id_with_http_info(graphic_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_graphics_graphic_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_game_graphic_by_id ..."
       end
       # verify the required parameter 'graphic_id' is set
-      fail ArgumentError, "Missing the required parameter 'graphic_id' when calling UniverseApi.get_universe_graphics_graphic_id" if graphic_id.nil?
+      fail ArgumentError, "Missing the required parameter 'graphic_id' when calling UniverseApi.get_game_graphic_by_id" if graphic_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -522,7 +522,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseGraphicsGraphicIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_graphics_graphic_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_game_graphic_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -535,8 +535,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_universe_groups(opts = {})
-      data, _status_code, _headers = get_universe_groups_with_http_info(opts)
+    def get_item_groups(opts = {})
+      data, _status_code, _headers = get_item_groups_with_http_info(opts)
       return data
     end
 
@@ -548,15 +548,15 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_universe_groups_with_http_info(opts = {})
+    def get_item_groups_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_groups ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_item_groups ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       if !opts[:'page'].nil? && opts[:'page'] < 1
-        fail ArgumentError, 'invalid value for "opts[:"page"]" when calling UniverseApi.get_universe_groups, must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "opts[:"page"]" when calling UniverseApi.get_item_groups, must be greater than or equal to 1.'
       end
 
       # resource path
@@ -588,7 +588,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_groups\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_item_groups\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -602,8 +602,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseGroupsGroupIdOk]
-    def get_universe_groups_group_id(group_id, opts = {})
-      data, _status_code, _headers = get_universe_groups_group_id_with_http_info(group_id, opts)
+    def get_item_group_by_id(group_id, opts = {})
+      data, _status_code, _headers = get_item_group_by_id_with_http_info(group_id, opts)
       return data
     end
 
@@ -616,12 +616,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseGroupsGroupIdOk, Fixnum, Hash)>] GetUniverseGroupsGroupIdOk data, response status code and response headers
-    def get_universe_groups_group_id_with_http_info(group_id, opts = {})
+    def get_item_group_by_id_with_http_info(group_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_groups_group_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_item_group_by_id ..."
       end
       # verify the required parameter 'group_id' is set
-      fail ArgumentError, "Missing the required parameter 'group_id' when calling UniverseApi.get_universe_groups_group_id" if group_id.nil?
+      fail ArgumentError, "Missing the required parameter 'group_id' when calling UniverseApi.get_item_group_by_id" if group_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -657,7 +657,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseGroupsGroupIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_groups_group_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_item_group_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -670,8 +670,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseMoonsMoonIdOk]
-    def get_universe_moons_moon_id(moon_id, opts = {})
-      data, _status_code, _headers = get_universe_moons_moon_id_with_http_info(moon_id, opts)
+    def get_moon_by_id(moon_id, opts = {})
+      data, _status_code, _headers = get_moon_by_id_with_http_info(moon_id, opts)
       return data
     end
 
@@ -683,12 +683,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseMoonsMoonIdOk, Fixnum, Hash)>] GetUniverseMoonsMoonIdOk data, response status code and response headers
-    def get_universe_moons_moon_id_with_http_info(moon_id, opts = {})
+    def get_moon_by_id_with_http_info(moon_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_moons_moon_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_moon_by_id ..."
       end
       # verify the required parameter 'moon_id' is set
-      fail ArgumentError, "Missing the required parameter 'moon_id' when calling UniverseApi.get_universe_moons_moon_id" if moon_id.nil?
+      fail ArgumentError, "Missing the required parameter 'moon_id' when calling UniverseApi.get_moon_by_id" if moon_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -720,7 +720,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseMoonsMoonIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_moons_moon_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_moon_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -733,8 +733,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniversePlanetsPlanetIdOk]
-    def get_universe_planets_planet_id(planet_id, opts = {})
-      data, _status_code, _headers = get_universe_planets_planet_id_with_http_info(planet_id, opts)
+    def get_planet_by_id(planet_id, opts = {})
+      data, _status_code, _headers = get_planet_by_id_with_http_info(planet_id, opts)
       return data
     end
 
@@ -746,12 +746,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniversePlanetsPlanetIdOk, Fixnum, Hash)>] GetUniversePlanetsPlanetIdOk data, response status code and response headers
-    def get_universe_planets_planet_id_with_http_info(planet_id, opts = {})
+    def get_planet_by_id_with_http_info(planet_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_planets_planet_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_planet_by_id ..."
       end
       # verify the required parameter 'planet_id' is set
-      fail ArgumentError, "Missing the required parameter 'planet_id' when calling UniverseApi.get_universe_planets_planet_id" if planet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'planet_id' when calling UniverseApi.get_planet_by_id" if planet_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -783,7 +783,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniversePlanetsPlanetIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_planets_planet_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_planet_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -796,8 +796,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetUniverseRaces200Ok>]
-    def get_universe_races(opts = {})
-      data, _status_code, _headers = get_universe_races_with_http_info(opts)
+    def get_races(opts = {})
+      data, _status_code, _headers = get_races_with_http_info(opts)
       return data
     end
 
@@ -809,9 +809,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetUniverseRaces200Ok>, Fixnum, Hash)>] Array<GetUniverseRaces200Ok> data, response status code and response headers
-    def get_universe_races_with_http_info(opts = {})
+    def get_races_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_races ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_races ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -848,7 +848,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetUniverseRaces200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_races\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_races\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -860,8 +860,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_universe_regions(opts = {})
-      data, _status_code, _headers = get_universe_regions_with_http_info(opts)
+    def get_regions(opts = {})
+      data, _status_code, _headers = get_regions_with_http_info(opts)
       return data
     end
 
@@ -872,9 +872,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_universe_regions_with_http_info(opts = {})
+    def get_regions_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_regions ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_regions ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -907,7 +907,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_regions\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_regions\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -921,8 +921,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseRegionsRegionIdOk]
-    def get_universe_regions_region_id(region_id, opts = {})
-      data, _status_code, _headers = get_universe_regions_region_id_with_http_info(region_id, opts)
+    def get_region_by_id(region_id, opts = {})
+      data, _status_code, _headers = get_region_by_id_with_http_info(region_id, opts)
       return data
     end
 
@@ -935,12 +935,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseRegionsRegionIdOk, Fixnum, Hash)>] GetUniverseRegionsRegionIdOk data, response status code and response headers
-    def get_universe_regions_region_id_with_http_info(region_id, opts = {})
+    def get_region_by_id_with_http_info(region_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_regions_region_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_region_by_id ..."
       end
       # verify the required parameter 'region_id' is set
-      fail ArgumentError, "Missing the required parameter 'region_id' when calling UniverseApi.get_universe_regions_region_id" if region_id.nil?
+      fail ArgumentError, "Missing the required parameter 'region_id' when calling UniverseApi.get_region_by_id" if region_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -976,7 +976,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseRegionsRegionIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_regions_region_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_region_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -989,8 +989,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseStargatesStargateIdOk]
-    def get_universe_stargates_stargate_id(stargate_id, opts = {})
-      data, _status_code, _headers = get_universe_stargates_stargate_id_with_http_info(stargate_id, opts)
+    def get_stargate_by_id(stargate_id, opts = {})
+      data, _status_code, _headers = get_stargate_by_id_with_http_info(stargate_id, opts)
       return data
     end
 
@@ -1002,12 +1002,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseStargatesStargateIdOk, Fixnum, Hash)>] GetUniverseStargatesStargateIdOk data, response status code and response headers
-    def get_universe_stargates_stargate_id_with_http_info(stargate_id, opts = {})
+    def get_stargate_by_id_with_http_info(stargate_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_stargates_stargate_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_stargate_by_id ..."
       end
       # verify the required parameter 'stargate_id' is set
-      fail ArgumentError, "Missing the required parameter 'stargate_id' when calling UniverseApi.get_universe_stargates_stargate_id" if stargate_id.nil?
+      fail ArgumentError, "Missing the required parameter 'stargate_id' when calling UniverseApi.get_stargate_by_id" if stargate_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -1039,7 +1039,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseStargatesStargateIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_stargates_stargate_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_stargate_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1052,8 +1052,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseStationsStationIdOk]
-    def get_universe_stations_station_id(station_id, opts = {})
-      data, _status_code, _headers = get_universe_stations_station_id_with_http_info(station_id, opts)
+    def get_station_by_id(station_id, opts = {})
+      data, _status_code, _headers = get_station_by_id_with_http_info(station_id, opts)
       return data
     end
 
@@ -1065,12 +1065,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseStationsStationIdOk, Fixnum, Hash)>] GetUniverseStationsStationIdOk data, response status code and response headers
-    def get_universe_stations_station_id_with_http_info(station_id, opts = {})
+    def get_station_by_id_with_http_info(station_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_stations_station_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_station_by_id ..."
       end
       # verify the required parameter 'station_id' is set
-      fail ArgumentError, "Missing the required parameter 'station_id' when calling UniverseApi.get_universe_stations_station_id" if station_id.nil?
+      fail ArgumentError, "Missing the required parameter 'station_id' when calling UniverseApi.get_station_by_id" if station_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -1102,7 +1102,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseStationsStationIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_stations_station_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_station_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1114,8 +1114,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_universe_structures(opts = {})
-      data, _status_code, _headers = get_universe_structures_with_http_info(opts)
+    def get_public_structures(opts = {})
+      data, _status_code, _headers = get_public_structures_with_http_info(opts)
       return data
     end
 
@@ -1126,9 +1126,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_universe_structures_with_http_info(opts = {})
+    def get_public_structures_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_structures ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_public_structures ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -1161,7 +1161,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_structures\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_public_structures\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1175,8 +1175,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseStructuresStructureIdOk]
-    def get_universe_structures_structure_id(structure_id, opts = {})
-      data, _status_code, _headers = get_universe_structures_structure_id_with_http_info(structure_id, opts)
+    def get_structure_by_id(structure_id, opts = {})
+      data, _status_code, _headers = get_structure_by_id_with_http_info(structure_id, opts)
       return data
     end
 
@@ -1189,12 +1189,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseStructuresStructureIdOk, Fixnum, Hash)>] GetUniverseStructuresStructureIdOk data, response status code and response headers
-    def get_universe_structures_structure_id_with_http_info(structure_id, opts = {})
+    def get_structure_by_id_with_http_info(structure_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_structures_structure_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_structure_by_id ..."
       end
       # verify the required parameter 'structure_id' is set
-      fail ArgumentError, "Missing the required parameter 'structure_id' when calling UniverseApi.get_universe_structures_structure_id" if structure_id.nil?
+      fail ArgumentError, "Missing the required parameter 'structure_id' when calling UniverseApi.get_structure_by_id" if structure_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -1227,7 +1227,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseStructuresStructureIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_structures_structure_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_structure_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1239,8 +1239,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetUniverseSystemJumps200Ok>]
-    def get_universe_system_jumps(opts = {})
-      data, _status_code, _headers = get_universe_system_jumps_with_http_info(opts)
+    def get_system_jumps(opts = {})
+      data, _status_code, _headers = get_system_jumps_with_http_info(opts)
       return data
     end
 
@@ -1251,9 +1251,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetUniverseSystemJumps200Ok>, Fixnum, Hash)>] Array<GetUniverseSystemJumps200Ok> data, response status code and response headers
-    def get_universe_system_jumps_with_http_info(opts = {})
+    def get_system_jumps_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_system_jumps ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_system_jumps ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -1286,7 +1286,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetUniverseSystemJumps200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_system_jumps\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_system_jumps\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1298,8 +1298,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetUniverseSystemKills200Ok>]
-    def get_universe_system_kills(opts = {})
-      data, _status_code, _headers = get_universe_system_kills_with_http_info(opts)
+    def get_system_kills(opts = {})
+      data, _status_code, _headers = get_system_kills_with_http_info(opts)
       return data
     end
 
@@ -1310,9 +1310,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetUniverseSystemKills200Ok>, Fixnum, Hash)>] Array<GetUniverseSystemKills200Ok> data, response status code and response headers
-    def get_universe_system_kills_with_http_info(opts = {})
+    def get_system_kills_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_system_kills ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_system_kills ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -1345,7 +1345,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetUniverseSystemKills200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_system_kills\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_system_kills\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1357,8 +1357,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_universe_systems(opts = {})
-      data, _status_code, _headers = get_universe_systems_with_http_info(opts)
+    def get_systems(opts = {})
+      data, _status_code, _headers = get_systems_with_http_info(opts)
       return data
     end
 
@@ -1369,9 +1369,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_universe_systems_with_http_info(opts = {})
+    def get_systems_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_systems ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_systems ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -1404,7 +1404,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_systems\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_systems\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1418,8 +1418,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseSystemsSystemIdOk]
-    def get_universe_systems_system_id(system_id, opts = {})
-      data, _status_code, _headers = get_universe_systems_system_id_with_http_info(system_id, opts)
+    def get_system_by_id(system_id, opts = {})
+      data, _status_code, _headers = get_system_by_id_with_http_info(system_id, opts)
       return data
     end
 
@@ -1432,12 +1432,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseSystemsSystemIdOk, Fixnum, Hash)>] GetUniverseSystemsSystemIdOk data, response status code and response headers
-    def get_universe_systems_system_id_with_http_info(system_id, opts = {})
+    def get_system_by_id_with_http_info(system_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_systems_system_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_system_by_id ..."
       end
       # verify the required parameter 'system_id' is set
-      fail ArgumentError, "Missing the required parameter 'system_id' when calling UniverseApi.get_universe_systems_system_id" if system_id.nil?
+      fail ArgumentError, "Missing the required parameter 'system_id' when calling UniverseApi.get_system_by_id" if system_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -1473,7 +1473,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseSystemsSystemIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_systems_system_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_system_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1553,8 +1553,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseTypesTypeIdOk]
-    def get_universe_types_type_id(type_id, opts = {})
-      data, _status_code, _headers = get_universe_types_type_id_with_http_info(type_id, opts)
+    def get_universe_type_by_id(type_id, opts = {})
+      data, _status_code, _headers = get_universe_type_by_id_with_http_info(type_id, opts)
       return data
     end
 
@@ -1567,12 +1567,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseTypesTypeIdOk, Fixnum, Hash)>] GetUniverseTypesTypeIdOk data, response status code and response headers
-    def get_universe_types_type_id_with_http_info(type_id, opts = {})
+    def get_universe_type_by_id_with_http_info(type_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_types_type_id ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_type_by_id ..."
       end
       # verify the required parameter 'type_id' is set
-      fail ArgumentError, "Missing the required parameter 'type_id' when calling UniverseApi.get_universe_types_type_id" if type_id.nil?
+      fail ArgumentError, "Missing the required parameter 'type_id' when calling UniverseApi.get_universe_type_by_id" if type_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -1608,7 +1608,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseTypesTypeIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#get_universe_types_type_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#get_universe_type_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1621,8 +1621,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<PostUniverseNames200Ok>]
-    def post_universe_names(ids, opts = {})
-      data, _status_code, _headers = post_universe_names_with_http_info(ids, opts)
+    def lookup_id(ids, opts = {})
+      data, _status_code, _headers = lookup_id_with_http_info(ids, opts)
       return data
     end
 
@@ -1634,12 +1634,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<PostUniverseNames200Ok>, Fixnum, Hash)>] Array<PostUniverseNames200Ok> data, response status code and response headers
-    def post_universe_names_with_http_info(ids, opts = {})
+    def lookup_id_with_http_info(ids, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: UniverseApi.post_universe_names ..."
+        @api_client.config.logger.debug "Calling API: UniverseApi.lookup_id ..."
       end
       # verify the required parameter 'ids' is set
-      fail ArgumentError, "Missing the required parameter 'ids' when calling UniverseApi.post_universe_names" if ids.nil?
+      fail ArgumentError, "Missing the required parameter 'ids' when calling UniverseApi.lookup_id" if ids.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -1671,7 +1671,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<PostUniverseNames200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UniverseApi#post_universe_names\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: UniverseApi#lookup_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
