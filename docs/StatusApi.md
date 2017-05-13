@@ -4,11 +4,11 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_status**](StatusApi.md#get_status) | **GET** /status/ | Retrieve the uptime and player counts
+[**get_server_status**](StatusApi.md#get_server_status) | **GET** /status/ | Retrieve the uptime and player counts
 
 
-# **get_status**
-> GetStatusOk get_status(opts)
+# **get_server_status**
+> GetStatusOk get_server_status(opts)
 
 Retrieve the uptime and player counts
 
@@ -29,10 +29,10 @@ opts = {
 
 begin
   #Retrieve the uptime and player counts
-  result = api_instance.get_status(opts)
+  result = api_instance.get_server_status(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling StatusApi->get_status: #{e}"
+  puts "Exception when calling StatusApi->get_server_status: #{e}"
 end
 ```
 

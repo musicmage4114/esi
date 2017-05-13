@@ -26,8 +26,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetStatusOk]
-    def get_status(opts = {})
-      data, _status_code, _headers = get_status_with_http_info(opts)
+    def get_server_status(opts = {})
+      data, _status_code, _headers = get_server_status_with_http_info(opts)
       return data
     end
 
@@ -38,9 +38,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetStatusOk, Fixnum, Hash)>] GetStatusOk data, response status code and response headers
-    def get_status_with_http_info(opts = {})
+    def get_server_status_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: StatusApi.get_status ..."
+        @api_client.config.logger.debug "Calling API: StatusApi.get_server_status ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -73,7 +73,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetStatusOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: StatusApi#get_status\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: StatusApi#get_server_status\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

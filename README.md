@@ -178,7 +178,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_campaigns**](docs/SovereigntyApi.md#get_sovereignty_campaigns) | **GET** /sovereignty/campaigns/ | List sovereignty campaigns
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_map**](docs/SovereigntyApi.md#get_sovereignty_map) | **GET** /sovereignty/map/ | List sovereignty of systems
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_structures**](docs/SovereigntyApi.md#get_sovereignty_structures) | **GET** /sovereignty/structures/ | List sovereignty structures
-*SwaggerClient::StatusApi* | [**get_status**](docs/StatusApi.md#get_status) | **GET** /status/ | Retrieve the uptime and player counts
+*SwaggerClient::StatusApi* | [**get_server_status**](docs/StatusApi.md#get_server_status) | **GET** /status/ | Retrieve the uptime and player counts
 *SwaggerClient::UniverseApi* | [**get_universe_bloodlines**](docs/UniverseApi.md#get_universe_bloodlines) | **GET** /universe/bloodlines/ | Get bloodlines
 *SwaggerClient::UniverseApi* | [**get_universe_categories**](docs/UniverseApi.md#get_universe_categories) | **GET** /universe/categories/ | Get item categories
 *SwaggerClient::UniverseApi* | [**get_universe_categories_category_id**](docs/UniverseApi.md#get_universe_categories_category_id) | **GET** /universe/categories/{category_id}/ | Get item category information
