@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdInternalServerError
+# SwaggerClient::DeleteMailLabelInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

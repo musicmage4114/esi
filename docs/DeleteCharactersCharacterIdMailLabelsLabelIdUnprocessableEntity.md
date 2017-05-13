@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity
+# SwaggerClient::DeleteMailLabelUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

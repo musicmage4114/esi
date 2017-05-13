@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_alliances**](AllianceApi.md#get_alliances) | **GET** /alliances/ | List all alliances
 [**get_alliance_by_id**](AllianceApi.md#get_alliance_by_id) | **GET** /alliances/{alliance_id}/ | Get alliance information
-[**get_corporations_in_alliance**](AllianceApi.md#get_corporations_in_alliance) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
+[**get_alliance_corporations**](AllianceApi.md#get_alliance_corporations) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
 [**get_alliance_icon**](AllianceApi.md#get_alliance_icon) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
 [**get_alliance_names**](AllianceApi.md#get_alliance_names) | **GET** /alliances/names/ | Get alliance names
 
@@ -118,8 +118,8 @@ No authorization required
 
 
 
-# **get_corporations_in_alliance**
-> Array&lt;Integer&gt; get_corporations_in_alliance(alliance_id, opts)
+# **get_alliance_corporations**
+> Array&lt;Integer&gt; get_alliance_corporations(alliance_id, opts)
 
 List alliance's corporations
 
@@ -142,10 +142,10 @@ opts = {
 
 begin
   #List alliance's corporations
-  result = api_instance.get_corporations_in_alliance(alliance_id, opts)
+  result = api_instance.get_alliance_corporations(alliance_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling AllianceApi->get_corporations_in_alliance: #{e}"
+  puts "Exception when calling AllianceApi->get_alliance_corporations: #{e}"
 end
 ```
 

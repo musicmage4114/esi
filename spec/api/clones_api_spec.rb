@@ -31,7 +31,7 @@ describe 'ClonesApi' do
     end
   end
 
-  # unit tests for get_character_clones
+  # unit tests for get_clones
   # Get clones
   # A list of the character&#39;s clones  ---  Alternate route: &#x60;/v2/characters/{character_id}/clones/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/clones/&#x60;   ---  This route is cached for up to 120 seconds
   # @param character_id An EVE character ID
@@ -41,7 +41,7 @@ describe 'ClonesApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetCharactersCharacterIdClonesOk]
-  describe 'get_character_clones test' do
+  describe 'get_clones test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

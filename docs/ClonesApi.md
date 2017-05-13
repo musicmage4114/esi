@@ -4,11 +4,11 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_character_clones**](ClonesApi.md#get_character_clones) | **GET** /characters/{character_id}/clones/ | Get clones
+[**get_clones**](ClonesApi.md#get_clones) | **GET** /characters/{character_id}/clones/ | Get clones
 
 
-# **get_character_clones**
-> GetCharactersCharacterIdClonesOk get_character_clones(character_id, opts)
+# **get_clones**
+> GetCharactersCharacterIdClonesOk get_clones(character_id, opts)
 
 Get clones
 
@@ -37,10 +37,10 @@ opts = {
 
 begin
   #Get clones
-  result = api_instance.get_character_clones(character_id, opts)
+  result = api_instance.get_clones(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling ClonesApi->get_character_clones: #{e}"
+  puts "Exception when calling ClonesApi->get_clones: #{e}"
 end
 ```
 

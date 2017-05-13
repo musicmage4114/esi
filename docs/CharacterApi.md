@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_character_research_agents**](CharacterApi.md#get_character_research_agents) | **GET** /characters/{character_id}/agents_research/ | Get agents research
 [**get_character_blueprints**](CharacterApi.md#get_character_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
 [**get_character_chat_channels**](CharacterApi.md#get_character_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
-[**get_character_employment_history**](CharacterApi.md#get_character_employment_history) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
+[**get_employment_history**](CharacterApi.md#get_employment_history) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
 [**get_character_medals**](CharacterApi.md#get_character_medals) | **GET** /characters/{character_id}/medals/ | Get medals
 [**get_character_portrait**](CharacterApi.md#get_character_portrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
 [**get_character_standings**](CharacterApi.md#get_character_standings) | **GET** /characters/{character_id}/standings/ | Get standings
@@ -258,8 +258,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_character_employment_history**
-> Array&lt;GetCharactersCharacterIdCorporationhistory200Ok&gt; get_character_employment_history(character_id, opts)
+# **get_employment_history**
+> Array&lt;GetCharactersCharacterIdCorporationhistory200Ok&gt; get_employment_history(character_id, opts)
 
 Get corporation history
 
@@ -282,10 +282,10 @@ opts = {
 
 begin
   #Get corporation history
-  result = api_instance.get_character_employment_history(character_id, opts)
+  result = api_instance.get_employment_history(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_character_employment_history: #{e}"
+  puts "Exception when calling CharacterApi->get_employment_history: #{e}"
 end
 ```
 

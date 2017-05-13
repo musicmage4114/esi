@@ -4,15 +4,15 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**delete_character_contacts**](ContactsApi.md#delete_character_contacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts
-[**get_character_contacts**](ContactsApi.md#get_character_contacts) | **GET** /characters/{character_id}/contacts/ | Get contacts
-[**get_character_contacts_labels**](ContactsApi.md#get_character_contacts_labels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels
-[**add_character_contacts**](ContactsApi.md#add_character_contacts) | **POST** /characters/{character_id}/contacts/ | Add contacts
-[**edit_character_contacts**](ContactsApi.md#edit_character_contacts) | **PUT** /characters/{character_id}/contacts/ | Edit contacts
+[**delete_contacts**](ContactsApi.md#delete_contacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts
+[**get_contacts**](ContactsApi.md#get_contacts) | **GET** /characters/{character_id}/contacts/ | Get contacts
+[**get_contacts_labels**](ContactsApi.md#get_contacts_labels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels
+[**add_contacts**](ContactsApi.md#add_contacts) | **POST** /characters/{character_id}/contacts/ | Add contacts
+[**edit_contacts**](ContactsApi.md#edit_contacts) | **PUT** /characters/{character_id}/contacts/ | Edit contacts
 
 
-# **delete_character_contacts**
-> delete_character_contacts(character_id, contact_ids, opts)
+# **delete_contacts**
+> delete_contacts(character_id, contact_ids, opts)
 
 Delete contacts
 
@@ -43,9 +43,9 @@ opts = {
 
 begin
   #Delete contacts
-  api_instance.delete_character_contacts(character_id, contact_ids, opts)
+  api_instance.delete_contacts(character_id, contact_ids, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling ContactsApi->delete_character_contacts: #{e}"
+  puts "Exception when calling ContactsApi->delete_contacts: #{e}"
 end
 ```
 
@@ -75,8 +75,8 @@ nil (empty response body)
 
 
 
-# **get_character_contacts**
-> Array&lt;GetCharactersCharacterIdContacts200Ok&gt; get_character_contacts(character_id, opts)
+# **get_contacts**
+> Array&lt;GetCharactersCharacterIdContacts200Ok&gt; get_contacts(character_id, opts)
 
 Get contacts
 
@@ -106,10 +106,10 @@ opts = {
 
 begin
   #Get contacts
-  result = api_instance.get_character_contacts(character_id, opts)
+  result = api_instance.get_contacts(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling ContactsApi->get_character_contacts: #{e}"
+  puts "Exception when calling ContactsApi->get_contacts: #{e}"
 end
 ```
 
@@ -139,8 +139,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_character_contacts_labels**
-> Array&lt;GetCharactersCharacterIdContactsLabels200Ok&gt; get_character_contacts_labels(character_id, opts)
+# **get_contacts_labels**
+> Array&lt;GetCharactersCharacterIdContactsLabels200Ok&gt; get_contacts_labels(character_id, opts)
 
 Get contact labels
 
@@ -169,10 +169,10 @@ opts = {
 
 begin
   #Get contact labels
-  result = api_instance.get_character_contacts_labels(character_id, opts)
+  result = api_instance.get_contacts_labels(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling ContactsApi->get_character_contacts_labels: #{e}"
+  puts "Exception when calling ContactsApi->get_contacts_labels: #{e}"
 end
 ```
 
@@ -201,8 +201,8 @@ Name | Type | Description  | Notes
 
 
 
-# **add_character_contacts**
-> Array&lt;Integer&gt; add_character_contacts(character_id, contact_ids, standing, opts)
+# **add_contacts**
+> Array&lt;Integer&gt; add_contacts(character_id, contact_ids, standing, opts)
 
 Add contacts
 
@@ -237,10 +237,10 @@ opts = {
 
 begin
   #Add contacts
-  result = api_instance.add_character_contacts(character_id, contact_ids, standing, opts)
+  result = api_instance.add_contacts(character_id, contact_ids, standing, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling ContactsApi->add_character_contacts: #{e}"
+  puts "Exception when calling ContactsApi->add_contacts: #{e}"
 end
 ```
 
@@ -273,8 +273,8 @@ Name | Type | Description  | Notes
 
 
 
-# **edit_character_contacts**
-> edit_character_contacts(character_id, contact_ids, standing, opts)
+# **edit_contacts**
+> edit_contacts(character_id, contact_ids, standing, opts)
 
 Edit contacts
 
@@ -309,9 +309,9 @@ opts = {
 
 begin
   #Edit contacts
-  api_instance.edit_character_contacts(character_id, contact_ids, standing, opts)
+  api_instance.edit_contacts(character_id, contact_ids, standing, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling ContactsApi->edit_character_contacts: #{e}"
+  puts "Exception when calling ContactsApi->edit_contacts: #{e}"
 end
 ```
 

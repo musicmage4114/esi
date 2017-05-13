@@ -94,7 +94,7 @@ describe 'CharacterApi' do
     end
   end
 
-  # unit tests for get_character_employment_history
+  # unit tests for get_employment_history
   # Get corporation history
   # Get a list of all the corporations a character has been a member of  ---  Alternate route: &#x60;/v1/characters/{character_id}/corporationhistory/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/corporationhistory/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/corporationhistory/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param character_id An EVE character ID
@@ -103,7 +103,7 @@ describe 'CharacterApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdCorporationhistory200Ok>]
-  describe 'get_character_employment_history test' do
+  describe 'get_employment_history test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

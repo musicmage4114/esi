@@ -4,13 +4,13 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**delete_character_fitting**](FittingsApi.md#delete_character_fitting) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
-[**get_character_fittings**](FittingsApi.md#get_character_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
-[**add_character_fitting**](FittingsApi.md#add_character_fitting) | **POST** /characters/{character_id}/fittings/ | Create fitting
+[**delete_fitting**](FittingsApi.md#delete_fitting) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
+[**get_fittings**](FittingsApi.md#get_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
+[**add_fitting**](FittingsApi.md#add_fitting) | **POST** /characters/{character_id}/fittings/ | Create fitting
 
 
-# **delete_character_fitting**
-> delete_character_fitting(character_id, fitting_id, opts)
+# **delete_fitting**
+> delete_fitting(character_id, fitting_id, opts)
 
 Delete fitting
 
@@ -41,9 +41,9 @@ opts = {
 
 begin
   #Delete fitting
-  api_instance.delete_character_fitting(character_id, fitting_id, opts)
+  api_instance.delete_fitting(character_id, fitting_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FittingsApi->delete_character_fitting: #{e}"
+  puts "Exception when calling FittingsApi->delete_fitting: #{e}"
 end
 ```
 
@@ -73,8 +73,8 @@ nil (empty response body)
 
 
 
-# **get_character_fittings**
-> Array&lt;GetCharactersCharacterIdFittings200Ok&gt; get_character_fittings(character_id, opts)
+# **get_fittings**
+> Array&lt;GetCharactersCharacterIdFittings200Ok&gt; get_fittings(character_id, opts)
 
 Get fittings
 
@@ -103,10 +103,10 @@ opts = {
 
 begin
   #Get fittings
-  result = api_instance.get_character_fittings(character_id, opts)
+  result = api_instance.get_fittings(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FittingsApi->get_character_fittings: #{e}"
+  puts "Exception when calling FittingsApi->get_fittings: #{e}"
 end
 ```
 
@@ -135,8 +135,8 @@ Name | Type | Description  | Notes
 
 
 
-# **add_character_fitting**
-> PostCharactersCharacterIdFittingsCreated add_character_fitting(character_id, opts)
+# **add_fitting**
+> PostCharactersCharacterIdFittingsCreated add_fitting(character_id, opts)
 
 Create fitting
 
@@ -166,10 +166,10 @@ opts = {
 
 begin
   #Create fitting
-  result = api_instance.add_character_fitting(character_id, opts)
+  result = api_instance.add_fitting(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FittingsApi->add_character_fitting: #{e}"
+  puts "Exception when calling FittingsApi->add_fitting: #{e}"
 end
 ```
 

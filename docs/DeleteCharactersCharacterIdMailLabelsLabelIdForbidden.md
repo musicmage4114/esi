@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdForbidden
+# SwaggerClient::DeleteMailLabelForbidden
 
 ## Properties
 Name | Type | Description | Notes

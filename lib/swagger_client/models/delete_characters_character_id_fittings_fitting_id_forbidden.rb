@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Forbidden
-  class DeleteCharacterFittingForbidden
+  class DeleteFittingForbidden
     # Forbidden message
     attr_accessor :error
 

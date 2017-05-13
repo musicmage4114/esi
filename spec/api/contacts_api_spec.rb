@@ -31,7 +31,7 @@ describe 'ContactsApi' do
     end
   end
 
-  # unit tests for delete_character_contacts
+  # unit tests for delete_contacts
   # Delete contacts
   # Bulk delete contacts  ---  Alternate route: &#x60;/v1/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/contacts/&#x60; 
   # @param character_id ID for a character
@@ -42,13 +42,13 @@ describe 'ContactsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'delete_character_contacts test' do
+  describe 'delete_contacts test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_character_contacts
+  # unit tests for get_contacts
   # Get contacts
   # Return contacts of a character  ---  Alternate route: &#x60;/v1/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/contacts/&#x60;   ---  This route is cached for up to 300 seconds
   # @param character_id ID for a character
@@ -59,13 +59,13 @@ describe 'ContactsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdContacts200Ok>]
-  describe 'get_character_contacts test' do
+  describe 'get_contacts test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_character_contacts_labels
+  # unit tests for get_contacts_labels
   # Get contact labels
   # Return custom labels for contacts the character defined  ---  Alternate route: &#x60;/v1/characters/{character_id}/contacts/labels/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/contacts/labels/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/contacts/labels/&#x60;   ---  This route is cached for up to 300 seconds
   # @param character_id ID for a character
@@ -75,13 +75,13 @@ describe 'ContactsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdContactsLabels200Ok>]
-  describe 'get_character_contacts_labels test' do
+  describe 'get_contacts_labels test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for add_character_contacts
+  # unit tests for add_contacts
   # Add contacts
   # Bulk add contacts with same settings  ---  Alternate route: &#x60;/v1/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/contacts/&#x60; 
   # @param character_id ID for a character
@@ -95,13 +95,13 @@ describe 'ContactsApi' do
   # @option opts [BOOLEAN] :watched Whether the new contact should be watched, note this is only effective on characters
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'add_character_contacts test' do
+  describe 'add_contacts test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for edit_character_contacts
+  # unit tests for edit_contacts
   # Edit contacts
   # Bulk edit contacts with same settings  ---  Alternate route: &#x60;/v1/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/contacts/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/contacts/&#x60; 
   # @param character_id ID for a character
@@ -115,7 +115,7 @@ describe 'ContactsApi' do
   # @option opts [BOOLEAN] :watched Whether the contact should be watched, note this is only effective on characters
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'edit_character_contacts test' do
+  describe 'edit_contacts test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

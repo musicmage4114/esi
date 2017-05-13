@@ -29,8 +29,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdIndustryJobs200Ok>]
-    def get_character_industry_jobs(character_id, opts = {})
-      data, _status_code, _headers = get_character_industry_jobs_with_http_info(character_id, opts)
+    def get_industry_jobs(character_id, opts = {})
+      data, _status_code, _headers = get_industry_jobs_with_http_info(character_id, opts)
       return data
     end
 
@@ -44,12 +44,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdIndustryJobs200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdIndustryJobs200Ok> data, response status code and response headers
-    def get_character_industry_jobs_with_http_info(character_id, opts = {})
+    def get_industry_jobs_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: IndustryApi.get_character_industry_jobs ..."
+        @api_client.config.logger.debug "Calling API: IndustryApi.get_industry_jobs ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling IndustryApi.get_character_industry_jobs" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling IndustryApi.get_industry_jobs" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -83,7 +83,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdIndustryJobs200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: IndustryApi#get_character_industry_jobs\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: IndustryApi#get_industry_jobs\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

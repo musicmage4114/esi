@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Unprocessable entity
-  class DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity
+  class DeleteMailLabelUnprocessableEntity
     # Unprocessable entity message
     attr_accessor :error
 

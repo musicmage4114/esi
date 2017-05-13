@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Forbidden
-  class DeleteCharacterContactsForbidden
+  class DeleteContactsForbidden
     # Forbidden message
     attr_accessor :error
 

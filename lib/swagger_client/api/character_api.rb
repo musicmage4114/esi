@@ -288,8 +288,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdCorporationhistory200Ok>]
-    def get_character_employment_history(character_id, opts = {})
-      data, _status_code, _headers = get_character_employment_history_with_http_info(character_id, opts)
+    def get_employment_history(character_id, opts = {})
+      data, _status_code, _headers = get_employment_history_with_http_info(character_id, opts)
       return data
     end
 
@@ -301,12 +301,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdCorporationhistory200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdCorporationhistory200Ok> data, response status code and response headers
-    def get_character_employment_history_with_http_info(character_id, opts = {})
+    def get_employment_history_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CharacterApi.get_character_employment_history ..."
+        @api_client.config.logger.debug "Calling API: CharacterApi.get_employment_history ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling CharacterApi.get_character_employment_history" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling CharacterApi.get_employment_history" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -338,7 +338,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdCorporationhistory200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CharacterApi#get_character_employment_history\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CharacterApi#get_employment_history\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

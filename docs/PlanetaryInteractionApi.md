@@ -4,13 +4,13 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_character_colonies**](PlanetaryInteractionApi.md#get_character_colonies) | **GET** /characters/{character_id}/planets/ | Get colonies
-[**get_character_colony_by_id**](PlanetaryInteractionApi.md#get_character_colony_by_id) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
+[**get_colonies**](PlanetaryInteractionApi.md#get_colonies) | **GET** /characters/{character_id}/planets/ | Get colonies
+[**get_colony**](PlanetaryInteractionApi.md#get_colony) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
 [**get_schematic_by_id**](PlanetaryInteractionApi.md#get_schematic_by_id) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
 
 
-# **get_character_colonies**
-> Array&lt;GetCharactersCharacterIdPlanets200Ok&gt; get_character_colonies(character_id, opts)
+# **get_colonies**
+> Array&lt;GetCharactersCharacterIdPlanets200Ok&gt; get_colonies(character_id, opts)
 
 Get colonies
 
@@ -39,10 +39,10 @@ opts = {
 
 begin
   #Get colonies
-  result = api_instance.get_character_colonies(character_id, opts)
+  result = api_instance.get_colonies(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling PlanetaryInteractionApi->get_character_colonies: #{e}"
+  puts "Exception when calling PlanetaryInteractionApi->get_colonies: #{e}"
 end
 ```
 
@@ -71,8 +71,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_character_colony_by_id**
-> GetCharactersCharacterIdPlanetsPlanetIdOk get_character_colony_by_id(character_id, planet_id, opts)
+# **get_colony**
+> GetCharactersCharacterIdPlanetsPlanetIdOk get_colony(character_id, planet_id, opts)
 
 Get colony layout
 
@@ -103,10 +103,10 @@ opts = {
 
 begin
   #Get colony layout
-  result = api_instance.get_character_colony_by_id(character_id, planet_id, opts)
+  result = api_instance.get_colony(character_id, planet_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling PlanetaryInteractionApi->get_character_colony_by_id: #{e}"
+  puts "Exception when calling PlanetaryInteractionApi->get_colony: #{e}"
 end
 ```
 

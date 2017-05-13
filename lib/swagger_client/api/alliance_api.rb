@@ -149,8 +149,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_corporations_in_alliance(alliance_id, opts = {})
-      data, _status_code, _headers = get_corporations_in_alliance_with_http_info(alliance_id, opts)
+    def get_alliance_corporations(alliance_id, opts = {})
+      data, _status_code, _headers = get_alliance_corporations_with_http_info(alliance_id, opts)
       return data
     end
 
@@ -162,12 +162,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_corporations_in_alliance_with_http_info(alliance_id, opts = {})
+    def get_alliance_corporations_with_http_info(alliance_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: AllianceApi.get_corporations_in_alliance ..."
+        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_corporations ..."
       end
       # verify the required parameter 'alliance_id' is set
-      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_corporations_in_alliance" if alliance_id.nil?
+      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_alliance_corporations" if alliance_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -199,7 +199,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: AllianceApi#get_corporations_in_alliance\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AllianceApi#get_alliance_corporations\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

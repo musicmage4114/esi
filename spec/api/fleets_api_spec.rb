@@ -48,7 +48,7 @@ describe 'FleetsApi' do
     end
   end
 
-  # unit tests for delete_fleet_squad
+  # unit tests for delete_squad
   # Delete fleet squad
   # Delete a fleet squad, only empty squads can be deleted  ---  Alternate route: &#x60;/v1/fleets/{fleet_id}/squads/{squad_id}/&#x60;  Alternate route: &#x60;/legacy/fleets/{fleet_id}/squads/{squad_id}/&#x60;  Alternate route: &#x60;/latest/fleets/{fleet_id}/squads/{squad_id}/&#x60; 
   # @param fleet_id ID for a fleet
@@ -59,13 +59,13 @@ describe 'FleetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'delete_fleet_squad test' do
+  describe 'delete_squad test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for delete_fleet_wing
+  # unit tests for delete_wing
   # Delete fleet wing
   # Delete a fleet wing, only empty wings can be deleted. The wing may contain squads, but the squads must be empty  ---  Alternate route: &#x60;/v1/fleets/{fleet_id}/wings/{wing_id}/&#x60;  Alternate route: &#x60;/legacy/fleets/{fleet_id}/wings/{wing_id}/&#x60;  Alternate route: &#x60;/latest/fleets/{fleet_id}/wings/{wing_id}/&#x60; 
   # @param fleet_id ID for a fleet
@@ -76,7 +76,7 @@ describe 'FleetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'delete_fleet_wing test' do
+  describe 'delete_wing test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -115,7 +115,7 @@ describe 'FleetsApi' do
     end
   end
 
-  # unit tests for get_fleet_wings
+  # unit tests for get_wings
   # Get fleet wings
   # Return information about wings in a fleet  ---  Alternate route: &#x60;/v1/fleets/{fleet_id}/wings/&#x60;  Alternate route: &#x60;/legacy/fleets/{fleet_id}/wings/&#x60;  Alternate route: &#x60;/latest/fleets/{fleet_id}/wings/&#x60;   ---  This route is cached for up to 5 seconds
   # @param fleet_id ID for a fleet
@@ -126,7 +126,7 @@ describe 'FleetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetFleetsFleetIdWings200Ok>]
-  describe 'get_fleet_wings test' do
+  describe 'get_wings test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -149,7 +149,7 @@ describe 'FleetsApi' do
     end
   end
 
-  # unit tests for create_fleet_wing
+  # unit tests for create_wing
   # Create fleet wing
   # Create a new wing in a fleet  ---  Alternate route: &#x60;/v1/fleets/{fleet_id}/wings/&#x60;  Alternate route: &#x60;/legacy/fleets/{fleet_id}/wings/&#x60;  Alternate route: &#x60;/latest/fleets/{fleet_id}/wings/&#x60; 
   # @param fleet_id ID for a fleet
@@ -159,13 +159,13 @@ describe 'FleetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [PostFleetsFleetIdWingsCreated]
-  describe 'create_fleet_wing test' do
+  describe 'create_wing test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for create_fleet_squad
+  # unit tests for create_squad
   # Create fleet squad
   # Create a new squad in a fleet  ---  Alternate route: &#x60;/v1/fleets/{fleet_id}/wings/{wing_id}/squads/&#x60;  Alternate route: &#x60;/legacy/fleets/{fleet_id}/wings/{wing_id}/squads/&#x60;  Alternate route: &#x60;/latest/fleets/{fleet_id}/wings/{wing_id}/squads/&#x60; 
   # @param fleet_id ID for a fleet
@@ -176,7 +176,7 @@ describe 'FleetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [PostFleetsFleetIdWingsWingIdSquadsCreated]
-  describe 'create_fleet_squad test' do
+  describe 'create_squad test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -217,7 +217,7 @@ describe 'FleetsApi' do
     end
   end
 
-  # unit tests for rename_fleet_squad
+  # unit tests for rename_squad
   # Rename fleet squad
   # Rename a fleet squad  ---  Alternate route: &#x60;/v1/fleets/{fleet_id}/squads/{squad_id}/&#x60;  Alternate route: &#x60;/legacy/fleets/{fleet_id}/squads/{squad_id}/&#x60;  Alternate route: &#x60;/latest/fleets/{fleet_id}/squads/{squad_id}/&#x60; 
   # @param fleet_id ID for a fleet
@@ -229,13 +229,13 @@ describe 'FleetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'rename_fleet_squad test' do
+  describe 'rename_squad test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for rename_fleet_wing
+  # unit tests for rename_wing
   # Rename fleet wing
   # Rename a fleet wing  ---  Alternate route: &#x60;/v1/fleets/{fleet_id}/wings/{wing_id}/&#x60;  Alternate route: &#x60;/legacy/fleets/{fleet_id}/wings/{wing_id}/&#x60;  Alternate route: &#x60;/latest/fleets/{fleet_id}/wings/{wing_id}/&#x60; 
   # @param fleet_id ID for a fleet
@@ -247,7 +247,7 @@ describe 'FleetsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'rename_fleet_wing test' do
+  describe 'rename_wing test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

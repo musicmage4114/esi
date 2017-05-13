@@ -5,18 +5,18 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**kick_fleet_member**](FleetsApi.md#kick_fleet_member) | **DELETE** /fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
-[**delete_fleet_squad**](FleetsApi.md#delete_fleet_squad) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
-[**delete_fleet_wing**](FleetsApi.md#delete_fleet_wing) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
+[**delete_squad**](FleetsApi.md#delete_squad) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
+[**delete_wing**](FleetsApi.md#delete_wing) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
 [**get_fleet**](FleetsApi.md#get_fleet) | **GET** /fleets/{fleet_id}/ | Get fleet information
 [**get_fleet_members**](FleetsApi.md#get_fleet_members) | **GET** /fleets/{fleet_id}/members/ | Get fleet members
-[**get_fleet_wings**](FleetsApi.md#get_fleet_wings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings
+[**get_wings**](FleetsApi.md#get_wings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings
 [**invite_to_fleet**](FleetsApi.md#invite_to_fleet) | **POST** /fleets/{fleet_id}/members/ | Create fleet invitation
-[**create_fleet_wing**](FleetsApi.md#create_fleet_wing) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing
-[**create_fleet_squad**](FleetsApi.md#create_fleet_squad) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
+[**create_wing**](FleetsApi.md#create_wing) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing
+[**create_squad**](FleetsApi.md#create_squad) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
 [**update_fleet**](FleetsApi.md#update_fleet) | **PUT** /fleets/{fleet_id}/ | Update fleet
 [**move_fleet_member**](FleetsApi.md#move_fleet_member) | **PUT** /fleets/{fleet_id}/members/{member_id}/ | Move fleet member
-[**rename_fleet_squad**](FleetsApi.md#rename_fleet_squad) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
-[**rename_fleet_wing**](FleetsApi.md#rename_fleet_wing) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
+[**rename_squad**](FleetsApi.md#rename_squad) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
+[**rename_wing**](FleetsApi.md#rename_wing) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
 
 
 # **kick_fleet_member**
@@ -83,8 +83,8 @@ nil (empty response body)
 
 
 
-# **delete_fleet_squad**
-> delete_fleet_squad(fleet_id, squad_id, opts)
+# **delete_squad**
+> delete_squad(fleet_id, squad_id, opts)
 
 Delete fleet squad
 
@@ -115,9 +115,9 @@ opts = {
 
 begin
   #Delete fleet squad
-  api_instance.delete_fleet_squad(fleet_id, squad_id, opts)
+  api_instance.delete_squad(fleet_id, squad_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FleetsApi->delete_fleet_squad: #{e}"
+  puts "Exception when calling FleetsApi->delete_squad: #{e}"
 end
 ```
 
@@ -147,8 +147,8 @@ nil (empty response body)
 
 
 
-# **delete_fleet_wing**
-> delete_fleet_wing(fleet_id, wing_id, opts)
+# **delete_wing**
+> delete_wing(fleet_id, wing_id, opts)
 
 Delete fleet wing
 
@@ -179,9 +179,9 @@ opts = {
 
 begin
   #Delete fleet wing
-  api_instance.delete_fleet_wing(fleet_id, wing_id, opts)
+  api_instance.delete_wing(fleet_id, wing_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FleetsApi->delete_fleet_wing: #{e}"
+  puts "Exception when calling FleetsApi->delete_wing: #{e}"
 end
 ```
 
@@ -337,8 +337,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_fleet_wings**
-> Array&lt;GetFleetsFleetIdWings200Ok&gt; get_fleet_wings(fleet_id, opts)
+# **get_wings**
+> Array&lt;GetFleetsFleetIdWings200Ok&gt; get_wings(fleet_id, opts)
 
 Get fleet wings
 
@@ -368,10 +368,10 @@ opts = {
 
 begin
   #Get fleet wings
-  result = api_instance.get_fleet_wings(fleet_id, opts)
+  result = api_instance.get_wings(fleet_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FleetsApi->get_fleet_wings: #{e}"
+  puts "Exception when calling FleetsApi->get_wings: #{e}"
 end
 ```
 
@@ -465,8 +465,8 @@ nil (empty response body)
 
 
 
-# **create_fleet_wing**
-> PostFleetsFleetIdWingsCreated create_fleet_wing(fleet_id, opts)
+# **create_wing**
+> PostFleetsFleetIdWingsCreated create_wing(fleet_id, opts)
 
 Create fleet wing
 
@@ -495,10 +495,10 @@ opts = {
 
 begin
   #Create fleet wing
-  result = api_instance.create_fleet_wing(fleet_id, opts)
+  result = api_instance.create_wing(fleet_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FleetsApi->create_fleet_wing: #{e}"
+  puts "Exception when calling FleetsApi->create_wing: #{e}"
 end
 ```
 
@@ -527,8 +527,8 @@ Name | Type | Description  | Notes
 
 
 
-# **create_fleet_squad**
-> PostFleetsFleetIdWingsWingIdSquadsCreated create_fleet_squad(fleet_id, wing_id, opts)
+# **create_squad**
+> PostFleetsFleetIdWingsWingIdSquadsCreated create_squad(fleet_id, wing_id, opts)
 
 Create fleet squad
 
@@ -559,10 +559,10 @@ opts = {
 
 begin
   #Create fleet squad
-  result = api_instance.create_fleet_squad(fleet_id, wing_id, opts)
+  result = api_instance.create_squad(fleet_id, wing_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FleetsApi->create_fleet_squad: #{e}"
+  puts "Exception when calling FleetsApi->create_squad: #{e}"
 end
 ```
 
@@ -723,8 +723,8 @@ nil (empty response body)
 
 
 
-# **rename_fleet_squad**
-> rename_fleet_squad(fleet_id, naming, squad_id, opts)
+# **rename_squad**
+> rename_squad(fleet_id, naming, squad_id, opts)
 
 Rename fleet squad
 
@@ -757,9 +757,9 @@ opts = {
 
 begin
   #Rename fleet squad
-  api_instance.rename_fleet_squad(fleet_id, naming, squad_id, opts)
+  api_instance.rename_squad(fleet_id, naming, squad_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FleetsApi->rename_fleet_squad: #{e}"
+  puts "Exception when calling FleetsApi->rename_squad: #{e}"
 end
 ```
 
@@ -790,8 +790,8 @@ nil (empty response body)
 
 
 
-# **rename_fleet_wing**
-> rename_fleet_wing(fleet_id, naming, wing_id, opts)
+# **rename_wing**
+> rename_wing(fleet_id, naming, wing_id, opts)
 
 Rename fleet wing
 
@@ -824,9 +824,9 @@ opts = {
 
 begin
   #Rename fleet wing
-  api_instance.rename_fleet_wing(fleet_id, naming, wing_id, opts)
+  api_instance.rename_wing(fleet_id, naming, wing_id, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling FleetsApi->rename_fleet_wing: #{e}"
+  puts "Exception when calling FleetsApi->rename_wing: #{e}"
 end
 ```
 

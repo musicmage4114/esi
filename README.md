@@ -80,7 +80,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *SwaggerClient::AllianceApi* | [**get_alliances**](docs/AllianceApi.md#get_alliances) | **GET** /alliances/ | List all alliances
 *SwaggerClient::AllianceApi* | [**get_alliance_by_id**](docs/AllianceApi.md#get_alliance_by_id) | **GET** /alliances/{alliance_id}/ | Get alliance information
-*SwaggerClient::AllianceApi* | [**get_corporations_in_alliance**](docs/AllianceApi.md#get_corporations_in_alliance) | **GET** /alliances/{alliance_id}/corporations/ | List alliance's corporations
+*SwaggerClient::AllianceApi* | [**get_alliance_corporations**](docs/AllianceApi.md#get_alliance_corporations) | **GET** /alliances/{alliance_id}/corporations/ | List alliance's corporations
 *SwaggerClient::AllianceApi* | [**get_alliance_icon**](docs/AllianceApi.md#get_alliance_icon) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
 *SwaggerClient::AllianceApi* | [**get_alliance_names**](docs/AllianceApi.md#get_alliance_names) | **GET** /alliances/names/ | Get alliance names
 *SwaggerClient::AssetsApi* | [**get_character_assets**](docs/AssetsApi.md#get_character_assets) | **GET** /characters/{character_id}/assets/ | Get character assets
@@ -93,19 +93,19 @@ Class | Method | HTTP request | Description
 *SwaggerClient::CharacterApi* | [**get_character_research_agents**](docs/CharacterApi.md#get_character_research_agents) | **GET** /characters/{character_id}/agents_research/ | Get agents research
 *SwaggerClient::CharacterApi* | [**get_character_blueprints**](docs/CharacterApi.md#get_character_blueprints) | **GET** /characters/{character_id}/blueprints/ | Get blueprints
 *SwaggerClient::CharacterApi* | [**get_character_chat_channels**](docs/CharacterApi.md#get_character_chat_channels) | **GET** /characters/{character_id}/chat_channels/ | Get chat channels
-*SwaggerClient::CharacterApi* | [**get_character_employment_history**](docs/CharacterApi.md#get_character_employment_history) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
+*SwaggerClient::CharacterApi* | [**get_employment_history**](docs/CharacterApi.md#get_employment_history) | **GET** /characters/{character_id}/corporationhistory/ | Get corporation history
 *SwaggerClient::CharacterApi* | [**get_character_medals**](docs/CharacterApi.md#get_character_medals) | **GET** /characters/{character_id}/medals/ | Get medals
 *SwaggerClient::CharacterApi* | [**get_character_portrait**](docs/CharacterApi.md#get_character_portrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
 *SwaggerClient::CharacterApi* | [**get_character_standings**](docs/CharacterApi.md#get_character_standings) | **GET** /characters/{character_id}/standings/ | Get standings
 *SwaggerClient::CharacterApi* | [**get_character_names**](docs/CharacterApi.md#get_character_names) | **GET** /characters/names/ | Get character names
 *SwaggerClient::CharacterApi* | [**get_characters_affiliation_by_id**](docs/CharacterApi.md#get_characters_affiliation_by_id) | **POST** /characters/affiliation/ | Character affiliation
 *SwaggerClient::CharacterApi* | [**calculate_cspa_charge**](docs/CharacterApi.md#calculate_cspa_charge) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
-*SwaggerClient::ClonesApi* | [**get_character_clones**](docs/ClonesApi.md#get_character_clones) | **GET** /characters/{character_id}/clones/ | Get clones
-*SwaggerClient::ContactsApi* | [**delete_character_contacts**](docs/ContactsApi.md#delete_character_contacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts
-*SwaggerClient::ContactsApi* | [**get_character_contacts**](docs/ContactsApi.md#get_character_contacts) | **GET** /characters/{character_id}/contacts/ | Get contacts
-*SwaggerClient::ContactsApi* | [**get_character_contacts_labels**](docs/ContactsApi.md#get_character_contacts_labels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels
-*SwaggerClient::ContactsApi* | [**add_character_contacts**](docs/ContactsApi.md#add_character_contacts) | **POST** /characters/{character_id}/contacts/ | Add contacts
-*SwaggerClient::ContactsApi* | [**edit_character_contacts**](docs/ContactsApi.md#edit_character_contacts) | **PUT** /characters/{character_id}/contacts/ | Edit contacts
+*SwaggerClient::ClonesApi* | [**get_clones**](docs/ClonesApi.md#get_clones) | **GET** /characters/{character_id}/clones/ | Get clones
+*SwaggerClient::ContactsApi* | [**delete_contacts**](docs/ContactsApi.md#delete_contacts) | **DELETE** /characters/{character_id}/contacts/ | Delete contacts
+*SwaggerClient::ContactsApi* | [**get_contacts**](docs/ContactsApi.md#get_contacts) | **GET** /characters/{character_id}/contacts/ | Get contacts
+*SwaggerClient::ContactsApi* | [**get_contacts_labels**](docs/ContactsApi.md#get_contacts_labels) | **GET** /characters/{character_id}/contacts/labels/ | Get contact labels
+*SwaggerClient::ContactsApi* | [**add_contacts**](docs/ContactsApi.md#add_contacts) | **POST** /characters/{character_id}/contacts/ | Add contacts
+*SwaggerClient::ContactsApi* | [**edit_contacts**](docs/ContactsApi.md#edit_contacts) | **PUT** /characters/{character_id}/contacts/ | Edit contacts
 *SwaggerClient::CorporationApi* | [**get_corporation_by_id**](docs/CorporationApi.md#get_corporation_by_id) | **GET** /corporations/{corporation_id}/ | Get corporation information
 *SwaggerClient::CorporationApi* | [**get_corporation_alliance_history**](docs/CorporationApi.md#get_corporation_alliance_history) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
 *SwaggerClient::CorporationApi* | [**get_corporation_icon**](docs/CorporationApi.md#get_corporation_icon) | **GET** /corporations/{corporation_id}/icons/ | Get corporation icon
@@ -119,24 +119,24 @@ Class | Method | HTTP request | Description
 *SwaggerClient::DogmaApi* | [**get_dogma_attribute_by_id**](docs/DogmaApi.md#get_dogma_attribute_by_id) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
 *SwaggerClient::DogmaApi* | [**get_dogma_effects**](docs/DogmaApi.md#get_dogma_effects) | **GET** /dogma/effects/ | Get effects
 *SwaggerClient::DogmaApi* | [**get_dogma_effect_by_id**](docs/DogmaApi.md#get_dogma_effect_by_id) | **GET** /dogma/effects/{effect_id}/ | Get effect information
-*SwaggerClient::FittingsApi* | [**delete_character_fitting**](docs/FittingsApi.md#delete_character_fitting) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
-*SwaggerClient::FittingsApi* | [**get_character_fittings**](docs/FittingsApi.md#get_character_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
-*SwaggerClient::FittingsApi* | [**add_character_fitting**](docs/FittingsApi.md#add_character_fitting) | **POST** /characters/{character_id}/fittings/ | Create fitting
+*SwaggerClient::FittingsApi* | [**delete_fitting**](docs/FittingsApi.md#delete_fitting) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
+*SwaggerClient::FittingsApi* | [**get_fittings**](docs/FittingsApi.md#get_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
+*SwaggerClient::FittingsApi* | [**add_fitting**](docs/FittingsApi.md#add_fitting) | **POST** /characters/{character_id}/fittings/ | Create fitting
 *SwaggerClient::FleetsApi* | [**kick_fleet_member**](docs/FleetsApi.md#kick_fleet_member) | **DELETE** /fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
-*SwaggerClient::FleetsApi* | [**delete_fleet_squad**](docs/FleetsApi.md#delete_fleet_squad) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
-*SwaggerClient::FleetsApi* | [**delete_fleet_wing**](docs/FleetsApi.md#delete_fleet_wing) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
+*SwaggerClient::FleetsApi* | [**delete_squad**](docs/FleetsApi.md#delete_squad) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
+*SwaggerClient::FleetsApi* | [**delete_wing**](docs/FleetsApi.md#delete_wing) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
 *SwaggerClient::FleetsApi* | [**get_fleet**](docs/FleetsApi.md#get_fleet) | **GET** /fleets/{fleet_id}/ | Get fleet information
 *SwaggerClient::FleetsApi* | [**get_fleet_members**](docs/FleetsApi.md#get_fleet_members) | **GET** /fleets/{fleet_id}/members/ | Get fleet members
-*SwaggerClient::FleetsApi* | [**get_fleet_wings**](docs/FleetsApi.md#get_fleet_wings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings
+*SwaggerClient::FleetsApi* | [**get_wings**](docs/FleetsApi.md#get_wings) | **GET** /fleets/{fleet_id}/wings/ | Get fleet wings
 *SwaggerClient::FleetsApi* | [**invite_to_fleet**](docs/FleetsApi.md#invite_to_fleet) | **POST** /fleets/{fleet_id}/members/ | Create fleet invitation
-*SwaggerClient::FleetsApi* | [**create_fleet_wing**](docs/FleetsApi.md#create_fleet_wing) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing
-*SwaggerClient::FleetsApi* | [**create_fleet_squad**](docs/FleetsApi.md#create_fleet_squad) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
+*SwaggerClient::FleetsApi* | [**create_wing**](docs/FleetsApi.md#create_wing) | **POST** /fleets/{fleet_id}/wings/ | Create fleet wing
+*SwaggerClient::FleetsApi* | [**create_squad**](docs/FleetsApi.md#create_squad) | **POST** /fleets/{fleet_id}/wings/{wing_id}/squads/ | Create fleet squad
 *SwaggerClient::FleetsApi* | [**update_fleet**](docs/FleetsApi.md#update_fleet) | **PUT** /fleets/{fleet_id}/ | Update fleet
 *SwaggerClient::FleetsApi* | [**move_fleet_member**](docs/FleetsApi.md#move_fleet_member) | **PUT** /fleets/{fleet_id}/members/{member_id}/ | Move fleet member
-*SwaggerClient::FleetsApi* | [**rename_fleet_squad**](docs/FleetsApi.md#rename_fleet_squad) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
-*SwaggerClient::FleetsApi* | [**rename_fleet_wing**](docs/FleetsApi.md#rename_fleet_wing) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
+*SwaggerClient::FleetsApi* | [**rename_squad**](docs/FleetsApi.md#rename_squad) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
+*SwaggerClient::FleetsApi* | [**rename_wing**](docs/FleetsApi.md#rename_wing) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
 *SwaggerClient::IncursionsApi* | [**get_incursions**](docs/IncursionsApi.md#get_incursions) | **GET** /incursions/ | List incursions
-*SwaggerClient::IndustryApi* | [**get_character_industry_jobs**](docs/IndustryApi.md#get_character_industry_jobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
+*SwaggerClient::IndustryApi* | [**get_industry_jobs**](docs/IndustryApi.md#get_industry_jobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
 *SwaggerClient::IndustryApi* | [**get_industry_facilities**](docs/IndustryApi.md#get_industry_facilities) | **GET** /industry/facilities/ | List industry facilities
 *SwaggerClient::IndustryApi* | [**get_industry_systems**](docs/IndustryApi.md#get_industry_systems) | **GET** /industry/systems/ | List solar system cost indices
 *SwaggerClient::InsuranceApi* | [**get_insurance_prices**](docs/InsuranceApi.md#get_insurance_prices) | **GET** /insurance/prices/ | List insurance levels
@@ -144,16 +144,16 @@ Class | Method | HTTP request | Description
 *SwaggerClient::KillmailsApi* | [**get_killmail**](docs/KillmailsApi.md#get_killmail) | **GET** /killmails/{killmail_id}/{killmail_hash}/ | Get a single killmail
 *SwaggerClient::LocationApi* | [**get_character_location**](docs/LocationApi.md#get_character_location) | **GET** /characters/{character_id}/location/ | Get character location
 *SwaggerClient::LocationApi* | [**get_current_ship**](docs/LocationApi.md#get_current_ship) | **GET** /characters/{character_id}/ship/ | Get current ship
-*SwaggerClient::LoyaltyApi* | [**get_character_loyalty_points**](docs/LoyaltyApi.md#get_character_loyalty_points) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points
-*SwaggerClient::LoyaltyApi* | [**get_corporation_loyalty_store_by_id**](docs/LoyaltyApi.md#get_corporation_loyalty_store_by_id) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
-*SwaggerClient::MailApi* | [**delete_character_mail_label**](docs/MailApi.md#delete_character_mail_label) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
-*SwaggerClient::MailApi* | [**delete_character_mail**](docs/MailApi.md#delete_character_mail) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
-*SwaggerClient::MailApi* | [**get_character_mail**](docs/MailApi.md#get_character_mail) | **GET** /characters/{character_id}/mail/ | Return mail headers
-*SwaggerClient::MailApi* | [**get_character_mail_labels**](docs/MailApi.md#get_character_mail_labels) | **GET** /characters/{character_id}/mail/labels/ | Get mail labels and unread counts
-*SwaggerClient::MailApi* | [**get_character_mail_lists**](docs/MailApi.md#get_character_mail_lists) | **GET** /characters/{character_id}/mail/lists/ | Return mailing list subscriptions
-*SwaggerClient::MailApi* | [**read_character_mail**](docs/MailApi.md#read_character_mail) | **GET** /characters/{character_id}/mail/{mail_id}/ | Return a mail
+*SwaggerClient::LoyaltyApi* | [**get_loyalty_points**](docs/LoyaltyApi.md#get_loyalty_points) | **GET** /characters/{character_id}/loyalty/points/ | Get loyalty points
+*SwaggerClient::LoyaltyApi* | [**get_loyalty_store_by_id**](docs/LoyaltyApi.md#get_loyalty_store_by_id) | **GET** /loyalty/stores/{corporation_id}/offers/ | List loyalty store offers
+*SwaggerClient::MailApi* | [**delete_mail_label**](docs/MailApi.md#delete_mail_label) | **DELETE** /characters/{character_id}/mail/labels/{label_id}/ | Delete a mail label
+*SwaggerClient::MailApi* | [**delete_mail**](docs/MailApi.md#delete_mail) | **DELETE** /characters/{character_id}/mail/{mail_id}/ | Delete a mail
+*SwaggerClient::MailApi* | [**get_mail**](docs/MailApi.md#get_mail) | **GET** /characters/{character_id}/mail/ | Return mail headers
+*SwaggerClient::MailApi* | [**get_mail_labels**](docs/MailApi.md#get_mail_labels) | **GET** /characters/{character_id}/mail/labels/ | Get mail labels and unread counts
+*SwaggerClient::MailApi* | [**get_mailing_lists**](docs/MailApi.md#get_mailing_lists) | **GET** /characters/{character_id}/mail/lists/ | Return mailing list subscriptions
+*SwaggerClient::MailApi* | [**read_mail**](docs/MailApi.md#read_mail) | **GET** /characters/{character_id}/mail/{mail_id}/ | Return a mail
 *SwaggerClient::MailApi* | [**send_mail**](docs/MailApi.md#send_mail) | **POST** /characters/{character_id}/mail/ | Send a new mail
-*SwaggerClient::MailApi* | [**add_character_mail_label**](docs/MailApi.md#add_character_mail_label) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
+*SwaggerClient::MailApi* | [**add_mail_label**](docs/MailApi.md#add_mail_label) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
 *SwaggerClient::MailApi* | [**update_mail**](docs/MailApi.md#update_mail) | **PUT** /characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
 *SwaggerClient::MarketApi* | [**get_character_market_orders**](docs/MarketApi.md#get_character_market_orders) | **GET** /characters/{character_id}/orders/ | List orders from a character
 *SwaggerClient::MarketApi* | [**get_market_groups**](docs/MarketApi.md#get_market_groups) | **GET** /markets/groups/ | Get item groups
@@ -167,13 +167,13 @@ Class | Method | HTTP request | Description
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_group_by_id**](docs/OpportunitiesApi.md#get_opportunities_group_by_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_tasks**](docs/OpportunitiesApi.md#get_opportunities_tasks) | **GET** /opportunities/tasks/ | Get opportunities tasks
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_task_by_id**](docs/OpportunitiesApi.md#get_opportunities_task_by_id) | **GET** /opportunities/tasks/{task_id}/ | Get opportunities task
-*SwaggerClient::PlanetaryInteractionApi* | [**get_character_colonies**](docs/PlanetaryInteractionApi.md#get_character_colonies) | **GET** /characters/{character_id}/planets/ | Get colonies
-*SwaggerClient::PlanetaryInteractionApi* | [**get_character_colony_by_id**](docs/PlanetaryInteractionApi.md#get_character_colony_by_id) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
+*SwaggerClient::PlanetaryInteractionApi* | [**get_colonies**](docs/PlanetaryInteractionApi.md#get_colonies) | **GET** /characters/{character_id}/planets/ | Get colonies
+*SwaggerClient::PlanetaryInteractionApi* | [**get_colony**](docs/PlanetaryInteractionApi.md#get_colony) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
 *SwaggerClient::PlanetaryInteractionApi* | [**get_schematic_by_id**](docs/PlanetaryInteractionApi.md#get_schematic_by_id) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
 *SwaggerClient::RoutesApi* | [**set_route**](docs/RoutesApi.md#set_route) | **GET** /route/{origin}/{destination}/ | Get route
 *SwaggerClient::SearchApi* | [**search_character_by_string**](docs/SearchApi.md#search_character_by_string) | **GET** /characters/{character_id}/search/ | Search on a string
 *SwaggerClient::SearchApi* | [**find_entity_by_string**](docs/SearchApi.md#find_entity_by_string) | **GET** /search/ | Search on a string
-*SwaggerClient::SkillsApi* | [**get_character_skill_queue**](docs/SkillsApi.md#get_character_skill_queue) | **GET** /characters/{character_id}/skillqueue/ | Get character's skill queue
+*SwaggerClient::SkillsApi* | [**get_skill_queue**](docs/SkillsApi.md#get_skill_queue) | **GET** /characters/{character_id}/skillqueue/ | Get character's skill queue
 *SwaggerClient::SkillsApi* | [**get_character_skills**](docs/SkillsApi.md#get_character_skills) | **GET** /characters/{character_id}/skills/ | Get character skills
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_campaigns**](docs/SovereigntyApi.md#get_sovereignty_campaigns) | **GET** /sovereignty/campaigns/ | List sovereignty campaigns
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_map**](docs/SovereigntyApi.md#get_sovereignty_map) | **GET** /sovereignty/map/ | List sovereignty of systems
@@ -210,7 +210,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::UserInterfaceApi* | [**show_info_by_id**](docs/UserInterfaceApi.md#show_info_by_id) | **POST** /ui/openwindow/information/ | Open Information Window
 *SwaggerClient::UserInterfaceApi* | [**open_market_details**](docs/UserInterfaceApi.md#open_market_details) | **POST** /ui/openwindow/marketdetails/ | Open Market Details
 *SwaggerClient::UserInterfaceApi* | [**open_new_mail**](docs/UserInterfaceApi.md#open_new_mail) | **POST** /ui/openwindow/newmail/ | Open New Mail Window
-*SwaggerClient::WalletApi* | [**get_character_wallets**](docs/WalletApi.md#get_character_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
+*SwaggerClient::WalletApi* | [**get_wallets**](docs/WalletApi.md#get_wallets) | **GET** /characters/{character_id}/wallets/ | List wallets and balances
 *SwaggerClient::WarsApi* | [**get_wars**](docs/WarsApi.md#get_wars) | **GET** /wars/ | List wars
 *SwaggerClient::WarsApi* | [**get_war_by_id**](docs/WarsApi.md#get_war_by_id) | **GET** /wars/{war_id}/ | Get war information
 *SwaggerClient::WarsApi* | [**get_war_killmails**](docs/WarsApi.md#get_war_killmails) | **GET** /wars/{war_id}/killmails/ | List kills for a war
@@ -218,13 +218,13 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
- - [SwaggerClient::DeleteCharacterContactsForbidden](docs/DeleteCharacterContactsForbidden.md)
- - [SwaggerClient::DeleteCharacterContactsInternalServerError](docs/DeleteCharacterContactsInternalServerError.md)
- - [SwaggerClient::DeleteCharacterFittingForbidden](docs/DeleteCharacterFittingForbidden.md)
- - [SwaggerClient::DeleteCharacterFittingInternalServerError](docs/DeleteCharacterFittingInternalServerError.md)
- - [SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdForbidden](docs/DeleteCharactersCharacterIdMailLabelsLabelIdForbidden.md)
- - [SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdInternalServerError](docs/DeleteCharactersCharacterIdMailLabelsLabelIdInternalServerError.md)
- - [SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity](docs/DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity.md)
+ - [SwaggerClient::DeleteContactsForbidden](docs/DeleteContactsForbidden.md)
+ - [SwaggerClient::DeleteContactsInternalServerError](docs/DeleteContactsInternalServerError.md)
+ - [SwaggerClient::DeleteFittingForbidden](docs/DeleteFittingForbidden.md)
+ - [SwaggerClient::DeleteFittingInternalServerError](docs/DeleteFittingInternalServerError.md)
+ - [SwaggerClient::DeleteMailLabelForbidden](docs/DeleteMailLabelForbidden.md)
+ - [SwaggerClient::DeleteMailLabelInternalServerError](docs/DeleteMailLabelInternalServerError.md)
+ - [SwaggerClient::DeleteMailLabelUnprocessableEntity](docs/DeleteMailLabelUnprocessableEntity.md)
  - [SwaggerClient::DeleteCharactersCharacterIdMailMailIdForbidden](docs/DeleteCharactersCharacterIdMailMailIdForbidden.md)
  - [SwaggerClient::DeleteCharactersCharacterIdMailMailIdInternalServerError](docs/DeleteCharactersCharacterIdMailMailIdInternalServerError.md)
  - [SwaggerClient::DeleteFleetsFleetIdMembersMemberIdForbidden](docs/DeleteFleetsFleetIdMembersMemberIdForbidden.md)

@@ -31,7 +31,7 @@ describe 'PlanetaryInteractionApi' do
     end
   end
 
-  # unit tests for get_character_colonies
+  # unit tests for get_colonies
   # Get colonies
   # Returns a list of all planetary colonies owned by a character.  ---  Alternate route: &#x60;/v1/characters/{character_id}/planets/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/planets/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/planets/&#x60;   ---  This route is cached for up to 600 seconds
   # @param character_id Character id of the target character
@@ -41,13 +41,13 @@ describe 'PlanetaryInteractionApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdPlanets200Ok>]
-  describe 'get_character_colonies test' do
+  describe 'get_colonies test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_character_colony_by_id
+  # unit tests for get_colony
   # Get colony layout
   # Returns full details on the layout of a single planetary colony, including links, pins and routes. Note: Planetary information is only recalculated when the colony is viewed through the client. Information on this endpoint will not update until this criteria is met.  ---  Alternate route: &#x60;/v2/characters/{character_id}/planets/{planet_id}/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/planets/{planet_id}/&#x60;   ---  This route is cached for up to 600 seconds
   # @param character_id Character id of the target character
@@ -58,7 +58,7 @@ describe 'PlanetaryInteractionApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetCharactersCharacterIdPlanetsPlanetIdOk]
-  describe 'get_character_colony_by_id test' do
+  describe 'get_colony test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

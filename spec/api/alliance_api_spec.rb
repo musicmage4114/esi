@@ -60,7 +60,7 @@ describe 'AllianceApi' do
     end
   end
 
-  # unit tests for get_corporations_in_alliance
+  # unit tests for get_alliance_corporations
   # List alliance&#39;s corporations
   # List all current member corporations of an alliance  ---  Alternate route: &#x60;/v1/alliances/{alliance_id}/corporations/&#x60;  Alternate route: &#x60;/latest/alliances/{alliance_id}/corporations/&#x60;  Alternate route: &#x60;/legacy/alliances/{alliance_id}/corporations/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param alliance_id An EVE alliance ID
@@ -69,7 +69,7 @@ describe 'AllianceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_corporations_in_alliance test' do
+  describe 'get_alliance_corporations test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

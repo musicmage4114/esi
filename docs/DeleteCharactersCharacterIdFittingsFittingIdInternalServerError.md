@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteCharacterFittingInternalServerError
+# SwaggerClient::DeleteFittingInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -31,7 +31,7 @@ describe 'FittingsApi' do
     end
   end
 
-  # unit tests for delete_character_fitting
+  # unit tests for delete_fitting
   # Delete fitting
   # Delete a fitting from a character  ---  Alternate route: &#x60;/v1/characters/{character_id}/fittings/{fitting_id}/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/fittings/{fitting_id}/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/fittings/{fitting_id}/&#x60; 
   # @param character_id ID for a character
@@ -42,13 +42,13 @@ describe 'FittingsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'delete_character_fitting test' do
+  describe 'delete_fitting test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_character_fittings
+  # unit tests for get_fittings
   # Get fittings
   # Return fittings of a character  ---  Alternate route: &#x60;/v1/characters/{character_id}/fittings/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/fittings/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/fittings/&#x60;   ---  This route is cached for up to 300 seconds
   # @param character_id ID for a character
@@ -58,13 +58,13 @@ describe 'FittingsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdFittings200Ok>]
-  describe 'get_character_fittings test' do
+  describe 'get_fittings test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for add_character_fitting
+  # unit tests for add_fitting
   # Create fitting
   # Save a new fitting for a character  ---  Alternate route: &#x60;/v1/characters/{character_id}/fittings/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/fittings/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/fittings/&#x60; 
   # @param character_id ID for a character
@@ -75,7 +75,7 @@ describe 'FittingsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [PostCharactersCharacterIdFittingsCreated]
-  describe 'add_character_fitting test' do
+  describe 'add_fitting test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

@@ -31,7 +31,7 @@ describe 'LoyaltyApi' do
     end
   end
 
-  # unit tests for get_character_loyalty_points
+  # unit tests for get_loyalty_points
   # Get loyalty points
   # Return a list of loyalty points for all corporations the character has worked for  ---  Alternate route: &#x60;/v1/characters/{character_id}/loyalty/points/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/loyalty/points/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/loyalty/points/&#x60; 
   # @param character_id ID for a character
@@ -41,13 +41,13 @@ describe 'LoyaltyApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdLoyaltyPoints200Ok>]
-  describe 'get_character_loyalty_points test' do
+  describe 'get_loyalty_points test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_corporation_loyalty_store_by_id
+  # unit tests for get_loyalty_store_by_id
   # List loyalty store offers
   # Return a list of offers from a specific corporation&#39;s loyalty store  ---  Alternate route: &#x60;/v1/loyalty/stores/{corporation_id}/offers/&#x60;  Alternate route: &#x60;/legacy/loyalty/stores/{corporation_id}/offers/&#x60;  Alternate route: &#x60;/latest/loyalty/stores/{corporation_id}/offers/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param corporation_id ID of a corporation
@@ -56,7 +56,7 @@ describe 'LoyaltyApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetLoyaltyStoresCorporationIdOffers200Ok>]
-  describe 'get_corporation_loyalty_store_by_id test' do
+  describe 'get_loyalty_store_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
