@@ -167,9 +167,9 @@ Class | Method | HTTP request | Description
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_group_by_id**](docs/OpportunitiesApi.md#get_opportunities_group_by_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_tasks**](docs/OpportunitiesApi.md#get_opportunities_tasks) | **GET** /opportunities/tasks/ | Get opportunities tasks
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_task_by_id**](docs/OpportunitiesApi.md#get_opportunities_task_by_id) | **GET** /opportunities/tasks/{task_id}/ | Get opportunities task
-*SwaggerClient::PlanetaryInteractionApi* | [**get_characters_character_id_planets**](docs/PlanetaryInteractionApi.md#get_characters_character_id_planets) | **GET** /characters/{character_id}/planets/ | Get colonies
-*SwaggerClient::PlanetaryInteractionApi* | [**get_characters_character_id_planets_planet_id**](docs/PlanetaryInteractionApi.md#get_characters_character_id_planets_planet_id) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
-*SwaggerClient::PlanetaryInteractionApi* | [**get_universe_schematics_schematic_id**](docs/PlanetaryInteractionApi.md#get_universe_schematics_schematic_id) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
+*SwaggerClient::PlanetaryInteractionApi* | [**get_character_colonies**](docs/PlanetaryInteractionApi.md#get_character_colonies) | **GET** /characters/{character_id}/planets/ | Get colonies
+*SwaggerClient::PlanetaryInteractionApi* | [**get_character_colony_by_id**](docs/PlanetaryInteractionApi.md#get_character_colony_by_id) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
+*SwaggerClient::PlanetaryInteractionApi* | [**get_schematic_by_id**](docs/PlanetaryInteractionApi.md#get_schematic_by_id) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
 *SwaggerClient::RoutesApi* | [**get_route_origin_destination**](docs/RoutesApi.md#get_route_origin_destination) | **GET** /route/{origin}/{destination}/ | Get route
 *SwaggerClient::SearchApi* | [**search_character_by_string**](docs/SearchApi.md#search_character_by_string) | **GET** /characters/{character_id}/search/ | Search on a string
 *SwaggerClient::SearchApi* | [**find_entity_by_string**](docs/SearchApi.md#find_entity_by_string) | **GET** /search/ | Search on a string

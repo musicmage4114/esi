@@ -28,8 +28,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdPlanets200Ok>]
-    def get_characters_character_id_planets(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_planets_with_http_info(character_id, opts)
+    def get_character_colonies(character_id, opts = {})
+      data, _status_code, _headers = get_character_colonies_with_http_info(character_id, opts)
       return data
     end
 
@@ -42,12 +42,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdPlanets200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdPlanets200Ok> data, response status code and response headers
-    def get_characters_character_id_planets_with_http_info(character_id, opts = {})
+    def get_character_colonies_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: PlanetaryInteractionApi.get_characters_character_id_planets ..."
+        @api_client.config.logger.debug "Calling API: PlanetaryInteractionApi.get_character_colonies ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling PlanetaryInteractionApi.get_characters_character_id_planets" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling PlanetaryInteractionApi.get_character_colonies" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -80,7 +80,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdPlanets200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: PlanetaryInteractionApi#get_characters_character_id_planets\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlanetaryInteractionApi#get_character_colonies\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -95,8 +95,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetCharactersCharacterIdPlanetsPlanetIdOk]
-    def get_characters_character_id_planets_planet_id(character_id, planet_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_planets_planet_id_with_http_info(character_id, planet_id, opts)
+    def get_character_colony_by_id(character_id, planet_id, opts = {})
+      data, _status_code, _headers = get_character_colony_by_id_with_http_info(character_id, planet_id, opts)
       return data
     end
 
@@ -110,14 +110,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetCharactersCharacterIdPlanetsPlanetIdOk, Fixnum, Hash)>] GetCharactersCharacterIdPlanetsPlanetIdOk data, response status code and response headers
-    def get_characters_character_id_planets_planet_id_with_http_info(character_id, planet_id, opts = {})
+    def get_character_colony_by_id_with_http_info(character_id, planet_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: PlanetaryInteractionApi.get_characters_character_id_planets_planet_id ..."
+        @api_client.config.logger.debug "Calling API: PlanetaryInteractionApi.get_character_colony_by_id ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling PlanetaryInteractionApi.get_characters_character_id_planets_planet_id" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling PlanetaryInteractionApi.get_character_colony_by_id" if character_id.nil?
       # verify the required parameter 'planet_id' is set
-      fail ArgumentError, "Missing the required parameter 'planet_id' when calling PlanetaryInteractionApi.get_characters_character_id_planets_planet_id" if planet_id.nil?
+      fail ArgumentError, "Missing the required parameter 'planet_id' when calling PlanetaryInteractionApi.get_character_colony_by_id" if planet_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -150,7 +150,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetCharactersCharacterIdPlanetsPlanetIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: PlanetaryInteractionApi#get_characters_character_id_planets_planet_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlanetaryInteractionApi#get_character_colony_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -163,8 +163,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetUniverseSchematicsSchematicIdOk]
-    def get_universe_schematics_schematic_id(schematic_id, opts = {})
-      data, _status_code, _headers = get_universe_schematics_schematic_id_with_http_info(schematic_id, opts)
+    def get_schematic_by_id(schematic_id, opts = {})
+      data, _status_code, _headers = get_schematic_by_id_with_http_info(schematic_id, opts)
       return data
     end
 
@@ -176,12 +176,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetUniverseSchematicsSchematicIdOk, Fixnum, Hash)>] GetUniverseSchematicsSchematicIdOk data, response status code and response headers
-    def get_universe_schematics_schematic_id_with_http_info(schematic_id, opts = {})
+    def get_schematic_by_id_with_http_info(schematic_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: PlanetaryInteractionApi.get_universe_schematics_schematic_id ..."
+        @api_client.config.logger.debug "Calling API: PlanetaryInteractionApi.get_schematic_by_id ..."
       end
       # verify the required parameter 'schematic_id' is set
-      fail ArgumentError, "Missing the required parameter 'schematic_id' when calling PlanetaryInteractionApi.get_universe_schematics_schematic_id" if schematic_id.nil?
+      fail ArgumentError, "Missing the required parameter 'schematic_id' when calling PlanetaryInteractionApi.get_schematic_by_id" if schematic_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -213,7 +213,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetUniverseSchematicsSchematicIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: PlanetaryInteractionApi#get_universe_schematics_schematic_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlanetaryInteractionApi#get_schematic_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
