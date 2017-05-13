@@ -86,8 +86,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetAlliancesAllianceIdOk]
-    def get_alliances_alliance_id(alliance_id, opts = {})
-      data, _status_code, _headers = get_alliances_alliance_id_with_http_info(alliance_id, opts)
+    def get_alliance_by_id(alliance_id, opts = {})
+      data, _status_code, _headers = get_alliance_by_id_with_http_info(alliance_id, opts)
       return data
     end
 
@@ -99,12 +99,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetAlliancesAllianceIdOk, Fixnum, Hash)>] GetAlliancesAllianceIdOk data, response status code and response headers
-    def get_alliances_alliance_id_with_http_info(alliance_id, opts = {})
+    def get_alliance_by_id_with_http_info(alliance_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliances_alliance_id ..."
+        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_by_id ..."
       end
       # verify the required parameter 'alliance_id' is set
-      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_alliances_alliance_id" if alliance_id.nil?
+      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_alliance_by_id" if alliance_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -136,7 +136,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetAlliancesAllianceIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: AllianceApi#get_alliances_alliance_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AllianceApi#get_alliance_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -149,8 +149,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_alliances_alliance_id_corporations(alliance_id, opts = {})
-      data, _status_code, _headers = get_alliances_alliance_id_corporations_with_http_info(alliance_id, opts)
+    def get_corporations_in_alliance(alliance_id, opts = {})
+      data, _status_code, _headers = get_corporations_in_alliance_with_http_info(alliance_id, opts)
       return data
     end
 
@@ -162,12 +162,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_alliances_alliance_id_corporations_with_http_info(alliance_id, opts = {})
+    def get_corporations_in_alliance_with_http_info(alliance_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliances_alliance_id_corporations ..."
+        @api_client.config.logger.debug "Calling API: AllianceApi.get_corporations_in_alliance ..."
       end
       # verify the required parameter 'alliance_id' is set
-      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_alliances_alliance_id_corporations" if alliance_id.nil?
+      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_corporations_in_alliance" if alliance_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -199,7 +199,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: AllianceApi#get_alliances_alliance_id_corporations\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AllianceApi#get_corporations_in_alliance\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -212,8 +212,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetAlliancesAllianceIdIconsOk]
-    def get_alliances_alliance_id_icons(alliance_id, opts = {})
-      data, _status_code, _headers = get_alliances_alliance_id_icons_with_http_info(alliance_id, opts)
+    def get_alliance_icon(alliance_id, opts = {})
+      data, _status_code, _headers = get_alliance_icon_with_http_info(alliance_id, opts)
       return data
     end
 
@@ -225,12 +225,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetAlliancesAllianceIdIconsOk, Fixnum, Hash)>] GetAlliancesAllianceIdIconsOk data, response status code and response headers
-    def get_alliances_alliance_id_icons_with_http_info(alliance_id, opts = {})
+    def get_alliance_icon_with_http_info(alliance_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliances_alliance_id_icons ..."
+        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_icon ..."
       end
       # verify the required parameter 'alliance_id' is set
-      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_alliances_alliance_id_icons" if alliance_id.nil?
+      fail ArgumentError, "Missing the required parameter 'alliance_id' when calling AllianceApi.get_alliance_icon" if alliance_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -262,7 +262,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetAlliancesAllianceIdIconsOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: AllianceApi#get_alliances_alliance_id_icons\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AllianceApi#get_alliance_icon\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

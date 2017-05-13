@@ -5,9 +5,9 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_alliances**](AllianceApi.md#get_alliances) | **GET** /alliances/ | List all alliances
-[**get_alliances_alliance_id**](AllianceApi.md#get_alliances_alliance_id) | **GET** /alliances/{alliance_id}/ | Get alliance information
-[**get_alliances_alliance_id_corporations**](AllianceApi.md#get_alliances_alliance_id_corporations) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
-[**get_alliances_alliance_id_icons**](AllianceApi.md#get_alliances_alliance_id_icons) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
+[**get_alliance_by_id**](AllianceApi.md#get_alliance_by_id) | **GET** /alliances/{alliance_id}/ | Get alliance information
+[**get_corporations_in_alliance**](AllianceApi.md#get_corporations_in_alliance) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
+[**get_alliance_icon**](AllianceApi.md#get_alliance_icon) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
 [**get_alliances_names**](AllianceApi.md#get_alliances_names) | **GET** /alliances/names/ | Get alliance names
 
 
@@ -63,8 +63,8 @@ No authorization required
 
 
 
-# **get_alliances_alliance_id**
-> GetAlliancesAllianceIdOk get_alliances_alliance_id(alliance_id, opts)
+# **get_alliance_by_id**
+> GetAlliancesAllianceIdOk get_alliance_by_id(alliance_id, opts)
 
 Get alliance information
 
@@ -87,10 +87,10 @@ opts = {
 
 begin
   #Get alliance information
-  result = api_instance.get_alliances_alliance_id(alliance_id, opts)
+  result = api_instance.get_alliance_by_id(alliance_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling AllianceApi->get_alliances_alliance_id: #{e}"
+  puts "Exception when calling AllianceApi->get_alliance_by_id: #{e}"
 end
 ```
 
@@ -118,8 +118,8 @@ No authorization required
 
 
 
-# **get_alliances_alliance_id_corporations**
-> Array&lt;Integer&gt; get_alliances_alliance_id_corporations(alliance_id, opts)
+# **get_corporations_in_alliance**
+> Array&lt;Integer&gt; get_corporations_in_alliance(alliance_id, opts)
 
 List alliance's corporations
 
@@ -142,10 +142,10 @@ opts = {
 
 begin
   #List alliance's corporations
-  result = api_instance.get_alliances_alliance_id_corporations(alliance_id, opts)
+  result = api_instance.get_corporations_in_alliance(alliance_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling AllianceApi->get_alliances_alliance_id_corporations: #{e}"
+  puts "Exception when calling AllianceApi->get_corporations_in_alliance: #{e}"
 end
 ```
 
@@ -173,8 +173,8 @@ No authorization required
 
 
 
-# **get_alliances_alliance_id_icons**
-> GetAlliancesAllianceIdIconsOk get_alliances_alliance_id_icons(alliance_id, opts)
+# **get_alliance_icon**
+> GetAlliancesAllianceIdIconsOk get_alliance_icon(alliance_id, opts)
 
 Get alliance icon
 
@@ -197,10 +197,10 @@ opts = {
 
 begin
   #Get alliance icon
-  result = api_instance.get_alliances_alliance_id_icons(alliance_id, opts)
+  result = api_instance.get_alliance_icon(alliance_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling AllianceApi->get_alliances_alliance_id_icons: #{e}"
+  puts "Exception when calling AllianceApi->get_alliance_icon: #{e}"
 end
 ```
 

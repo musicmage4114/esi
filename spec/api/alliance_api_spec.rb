@@ -45,7 +45,7 @@ describe 'AllianceApi' do
     end
   end
 
-  # unit tests for get_alliances_alliance_id
+  # unit tests for get_alliance_by_id
   # Get alliance information
   # Public information about an alliance  ---  Alternate route: &#x60;/v1/alliances/{alliance_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param alliance_id An Eve alliance ID
@@ -54,13 +54,13 @@ describe 'AllianceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetAlliancesAllianceIdOk]
-  describe 'get_alliances_alliance_id test' do
+  describe 'get_alliance_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_alliances_alliance_id_corporations
+  # unit tests for get_corporations_in_alliance
   # List alliance&#39;s corporations
   # List all current member corporations of an alliance  ---  Alternate route: &#x60;/v1/alliances/{alliance_id}/corporations/&#x60;  Alternate route: &#x60;/latest/alliances/{alliance_id}/corporations/&#x60;  Alternate route: &#x60;/legacy/alliances/{alliance_id}/corporations/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param alliance_id An EVE alliance ID
@@ -69,13 +69,13 @@ describe 'AllianceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_alliances_alliance_id_corporations test' do
+  describe 'get_corporations_in_alliance test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_alliances_alliance_id_icons
+  # unit tests for get_alliance_icon
   # Get alliance icon
   # Get the icon urls for a alliance  ---  Alternate route: &#x60;/v1/alliances/{alliance_id}/icons/&#x60;  Alternate route: &#x60;/legacy/alliances/{alliance_id}/icons/&#x60;  Alternate route: &#x60;/latest/alliances/{alliance_id}/icons/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param alliance_id An EVE alliance ID
@@ -84,7 +84,7 @@ describe 'AllianceApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetAlliancesAllianceIdIconsOk]
-  describe 'get_alliances_alliance_id_icons test' do
+  describe 'get_alliance_icon test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
