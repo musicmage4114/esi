@@ -155,13 +155,13 @@ Class | Method | HTTP request | Description
 *SwaggerClient::MailApi* | [**post_characters_character_id_mail**](docs/MailApi.md#post_characters_character_id_mail) | **POST** /characters/{character_id}/mail/ | Send a new mail
 *SwaggerClient::MailApi* | [**post_characters_character_id_mail_labels**](docs/MailApi.md#post_characters_character_id_mail_labels) | **POST** /characters/{character_id}/mail/labels/ | Create a mail label
 *SwaggerClient::MailApi* | [**put_characters_character_id_mail_mail_id**](docs/MailApi.md#put_characters_character_id_mail_mail_id) | **PUT** /characters/{character_id}/mail/{mail_id}/ | Update metadata about a mail
-*SwaggerClient::MarketApi* | [**get_characters_character_id_orders**](docs/MarketApi.md#get_characters_character_id_orders) | **GET** /characters/{character_id}/orders/ | List orders from a character
-*SwaggerClient::MarketApi* | [**get_markets_groups**](docs/MarketApi.md#get_markets_groups) | **GET** /markets/groups/ | Get item groups
-*SwaggerClient::MarketApi* | [**get_markets_groups_market_group_id**](docs/MarketApi.md#get_markets_groups_market_group_id) | **GET** /markets/groups/{market_group_id}/ | Get item group information
-*SwaggerClient::MarketApi* | [**get_markets_prices**](docs/MarketApi.md#get_markets_prices) | **GET** /markets/prices/ | List market prices
-*SwaggerClient::MarketApi* | [**get_markets_region_id_history**](docs/MarketApi.md#get_markets_region_id_history) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
-*SwaggerClient::MarketApi* | [**get_markets_region_id_orders**](docs/MarketApi.md#get_markets_region_id_orders) | **GET** /markets/{region_id}/orders/ | List orders in a region
-*SwaggerClient::MarketApi* | [**get_markets_structures_structure_id**](docs/MarketApi.md#get_markets_structures_structure_id) | **GET** /markets/structures/{structure_id}/ | List orders in a structure
+*SwaggerClient::MarketApi* | [**get_character_market_orders**](docs/MarketApi.md#get_character_market_orders) | **GET** /characters/{character_id}/orders/ | List orders from a character
+*SwaggerClient::MarketApi* | [**get_market_groups**](docs/MarketApi.md#get_market_groups) | **GET** /markets/groups/ | Get item groups
+*SwaggerClient::MarketApi* | [**get_market_group_by_id**](docs/MarketApi.md#get_market_group_by_id) | **GET** /markets/groups/{market_group_id}/ | Get item group information
+*SwaggerClient::MarketApi* | [**get_market_prices**](docs/MarketApi.md#get_market_prices) | **GET** /markets/prices/ | List market prices
+*SwaggerClient::MarketApi* | [**get_region_market_history_by_id**](docs/MarketApi.md#get_region_market_history_by_id) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
+*SwaggerClient::MarketApi* | [**get_region_market_orders**](docs/MarketApi.md#get_region_market_orders) | **GET** /markets/{region_id}/orders/ | List orders in a region
+*SwaggerClient::MarketApi* | [**get_structure_market_orders**](docs/MarketApi.md#get_structure_market_orders) | **GET** /markets/structures/{structure_id}/ | List orders in a structure
 *SwaggerClient::OpportunitiesApi* | [**get_character_completed_opportunities**](docs/OpportunitiesApi.md#get_character_completed_opportunities) | **GET** /characters/{character_id}/opportunities/ | Get a character's completed tasks
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_groups**](docs/OpportunitiesApi.md#get_opportunities_groups) | **GET** /opportunities/groups/ | Get opportunities groups
 *SwaggerClient::OpportunitiesApi* | [**get_opportunities_group_by_id**](docs/OpportunitiesApi.md#get_opportunities_group_by_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group

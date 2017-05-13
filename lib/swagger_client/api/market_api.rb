@@ -28,8 +28,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetCharactersCharacterIdOrders200Ok>]
-    def get_characters_character_id_orders(character_id, opts = {})
-      data, _status_code, _headers = get_characters_character_id_orders_with_http_info(character_id, opts)
+    def get_character_market_orders(character_id, opts = {})
+      data, _status_code, _headers = get_character_market_orders_with_http_info(character_id, opts)
       return data
     end
 
@@ -42,12 +42,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetCharactersCharacterIdOrders200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdOrders200Ok> data, response status code and response headers
-    def get_characters_character_id_orders_with_http_info(character_id, opts = {})
+    def get_character_market_orders_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_characters_character_id_orders ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_character_market_orders ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling MarketApi.get_characters_character_id_orders" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling MarketApi.get_character_market_orders" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -80,7 +80,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetCharactersCharacterIdOrders200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_characters_character_id_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_character_market_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -92,8 +92,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def get_markets_groups(opts = {})
-      data, _status_code, _headers = get_markets_groups_with_http_info(opts)
+    def get_market_groups(opts = {})
+      data, _status_code, _headers = get_market_groups_with_http_info(opts)
       return data
     end
 
@@ -104,9 +104,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def get_markets_groups_with_http_info(opts = {})
+    def get_market_groups_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_markets_groups ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_market_groups ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -139,7 +139,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_markets_groups\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_market_groups\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -153,8 +153,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetMarketsGroupsMarketGroupIdOk]
-    def get_markets_groups_market_group_id(market_group_id, opts = {})
-      data, _status_code, _headers = get_markets_groups_market_group_id_with_http_info(market_group_id, opts)
+    def get_market_group_by_id(market_group_id, opts = {})
+      data, _status_code, _headers = get_market_group_by_id_with_http_info(market_group_id, opts)
       return data
     end
 
@@ -167,12 +167,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetMarketsGroupsMarketGroupIdOk, Fixnum, Hash)>] GetMarketsGroupsMarketGroupIdOk data, response status code and response headers
-    def get_markets_groups_market_group_id_with_http_info(market_group_id, opts = {})
+    def get_market_group_by_id_with_http_info(market_group_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_markets_groups_market_group_id ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_market_group_by_id ..."
       end
       # verify the required parameter 'market_group_id' is set
-      fail ArgumentError, "Missing the required parameter 'market_group_id' when calling MarketApi.get_markets_groups_market_group_id" if market_group_id.nil?
+      fail ArgumentError, "Missing the required parameter 'market_group_id' when calling MarketApi.get_market_group_by_id" if market_group_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -208,7 +208,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetMarketsGroupsMarketGroupIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_markets_groups_market_group_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_market_group_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -220,8 +220,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetMarketsPrices200Ok>]
-    def get_markets_prices(opts = {})
-      data, _status_code, _headers = get_markets_prices_with_http_info(opts)
+    def get_market_prices(opts = {})
+      data, _status_code, _headers = get_market_prices_with_http_info(opts)
       return data
     end
 
@@ -232,9 +232,9 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetMarketsPrices200Ok>, Fixnum, Hash)>] Array<GetMarketsPrices200Ok> data, response status code and response headers
-    def get_markets_prices_with_http_info(opts = {})
+    def get_market_prices_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_markets_prices ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_market_prices ..."
       end
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
@@ -267,7 +267,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetMarketsPrices200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_markets_prices\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_market_prices\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -281,8 +281,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetMarketsRegionIdHistory200Ok>]
-    def get_markets_region_id_history(region_id, type_id, opts = {})
-      data, _status_code, _headers = get_markets_region_id_history_with_http_info(region_id, type_id, opts)
+    def get_region_market_history_by_id(region_id, type_id, opts = {})
+      data, _status_code, _headers = get_region_market_history_by_id_with_http_info(region_id, type_id, opts)
       return data
     end
 
@@ -295,14 +295,14 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetMarketsRegionIdHistory200Ok>, Fixnum, Hash)>] Array<GetMarketsRegionIdHistory200Ok> data, response status code and response headers
-    def get_markets_region_id_history_with_http_info(region_id, type_id, opts = {})
+    def get_region_market_history_by_id_with_http_info(region_id, type_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_markets_region_id_history ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_region_market_history_by_id ..."
       end
       # verify the required parameter 'region_id' is set
-      fail ArgumentError, "Missing the required parameter 'region_id' when calling MarketApi.get_markets_region_id_history" if region_id.nil?
+      fail ArgumentError, "Missing the required parameter 'region_id' when calling MarketApi.get_region_market_history_by_id" if region_id.nil?
       # verify the required parameter 'type_id' is set
-      fail ArgumentError, "Missing the required parameter 'type_id' when calling MarketApi.get_markets_region_id_history" if type_id.nil?
+      fail ArgumentError, "Missing the required parameter 'type_id' when calling MarketApi.get_region_market_history_by_id" if type_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -335,7 +335,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetMarketsRegionIdHistory200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_markets_region_id_history\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_region_market_history_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -351,8 +351,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetMarketsRegionIdOrders200Ok>]
-    def get_markets_region_id_orders(order_type, region_id, opts = {})
-      data, _status_code, _headers = get_markets_region_id_orders_with_http_info(order_type, region_id, opts)
+    def get_region_market_orders(order_type, region_id, opts = {})
+      data, _status_code, _headers = get_region_market_orders_with_http_info(order_type, region_id, opts)
       return data
     end
 
@@ -367,18 +367,18 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetMarketsRegionIdOrders200Ok>, Fixnum, Hash)>] Array<GetMarketsRegionIdOrders200Ok> data, response status code and response headers
-    def get_markets_region_id_orders_with_http_info(order_type, region_id, opts = {})
+    def get_region_market_orders_with_http_info(order_type, region_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_markets_region_id_orders ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_region_market_orders ..."
       end
       # verify the required parameter 'order_type' is set
-      fail ArgumentError, "Missing the required parameter 'order_type' when calling MarketApi.get_markets_region_id_orders" if order_type.nil?
+      fail ArgumentError, "Missing the required parameter 'order_type' when calling MarketApi.get_region_market_orders" if order_type.nil?
       # verify enum value
       unless ['buy', 'sell', 'all'].include?(order_type)
         fail ArgumentError, "invalid value for 'order_type', must be one of buy, sell, all"
       end
       # verify the required parameter 'region_id' is set
-      fail ArgumentError, "Missing the required parameter 'region_id' when calling MarketApi.get_markets_region_id_orders" if region_id.nil?
+      fail ArgumentError, "Missing the required parameter 'region_id' when calling MarketApi.get_region_market_orders" if region_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -413,7 +413,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetMarketsRegionIdOrders200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_markets_region_id_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_region_market_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -428,8 +428,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<GetMarketsStructuresStructureId200Ok>]
-    def get_markets_structures_structure_id(structure_id, opts = {})
-      data, _status_code, _headers = get_markets_structures_structure_id_with_http_info(structure_id, opts)
+    def get_structure_market_orders(structure_id, opts = {})
+      data, _status_code, _headers = get_structure_market_orders_with_http_info(structure_id, opts)
       return data
     end
 
@@ -443,12 +443,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<GetMarketsStructuresStructureId200Ok>, Fixnum, Hash)>] Array<GetMarketsStructuresStructureId200Ok> data, response status code and response headers
-    def get_markets_structures_structure_id_with_http_info(structure_id, opts = {})
+    def get_structure_market_orders_with_http_info(structure_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_markets_structures_structure_id ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_structure_market_orders ..."
       end
       # verify the required parameter 'structure_id' is set
-      fail ArgumentError, "Missing the required parameter 'structure_id' when calling MarketApi.get_markets_structures_structure_id" if structure_id.nil?
+      fail ArgumentError, "Missing the required parameter 'structure_id' when calling MarketApi.get_structure_market_orders" if structure_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -482,7 +482,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<GetMarketsStructuresStructureId200Ok>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_markets_structures_structure_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_structure_market_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

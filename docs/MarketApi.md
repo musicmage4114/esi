@@ -4,17 +4,17 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_orders**](MarketApi.md#get_characters_character_id_orders) | **GET** /characters/{character_id}/orders/ | List orders from a character
-[**get_markets_groups**](MarketApi.md#get_markets_groups) | **GET** /markets/groups/ | Get item groups
-[**get_markets_groups_market_group_id**](MarketApi.md#get_markets_groups_market_group_id) | **GET** /markets/groups/{market_group_id}/ | Get item group information
-[**get_markets_prices**](MarketApi.md#get_markets_prices) | **GET** /markets/prices/ | List market prices
-[**get_markets_region_id_history**](MarketApi.md#get_markets_region_id_history) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
-[**get_markets_region_id_orders**](MarketApi.md#get_markets_region_id_orders) | **GET** /markets/{region_id}/orders/ | List orders in a region
-[**get_markets_structures_structure_id**](MarketApi.md#get_markets_structures_structure_id) | **GET** /markets/structures/{structure_id}/ | List orders in a structure
+[**get_character_market_orders**](MarketApi.md#get_character_market_orders) | **GET** /characters/{character_id}/orders/ | List orders from a character
+[**get_market_groups**](MarketApi.md#get_market_groups) | **GET** /markets/groups/ | Get item groups
+[**get_market_group_by_id**](MarketApi.md#get_market_group_by_id) | **GET** /markets/groups/{market_group_id}/ | Get item group information
+[**get_market_prices**](MarketApi.md#get_market_prices) | **GET** /markets/prices/ | List market prices
+[**get_region_market_history_by_id**](MarketApi.md#get_region_market_history_by_id) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
+[**get_region_market_orders**](MarketApi.md#get_region_market_orders) | **GET** /markets/{region_id}/orders/ | List orders in a region
+[**get_structure_market_orders**](MarketApi.md#get_structure_market_orders) | **GET** /markets/structures/{structure_id}/ | List orders in a structure
 
 
-# **get_characters_character_id_orders**
-> Array&lt;GetCharactersCharacterIdOrders200Ok&gt; get_characters_character_id_orders(character_id, opts)
+# **get_character_market_orders**
+> Array&lt;GetCharactersCharacterIdOrders200Ok&gt; get_character_market_orders(character_id, opts)
 
 List orders from a character
 
@@ -43,10 +43,10 @@ opts = {
 
 begin
   #List orders from a character
-  result = api_instance.get_characters_character_id_orders(character_id, opts)
+  result = api_instance.get_character_market_orders(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_characters_character_id_orders: #{e}"
+  puts "Exception when calling MarketApi->get_character_market_orders: #{e}"
 end
 ```
 
@@ -75,8 +75,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_markets_groups**
-> Array&lt;Integer&gt; get_markets_groups(opts)
+# **get_market_groups**
+> Array&lt;Integer&gt; get_market_groups(opts)
 
 Get item groups
 
@@ -97,10 +97,10 @@ opts = {
 
 begin
   #Get item groups
-  result = api_instance.get_markets_groups(opts)
+  result = api_instance.get_market_groups(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_markets_groups: #{e}"
+  puts "Exception when calling MarketApi->get_market_groups: #{e}"
 end
 ```
 
@@ -127,8 +127,8 @@ No authorization required
 
 
 
-# **get_markets_groups_market_group_id**
-> GetMarketsGroupsMarketGroupIdOk get_markets_groups_market_group_id(market_group_id, opts)
+# **get_market_group_by_id**
+> GetMarketsGroupsMarketGroupIdOk get_market_group_by_id(market_group_id, opts)
 
 Get item group information
 
@@ -152,10 +152,10 @@ opts = {
 
 begin
   #Get item group information
-  result = api_instance.get_markets_groups_market_group_id(market_group_id, opts)
+  result = api_instance.get_market_group_by_id(market_group_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_markets_groups_market_group_id: #{e}"
+  puts "Exception when calling MarketApi->get_market_group_by_id: #{e}"
 end
 ```
 
@@ -184,8 +184,8 @@ No authorization required
 
 
 
-# **get_markets_prices**
-> Array&lt;GetMarketsPrices200Ok&gt; get_markets_prices(opts)
+# **get_market_prices**
+> Array&lt;GetMarketsPrices200Ok&gt; get_market_prices(opts)
 
 List market prices
 
@@ -206,10 +206,10 @@ opts = {
 
 begin
   #List market prices
-  result = api_instance.get_markets_prices(opts)
+  result = api_instance.get_market_prices(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_markets_prices: #{e}"
+  puts "Exception when calling MarketApi->get_market_prices: #{e}"
 end
 ```
 
@@ -236,8 +236,8 @@ No authorization required
 
 
 
-# **get_markets_region_id_history**
-> Array&lt;GetMarketsRegionIdHistory200Ok&gt; get_markets_region_id_history(region_id, type_id, opts)
+# **get_region_market_history_by_id**
+> Array&lt;GetMarketsRegionIdHistory200Ok&gt; get_region_market_history_by_id(region_id, type_id, opts)
 
 List historical market statistics in a region
 
@@ -262,10 +262,10 @@ opts = {
 
 begin
   #List historical market statistics in a region
-  result = api_instance.get_markets_region_id_history(region_id, type_id, opts)
+  result = api_instance.get_region_market_history_by_id(region_id, type_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_markets_region_id_history: #{e}"
+  puts "Exception when calling MarketApi->get_region_market_history_by_id: #{e}"
 end
 ```
 
@@ -294,8 +294,8 @@ No authorization required
 
 
 
-# **get_markets_region_id_orders**
-> Array&lt;GetMarketsRegionIdOrders200Ok&gt; get_markets_region_id_orders(order_type, region_id, opts)
+# **get_region_market_orders**
+> Array&lt;GetMarketsRegionIdOrders200Ok&gt; get_region_market_orders(order_type, region_id, opts)
 
 List orders in a region
 
@@ -322,10 +322,10 @@ opts = {
 
 begin
   #List orders in a region
-  result = api_instance.get_markets_region_id_orders(order_type, region_id, opts)
+  result = api_instance.get_region_market_orders(order_type, region_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_markets_region_id_orders: #{e}"
+  puts "Exception when calling MarketApi->get_region_market_orders: #{e}"
 end
 ```
 
@@ -356,8 +356,8 @@ No authorization required
 
 
 
-# **get_markets_structures_structure_id**
-> Array&lt;GetMarketsStructuresStructureId200Ok&gt; get_markets_structures_structure_id(structure_id, opts)
+# **get_structure_market_orders**
+> Array&lt;GetMarketsStructuresStructureId200Ok&gt; get_structure_market_orders(structure_id, opts)
 
 List orders in a structure
 
@@ -387,10 +387,10 @@ opts = {
 
 begin
   #List orders in a structure
-  result = api_instance.get_markets_structures_structure_id(structure_id, opts)
+  result = api_instance.get_structure_market_orders(structure_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_markets_structures_structure_id: #{e}"
+  puts "Exception when calling MarketApi->get_structure_market_orders: #{e}"
 end
 ```
 

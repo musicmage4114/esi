@@ -31,7 +31,7 @@ describe 'MarketApi' do
     end
   end
 
-  # unit tests for get_characters_character_id_orders
+  # unit tests for get_character_market_orders
   # List orders from a character
   # List market orders placed by a character  ---  Alternate route: &#x60;/v1/characters/{character_id}/orders/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/orders/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/orders/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param character_id An EVE character ID
@@ -41,13 +41,13 @@ describe 'MarketApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdOrders200Ok>]
-  describe 'get_characters_character_id_orders test' do
+  describe 'get_character_market_orders test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_markets_groups
+  # unit tests for get_market_groups
   # Get item groups
   # Get a list of item groups  ---  Alternate route: &#x60;/v1/markets/groups/&#x60;  Alternate route: &#x60;/legacy/markets/groups/&#x60;  Alternate route: &#x60;/latest/markets/groups/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -55,13 +55,13 @@ describe 'MarketApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'get_markets_groups test' do
+  describe 'get_market_groups test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_markets_groups_market_group_id
+  # unit tests for get_market_group_by_id
   # Get item group information
   # Get information on an item group  ---  Alternate route: &#x60;/v1/markets/groups/{market_group_id}/&#x60;  Alternate route: &#x60;/legacy/markets/groups/{market_group_id}/&#x60;  Alternate route: &#x60;/latest/markets/groups/{market_group_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param market_group_id An Eve item group ID
@@ -71,13 +71,13 @@ describe 'MarketApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetMarketsGroupsMarketGroupIdOk]
-  describe 'get_markets_groups_market_group_id test' do
+  describe 'get_market_group_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_markets_prices
+  # unit tests for get_market_prices
   # List market prices
   # Return a list of prices  ---  Alternate route: &#x60;/v1/markets/prices/&#x60;  Alternate route: &#x60;/legacy/markets/prices/&#x60;  Alternate route: &#x60;/latest/markets/prices/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param [Hash] opts the optional parameters
@@ -85,13 +85,13 @@ describe 'MarketApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetMarketsPrices200Ok>]
-  describe 'get_markets_prices test' do
+  describe 'get_market_prices test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_markets_region_id_history
+  # unit tests for get_region_market_history_by_id
   # List historical market statistics in a region
   # Return a list of historical market statistics for the specified type in a region  ---  Alternate route: &#x60;/v1/markets/{region_id}/history/&#x60;  Alternate route: &#x60;/legacy/markets/{region_id}/history/&#x60;  Alternate route: &#x60;/latest/markets/{region_id}/history/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param region_id Return statistics in this region
@@ -101,13 +101,13 @@ describe 'MarketApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetMarketsRegionIdHistory200Ok>]
-  describe 'get_markets_region_id_history test' do
+  describe 'get_region_market_history_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_markets_region_id_orders
+  # unit tests for get_region_market_orders
   # List orders in a region
   # Return a list of orders in a region  ---  Alternate route: &#x60;/v1/markets/{region_id}/orders/&#x60;  Alternate route: &#x60;/legacy/markets/{region_id}/orders/&#x60;  Alternate route: &#x60;/latest/markets/{region_id}/orders/&#x60;   ---  This route is cached for up to 300 seconds
   # @param order_type Filter buy/sell orders, return all orders by default. If you query without type_id, we always return both buy and sell orders. 
@@ -119,13 +119,13 @@ describe 'MarketApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetMarketsRegionIdOrders200Ok>]
-  describe 'get_markets_region_id_orders test' do
+  describe 'get_region_market_orders test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_markets_structures_structure_id
+  # unit tests for get_structure_market_orders
   # List orders in a structure
   # Return all orders in a structure  ---  Alternate route: &#x60;/v1/markets/structures/{structure_id}/&#x60;  Alternate route: &#x60;/legacy/markets/structures/{structure_id}/&#x60;  Alternate route: &#x60;/latest/markets/structures/{structure_id}/&#x60;   ---  This route is cached for up to 300 seconds
   # @param structure_id Return orders in this structure
@@ -136,7 +136,7 @@ describe 'MarketApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetMarketsStructuresStructureId200Ok>]
-  describe 'get_markets_structures_structure_id test' do
+  describe 'get_structure_market_orders test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
