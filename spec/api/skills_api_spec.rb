@@ -31,7 +31,7 @@ describe 'SkillsApi' do
     end
   end
 
-  # unit tests for get_characters_character_id_skillqueue
+  # unit tests for get_character_skill_queue
   # Get character&#39;s skill queue
   # List the configured skill queue for the given character  ---  Alternate route: &#x60;/v2/characters/{character_id}/skillqueue/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/skillqueue/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/skillqueue/&#x60;   ---  This route is cached for up to 120 seconds
   # @param character_id Character id of the target character
@@ -41,13 +41,13 @@ describe 'SkillsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdSkillqueue200Ok>]
-  describe 'get_characters_character_id_skillqueue test' do
+  describe 'get_character_skill_queue test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_characters_character_id_skills
+  # unit tests for get_character_skills
   # Get character skills
   # List all trained skills for the given character  ---  Alternate route: &#x60;/v3/characters/{character_id}/skills/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/skills/&#x60;   ---  This route is cached for up to 120 seconds
   # @param character_id An EVE character ID
@@ -57,7 +57,7 @@ describe 'SkillsApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetCharactersCharacterIdSkillsOk]
-  describe 'get_characters_character_id_skills test' do
+  describe 'get_character_skills test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

@@ -4,12 +4,12 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_skillqueue**](SkillsApi.md#get_characters_character_id_skillqueue) | **GET** /characters/{character_id}/skillqueue/ | Get character&#39;s skill queue
-[**get_characters_character_id_skills**](SkillsApi.md#get_characters_character_id_skills) | **GET** /characters/{character_id}/skills/ | Get character skills
+[**get_character_skill_queue**](SkillsApi.md#get_character_skill_queue) | **GET** /characters/{character_id}/skillqueue/ | Get character&#39;s skill queue
+[**get_character_skills**](SkillsApi.md#get_character_skills) | **GET** /characters/{character_id}/skills/ | Get character skills
 
 
-# **get_characters_character_id_skillqueue**
-> Array&lt;GetCharactersCharacterIdSkillqueue200Ok&gt; get_characters_character_id_skillqueue(character_id, opts)
+# **get_character_skill_queue**
+> Array&lt;GetCharactersCharacterIdSkillqueue200Ok&gt; get_character_skill_queue(character_id, opts)
 
 Get character's skill queue
 
@@ -38,10 +38,10 @@ opts = {
 
 begin
   #Get character's skill queue
-  result = api_instance.get_characters_character_id_skillqueue(character_id, opts)
+  result = api_instance.get_character_skill_queue(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling SkillsApi->get_characters_character_id_skillqueue: #{e}"
+  puts "Exception when calling SkillsApi->get_character_skill_queue: #{e}"
 end
 ```
 
@@ -70,8 +70,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_characters_character_id_skills**
-> GetCharactersCharacterIdSkillsOk get_characters_character_id_skills(character_id, opts)
+# **get_character_skills**
+> GetCharactersCharacterIdSkillsOk get_character_skills(character_id, opts)
 
 Get character skills
 
@@ -100,10 +100,10 @@ opts = {
 
 begin
   #Get character skills
-  result = api_instance.get_characters_character_id_skills(character_id, opts)
+  result = api_instance.get_character_skills(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling SkillsApi->get_characters_character_id_skills: #{e}"
+  puts "Exception when calling SkillsApi->get_character_skills: #{e}"
 end
 ```
 

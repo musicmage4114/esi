@@ -173,8 +173,8 @@ Class | Method | HTTP request | Description
 *SwaggerClient::RoutesApi* | [**get_route_origin_destination**](docs/RoutesApi.md#get_route_origin_destination) | **GET** /route/{origin}/{destination}/ | Get route
 *SwaggerClient::SearchApi* | [**search_character_by_string**](docs/SearchApi.md#search_character_by_string) | **GET** /characters/{character_id}/search/ | Search on a string
 *SwaggerClient::SearchApi* | [**find_entity_by_string**](docs/SearchApi.md#find_entity_by_string) | **GET** /search/ | Search on a string
-*SwaggerClient::SkillsApi* | [**get_characters_character_id_skillqueue**](docs/SkillsApi.md#get_characters_character_id_skillqueue) | **GET** /characters/{character_id}/skillqueue/ | Get character's skill queue
-*SwaggerClient::SkillsApi* | [**get_characters_character_id_skills**](docs/SkillsApi.md#get_characters_character_id_skills) | **GET** /characters/{character_id}/skills/ | Get character skills
+*SwaggerClient::SkillsApi* | [**get_character_skill_queue**](docs/SkillsApi.md#get_character_skill_queue) | **GET** /characters/{character_id}/skillqueue/ | Get character's skill queue
+*SwaggerClient::SkillsApi* | [**get_character_skills**](docs/SkillsApi.md#get_character_skills) | **GET** /characters/{character_id}/skills/ | Get character skills
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_campaigns**](docs/SovereigntyApi.md#get_sovereignty_campaigns) | **GET** /sovereignty/campaigns/ | List sovereignty campaigns
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_map**](docs/SovereigntyApi.md#get_sovereignty_map) | **GET** /sovereignty/map/ | List sovereignty of systems
 *SwaggerClient::SovereigntyApi* | [**get_sovereignty_structures**](docs/SovereigntyApi.md#get_sovereignty_structures) | **GET** /sovereignty/structures/ | List sovereignty structures
