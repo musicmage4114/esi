@@ -5,9 +5,9 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_dogma_attributes**](DogmaApi.md#get_dogma_attributes) | **GET** /dogma/attributes/ | Get attributes
-[**get_dogma_attributes_attribute_id**](DogmaApi.md#get_dogma_attributes_attribute_id) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
+[**get_dogma_attribute_by_id**](DogmaApi.md#get_dogma_attribute_by_id) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
 [**get_dogma_effects**](DogmaApi.md#get_dogma_effects) | **GET** /dogma/effects/ | Get effects
-[**get_dogma_effects_effect_id**](DogmaApi.md#get_dogma_effects_effect_id) | **GET** /dogma/effects/{effect_id}/ | Get effect information
+[**get_dogma_effect_by_id**](DogmaApi.md#get_dogma_effect_by_id) | **GET** /dogma/effects/{effect_id}/ | Get effect information
 
 
 # **get_dogma_attributes**
@@ -62,8 +62,8 @@ No authorization required
 
 
 
-# **get_dogma_attributes_attribute_id**
-> GetDogmaAttributesAttributeIdOk get_dogma_attributes_attribute_id(attribute_id, opts)
+# **get_dogma_attribute_by_id**
+> GetDogmaAttributesAttributeIdOk get_dogma_attribute_by_id(attribute_id, opts)
 
 Get attribute information
 
@@ -86,10 +86,10 @@ opts = {
 
 begin
   #Get attribute information
-  result = api_instance.get_dogma_attributes_attribute_id(attribute_id, opts)
+  result = api_instance.get_dogma_attribute_by_id(attribute_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DogmaApi->get_dogma_attributes_attribute_id: #{e}"
+  puts "Exception when calling DogmaApi->get_dogma_attribute_by_id: #{e}"
 end
 ```
 
@@ -169,8 +169,8 @@ No authorization required
 
 
 
-# **get_dogma_effects_effect_id**
-> GetDogmaEffectsEffectIdOk get_dogma_effects_effect_id(effect_id, opts)
+# **get_dogma_effect_by_id**
+> GetDogmaEffectsEffectIdOk get_dogma_effect_by_id(effect_id, opts)
 
 Get effect information
 
@@ -193,10 +193,10 @@ opts = {
 
 begin
   #Get effect information
-  result = api_instance.get_dogma_effects_effect_id(effect_id, opts)
+  result = api_instance.get_dogma_effect_by_id(effect_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DogmaApi->get_dogma_effects_effect_id: #{e}"
+  puts "Exception when calling DogmaApi->get_dogma_effect_by_id: #{e}"
 end
 ```
 

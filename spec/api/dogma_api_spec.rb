@@ -45,7 +45,7 @@ describe 'DogmaApi' do
     end
   end
 
-  # unit tests for get_dogma_attributes_attribute_id
+  # unit tests for get_dogma_attribute_by_id
   # Get attribute information
   # Get information on a dogma attribute  ---  Alternate route: &#x60;/v1/dogma/attributes/{attribute_id}/&#x60;  Alternate route: &#x60;/legacy/dogma/attributes/{attribute_id}/&#x60;  Alternate route: &#x60;/latest/dogma/attributes/{attribute_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param attribute_id A dogma attribute ID
@@ -54,7 +54,7 @@ describe 'DogmaApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetDogmaAttributesAttributeIdOk]
-  describe 'get_dogma_attributes_attribute_id test' do
+  describe 'get_dogma_attribute_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -74,7 +74,7 @@ describe 'DogmaApi' do
     end
   end
 
-  # unit tests for get_dogma_effects_effect_id
+  # unit tests for get_dogma_effect_by_id
   # Get effect information
   # Get information on a dogma effect  ---  Alternate route: &#x60;/v1/dogma/effects/{effect_id}/&#x60;  Alternate route: &#x60;/legacy/dogma/effects/{effect_id}/&#x60;  Alternate route: &#x60;/latest/dogma/effects/{effect_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param effect_id A dogma effect ID
@@ -83,7 +83,7 @@ describe 'DogmaApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [GetDogmaEffectsEffectIdOk]
-  describe 'get_dogma_effects_effect_id test' do
+  describe 'get_dogma_effect_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

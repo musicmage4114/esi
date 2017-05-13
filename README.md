@@ -116,9 +116,9 @@ Class | Method | HTTP request | Description
 *SwaggerClient::CorporationApi* | [**get_npc_corporations**](docs/CorporationApi.md#get_npc_corporations) | **GET** /corporations/npccorps/ | Get npc corporations
 *SwaggerClient::CorporationApi* | [**update_structure_vulnerability**](docs/CorporationApi.md#update_structure_vulnerability) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
 *SwaggerClient::DogmaApi* | [**get_dogma_attributes**](docs/DogmaApi.md#get_dogma_attributes) | **GET** /dogma/attributes/ | Get attributes
-*SwaggerClient::DogmaApi* | [**get_dogma_attributes_attribute_id**](docs/DogmaApi.md#get_dogma_attributes_attribute_id) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
+*SwaggerClient::DogmaApi* | [**get_dogma_attribute_by_id**](docs/DogmaApi.md#get_dogma_attribute_by_id) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
 *SwaggerClient::DogmaApi* | [**get_dogma_effects**](docs/DogmaApi.md#get_dogma_effects) | **GET** /dogma/effects/ | Get effects
-*SwaggerClient::DogmaApi* | [**get_dogma_effects_effect_id**](docs/DogmaApi.md#get_dogma_effects_effect_id) | **GET** /dogma/effects/{effect_id}/ | Get effect information
+*SwaggerClient::DogmaApi* | [**get_dogma_effect_by_id**](docs/DogmaApi.md#get_dogma_effect_by_id) | **GET** /dogma/effects/{effect_id}/ | Get effect information
 *SwaggerClient::FittingsApi* | [**delete_character_fitting**](docs/FittingsApi.md#delete_character_fitting) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
 *SwaggerClient::FittingsApi* | [**get_character_fittings**](docs/FittingsApi.md#get_character_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
 *SwaggerClient::FittingsApi* | [**add_character_fitting**](docs/FittingsApi.md#add_character_fitting) | **POST** /characters/{character_id}/fittings/ | Create fitting

@@ -86,8 +86,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetDogmaAttributesAttributeIdOk]
-    def get_dogma_attributes_attribute_id(attribute_id, opts = {})
-      data, _status_code, _headers = get_dogma_attributes_attribute_id_with_http_info(attribute_id, opts)
+    def get_dogma_attribute_by_id(attribute_id, opts = {})
+      data, _status_code, _headers = get_dogma_attribute_by_id_with_http_info(attribute_id, opts)
       return data
     end
 
@@ -99,12 +99,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetDogmaAttributesAttributeIdOk, Fixnum, Hash)>] GetDogmaAttributesAttributeIdOk data, response status code and response headers
-    def get_dogma_attributes_attribute_id_with_http_info(attribute_id, opts = {})
+    def get_dogma_attribute_by_id_with_http_info(attribute_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: DogmaApi.get_dogma_attributes_attribute_id ..."
+        @api_client.config.logger.debug "Calling API: DogmaApi.get_dogma_attribute_by_id ..."
       end
       # verify the required parameter 'attribute_id' is set
-      fail ArgumentError, "Missing the required parameter 'attribute_id' when calling DogmaApi.get_dogma_attributes_attribute_id" if attribute_id.nil?
+      fail ArgumentError, "Missing the required parameter 'attribute_id' when calling DogmaApi.get_dogma_attribute_by_id" if attribute_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -136,7 +136,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetDogmaAttributesAttributeIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: DogmaApi#get_dogma_attributes_attribute_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: DogmaApi#get_dogma_attribute_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -208,8 +208,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [GetDogmaEffectsEffectIdOk]
-    def get_dogma_effects_effect_id(effect_id, opts = {})
-      data, _status_code, _headers = get_dogma_effects_effect_id_with_http_info(effect_id, opts)
+    def get_dogma_effect_by_id(effect_id, opts = {})
+      data, _status_code, _headers = get_dogma_effect_by_id_with_http_info(effect_id, opts)
       return data
     end
 
@@ -221,12 +221,12 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(GetDogmaEffectsEffectIdOk, Fixnum, Hash)>] GetDogmaEffectsEffectIdOk data, response status code and response headers
-    def get_dogma_effects_effect_id_with_http_info(effect_id, opts = {})
+    def get_dogma_effect_by_id_with_http_info(effect_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: DogmaApi.get_dogma_effects_effect_id ..."
+        @api_client.config.logger.debug "Calling API: DogmaApi.get_dogma_effect_by_id ..."
       end
       # verify the required parameter 'effect_id' is set
-      fail ArgumentError, "Missing the required parameter 'effect_id' when calling DogmaApi.get_dogma_effects_effect_id" if effect_id.nil?
+      fail ArgumentError, "Missing the required parameter 'effect_id' when calling DogmaApi.get_dogma_effect_by_id" if effect_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -258,7 +258,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'GetDogmaEffectsEffectIdOk')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: DogmaApi#get_dogma_effects_effect_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: DogmaApi#get_dogma_effect_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
