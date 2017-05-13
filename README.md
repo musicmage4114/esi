@@ -218,10 +218,10 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
- - [SwaggerClient::DeleteCharactersCharacterIdContactsForbidden](docs/DeleteCharactersCharacterIdContactsForbidden.md)
- - [SwaggerClient::DeleteCharactersCharacterIdContactsInternalServerError](docs/DeleteCharactersCharacterIdContactsInternalServerError.md)
- - [SwaggerClient::DeleteCharactersCharacterIdFittingsFittingIdForbidden](docs/DeleteCharactersCharacterIdFittingsFittingIdForbidden.md)
- - [SwaggerClient::DeleteCharactersCharacterIdFittingsFittingIdInternalServerError](docs/DeleteCharactersCharacterIdFittingsFittingIdInternalServerError.md)
+ - [SwaggerClient::DeleteCharacterContactsForbidden](docs/DeleteCharacterContactsForbidden.md)
+ - [SwaggerClient::DeleteCharacterContactsInternalServerError](docs/DeleteCharacterContactsInternalServerError.md)
+ - [SwaggerClient::DeleteCharacterFittingForbidden](docs/DeleteCharacterFittingForbidden.md)
+ - [SwaggerClient::DeleteCharacterFittingInternalServerError](docs/DeleteCharacterFittingInternalServerError.md)
  - [SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdForbidden](docs/DeleteCharactersCharacterIdMailLabelsLabelIdForbidden.md)
  - [SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdInternalServerError](docs/DeleteCharactersCharacterIdMailLabelsLabelIdInternalServerError.md)
  - [SwaggerClient::DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity](docs/DeleteCharactersCharacterIdMailLabelsLabelIdUnprocessableEntity.md)

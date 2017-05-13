@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteCharactersCharacterIdContactsInternalServerError
+# SwaggerClient::DeleteCharacterContactsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteCharactersCharacterIdFittingsFittingIdForbidden
+# SwaggerClient::DeleteCharacterFittingForbidden
 
 ## Properties
 Name | Type | Description | Notes
