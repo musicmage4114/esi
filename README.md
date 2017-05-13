@@ -136,7 +136,7 @@ Class | Method | HTTP request | Description
 *SwaggerClient::FleetsApi* | [**put_fleets_fleet_id_squads_squad_id**](docs/FleetsApi.md#put_fleets_fleet_id_squads_squad_id) | **PUT** /fleets/{fleet_id}/squads/{squad_id}/ | Rename fleet squad
 *SwaggerClient::FleetsApi* | [**put_fleets_fleet_id_wings_wing_id**](docs/FleetsApi.md#put_fleets_fleet_id_wings_wing_id) | **PUT** /fleets/{fleet_id}/wings/{wing_id}/ | Rename fleet wing
 *SwaggerClient::IncursionsApi* | [**get_incursions**](docs/IncursionsApi.md#get_incursions) | **GET** /incursions/ | List incursions
-*SwaggerClient::IndustryApi* | [**get_characters_character_id_industry_jobs**](docs/IndustryApi.md#get_characters_character_id_industry_jobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
+*SwaggerClient::IndustryApi* | [**get_character_industry_jobs**](docs/IndustryApi.md#get_character_industry_jobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
 *SwaggerClient::IndustryApi* | [**get_industry_facilities**](docs/IndustryApi.md#get_industry_facilities) | **GET** /industry/facilities/ | List industry facilities
 *SwaggerClient::IndustryApi* | [**get_industry_systems**](docs/IndustryApi.md#get_industry_systems) | **GET** /industry/systems/ | List solar system cost indices
 *SwaggerClient::InsuranceApi* | [**get_insurance_prices**](docs/InsuranceApi.md#get_insurance_prices) | **GET** /insurance/prices/ | List insurance levels

@@ -4,13 +4,13 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_characters_character_id_industry_jobs**](IndustryApi.md#get_characters_character_id_industry_jobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
+[**get_character_industry_jobs**](IndustryApi.md#get_character_industry_jobs) | **GET** /characters/{character_id}/industry/jobs/ | List character industry jobs
 [**get_industry_facilities**](IndustryApi.md#get_industry_facilities) | **GET** /industry/facilities/ | List industry facilities
 [**get_industry_systems**](IndustryApi.md#get_industry_systems) | **GET** /industry/systems/ | List solar system cost indices
 
 
-# **get_characters_character_id_industry_jobs**
-> Array&lt;GetCharactersCharacterIdIndustryJobs200Ok&gt; get_characters_character_id_industry_jobs(character_id, opts)
+# **get_character_industry_jobs**
+> Array&lt;GetCharactersCharacterIdIndustryJobs200Ok&gt; get_character_industry_jobs(character_id, opts)
 
 List character industry jobs
 
@@ -40,10 +40,10 @@ opts = {
 
 begin
   #List character industry jobs
-  result = api_instance.get_characters_character_id_industry_jobs(character_id, opts)
+  result = api_instance.get_character_industry_jobs(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling IndustryApi->get_characters_character_id_industry_jobs: #{e}"
+  puts "Exception when calling IndustryApi->get_character_industry_jobs: #{e}"
 end
 ```
 

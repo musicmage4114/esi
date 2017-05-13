@@ -31,7 +31,7 @@ describe 'IndustryApi' do
     end
   end
 
-  # unit tests for get_characters_character_id_industry_jobs
+  # unit tests for get_character_industry_jobs
   # List character industry jobs
   # List industry jobs placed by a character  ---  Alternate route: &#x60;/v1/characters/{character_id}/industry/jobs/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/industry/jobs/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/industry/jobs/&#x60;   ---  This route is cached for up to 300 seconds
   # @param character_id An EVE character ID
@@ -42,7 +42,7 @@ describe 'IndustryApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<GetCharactersCharacterIdIndustryJobs200Ok>]
-  describe 'get_characters_character_id_industry_jobs test' do
+  describe 'get_character_industry_jobs test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
