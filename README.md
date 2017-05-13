@@ -119,9 +119,9 @@ Class | Method | HTTP request | Description
 *SwaggerClient::DogmaApi* | [**get_dogma_attributes_attribute_id**](docs/DogmaApi.md#get_dogma_attributes_attribute_id) | **GET** /dogma/attributes/{attribute_id}/ | Get attribute information
 *SwaggerClient::DogmaApi* | [**get_dogma_effects**](docs/DogmaApi.md#get_dogma_effects) | **GET** /dogma/effects/ | Get effects
 *SwaggerClient::DogmaApi* | [**get_dogma_effects_effect_id**](docs/DogmaApi.md#get_dogma_effects_effect_id) | **GET** /dogma/effects/{effect_id}/ | Get effect information
-*SwaggerClient::FittingsApi* | [**delete_characters_character_id_fittings_fitting_id**](docs/FittingsApi.md#delete_characters_character_id_fittings_fitting_id) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
-*SwaggerClient::FittingsApi* | [**get_characters_character_id_fittings**](docs/FittingsApi.md#get_characters_character_id_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
-*SwaggerClient::FittingsApi* | [**post_characters_character_id_fittings**](docs/FittingsApi.md#post_characters_character_id_fittings) | **POST** /characters/{character_id}/fittings/ | Create fitting
+*SwaggerClient::FittingsApi* | [**delete_character_fitting**](docs/FittingsApi.md#delete_character_fitting) | **DELETE** /characters/{character_id}/fittings/{fitting_id}/ | Delete fitting
+*SwaggerClient::FittingsApi* | [**get_character_fittings**](docs/FittingsApi.md#get_character_fittings) | **GET** /characters/{character_id}/fittings/ | Get fittings
+*SwaggerClient::FittingsApi* | [**add_character_fitting**](docs/FittingsApi.md#add_character_fitting) | **POST** /characters/{character_id}/fittings/ | Create fitting
 *SwaggerClient::FleetsApi* | [**delete_fleets_fleet_id_members_member_id**](docs/FleetsApi.md#delete_fleets_fleet_id_members_member_id) | **DELETE** /fleets/{fleet_id}/members/{member_id}/ | Kick fleet member
 *SwaggerClient::FleetsApi* | [**delete_fleets_fleet_id_squads_squad_id**](docs/FleetsApi.md#delete_fleets_fleet_id_squads_squad_id) | **DELETE** /fleets/{fleet_id}/squads/{squad_id}/ | Delete fleet squad
 *SwaggerClient::FleetsApi* | [**delete_fleets_fleet_id_wings_wing_id**](docs/FleetsApi.md#delete_fleets_fleet_id_wings_wing_id) | **DELETE** /fleets/{fleet_id}/wings/{wing_id}/ | Delete fleet wing
