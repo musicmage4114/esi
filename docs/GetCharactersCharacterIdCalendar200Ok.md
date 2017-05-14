@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdCalendar200Ok
+# SwaggerClient::EventSummary
 
 ## Properties
 Name | Type | Description | Notes

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_clones**
-> GetCharactersCharacterIdClonesOk get_clones(character_id, opts)
+> CloneInfo get_clones(character_id, opts)
 
 Get clones
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdClonesOk**](GetCharactersCharacterIdClonesOk.md)
+[**CloneInfo**](CloneInfo.md)
 
 ### Authorization
 

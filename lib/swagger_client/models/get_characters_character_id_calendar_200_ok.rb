@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # event
-  class GetCharactersCharacterIdCalendar200Ok
+  class EventSummary
     # event_date string
     attr_accessor :event_date
 

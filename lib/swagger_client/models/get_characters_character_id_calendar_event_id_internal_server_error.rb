@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Internal server error
-  class GetCharactersCharacterIdCalendarEventIdInternalServerError
+  class GetEventByIdInternalServerError
     # Internal server error message
     attr_accessor :error
 

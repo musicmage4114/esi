@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdContacts200Ok
+# SwaggerClient::Contact
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdChatChannelsInternalServerError
+# SwaggerClient::GetCharacterChatChannelsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

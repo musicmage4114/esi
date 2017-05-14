@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetAlliancesAllianceIdIconsOk
+  class AllianceIcons
     # px128x128 string
     attr_accessor :px128x128
 

@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetCharactersCharacterIdContactsLabels200Ok
+  class ContactLabel
     # label_id integer
     attr_accessor :label_id
 

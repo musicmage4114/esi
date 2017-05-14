@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdCalendarForbidden
+# SwaggerClient::GetCalendarForbidden
 
 ## Properties
 Name | Type | Description | Notes

@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # blocked object
-  class GetCharactersCharacterIdChatChannelsBlocked
+  class CharacterChatChannelsBlocked
     # ID of a blocked channel member
     attr_accessor :accessor_id
 

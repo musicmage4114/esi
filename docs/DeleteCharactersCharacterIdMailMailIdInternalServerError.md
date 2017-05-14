@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteCharactersCharacterIdMailMailIdInternalServerError
+# SwaggerClient::DeleteMailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

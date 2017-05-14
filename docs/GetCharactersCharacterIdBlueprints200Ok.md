@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdBlueprints200Ok
+# SwaggerClient::CharacterBlueprint
 
 ## Properties
 Name | Type | Description | Notes

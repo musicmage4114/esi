@@ -1,4 +1,4 @@
-# SwaggerClient::GetAlliancesNamesInternalServerError
+# SwaggerClient::GetAllianceNameInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

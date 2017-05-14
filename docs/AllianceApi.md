@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_alliance_by_id**](AllianceApi.md#get_alliance_by_id) | **GET** /alliances/{alliance_id}/ | Get alliance information
 [**get_alliance_corporations**](AllianceApi.md#get_alliance_corporations) | **GET** /alliances/{alliance_id}/corporations/ | List alliance&#39;s corporations
 [**get_alliance_icon**](AllianceApi.md#get_alliance_icon) | **GET** /alliances/{alliance_id}/icons/ | Get alliance icon
-[**get_alliance_names**](AllianceApi.md#get_alliance_names) | **GET** /alliances/names/ | Get alliance names
+[**get_alliance_name**](AllianceApi.md#get_alliance_name) | **GET** /alliances/names/ | Get alliance names
 
 
 # **get_alliances**
@@ -64,7 +64,7 @@ No authorization required
 
 
 # **get_alliance_by_id**
-> GetAlliancesAllianceIdOk get_alliance_by_id(alliance_id, opts)
+> Alliance get_alliance_by_id(alliance_id, opts)
 
 Get alliance information
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAlliancesAllianceIdOk**](GetAlliancesAllianceIdOk.md)
+[**Alliance**](Alliance.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ No authorization required
 
 
 # **get_alliance_icon**
-> GetAlliancesAllianceIdIconsOk get_alliance_icon(alliance_id, opts)
+> AllianceIcons get_alliance_icon(alliance_id, opts)
 
 Get alliance icon
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAlliancesAllianceIdIconsOk**](GetAlliancesAllianceIdIconsOk.md)
+[**AllianceIcons**](AllianceIcons.md)
 
 ### Authorization
 
@@ -228,8 +228,8 @@ No authorization required
 
 
 
-# **get_alliance_names**
-> Array&lt;GetAlliancesNames200Ok&gt; get_alliance_names(alliance_ids, opts)
+# **get_alliance_name**
+> Array&lt;AllianceName&gt; get_alliance_name(alliance_ids, opts)
 
 Get alliance names
 
@@ -252,10 +252,10 @@ opts = {
 
 begin
   #Get alliance names
-  result = api_instance.get_alliance_names(alliance_ids, opts)
+  result = api_instance.get_alliance_name(alliance_ids, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling AllianceApi->get_alliance_names: #{e}"
+  puts "Exception when calling AllianceApi->get_alliance_name: #{e}"
 end
 ```
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetAlliancesNames200Ok&gt;**](GetAlliancesNames200Ok.md)
+[**Array&lt;AllianceName&gt;**](AllianceName.md)
 
 ### Authorization
 

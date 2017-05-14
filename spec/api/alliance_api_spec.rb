@@ -53,7 +53,7 @@ describe 'AllianceApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetAlliancesAllianceIdOk]
+  # @return [Alliance]
   describe 'get_alliance_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -83,14 +83,14 @@ describe 'AllianceApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetAlliancesAllianceIdIconsOk]
+  # @return [AllianceIcons]
   describe 'get_alliance_icon test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_alliance_names
+  # unit tests for get_alliance_name
   # Get alliance names
   # Resolve a set of alliance IDs to alliance names  ---  Alternate route: &#x60;/v1/alliances/names/&#x60;  Alternate route: &#x60;/legacy/alliances/names/&#x60;  Alternate route: &#x60;/latest/alliances/names/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param alliance_ids A comma separated list of alliance IDs
@@ -98,8 +98,8 @@ describe 'AllianceApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetAlliancesNames200Ok>]
-  describe 'get_alliance_names test' do
+  # @return [Array<AllianceName>]
+  describe 'get_alliance_name test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

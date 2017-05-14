@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # jump_clone object
-  class GetCharactersCharacterIdClonesJumpClone
+  class JumpClone
     # implants array
     attr_accessor :implants
 

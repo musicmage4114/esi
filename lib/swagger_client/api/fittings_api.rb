@@ -96,7 +96,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdFittings200Ok>]
+    # @return [Array<Fitting>]
     def get_fittings(character_id, opts = {})
       data, _status_code, _headers = get_fittings_with_http_info(character_id, opts)
       return data
@@ -110,7 +110,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdFittings200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdFittings200Ok> data, response status code and response headers
+    # @return [Array<(Array<Fitting>, Fixnum, Hash)>] Array<Fitting> data, response status code and response headers
     def get_fittings_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: FittingsApi.get_fittings ..."
@@ -147,7 +147,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdFittings200Ok>')
+        :return_type => 'Array<Fitting>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: FittingsApi#get_fittings\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

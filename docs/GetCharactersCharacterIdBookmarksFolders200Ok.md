@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdBookmarksFolders200Ok
+# SwaggerClient::BookmarkFolder
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PutCharactersCharacterIdCalendarEventIdForbidden
+# SwaggerClient::RespondToEventForbidden
 
 ## Properties
 Name | Type | Description | Notes

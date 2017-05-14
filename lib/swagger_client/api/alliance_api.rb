@@ -85,7 +85,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetAlliancesAllianceIdOk]
+    # @return [Alliance]
     def get_alliance_by_id(alliance_id, opts = {})
       data, _status_code, _headers = get_alliance_by_id_with_http_info(alliance_id, opts)
       return data
@@ -98,7 +98,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetAlliancesAllianceIdOk, Fixnum, Hash)>] GetAlliancesAllianceIdOk data, response status code and response headers
+    # @return [Array<(Alliance, Fixnum, Hash)>] Alliance data, response status code and response headers
     def get_alliance_by_id_with_http_info(alliance_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_by_id ..."
@@ -134,7 +134,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetAlliancesAllianceIdOk')
+        :return_type => 'Alliance')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: AllianceApi#get_alliance_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -211,7 +211,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetAlliancesAllianceIdIconsOk]
+    # @return [AllianceIcons]
     def get_alliance_icon(alliance_id, opts = {})
       data, _status_code, _headers = get_alliance_icon_with_http_info(alliance_id, opts)
       return data
@@ -224,7 +224,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetAlliancesAllianceIdIconsOk, Fixnum, Hash)>] GetAlliancesAllianceIdIconsOk data, response status code and response headers
+    # @return [Array<(AllianceIcons, Fixnum, Hash)>] AllianceIcons data, response status code and response headers
     def get_alliance_icon_with_http_info(alliance_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_icon ..."
@@ -260,7 +260,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetAlliancesAllianceIdIconsOk')
+        :return_type => 'AllianceIcons')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: AllianceApi#get_alliance_icon\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -274,9 +274,9 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetAlliancesNames200Ok>]
-    def get_alliance_names(alliance_ids, opts = {})
-      data, _status_code, _headers = get_alliance_names_with_http_info(alliance_ids, opts)
+    # @return [Array<AllianceName>]
+    def get_alliance_name(alliance_ids, opts = {})
+      data, _status_code, _headers = get_alliance_name_with_http_info(alliance_ids, opts)
       return data
     end
 
@@ -287,15 +287,15 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetAlliancesNames200Ok>, Fixnum, Hash)>] Array<GetAlliancesNames200Ok> data, response status code and response headers
-    def get_alliance_names_with_http_info(alliance_ids, opts = {})
+    # @return [Array<(Array<AllianceName>, Fixnum, Hash)>] Array<AllianceName> data, response status code and response headers
+    def get_alliance_name_with_http_info(alliance_ids, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_names ..."
+        @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_name ..."
       end
       # verify the required parameter 'alliance_ids' is set
-      fail ArgumentError, "Missing the required parameter 'alliance_ids' when calling AllianceApi.get_alliance_names" if alliance_ids.nil?
+      fail ArgumentError, "Missing the required parameter 'alliance_ids' when calling AllianceApi.get_alliance_name" if alliance_ids.nil?
       if alliance_ids.length < 1
-        fail ArgumentError, 'invalid value for "alliance_ids" when calling AllianceApi.get_alliance_names, number of items must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "alliance_ids" when calling AllianceApi.get_alliance_name, number of items must be greater than or equal to 1.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -328,9 +328,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetAlliancesNames200Ok>')
+        :return_type => 'Array<AllianceName>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: AllianceApi#get_alliance_names\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AllianceApi#get_alliance_name\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Internal server error
-  class GetCharactersCharacterIdContactsInternalServerError
+  class GetContactsInternalServerError
     # Internal server error message
     attr_accessor :error
 

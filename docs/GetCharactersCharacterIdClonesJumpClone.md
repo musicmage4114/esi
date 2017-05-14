@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdClonesJumpClone
+# SwaggerClient::JumpClone
 
 ## Properties
 Name | Type | Description | Notes

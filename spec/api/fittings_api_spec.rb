@@ -57,7 +57,7 @@ describe 'FittingsApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdFittings200Ok>]
+  # @return [Array<Fitting>]
   describe 'get_fittings test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

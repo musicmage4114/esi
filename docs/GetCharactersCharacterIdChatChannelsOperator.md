@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdChatChannelsOperator
+# SwaggerClient::CharacterChatChannelsOperator
 
 ## Properties
 Name | Type | Description | Notes

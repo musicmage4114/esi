@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdClonesHomeLocation
+# SwaggerClient::HomeStation
 
 ## Properties
 Name | Type | Description | Notes

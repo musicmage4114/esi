@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Internal server error
-  class GetAlliancesAllianceIdInternalServerError
+  class GetAllianceByIdInternalServerError
     # Internal server error message
     attr_accessor :error
 

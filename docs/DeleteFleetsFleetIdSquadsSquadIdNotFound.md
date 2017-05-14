@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteFleetsFleetIdSquadsSquadIdNotFound
+# SwaggerClient::DeleteSquadNotFound
 
 ## Properties
 Name | Type | Description | Notes

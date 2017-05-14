@@ -74,7 +74,7 @@ nil (empty response body)
 
 
 # **get_fittings**
-> Array&lt;GetCharactersCharacterIdFittings200Ok&gt; get_fittings(character_id, opts)
+> Array&lt;Fitting&gt; get_fittings(character_id, opts)
 
 Get fittings
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdFittings200Ok&gt;**](GetCharactersCharacterIdFittings200Ok.md)
+[**Array&lt;Fitting&gt;**](Fitting.md)
 
 ### Authorization
 

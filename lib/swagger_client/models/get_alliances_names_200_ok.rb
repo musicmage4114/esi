@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetAlliancesNames200Ok
+  class AllianceName
     # alliance_id integer
     attr_accessor :alliance_id
 

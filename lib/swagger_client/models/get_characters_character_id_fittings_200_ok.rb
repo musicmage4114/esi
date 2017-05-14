@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetCharactersCharacterIdFittings200Ok
+  class Fitting
     # description string
     attr_accessor :description
 

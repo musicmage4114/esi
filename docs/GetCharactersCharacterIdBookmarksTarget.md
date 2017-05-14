@@ -1,10 +1,10 @@
-# SwaggerClient::GetCharactersCharacterIdBookmarksTarget
+# SwaggerClient::BookmarkLocation
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**coordinates** | [**GetCharactersCharacterIdBookmarksCoordinates**](GetCharactersCharacterIdBookmarksCoordinates.md) |  | [optional] 
-**item** | [**GetCharactersCharacterIdBookmarksItem**](GetCharactersCharacterIdBookmarksItem.md) |  | [optional] 
+**coordinates** | [**BookmarkCoordinates**](BookmarkCoordinates.md) |  | [optional] 
+**item** | [**BookmarkItem**](BookmarkItem.md) |  | [optional] 
 **location_id** | **Integer** | location_id integer | 
 
 

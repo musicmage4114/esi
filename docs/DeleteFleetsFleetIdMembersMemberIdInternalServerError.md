@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteFleetsFleetIdMembersMemberIdInternalServerError
+# SwaggerClient::KickFleetMemberInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

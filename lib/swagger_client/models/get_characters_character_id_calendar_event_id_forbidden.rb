@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Forbidden
-  class GetCharactersCharacterIdCalendarEventIdForbidden
+  class GetEventByIdForbidden
     # Forbidden message
     attr_accessor :error
 

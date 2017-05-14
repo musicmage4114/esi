@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetCharactersCharacterIdBookmarks200Ok
+  class Bookmark
     # bookmark_id integer
     attr_accessor :bookmark_id
 
@@ -62,7 +62,7 @@ module SwaggerClient
         :'memo' => :'String',
         :'note' => :'String',
         :'owner_id' => :'Integer',
-        :'target' => :'GetCharactersCharacterIdBookmarksTarget'
+        :'target' => :'BookmarkLocation'
       }
     end
 

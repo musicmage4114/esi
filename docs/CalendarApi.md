@@ -4,13 +4,13 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_character_calendar**](CalendarApi.md#get_character_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
-[**get_calendar_event_by_id**](CalendarApi.md#get_calendar_event_by_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
-[**respond_to_calendar_event**](CalendarApi.md#respond_to_calendar_event) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
+[**get_calendar**](CalendarApi.md#get_calendar) | **GET** /characters/{character_id}/calendar/ | List calendar event summaries
+[**get_event_by_id**](CalendarApi.md#get_event_by_id) | **GET** /characters/{character_id}/calendar/{event_id}/ | Get an event
+[**respond_to_event**](CalendarApi.md#respond_to_event) | **PUT** /characters/{character_id}/calendar/{event_id}/ | Respond to an event
 
 
-# **get_character_calendar**
-> Array&lt;GetCharactersCharacterIdCalendar200Ok&gt; get_character_calendar(character_id, opts)
+# **get_calendar**
+> Array&lt;EventSummary&gt; get_calendar(character_id, opts)
 
 List calendar event summaries
 
@@ -40,10 +40,10 @@ opts = {
 
 begin
   #List calendar event summaries
-  result = api_instance.get_character_calendar(character_id, opts)
+  result = api_instance.get_calendar(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CalendarApi->get_character_calendar: #{e}"
+  puts "Exception when calling CalendarApi->get_calendar: #{e}"
 end
 ```
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdCalendar200Ok&gt;**](GetCharactersCharacterIdCalendar200Ok.md)
+[**Array&lt;EventSummary&gt;**](EventSummary.md)
 
 ### Authorization
 
@@ -73,8 +73,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_calendar_event_by_id**
-> GetCharactersCharacterIdCalendarEventIdOk get_calendar_event_by_id(character_id, event_id, opts)
+# **get_event_by_id**
+> Event get_event_by_id(character_id, event_id, opts)
 
 Get an event
 
@@ -105,10 +105,10 @@ opts = {
 
 begin
   #Get an event
-  result = api_instance.get_calendar_event_by_id(character_id, event_id, opts)
+  result = api_instance.get_event_by_id(character_id, event_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CalendarApi->get_calendar_event_by_id: #{e}"
+  puts "Exception when calling CalendarApi->get_event_by_id: #{e}"
 end
 ```
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdCalendarEventIdOk**](GetCharactersCharacterIdCalendarEventIdOk.md)
+[**Event**](Event.md)
 
 ### Authorization
 
@@ -138,8 +138,8 @@ Name | Type | Description  | Notes
 
 
 
-# **respond_to_calendar_event**
-> respond_to_calendar_event(character_id, event_id, response, opts)
+# **respond_to_event**
+> respond_to_event(character_id, event_id, response, opts)
 
 Respond to an event
 
@@ -161,7 +161,7 @@ character_id = 56 # Integer | The character ID requesting the event
 
 event_id = 56 # Integer | The ID of the event requested
 
-response = SwaggerClient::PutCharactersCharacterIdCalendarEventIdResponse.new # PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value.
+response = SwaggerClient::EventResponse.new # EventResponse | The response value to set, overriding current value.
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -172,9 +172,9 @@ opts = {
 
 begin
   #Respond to an event
-  api_instance.respond_to_calendar_event(character_id, event_id, response, opts)
+  api_instance.respond_to_event(character_id, event_id, response, opts)
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CalendarApi->respond_to_calendar_event: #{e}"
+  puts "Exception when calling CalendarApi->respond_to_event: #{e}"
 end
 ```
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| The character ID requesting the event | 
  **event_id** | **Integer**| The ID of the event requested | 
- **response** | [**PutCharactersCharacterIdCalendarEventIdResponse**](PutCharactersCharacterIdCalendarEventIdResponse.md)| The response value to set, overriding current value. | 
+ **response** | [**EventResponse**](EventResponse.md)| The response value to set, overriding current value. | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 

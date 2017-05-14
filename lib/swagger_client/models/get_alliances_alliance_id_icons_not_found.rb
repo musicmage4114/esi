@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # No image server for this datasource
-  class GetAlliancesAllianceIdIconsNotFound
+  class GetAllianceIconNotFound
     # error message
     attr_accessor :error
 

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdChatChannelsMuted
+# SwaggerClient::CharacterChatChannelsMuted
 
 ## Properties
 Name | Type | Description | Notes

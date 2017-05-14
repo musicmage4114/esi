@@ -1,4 +1,4 @@
-# SwaggerClient::GetAlliancesAllianceIdOk
+# SwaggerClient::Alliance
 
 ## Properties
 Name | Type | Description | Notes

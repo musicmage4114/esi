@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # target object
-  class GetCharactersCharacterIdBookmarksTarget
+  class BookmarkLocation
     attr_accessor :coordinates
 
     attr_accessor :item
@@ -34,8 +34,8 @@ module SwaggerClient
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'coordinates' => :'GetCharactersCharacterIdBookmarksCoordinates',
-        :'item' => :'GetCharactersCharacterIdBookmarksItem',
+        :'coordinates' => :'BookmarkCoordinates',
+        :'item' => :'BookmarkItem',
         :'location_id' => :'Integer'
       }
     end

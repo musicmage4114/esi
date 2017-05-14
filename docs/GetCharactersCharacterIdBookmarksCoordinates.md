@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdBookmarksCoordinates
+# SwaggerClient::BookmarkCoordinates
 
 ## Properties
 Name | Type | Description | Notes

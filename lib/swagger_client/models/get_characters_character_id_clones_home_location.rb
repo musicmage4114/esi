@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # home_location object
-  class GetCharactersCharacterIdClonesHomeLocation
+  class HomeStation
     # location_id integer
     attr_accessor :location_id
 

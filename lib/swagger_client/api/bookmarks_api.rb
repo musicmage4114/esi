@@ -27,7 +27,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdBookmarks200Ok>]
+    # @return [Array<Bookmark>]
     def get_character_bookmarks(character_id, opts = {})
       data, _status_code, _headers = get_character_bookmarks_with_http_info(character_id, opts)
       return data
@@ -41,7 +41,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdBookmarks200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdBookmarks200Ok> data, response status code and response headers
+    # @return [Array<(Array<Bookmark>, Fixnum, Hash)>] Array<Bookmark> data, response status code and response headers
     def get_character_bookmarks_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: BookmarksApi.get_character_bookmarks ..."
@@ -78,7 +78,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdBookmarks200Ok>')
+        :return_type => 'Array<Bookmark>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: BookmarksApi#get_character_bookmarks\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -93,7 +93,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdBookmarksFolders200Ok>]
+    # @return [Array<BookmarkFolder>]
     def get_character_bookmarks_folders(character_id, opts = {})
       data, _status_code, _headers = get_character_bookmarks_folders_with_http_info(character_id, opts)
       return data
@@ -107,7 +107,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdBookmarksFolders200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdBookmarksFolders200Ok> data, response status code and response headers
+    # @return [Array<(Array<BookmarkFolder>, Fixnum, Hash)>] Array<BookmarkFolder> data, response status code and response headers
     def get_character_bookmarks_folders_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: BookmarksApi.get_character_bookmarks_folders ..."
@@ -144,7 +144,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdBookmarksFolders200Ok>')
+        :return_type => 'Array<BookmarkFolder>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: BookmarksApi#get_character_bookmarks_folders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

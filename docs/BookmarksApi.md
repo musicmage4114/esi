@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_character_bookmarks**
-> Array&lt;GetCharactersCharacterIdBookmarks200Ok&gt; get_character_bookmarks(character_id, opts)
+> Array&lt;Bookmark&gt; get_character_bookmarks(character_id, opts)
 
 List bookmarks
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdBookmarks200Ok&gt;**](GetCharactersCharacterIdBookmarks200Ok.md)
+[**Array&lt;Bookmark&gt;**](Bookmark.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 
 
 # **get_character_bookmarks_folders**
-> Array&lt;GetCharactersCharacterIdBookmarksFolders200Ok&gt; get_character_bookmarks_folders(character_id, opts)
+> Array&lt;BookmarkFolder&gt; get_character_bookmarks_folders(character_id, opts)
 
 List bookmark folders
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdBookmarksFolders200Ok&gt;**](GetCharactersCharacterIdBookmarksFolders200Ok.md)
+[**Array&lt;BookmarkFolder&gt;**](BookmarkFolder.md)
 
 ### Authorization
 

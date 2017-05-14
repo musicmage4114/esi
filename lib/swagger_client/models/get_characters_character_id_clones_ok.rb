@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetCharactersCharacterIdClonesOk
+  class CloneInfo
     attr_accessor :home_location
 
     # jump_clones array
@@ -35,8 +35,8 @@ module SwaggerClient
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'home_location' => :'GetCharactersCharacterIdClonesHomeLocation',
-        :'jump_clones' => :'Array<GetCharactersCharacterIdClonesJumpClone>',
+        :'home_location' => :'HomeStation',
+        :'jump_clones' => :'Array<JumpClone>',
         :'last_jump_date' => :'DateTime'
       }
     end

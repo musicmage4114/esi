@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # coordinates object
-  class GetCharactersCharacterIdBookmarksCoordinates
+  class BookmarkCoordinates
     # x number
     attr_accessor :x
 

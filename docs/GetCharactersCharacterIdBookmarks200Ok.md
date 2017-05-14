@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdBookmarks200Ok
+# SwaggerClient::Bookmark
 
 ## Properties
 Name | Type | Description | Notes
@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **memo** | **String** | memo string | 
 **note** | **String** | note string | 
 **owner_id** | **Integer** | owner_id integer | 
-**target** | [**GetCharactersCharacterIdBookmarksTarget**](GetCharactersCharacterIdBookmarksTarget.md) |  | [optional] 
+**target** | [**BookmarkLocation**](BookmarkLocation.md) |  | [optional] 
 
 

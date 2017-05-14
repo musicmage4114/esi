@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteFleetsFleetIdMembersMemberIdForbidden
+# SwaggerClient::KickFleetMemberForbidden
 
 ## Properties
 Name | Type | Description | Notes

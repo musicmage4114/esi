@@ -28,9 +28,9 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdCalendar200Ok>]
-    def get_character_calendar(character_id, opts = {})
-      data, _status_code, _headers = get_character_calendar_with_http_info(character_id, opts)
+    # @return [Array<EventSummary>]
+    def get_calendar(character_id, opts = {})
+      data, _status_code, _headers = get_calendar_with_http_info(character_id, opts)
       return data
     end
 
@@ -43,13 +43,13 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdCalendar200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdCalendar200Ok> data, response status code and response headers
-    def get_character_calendar_with_http_info(character_id, opts = {})
+    # @return [Array<(Array<EventSummary>, Fixnum, Hash)>] Array<EventSummary> data, response status code and response headers
+    def get_calendar_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CalendarApi.get_character_calendar ..."
+        @api_client.config.logger.debug "Calling API: CalendarApi.get_calendar ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling CalendarApi.get_character_calendar" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling CalendarApi.get_calendar" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -81,9 +81,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdCalendar200Ok>')
+        :return_type => 'Array<EventSummary>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CalendarApi#get_character_calendar\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CalendarApi#get_calendar\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -97,9 +97,9 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdCalendarEventIdOk]
-    def get_calendar_event_by_id(character_id, event_id, opts = {})
-      data, _status_code, _headers = get_calendar_event_by_id_with_http_info(character_id, event_id, opts)
+    # @return [Event]
+    def get_event_by_id(character_id, event_id, opts = {})
+      data, _status_code, _headers = get_event_by_id_with_http_info(character_id, event_id, opts)
       return data
     end
 
@@ -112,15 +112,15 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdCalendarEventIdOk, Fixnum, Hash)>] GetCharactersCharacterIdCalendarEventIdOk data, response status code and response headers
-    def get_calendar_event_by_id_with_http_info(character_id, event_id, opts = {})
+    # @return [Array<(Event, Fixnum, Hash)>] Event data, response status code and response headers
+    def get_event_by_id_with_http_info(character_id, event_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CalendarApi.get_calendar_event_by_id ..."
+        @api_client.config.logger.debug "Calling API: CalendarApi.get_event_by_id ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling CalendarApi.get_calendar_event_by_id" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling CalendarApi.get_event_by_id" if character_id.nil?
       # verify the required parameter 'event_id' is set
-      fail ArgumentError, "Missing the required parameter 'event_id' when calling CalendarApi.get_calendar_event_by_id" if event_id.nil?
+      fail ArgumentError, "Missing the required parameter 'event_id' when calling CalendarApi.get_event_by_id" if event_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -151,9 +151,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdCalendarEventIdOk')
+        :return_type => 'Event')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CalendarApi#get_calendar_event_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CalendarApi#get_event_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -169,8 +169,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def respond_to_calendar_event(character_id, event_id, response, opts = {})
-      respond_to_calendar_event_with_http_info(character_id, event_id, response, opts)
+    def respond_to_event(character_id, event_id, response, opts = {})
+      respond_to_event_with_http_info(character_id, event_id, response, opts)
       return nil
     end
 
@@ -185,16 +185,16 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def respond_to_calendar_event_with_http_info(character_id, event_id, response, opts = {})
+    def respond_to_event_with_http_info(character_id, event_id, response, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CalendarApi.respond_to_calendar_event ..."
+        @api_client.config.logger.debug "Calling API: CalendarApi.respond_to_event ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling CalendarApi.respond_to_calendar_event" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling CalendarApi.respond_to_event" if character_id.nil?
       # verify the required parameter 'event_id' is set
-      fail ArgumentError, "Missing the required parameter 'event_id' when calling CalendarApi.respond_to_calendar_event" if event_id.nil?
+      fail ArgumentError, "Missing the required parameter 'event_id' when calling CalendarApi.respond_to_event" if event_id.nil?
       # verify the required parameter 'response' is set
-      fail ArgumentError, "Missing the required parameter 'response' when calling CalendarApi.respond_to_calendar_event" if response.nil?
+      fail ArgumentError, "Missing the required parameter 'response' when calling CalendarApi.respond_to_event" if response.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -226,7 +226,7 @@ module SwaggerClient
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CalendarApi#respond_to_calendar_event\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CalendarApi#respond_to_event\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

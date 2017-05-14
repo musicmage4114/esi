@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdAgentsResearch200Ok
+# SwaggerClient::CharacterResearchAgent
 
 ## Properties
 Name | Type | Description | Notes

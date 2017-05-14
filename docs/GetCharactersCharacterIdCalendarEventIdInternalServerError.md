@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdCalendarEventIdInternalServerError
+# SwaggerClient::GetEventByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

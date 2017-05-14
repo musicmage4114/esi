@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdFittings200Ok
+# SwaggerClient::Fitting
 
 ## Properties
 Name | Type | Description | Notes

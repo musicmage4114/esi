@@ -1,4 +1,4 @@
-# SwaggerClient::GetAlliancesAllianceIdIconsNotFound
+# SwaggerClient::GetAllianceIconNotFound
 
 ## Properties
 Name | Type | Description | Notes

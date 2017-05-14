@@ -31,7 +31,7 @@ describe 'CalendarApi' do
     end
   end
 
-  # unit tests for get_character_calendar
+  # unit tests for get_calendar
   # List calendar event summaries
   # Get 50 event summaries from the calendar. If no event ID is given, the resource will return the next 50 chronological event summaries from now. If an event ID is specified, it will return the next 50 chronological event summaries from after that event.   ---  Alternate route: &#x60;/v1/characters/{character_id}/calendar/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/calendar/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/calendar/&#x60;   ---  This route is cached for up to 5 seconds
   # @param character_id The character to retrieve events from
@@ -41,14 +41,14 @@ describe 'CalendarApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdCalendar200Ok>]
-  describe 'get_character_calendar test' do
+  # @return [Array<EventSummary>]
+  describe 'get_calendar test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_calendar_event_by_id
+  # unit tests for get_event_by_id
   # Get an event
   # Get all the information for a specific event  ---  Alternate route: &#x60;/v3/characters/{character_id}/calendar/{event_id}/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/calendar/{event_id}/&#x60;   ---  This route is cached for up to 5 seconds
   # @param character_id The character id requesting the event
@@ -58,14 +58,14 @@ describe 'CalendarApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCharactersCharacterIdCalendarEventIdOk]
-  describe 'get_calendar_event_by_id test' do
+  # @return [Event]
+  describe 'get_event_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for respond_to_calendar_event
+  # unit tests for respond_to_event
   # Respond to an event
   # Set your response status to an event  ---  Alternate route: &#x60;/v3/characters/{character_id}/calendar/{event_id}/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/calendar/{event_id}/&#x60; 
   # @param character_id The character ID requesting the event
@@ -77,7 +77,7 @@ describe 'CalendarApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'respond_to_calendar_event test' do
+  describe 'respond_to_event test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

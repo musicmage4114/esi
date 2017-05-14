@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdBookmarksItem
+# SwaggerClient::BookmarkItem
 
 ## Properties
 Name | Type | Description | Notes

@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Not found
-  class DeleteFleetsFleetIdMembersMemberIdNotFound
+  class KickFleetMemberNotFound
     # Not found message
     attr_accessor :error
 

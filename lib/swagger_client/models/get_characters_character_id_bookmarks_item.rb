@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # item object
-  class GetCharactersCharacterIdBookmarksItem
+  class BookmarkItem
     # item_id integer
     attr_accessor :item_id
 

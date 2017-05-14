@@ -1,4 +1,4 @@
-# SwaggerClient::GetAlliancesNames200Ok
+# SwaggerClient::AllianceName
 
 ## Properties
 Name | Type | Description | Notes

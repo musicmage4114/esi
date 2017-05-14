@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetCharactersCharacterIdAssets200Ok
+  class CharacterAsset
     # is_singleton boolean
     attr_accessor :is_singleton
 

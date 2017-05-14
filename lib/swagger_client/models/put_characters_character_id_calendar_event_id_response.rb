@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # response schema
-  class PutCharactersCharacterIdCalendarEventIdResponse
+  class EventResponse
     # response string
     attr_accessor :response
 

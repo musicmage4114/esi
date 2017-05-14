@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdCorporationhistory200Ok
+# SwaggerClient::PastCorporation
 
 ## Properties
 Name | Type | Description | Notes

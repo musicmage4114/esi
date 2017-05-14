@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdContactsInternalServerError
+# SwaggerClient::GetContactsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

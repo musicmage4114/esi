@@ -55,7 +55,7 @@ describe 'CharacterApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdAgentsResearch200Ok>]
+  # @return [Array<CharacterResearchAgent>]
   describe 'get_character_research_agents test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -71,7 +71,7 @@ describe 'CharacterApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdBlueprints200Ok>]
+  # @return [Array<CharacterBlueprint>]
   describe 'get_character_blueprints test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -87,7 +87,7 @@ describe 'CharacterApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdChatChannels200Ok>]
+  # @return [Array<CharacterChatChannels>]
   describe 'get_character_chat_channels test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -102,7 +102,7 @@ describe 'CharacterApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdCorporationhistory200Ok>]
+  # @return [Array<PastCorporation>]
   describe 'get_employment_history test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

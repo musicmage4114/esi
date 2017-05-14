@@ -76,7 +76,7 @@ nil (empty response body)
 
 
 # **get_contacts**
-> Array&lt;GetCharactersCharacterIdContacts200Ok&gt; get_contacts(character_id, opts)
+> Array&lt;Contact&gt; get_contacts(character_id, opts)
 
 Get contacts
 
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdContacts200Ok&gt;**](GetCharactersCharacterIdContacts200Ok.md)
+[**Array&lt;Contact&gt;**](Contact.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 
 # **get_contacts_labels**
-> Array&lt;GetCharactersCharacterIdContactsLabels200Ok&gt; get_contacts_labels(character_id, opts)
+> Array&lt;ContactLabel&gt; get_contacts_labels(character_id, opts)
 
 Get contact labels
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdContactsLabels200Ok&gt;**](GetCharactersCharacterIdContactsLabels200Ok.md)
+[**Array&lt;ContactLabel&gt;**](ContactLabel.md)
 
 ### Authorization
 

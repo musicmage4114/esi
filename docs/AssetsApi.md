@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_character_assets**
-> Array&lt;GetCharactersCharacterIdAssets200Ok&gt; get_character_assets(character_id, opts)
+> Array&lt;CharacterAsset&gt; get_character_assets(character_id, opts)
 
 Get character assets
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdAssets200Ok&gt;**](GetCharactersCharacterIdAssets200Ok.md)
+[**Array&lt;CharacterAsset&gt;**](CharacterAsset.md)
 
 ### Authorization
 

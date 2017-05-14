@@ -73,7 +73,7 @@ No authorization required
 
 
 # **get_character_research_agents**
-> Array&lt;GetCharactersCharacterIdAgentsResearch200Ok&gt; get_character_research_agents(character_id, opts)
+> Array&lt;CharacterResearchAgent&gt; get_character_research_agents(character_id, opts)
 
 Get agents research
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdAgentsResearch200Ok&gt;**](GetCharactersCharacterIdAgentsResearch200Ok.md)
+[**Array&lt;CharacterResearchAgent&gt;**](CharacterResearchAgent.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 
 
 # **get_character_blueprints**
-> Array&lt;GetCharactersCharacterIdBlueprints200Ok&gt; get_character_blueprints(character_id, opts)
+> Array&lt;CharacterBlueprint&gt; get_character_blueprints(character_id, opts)
 
 Get blueprints
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdBlueprints200Ok&gt;**](GetCharactersCharacterIdBlueprints200Ok.md)
+[**Array&lt;CharacterBlueprint&gt;**](CharacterBlueprint.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 
 # **get_character_chat_channels**
-> Array&lt;GetCharactersCharacterIdChatChannels200Ok&gt; get_character_chat_channels(character_id, opts)
+> Array&lt;CharacterChatChannels&gt; get_character_chat_channels(character_id, opts)
 
 Get chat channels
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdChatChannels200Ok&gt;**](GetCharactersCharacterIdChatChannels200Ok.md)
+[**Array&lt;CharacterChatChannels&gt;**](CharacterChatChannels.md)
 
 ### Authorization
 
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 
 # **get_employment_history**
-> Array&lt;GetCharactersCharacterIdCorporationhistory200Ok&gt; get_employment_history(character_id, opts)
+> Array&lt;PastCorporation&gt; get_employment_history(character_id, opts)
 
 Get corporation history
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdCorporationhistory200Ok&gt;**](GetCharactersCharacterIdCorporationhistory200Ok.md)
+[**Array&lt;PastCorporation&gt;**](PastCorporation.md)
 
 ### Authorization
 

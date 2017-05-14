@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteFleetsFleetIdWingsWingIdForbidden
+# SwaggerClient::DeleteWingForbidden
 
 ## Properties
 Name | Type | Description | Notes

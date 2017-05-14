@@ -1,4 +1,4 @@
-# SwaggerClient::PutCharactersCharacterIdCalendarEventIdResponse
+# SwaggerClient::EventResponse
 
 ## Properties
 Name | Type | Description | Notes

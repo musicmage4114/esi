@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdCorporationhistoryInternalServerError
+# SwaggerClient::GetEmploymentHistoryInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

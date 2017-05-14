@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdBookmarksFoldersForbidden
+# SwaggerClient::GetCharacterBookmarksFoldersForbidden
 
 ## Properties
 Name | Type | Description | Notes

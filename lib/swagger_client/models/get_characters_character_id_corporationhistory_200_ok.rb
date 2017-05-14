@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class GetCharactersCharacterIdCorporationhistory200Ok
+  class PastCorporation
     # corporation_id integer
     attr_accessor :corporation_id
 

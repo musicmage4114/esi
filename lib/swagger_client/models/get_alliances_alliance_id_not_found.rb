@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # Alliance not found
-  class GetAlliancesAllianceIdNotFound
+  class GetAllianceByIdNotFound
     # error message
     attr_accessor :error
 

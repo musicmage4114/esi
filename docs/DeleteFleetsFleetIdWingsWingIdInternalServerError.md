@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteFleetsFleetIdWingsWingIdInternalServerError
+# SwaggerClient::DeleteWingInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

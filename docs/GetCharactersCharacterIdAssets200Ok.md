@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdAssets200Ok
+# SwaggerClient::CharacterAsset
 
 ## Properties
 Name | Type | Description | Notes

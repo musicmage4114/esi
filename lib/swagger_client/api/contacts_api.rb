@@ -97,7 +97,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdContacts200Ok>]
+    # @return [Array<Contact>]
     def get_contacts(character_id, opts = {})
       data, _status_code, _headers = get_contacts_with_http_info(character_id, opts)
       return data
@@ -112,7 +112,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdContacts200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdContacts200Ok> data, response status code and response headers
+    # @return [Array<(Array<Contact>, Fixnum, Hash)>] Array<Contact> data, response status code and response headers
     def get_contacts_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: ContactsApi.get_contacts ..."
@@ -154,7 +154,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdContacts200Ok>')
+        :return_type => 'Array<Contact>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: ContactsApi#get_contacts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -169,7 +169,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdContactsLabels200Ok>]
+    # @return [Array<ContactLabel>]
     def get_contacts_labels(character_id, opts = {})
       data, _status_code, _headers = get_contacts_labels_with_http_info(character_id, opts)
       return data
@@ -183,7 +183,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdContactsLabels200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdContactsLabels200Ok> data, response status code and response headers
+    # @return [Array<(Array<ContactLabel>, Fixnum, Hash)>] Array<ContactLabel> data, response status code and response headers
     def get_contacts_labels_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: ContactsApi.get_contacts_labels ..."
@@ -220,7 +220,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdContactsLabels200Ok>')
+        :return_type => 'Array<ContactLabel>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: ContactsApi#get_contacts_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
