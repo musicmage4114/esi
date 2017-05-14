@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # allowed object
-  class CharacterChatChannelsAllowed
+  class ChatChannelAllowed
     # ID of an allowed channel member
     attr_accessor :accessor_id
 

@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 
 # **get_character_chat_channels**
-> Array&lt;CharacterChatChannels&gt; get_character_chat_channels(character_id, opts)
+> Array&lt;ChatChannel&gt; get_character_chat_channels(character_id, opts)
 
 Get chat channels
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;CharacterChatChannels&gt;**](CharacterChatChannels.md)
+[**Array&lt;ChatChannel&gt;**](ChatChannel.md)
 
 ### Authorization
 

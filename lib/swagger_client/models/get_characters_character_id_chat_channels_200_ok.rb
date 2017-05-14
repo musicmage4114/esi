@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # 200 ok object
-  class CharacterChatChannels
+  class ChatChannel
     # allowed array
     attr_accessor :allowed
 
@@ -64,15 +64,15 @@ module SwaggerClient
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'allowed' => :'Array<CharacterChatChannelsAllowed>',
-        :'blocked' => :'Array<CharacterChatChannelsBlocked>',
+        :'allowed' => :'Array<ChatChannelAllowed>',
+        :'blocked' => :'Array<ChatChannelBlocked>',
         :'channel_id' => :'Integer',
         :'comparison_key' => :'String',
         :'has_password' => :'BOOLEAN',
         :'motd' => :'String',
-        :'muted' => :'Array<CharacterChatChannelsMuted>',
+        :'muted' => :'Array<ChatChannelMuted>',
         :'name' => :'String',
-        :'operators' => :'Array<CharacterChatChannelsOperator>',
+        :'operators' => :'Array<ChatChannelOperator>',
         :'owner_id' => :'Integer'
       }
     end

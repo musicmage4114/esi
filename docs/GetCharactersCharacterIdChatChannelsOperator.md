@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterChatChannelsOperator
+# SwaggerClient::ChatChannelOperator
 
 ## Properties
 Name | Type | Description | Notes

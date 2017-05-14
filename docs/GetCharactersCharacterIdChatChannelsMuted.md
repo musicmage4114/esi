@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterChatChannelsMuted
+# SwaggerClient::ChatChannelMuted
 
 ## Properties
 Name | Type | Description | Notes

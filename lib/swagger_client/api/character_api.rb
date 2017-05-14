@@ -222,7 +222,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<CharacterChatChannels>]
+    # @return [Array<ChatChannel>]
     def get_character_chat_channels(character_id, opts = {})
       data, _status_code, _headers = get_character_chat_channels_with_http_info(character_id, opts)
       return data
@@ -236,7 +236,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<CharacterChatChannels>, Fixnum, Hash)>] Array<CharacterChatChannels> data, response status code and response headers
+    # @return [Array<(Array<ChatChannel>, Fixnum, Hash)>] Array<ChatChannel> data, response status code and response headers
     def get_character_chat_channels_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CharacterApi.get_character_chat_channels ..."
@@ -273,7 +273,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<CharacterChatChannels>')
+        :return_type => 'Array<ChatChannel>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CharacterApi#get_character_chat_channels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

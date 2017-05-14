@@ -13,7 +13,7 @@ require 'date'
 
 module SwaggerClient
   # muted object
-  class CharacterChatChannelsMuted
+  class ChatChannelMuted
     # ID of a muted channel member
     attr_accessor :accessor_id
 

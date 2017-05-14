@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterChatChannelsBlocked
+# SwaggerClient::ChatChannelBlocked
 
 ## Properties
 Name | Type | Description | Notes
