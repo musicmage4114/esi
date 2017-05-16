@@ -13,27 +13,27 @@ require 'date'
 
 module Esi
   # 200 ok object
-  class MailLabel
-    # labels array
-    attr_accessor :labels
+  class SystemJumpSummary
+    # ship_jumps integer
+    attr_accessor :ship_jumps
 
-    # total_unread_count integer
-    attr_accessor :total_unread_count
+    # system_id integer
+    attr_accessor :system_id
 
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'labels' => :'labels',
-        :'total_unread_count' => :'total_unread_count'
+        :'ship_jumps' => :'ship_jumps',
+        :'system_id' => :'system_id'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'labels' => :'Array<MailLabelSummary>',
-        :'total_unread_count' => :'Integer'
+        :'ship_jumps' => :'Integer',
+        :'system_id' => :'Integer'
       }
     end
 
@@ -45,14 +45,12 @@ module Esi
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}){|(k,v), h| h[k.to_sym] = v}
 
-      if attributes.has_key?(:'labels')
-        if (value = attributes[:'labels']).is_a?(Array)
-          self.labels = value
-        end
+      if attributes.has_key?(:'ship_jumps')
+        self.ship_jumps = attributes[:'ship_jumps']
       end
 
-      if attributes.has_key?(:'total_unread_count')
-        self.total_unread_count = attributes[:'total_unread_count']
+      if attributes.has_key?(:'system_id')
+        self.system_id = attributes[:'system_id']
       end
 
     end
@@ -61,8 +59,12 @@ module Esi
     # @return Array for valid properies with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if !@total_unread_count.nil? && @total_unread_count < 0
-        invalid_properties.push("invalid value for 'total_unread_count', must be greater than or equal to 0.")
+      if @ship_jumps.nil?
+        invalid_properties.push("invalid value for 'ship_jumps', ship_jumps cannot be nil.")
+      end
+
+      if @system_id.nil?
+        invalid_properties.push("invalid value for 'system_id', system_id cannot be nil.")
       end
 
       return invalid_properties
@@ -71,19 +73,9 @@ module Esi
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if !@total_unread_count.nil? && @total_unread_count < 0
+      return false if @ship_jumps.nil?
+      return false if @system_id.nil?
       return true
-    end
-
-    # Custom attribute writer method with validation
-    # @param [Object] total_unread_count Value to be assigned
-    def total_unread_count=(total_unread_count)
-
-      if !total_unread_count.nil? && total_unread_count < 0
-        fail ArgumentError, "invalid value for 'total_unread_count', must be greater than or equal to 0."
-      end
-
-      @total_unread_count = total_unread_count
     end
 
     # Checks equality by comparing each attribute.
@@ -91,8 +83,8 @@ module Esi
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          labels == o.labels &&
-          total_unread_count == o.total_unread_count
+          ship_jumps == o.ship_jumps &&
+          system_id == o.system_id
     end
 
     # @see the `==` method
@@ -104,7 +96,7 @@ module Esi
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [labels, total_unread_count].hash
+      [ship_jumps, system_id].hash
     end
 
     # Builds the object from hash

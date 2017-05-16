@@ -1238,7 +1238,7 @@ module Esi
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<SystemJumpInfo>]
+    # @return [Array<SystemJumpSummary>]
     def get_system_jumps(opts = {})
       data, _status_code, _headers = get_system_jumps_with_http_info(opts)
       return data
@@ -1250,7 +1250,7 @@ module Esi
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<SystemJumpInfo>, Fixnum, Hash)>] Array<SystemJumpInfo> data, response status code and response headers
+    # @return [Array<(Array<SystemJumpSummary>, Fixnum, Hash)>] Array<SystemJumpSummary> data, response status code and response headers
     def get_system_jumps_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_system_jumps ..."
@@ -1284,7 +1284,7 @@ module Esi
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<SystemJumpInfo>')
+        :return_type => 'Array<SystemJumpSummary>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_system_jumps\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1297,7 +1297,7 @@ module Esi
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<SystemKillsInfo>]
+    # @return [Array<SystemKillSummary>]
     def get_system_kills(opts = {})
       data, _status_code, _headers = get_system_kills_with_http_info(opts)
       return data
@@ -1309,7 +1309,7 @@ module Esi
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<SystemKillsInfo>, Fixnum, Hash)>] Array<SystemKillsInfo> data, response status code and response headers
+    # @return [Array<(Array<SystemKillSummary>, Fixnum, Hash)>] Array<SystemKillSummary> data, response status code and response headers
     def get_system_kills_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_system_kills ..."
@@ -1343,7 +1343,7 @@ module Esi
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<SystemKillsInfo>')
+        :return_type => 'Array<SystemKillSummary>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_system_kills\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

@@ -64,13 +64,13 @@ module Esi
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'allowed' => :'Array<ChatChannelAllowed>',
-        :'blocked' => :'Array<ChatChannelBlocked>',
+        :'allowed' => :'Array<ChatChannelAllow>',
+        :'blocked' => :'Array<ChatChannelBlock>',
         :'channel_id' => :'Integer',
         :'comparison_key' => :'String',
         :'has_password' => :'BOOLEAN',
         :'motd' => :'String',
-        :'muted' => :'Array<ChatChannelMuted>',
+        :'muted' => :'Array<ChatChannelMute>',
         :'name' => :'String',
         :'operators' => :'Array<ChatChannelOperator>',
         :'owner_id' => :'Integer'

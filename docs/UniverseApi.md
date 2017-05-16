@@ -1074,7 +1074,7 @@ Name | Type | Description  | Notes
 
 
 # **get_system_jumps**
-> Array&lt;SystemJumpInfo&gt; get_system_jumps(opts)
+> Array&lt;SystemJumpSummary&gt; get_system_jumps(opts)
 
 Get system jumps
 
@@ -1112,7 +1112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;SystemJumpInfo&gt;**](SystemJumpInfo.md)
+[**Array&lt;SystemJumpSummary&gt;**](SystemJumpSummary.md)
 
 ### Authorization
 
@@ -1126,7 +1126,7 @@ No authorization required
 
 
 # **get_system_kills**
-> Array&lt;SystemKillsInfo&gt; get_system_kills(opts)
+> Array&lt;SystemKillSummary&gt; get_system_kills(opts)
 
 Get system kills
 
@@ -1164,7 +1164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;SystemKillsInfo&gt;**](SystemKillsInfo.md)
+[**Array&lt;SystemKillSummary&gt;**](SystemKillSummary.md)
 
 ### Authorization
 
