@@ -27,7 +27,7 @@ describe 'ChatChannel' do
   end
 
   describe 'test an instance of ChatChannel' do
-    it 'should create an instact of ChatChannel' do
+    it 'should create an instance of ChatChannel' do
       expect(@instance).to be_instance_of(Esi::ChatChannel)
     end
   end

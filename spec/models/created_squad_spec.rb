@@ -27,7 +27,7 @@ describe 'CreatedSquad' do
   end
 
   describe 'test an instance of CreatedSquad' do
-    it 'should create an instact of CreatedSquad' do
+    it 'should create an instance of CreatedSquad' do
       expect(@instance).to be_instance_of(Esi::CreatedSquad)
     end
   end

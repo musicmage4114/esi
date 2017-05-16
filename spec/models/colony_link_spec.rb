@@ -27,7 +27,7 @@ describe 'ColonyLink' do
   end
 
   describe 'test an instance of ColonyLink' do
-    it 'should create an instact of ColonyLink' do
+    it 'should create an instance of ColonyLink' do
       expect(@instance).to be_instance_of(Esi::ColonyLink)
     end
   end

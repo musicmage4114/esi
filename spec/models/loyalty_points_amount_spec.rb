@@ -27,7 +27,7 @@ describe 'LoyaltyPointsAmount' do
   end
 
   describe 'test an instance of LoyaltyPointsAmount' do
-    it 'should create an instact of LoyaltyPointsAmount' do
+    it 'should create an instance of LoyaltyPointsAmount' do
       expect(@instance).to be_instance_of(Esi::LoyaltyPointsAmount)
     end
   end

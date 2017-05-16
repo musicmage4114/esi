@@ -27,7 +27,7 @@ describe 'Constellation' do
   end
 
   describe 'test an instance of Constellation' do
-    it 'should create an instact of Constellation' do
+    it 'should create an instance of Constellation' do
       expect(@instance).to be_instance_of(Esi::Constellation)
     end
   end

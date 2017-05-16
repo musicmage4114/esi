@@ -27,7 +27,7 @@ describe 'SovereigntyCampaign' do
   end
 
   describe 'test an instance of SovereigntyCampaign' do
-    it 'should create an instact of SovereigntyCampaign' do
+    it 'should create an instance of SovereigntyCampaign' do
       expect(@instance).to be_instance_of(Esi::SovereigntyCampaign)
     end
   end

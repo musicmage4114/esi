@@ -27,7 +27,7 @@ describe 'ItemCategory' do
   end
 
   describe 'test an instance of ItemCategory' do
-    it 'should create an instact of ItemCategory' do
+    it 'should create an instance of ItemCategory' do
       expect(@instance).to be_instance_of(Esi::ItemCategory)
     end
   end

@@ -26,7 +26,7 @@ describe 'BookmarksApi' do
   end
 
   describe 'test an instance of BookmarksApi' do
-    it 'should create an instact of BookmarksApi' do
+    it 'should create an instance of BookmarksApi' do
       expect(@instance).to be_instance_of(Esi::BookmarksApi)
     end
   end

@@ -26,7 +26,7 @@ describe 'AssetsApi' do
   end
 
   describe 'test an instance of AssetsApi' do
-    it 'should create an instact of AssetsApi' do
+    it 'should create an instance of AssetsApi' do
       expect(@instance).to be_instance_of(Esi::AssetsApi)
     end
   end

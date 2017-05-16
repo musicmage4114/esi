@@ -27,7 +27,7 @@ describe 'NewMailLabel' do
   end
 
   describe 'test an instance of NewMailLabel' do
-    it 'should create an instact of NewMailLabel' do
+    it 'should create an instance of NewMailLabel' do
       expect(@instance).to be_instance_of(Esi::NewMailLabel)
     end
   end

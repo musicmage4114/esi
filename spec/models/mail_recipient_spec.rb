@@ -27,7 +27,7 @@ describe 'MailRecipient' do
   end
 
   describe 'test an instance of MailRecipient' do
-    it 'should create an instact of MailRecipient' do
+    it 'should create an instance of MailRecipient' do
       expect(@instance).to be_instance_of(Esi::MailRecipient)
     end
   end

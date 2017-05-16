@@ -27,7 +27,7 @@ describe 'Stargate' do
   end
 
   describe 'test an instance of Stargate' do
-    it 'should create an instact of Stargate' do
+    it 'should create an instance of Stargate' do
       expect(@instance).to be_instance_of(Esi::Stargate)
     end
   end

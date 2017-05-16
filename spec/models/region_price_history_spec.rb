@@ -27,7 +27,7 @@ describe 'RegionPriceHistory' do
   end
 
   describe 'test an instance of RegionPriceHistory' do
-    it 'should create an instact of RegionPriceHistory' do
+    it 'should create an instance of RegionPriceHistory' do
       expect(@instance).to be_instance_of(Esi::RegionPriceHistory)
     end
   end

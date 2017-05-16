@@ -27,7 +27,7 @@ describe 'CloneSummary' do
   end
 
   describe 'test an instance of CloneSummary' do
-    it 'should create an instact of CloneSummary' do
+    it 'should create an instance of CloneSummary' do
       expect(@instance).to be_instance_of(Esi::CloneSummary)
     end
   end

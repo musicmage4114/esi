@@ -27,7 +27,7 @@ describe 'CharacterAffiliation' do
   end
 
   describe 'test an instance of CharacterAffiliation' do
-    it 'should create an instact of CharacterAffiliation' do
+    it 'should create an instance of CharacterAffiliation' do
       expect(@instance).to be_instance_of(Esi::CharacterAffiliation)
     end
   end

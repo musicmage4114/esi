@@ -27,7 +27,7 @@ describe 'Incursion' do
   end
 
   describe 'test an instance of Incursion' do
-    it 'should create an instact of Incursion' do
+    it 'should create an instance of Incursion' do
       expect(@instance).to be_instance_of(Esi::Incursion)
     end
   end

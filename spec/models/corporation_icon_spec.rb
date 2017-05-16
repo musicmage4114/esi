@@ -27,7 +27,7 @@ describe 'CorporationIcon' do
   end
 
   describe 'test an instance of CorporationIcon' do
-    it 'should create an instact of CorporationIcon' do
+    it 'should create an instance of CorporationIcon' do
       expect(@instance).to be_instance_of(Esi::CorporationIcon)
     end
   end

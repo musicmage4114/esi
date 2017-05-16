@@ -27,7 +27,7 @@ describe 'ServerStatus' do
   end
 
   describe 'test an instance of ServerStatus' do
-    it 'should create an instact of ServerStatus' do
+    it 'should create an instance of ServerStatus' do
       expect(@instance).to be_instance_of(Esi::ServerStatus)
     end
   end

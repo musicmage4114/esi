@@ -27,7 +27,7 @@ describe 'DogmaEffectValue' do
   end
 
   describe 'test an instance of DogmaEffectValue' do
-    it 'should create an instact of DogmaEffectValue' do
+    it 'should create an instance of DogmaEffectValue' do
       expect(@instance).to be_instance_of(Esi::DogmaEffectValue)
     end
   end

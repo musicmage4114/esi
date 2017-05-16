@@ -27,7 +27,7 @@ describe 'ColonyExtractor' do
   end
 
   describe 'test an instance of ColonyExtractor' do
-    it 'should create an instact of ColonyExtractor' do
+    it 'should create an instance of ColonyExtractor' do
       expect(@instance).to be_instance_of(Esi::ColonyExtractor)
     end
   end

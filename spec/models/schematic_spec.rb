@@ -27,7 +27,7 @@ describe 'Schematic' do
   end
 
   describe 'test an instance of Schematic' do
-    it 'should create an instact of Schematic' do
+    it 'should create an instance of Schematic' do
       expect(@instance).to be_instance_of(Esi::Schematic)
     end
   end

@@ -27,7 +27,7 @@ describe 'IndustryJob' do
   end
 
   describe 'test an instance of IndustryJob' do
-    it 'should create an instact of IndustryJob' do
+    it 'should create an instance of IndustryJob' do
       expect(@instance).to be_instance_of(Esi::IndustryJob)
     end
   end

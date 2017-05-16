@@ -27,7 +27,7 @@ describe 'PersonalMarketOrder' do
   end
 
   describe 'test an instance of PersonalMarketOrder' do
-    it 'should create an instact of PersonalMarketOrder' do
+    it 'should create an instance of PersonalMarketOrder' do
       expect(@instance).to be_instance_of(Esi::PersonalMarketOrder)
     end
   end

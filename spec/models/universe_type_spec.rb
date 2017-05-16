@@ -27,7 +27,7 @@ describe 'UniverseType' do
   end
 
   describe 'test an instance of UniverseType' do
-    it 'should create an instact of UniverseType' do
+    it 'should create an instance of UniverseType' do
       expect(@instance).to be_instance_of(Esi::UniverseType)
     end
   end

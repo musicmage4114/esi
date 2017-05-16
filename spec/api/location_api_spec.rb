@@ -26,7 +26,7 @@ describe 'LocationApi' do
   end
 
   describe 'test an instance of LocationApi' do
-    it 'should create an instact of LocationApi' do
+    it 'should create an instance of LocationApi' do
       expect(@instance).to be_instance_of(Esi::LocationApi)
     end
   end

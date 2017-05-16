@@ -27,7 +27,7 @@ describe 'InternalServerError' do
   end
 
   describe 'test an instance of InternalServerError' do
-    it 'should create an instact of InternalServerError' do
+    it 'should create an instance of InternalServerError' do
       expect(@instance).to be_instance_of(Esi::InternalServerError)
     end
   end

@@ -27,7 +27,7 @@ describe 'ShipInsurance' do
   end
 
   describe 'test an instance of ShipInsurance' do
-    it 'should create an instact of ShipInsurance' do
+    it 'should create an instance of ShipInsurance' do
       expect(@instance).to be_instance_of(Esi::ShipInsurance)
     end
   end

@@ -27,7 +27,7 @@ describe 'CorporationMemberRole' do
   end
 
   describe 'test an instance of CorporationMemberRole' do
-    it 'should create an instact of CorporationMemberRole' do
+    it 'should create an instance of CorporationMemberRole' do
       expect(@instance).to be_instance_of(Esi::CorporationMemberRole)
     end
   end

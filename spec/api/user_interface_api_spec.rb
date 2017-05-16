@@ -26,7 +26,7 @@ describe 'UserInterfaceApi' do
   end
 
   describe 'test an instance of UserInterfaceApi' do
-    it 'should create an instact of UserInterfaceApi' do
+    it 'should create an instance of UserInterfaceApi' do
       expect(@instance).to be_instance_of(Esi::UserInterfaceApi)
     end
   end

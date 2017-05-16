@@ -26,7 +26,7 @@ describe 'RoutesApi' do
   end
 
   describe 'test an instance of RoutesApi' do
-    it 'should create an instact of RoutesApi' do
+    it 'should create an instance of RoutesApi' do
       expect(@instance).to be_instance_of(Esi::RoutesApi)
     end
   end

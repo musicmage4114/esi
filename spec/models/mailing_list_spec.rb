@@ -27,7 +27,7 @@ describe 'MailingList' do
   end
 
   describe 'test an instance of MailingList' do
-    it 'should create an instact of MailingList' do
+    it 'should create an instance of MailingList' do
       expect(@instance).to be_instance_of(Esi::MailingList)
     end
   end

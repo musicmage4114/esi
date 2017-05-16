@@ -27,7 +27,7 @@ describe 'EvemailHeader' do
   end
 
   describe 'test an instance of EvemailHeader' do
-    it 'should create an instact of EvemailHeader' do
+    it 'should create an instance of EvemailHeader' do
       expect(@instance).to be_instance_of(Esi::EvemailHeader)
     end
   end

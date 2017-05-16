@@ -27,7 +27,7 @@ describe 'ColonyWaypoint' do
   end
 
   describe 'test an instance of ColonyWaypoint' do
-    it 'should create an instact of ColonyWaypoint' do
+    it 'should create an instance of ColonyWaypoint' do
       expect(@instance).to be_instance_of(Esi::ColonyWaypoint)
     end
   end

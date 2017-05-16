@@ -26,7 +26,7 @@ describe 'WarsApi' do
   end
 
   describe 'test an instance of WarsApi' do
-    it 'should create an instact of WarsApi' do
+    it 'should create an instance of WarsApi' do
       expect(@instance).to be_instance_of(Esi::WarsApi)
     end
   end

@@ -27,7 +27,7 @@ describe 'Structure' do
   end
 
   describe 'test an instance of Structure' do
-    it 'should create an instact of Structure' do
+    it 'should create an instance of Structure' do
       expect(@instance).to be_instance_of(Esi::Structure)
     end
   end

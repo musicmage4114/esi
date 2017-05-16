@@ -27,7 +27,7 @@ describe 'PastAlliance' do
   end
 
   describe 'test an instance of PastAlliance' do
-    it 'should create an instact of PastAlliance' do
+    it 'should create an instance of PastAlliance' do
       expect(@instance).to be_instance_of(Esi::PastAlliance)
     end
   end

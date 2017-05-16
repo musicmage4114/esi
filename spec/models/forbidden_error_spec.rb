@@ -27,7 +27,7 @@ describe 'ForbiddenError' do
   end
 
   describe 'test an instance of ForbiddenError' do
-    it 'should create an instact of ForbiddenError' do
+    it 'should create an instance of ForbiddenError' do
       expect(@instance).to be_instance_of(Esi::ForbiddenError)
     end
   end

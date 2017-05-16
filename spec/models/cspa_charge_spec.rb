@@ -27,7 +27,7 @@ describe 'CspaCharge' do
   end
 
   describe 'test an instance of CspaCharge' do
-    it 'should create an instact of CspaCharge' do
+    it 'should create an instance of CspaCharge' do
       expect(@instance).to be_instance_of(Esi::CspaCharge)
     end
   end

@@ -27,7 +27,7 @@ describe 'Colony' do
   end
 
   describe 'test an instance of Colony' do
-    it 'should create an instact of Colony' do
+    it 'should create an instance of Colony' do
       expect(@instance).to be_instance_of(Esi::Colony)
     end
   end

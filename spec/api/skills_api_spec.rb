@@ -26,7 +26,7 @@ describe 'SkillsApi' do
   end
 
   describe 'test an instance of SkillsApi' do
-    it 'should create an instact of SkillsApi' do
+    it 'should create an instance of SkillsApi' do
       expect(@instance).to be_instance_of(Esi::SkillsApi)
     end
   end

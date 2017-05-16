@@ -27,7 +27,7 @@ describe 'GeneralSearchResult' do
   end
 
   describe 'test an instance of GeneralSearchResult' do
-    it 'should create an instact of GeneralSearchResult' do
+    it 'should create an instance of GeneralSearchResult' do
       expect(@instance).to be_instance_of(Esi::GeneralSearchResult)
     end
   end

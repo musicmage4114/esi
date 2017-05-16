@@ -27,7 +27,7 @@ describe 'ColonyPin' do
   end
 
   describe 'test an instance of ColonyPin' do
-    it 'should create an instact of ColonyPin' do
+    it 'should create an instance of ColonyPin' do
       expect(@instance).to be_instance_of(Esi::ColonyPin)
     end
   end

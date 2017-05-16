@@ -27,7 +27,7 @@ describe 'MedalGraphic' do
   end
 
   describe 'test an instance of MedalGraphic' do
-    it 'should create an instact of MedalGraphic' do
+    it 'should create an instance of MedalGraphic' do
       expect(@instance).to be_instance_of(Esi::MedalGraphic)
     end
   end

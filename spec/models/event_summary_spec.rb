@@ -27,7 +27,7 @@ describe 'EventSummary' do
   end
 
   describe 'test an instance of EventSummary' do
-    it 'should create an instact of EventSummary' do
+    it 'should create an instance of EventSummary' do
       expect(@instance).to be_instance_of(Esi::EventSummary)
     end
   end

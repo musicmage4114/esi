@@ -27,7 +27,7 @@ describe 'CharacterResearchAgent' do
   end
 
   describe 'test an instance of CharacterResearchAgent' do
-    it 'should create an instact of CharacterResearchAgent' do
+    it 'should create an instance of CharacterResearchAgent' do
       expect(@instance).to be_instance_of(Esi::CharacterResearchAgent)
     end
   end

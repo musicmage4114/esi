@@ -26,7 +26,7 @@ describe 'ClonesApi' do
   end
 
   describe 'test an instance of ClonesApi' do
-    it 'should create an instact of ClonesApi' do
+    it 'should create an instance of ClonesApi' do
       expect(@instance).to be_instance_of(Esi::ClonesApi)
     end
   end

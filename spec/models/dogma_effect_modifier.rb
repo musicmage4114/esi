@@ -27,7 +27,7 @@ describe 'DogmaEffectModifier' do
   end
 
   describe 'test an instance of DogmaEffectModifier' do
-    it 'should create an instact of DogmaEffectModifier' do
+    it 'should create an instance of DogmaEffectModifier' do
       expect(@instance).to be_instance_of(Esi::DogmaEffectModifier)
     end
   end

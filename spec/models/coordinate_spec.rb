@@ -27,7 +27,7 @@ describe 'Coordinate' do
   end
 
   describe 'test an instance of Coordinate' do
-    it 'should create an instact of Coordinate' do
+    it 'should create an instance of Coordinate' do
       expect(@instance).to be_instance_of(Esi::Coordinate)
     end
   end

@@ -27,7 +27,7 @@ describe 'UnprocessableEntityError' do
   end
 
   describe 'test an instance of UnprocessableEntityError' do
-    it 'should create an instact of UnprocessableEntityError' do
+    it 'should create an instance of UnprocessableEntityError' do
       expect(@instance).to be_instance_of(Esi::UnprocessableEntityError)
     end
   end

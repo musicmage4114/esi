@@ -27,7 +27,7 @@ describe 'ContactLabel' do
   end
 
   describe 'test an instance of ContactLabel' do
-    it 'should create an instact of ContactLabel' do
+    it 'should create an instance of ContactLabel' do
       expect(@instance).to be_instance_of(Esi::ContactLabel)
     end
   end

@@ -27,7 +27,7 @@ describe 'ItemGroup' do
   end
 
   describe 'test an instance of ItemGroup' do
-    it 'should create an instact of ItemGroup' do
+    it 'should create an instance of ItemGroup' do
       expect(@instance).to be_instance_of(Esi::ItemGroup)
     end
   end

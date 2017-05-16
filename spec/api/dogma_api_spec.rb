@@ -26,7 +26,7 @@ describe 'DogmaApi' do
   end
 
   describe 'test an instance of DogmaApi' do
-    it 'should create an instact of DogmaApi' do
+    it 'should create an instance of DogmaApi' do
       expect(@instance).to be_instance_of(Esi::DogmaApi)
     end
   end

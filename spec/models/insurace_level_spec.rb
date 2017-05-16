@@ -27,7 +27,7 @@ describe 'InsuranceLevel' do
   end
 
   describe 'test an instance of InsuranceLevel' do
-    it 'should create an instact of InsuranceLevel' do
+    it 'should create an instance of InsuranceLevel' do
       expect(@instance).to be_instance_of(Esi::InsuranceLevel)
     end
   end

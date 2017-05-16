@@ -27,7 +27,7 @@ describe 'SystemSovereignty' do
   end
 
   describe 'test an instance of SystemSovereignty' do
-    it 'should create an instact of SystemSovereignty' do
+    it 'should create an instance of SystemSovereignty' do
       expect(@instance).to be_instance_of(Esi::SystemSovereignty)
     end
   end

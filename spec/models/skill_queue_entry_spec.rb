@@ -27,7 +27,7 @@ describe 'SkillQueueEntry' do
   end
 
   describe 'test an instance of SkillQueueEntry' do
-    it 'should create an instact of SkillQueueEntry' do
+    it 'should create an instance of SkillQueueEntry' do
       expect(@instance).to be_instance_of(Esi::SkillQueueEntry)
     end
   end

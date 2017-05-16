@@ -27,7 +27,7 @@ describe 'SystemKillSummary' do
   end
 
   describe 'test an instance of SystemKillSummary' do
-    it 'should create an instact of SystemKillSummary' do
+    it 'should create an instance of SystemKillSummary' do
       expect(@instance).to be_instance_of(Esi::SystemKillSummary)
     end
   end

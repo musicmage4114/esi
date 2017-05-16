@@ -27,7 +27,7 @@ describe 'ChatChannelMute' do
   end
 
   describe 'test an instance of ChatChannelMute' do
-    it 'should create an instact of ChatChannelMute' do
+    it 'should create an instance of ChatChannelMute' do
       expect(@instance).to be_instance_of(Esi::ChatChannelMute)
     end
   end

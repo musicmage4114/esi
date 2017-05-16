@@ -27,7 +27,7 @@ describe 'Wallet' do
   end
 
   describe 'test an instance of Wallet' do
-    it 'should create an instact of Wallet' do
+    it 'should create an instance of Wallet' do
       expect(@instance).to be_instance_of(Esi::Wallet)
     end
   end

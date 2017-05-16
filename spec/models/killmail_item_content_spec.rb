@@ -27,7 +27,7 @@ describe 'KillmailItemContent' do
   end
 
   describe 'test an instance of KillmailItemContent' do
-    it 'should create an instact of KillmailItemContent' do
+    it 'should create an instance of KillmailItemContent' do
       expect(@instance).to be_instance_of(Esi::KillmailItemContent)
     end
   end

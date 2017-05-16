@@ -27,7 +27,7 @@ describe 'Bloodline' do
   end
 
   describe 'test an instance of Bloodline' do
-    it 'should create an instact of Bloodline' do
+    it 'should create an instance of Bloodline' do
       expect(@instance).to be_instance_of(Esi::Bloodline)
     end
   end

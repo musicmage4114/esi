@@ -27,7 +27,7 @@ describe 'Character' do
   end
 
   describe 'test an instance of Character' do
-    it 'should create an instact of Character' do
+    it 'should create an instance of Character' do
       expect(@instance).to be_instance_of(Esi::Character)
     end
   end

@@ -26,7 +26,7 @@ describe 'FleetsApi' do
   end
 
   describe 'test an instance of FleetsApi' do
-    it 'should create an instact of FleetsApi' do
+    it 'should create an instance of FleetsApi' do
       expect(@instance).to be_instance_of(Esi::FleetsApi)
     end
   end

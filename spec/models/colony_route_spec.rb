@@ -27,7 +27,7 @@ describe 'ColonyRoute' do
   end
 
   describe 'test an instance of ColonyRoute' do
-    it 'should create an instact of ColonyRoute' do
+    it 'should create an instance of ColonyRoute' do
       expect(@instance).to be_instance_of(Esi::ColonyRoute)
     end
   end

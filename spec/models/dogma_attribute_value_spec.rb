@@ -27,7 +27,7 @@ describe 'DogmaAttributeValue' do
   end
 
   describe 'test an instance of DogmaAttributeValue' do
-    it 'should create an instact of DogmaAttributeValue' do
+    it 'should create an instance of DogmaAttributeValue' do
       expect(@instance).to be_instance_of(Esi::DogmaAttributeValue)
     end
   end

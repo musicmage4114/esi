@@ -27,7 +27,7 @@ describe 'BookmarkLocation' do
   end
 
   describe 'test an instance of BookmarkLocation' do
-    it 'should create an instact of BookmarkLocation' do
+    it 'should create an instance of BookmarkLocation' do
       expect(@instance).to be_instance_of(Esi::BookmarkLocation)
     end
   end

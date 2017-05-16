@@ -27,7 +27,7 @@ describe 'IdSummary' do
   end
 
   describe 'test an instance of IdSummary' do
-    it 'should create an instact of IdSummary' do
+    it 'should create an instance of IdSummary' do
       expect(@instance).to be_instance_of(Esi::IdSummary)
     end
   end

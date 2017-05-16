@@ -27,7 +27,7 @@ describe 'Moon' do
   end
 
   describe 'test an instance of Moon' do
-    it 'should create an instact of Moon' do
+    it 'should create an instance of Moon' do
       expect(@instance).to be_instance_of(Esi::Moon)
     end
   end

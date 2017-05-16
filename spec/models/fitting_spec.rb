@@ -27,7 +27,7 @@ describe 'Fitting' do
   end
 
   describe 'test an instance of Fitting' do
-    it 'should create an instact of Fitting' do
+    it 'should create an instance of Fitting' do
       expect(@instance).to be_instance_of(Esi::Fitting)
     end
   end

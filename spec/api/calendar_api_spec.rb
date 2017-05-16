@@ -26,7 +26,7 @@ describe 'CalendarApi' do
   end
 
   describe 'test an instance of CalendarApi' do
-    it 'should create an instact of CalendarApi' do
+    it 'should create an instance of CalendarApi' do
       expect(@instance).to be_instance_of(Esi::CalendarApi)
     end
   end

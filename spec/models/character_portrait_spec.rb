@@ -27,7 +27,7 @@ describe 'CharacterPortrait' do
   end
 
   describe 'test an instance of CharacterPortrait' do
-    it 'should create an instact of CharacterPortrait' do
+    it 'should create an instance of CharacterPortrait' do
       expect(@instance).to be_instance_of(Esi::CharacterPortrait)
     end
   end

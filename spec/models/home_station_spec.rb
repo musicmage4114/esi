@@ -27,7 +27,7 @@ describe 'HomeStation' do
   end
 
   describe 'test an instance of HomeStation' do
-    it 'should create an instact of HomeStation' do
+    it 'should create an instance of HomeStation' do
       expect(@instance).to be_instance_of(Esi::HomeStation)
     end
   end

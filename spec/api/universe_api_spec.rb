@@ -26,7 +26,7 @@ describe 'UniverseApi' do
   end
 
   describe 'test an instance of UniverseApi' do
-    it 'should create an instact of UniverseApi' do
+    it 'should create an instance of UniverseApi' do
       expect(@instance).to be_instance_of(Esi::UniverseApi)
     end
   end

@@ -27,7 +27,7 @@ describe 'Fleet' do
   end
 
   describe 'test an instance of Fleet' do
-    it 'should create an instact of Fleet' do
+    it 'should create an instance of Fleet' do
       expect(@instance).to be_instance_of(Esi::Fleet)
     end
   end

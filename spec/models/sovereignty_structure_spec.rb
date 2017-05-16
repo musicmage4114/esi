@@ -27,7 +27,7 @@ describe 'SovereigntyStructure' do
   end
 
   describe 'test an instance of SovereigntyStructure' do
-    it 'should create an instact of SovereigntyStructure' do
+    it 'should create an instance of SovereigntyStructure' do
       expect(@instance).to be_instance_of(Esi::SovereigntyStructure)
     end
   end

@@ -27,7 +27,7 @@ describe 'OpportunitiesGroup' do
   end
 
   describe 'test an instance of OpportunitiesGroup' do
-    it 'should create an instact of OpportunitiesGroup' do
+    it 'should create an instance of OpportunitiesGroup' do
       expect(@instance).to be_instance_of(Esi::OpportunitiesGroup)
     end
   end

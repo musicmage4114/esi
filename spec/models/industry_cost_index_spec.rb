@@ -27,7 +27,7 @@ describe 'IndustryCostIndex' do
   end
 
   describe 'test an instance of IndustryCostIndex' do
-    it 'should create an instact of IndustryCostIndex' do
+    it 'should create an instance of IndustryCostIndex' do
       expect(@instance).to be_instance_of(Esi::IndustryCostIndex)
     end
   end

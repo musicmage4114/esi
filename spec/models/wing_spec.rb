@@ -27,7 +27,7 @@ describe 'Wing' do
   end
 
   describe 'test an instance of Wing' do
-    it 'should create an instact of Wing' do
+    it 'should create an instance of Wing' do
       expect(@instance).to be_instance_of(Esi::Wing)
     end
   end

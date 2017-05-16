@@ -27,7 +27,7 @@ describe 'Station' do
   end
 
   describe 'test an instance of Station' do
-    it 'should create an instact of Station' do
+    it 'should create an instance of Station' do
       expect(@instance).to be_instance_of(Esi::Station)
     end
   end

@@ -27,7 +27,7 @@ describe 'GameGraphic' do
   end
 
   describe 'test an instance of GameGraphic' do
-    it 'should create an instact of GameGraphic' do
+    it 'should create an instance of GameGraphic' do
       expect(@instance).to be_instance_of(Esi::GameGraphic)
     end
   end

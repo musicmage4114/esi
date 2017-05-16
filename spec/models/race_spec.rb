@@ -27,7 +27,7 @@ describe 'Race' do
   end
 
   describe 'test an instance of Race' do
-    it 'should create an instact of Race' do
+    it 'should create an instance of Race' do
       expect(@instance).to be_instance_of(Esi::Race)
     end
   end

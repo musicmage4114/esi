@@ -27,7 +27,7 @@ describe 'ColonyDetail' do
   end
 
   describe 'test an instance of ColonyDetail' do
-    it 'should create an instact of ColonyDetail' do
+    it 'should create an instance of ColonyDetail' do
       expect(@instance).to be_instance_of(Esi::ColonyDetail)
     end
   end

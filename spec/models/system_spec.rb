@@ -27,7 +27,7 @@ describe 'System' do
   end
 
   describe 'test an instance of System' do
-    it 'should create an instact of System' do
+    it 'should create an instance of System' do
       expect(@instance).to be_instance_of(Esi::System)
     end
   end

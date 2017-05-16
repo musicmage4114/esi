@@ -27,7 +27,7 @@ describe 'Contact' do
   end
 
   describe 'test an instance of Contact' do
-    it 'should create an instact of Contact' do
+    it 'should create an instance of Contact' do
       expect(@instance).to be_instance_of(Esi::Contact)
     end
   end

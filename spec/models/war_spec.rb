@@ -27,7 +27,7 @@ describe 'War' do
   end
 
   describe 'test an instance of War' do
-    it 'should create an instact of War' do
+    it 'should create an instance of War' do
       expect(@instance).to be_instance_of(Esi::War)
     end
   end

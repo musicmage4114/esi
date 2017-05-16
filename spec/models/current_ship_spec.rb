@@ -27,7 +27,7 @@ describe 'CurrentShip' do
   end
 
   describe 'test an instance of CurrentShip' do
-    it 'should create an instact of CurrentShip' do
+    it 'should create an instance of CurrentShip' do
       expect(@instance).to be_instance_of(Esi::CurrentShip)
     end
   end

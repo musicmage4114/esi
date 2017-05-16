@@ -26,7 +26,7 @@ describe 'PlanetaryInteractionApi' do
   end
 
   describe 'test an instance of PlanetaryInteractionApi' do
-    it 'should create an instact of PlanetaryInteractionApi' do
+    it 'should create an instance of PlanetaryInteractionApi' do
       expect(@instance).to be_instance_of(Esi::PlanetaryInteractionApi)
     end
   end

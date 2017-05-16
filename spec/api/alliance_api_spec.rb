@@ -26,7 +26,7 @@ describe 'AllianceApi' do
   end
 
   describe 'test an instance of AllianceApi' do
-    it 'should create an instact of AllianceApi' do
+    it 'should create an instance of AllianceApi' do
       expect(@instance).to be_instance_of(Esi::AllianceApi)
     end
   end

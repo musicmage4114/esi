@@ -27,7 +27,7 @@ describe 'ViewableMarketOrder' do
   end
 
   describe 'test an instance of ViewableMarketOrder' do
-    it 'should create an instact of ViewableMarketOrder' do
+    it 'should create an instance of ViewableMarketOrder' do
       expect(@instance).to be_instance_of(Esi::ViewableMarketOrder)
     end
   end

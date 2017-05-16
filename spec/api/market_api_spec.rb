@@ -26,7 +26,7 @@ describe 'MarketApi' do
   end
 
   describe 'test an instance of MarketApi' do
-    it 'should create an instact of MarketApi' do
+    it 'should create an instance of MarketApi' do
       expect(@instance).to be_instance_of(Esi::MarketApi)
     end
   end

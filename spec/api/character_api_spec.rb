@@ -26,7 +26,7 @@ describe 'CharacterApi' do
   end
 
   describe 'test an instance of CharacterApi' do
-    it 'should create an instact of CharacterApi' do
+    it 'should create an instance of CharacterApi' do
       expect(@instance).to be_instance_of(Esi::CharacterApi)
     end
   end
