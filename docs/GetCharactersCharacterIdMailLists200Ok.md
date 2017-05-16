@@ -1,4 +1,4 @@
-# SwaggerClient::MailingList
+# Esi::MailingList
 
 ## Properties
 Name | Type | Description | Notes

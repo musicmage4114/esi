@@ -1,4 +1,4 @@
-# SwaggerClient::GetContactsLabelsForbidden
+# Esi::GetContactsLabelsForbidden
 
 ## Properties
 Name | Type | Description | Notes

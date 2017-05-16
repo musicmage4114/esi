@@ -1,4 +1,4 @@
-# SwaggerClient::IdSummary
+# Esi::IdSummary
 
 ## Properties
 Name | Type | Description | Notes

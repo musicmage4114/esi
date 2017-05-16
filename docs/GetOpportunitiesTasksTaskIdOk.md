@@ -1,4 +1,4 @@
-# SwaggerClient::OpportunitiesTask
+# Esi::OpportunitiesTask
 
 ## Properties
 Name | Type | Description | Notes

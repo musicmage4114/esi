@@ -1,4 +1,4 @@
-# SwaggerClient::GetIndustryJobsInternalServerError
+# Esi::GetIndustryJobsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

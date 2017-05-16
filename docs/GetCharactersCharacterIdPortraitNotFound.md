@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterPortraitNotFound
+# Esi::GetCharacterPortraitNotFound
 
 ## Properties
 Name | Type | Description | Notes

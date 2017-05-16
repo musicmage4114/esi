@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterApi
+# Esi::CharacterApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -27,9 +27,9 @@ Public information about a character  ---  Alternate route: `/v4/characters/{cha
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -43,7 +43,7 @@ begin
   #Get character's public information
   result = api_instance.get_character_by_id(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_by_id: #{e}"
 end
 ```
@@ -82,14 +82,14 @@ Return a list of agents research information for a character. The formula for fi
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -104,7 +104,7 @@ begin
   #Get agents research
   result = api_instance.get_character_research_agents(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_research_agents: #{e}"
 end
 ```
@@ -144,14 +144,14 @@ Return a list of blueprints the character has  ---  Alternate route: `/v1/charac
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -166,7 +166,7 @@ begin
   #Get blueprints
   result = api_instance.get_character_blueprints(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_blueprints: #{e}"
 end
 ```
@@ -206,14 +206,14 @@ Return chat channels that a character is the owner or an operator of  ---  Alter
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -228,7 +228,7 @@ begin
   #Get chat channels
   result = api_instance.get_character_chat_channels(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_chat_channels: #{e}"
 end
 ```
@@ -268,9 +268,9 @@ Get a list of all the corporations a character has been a member of  ---  Altern
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -284,7 +284,7 @@ begin
   #Get corporation history
   result = api_instance.get_employment_history(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_employment_history: #{e}"
 end
 ```
@@ -323,14 +323,14 @@ Return a list of medals the character has  ---  Alternate route: `/v1/characters
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -345,7 +345,7 @@ begin
   #Get medals
   result = api_instance.get_character_medals(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_medals: #{e}"
 end
 ```
@@ -385,9 +385,9 @@ Get portrait urls for a character  ---  Alternate route: `/v2/characters/{charac
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -401,7 +401,7 @@ begin
   #Get character portraits
   result = api_instance.get_character_portrait(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_portrait: #{e}"
 end
 ```
@@ -440,14 +440,14 @@ Return character standings from agents, NPC corporations, and factions  ---  Alt
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -462,7 +462,7 @@ begin
   #Get standings
   result = api_instance.get_character_standings(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_standings: #{e}"
 end
 ```
@@ -502,9 +502,9 @@ Resolve a set of character IDs to character names  ---  Alternate route: `/v1/ch
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_ids = [56] # Array<Integer> | A comma separated list of character IDs
 
@@ -518,7 +518,7 @@ begin
   #Get character names
   result = api_instance.get_character_name(character_ids, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_name: #{e}"
 end
 ```
@@ -557,11 +557,11 @@ Bulk lookup of character IDs to corporation, alliance and faction  ---  Alternat
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
-characters = [SwaggerClient::Array<Integer>.new] # Array<Integer> | The character IDs to fetch affiliations for
+characters = [Esi::Array<Integer>.new] # Array<Integer> | The character IDs to fetch affiliations for
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -573,7 +573,7 @@ begin
   #Character affiliation
   result = api_instance.get_character_affiliation(characters, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->get_character_affiliation: #{e}"
 end
 ```
@@ -612,18 +612,18 @@ Takes a source character ID in the url and a set of target character ID's in the
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CharacterApi.new
+api_instance = Esi::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
-characters = SwaggerClient::CspaCharacter.new # CspaCharacter | The target characters to calculate the charge for
+characters = Esi::CspaCharacter.new # CspaCharacter | The target characters to calculate the charge for
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -636,7 +636,7 @@ begin
   #Calculate a CSPA charge cost
   result = api_instance.calculate_cspa(character_id, characters, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CharacterApi->calculate_cspa: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::Contact
+# Esi::Contact
 
 ## Properties
 Name | Type | Description | Notes

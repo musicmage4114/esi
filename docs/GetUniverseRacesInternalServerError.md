@@ -1,4 +1,4 @@
-# SwaggerClient::GetRacesInternalServerError
+# Esi::GetRacesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

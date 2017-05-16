@@ -1,4 +1,4 @@
-# SwaggerClient::RegionPriceHistory
+# Esi::RegionPriceHistory
 
 ## Properties
 Name | Type | Description | Notes

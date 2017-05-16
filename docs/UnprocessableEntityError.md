@@ -1,4 +1,4 @@
-# SwaggerClient::UnprocessableEntityError
+# Esi::UnprocessableEntityError
 
 ## Properties
 Name | Type | Description | Notes

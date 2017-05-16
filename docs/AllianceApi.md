@@ -1,4 +1,4 @@
-# SwaggerClient::AllianceApi
+# Esi::AllianceApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -21,9 +21,9 @@ List all active player alliances  ---  Alternate route: `/v1/alliances/`  Altern
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::AllianceApi.new
+api_instance = Esi::AllianceApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -35,7 +35,7 @@ begin
   #List all alliances
   result = api_instance.get_alliances(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling AllianceApi->get_alliances: #{e}"
 end
 ```
@@ -73,9 +73,9 @@ Public information about an alliance  ---  Alternate route: `/v1/alliances/{alli
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::AllianceApi.new
+api_instance = Esi::AllianceApi.new
 
 alliance_id = 56 # Integer | An Eve alliance ID
 
@@ -89,7 +89,7 @@ begin
   #Get alliance information
   result = api_instance.get_alliance_by_id(alliance_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling AllianceApi->get_alliance_by_id: #{e}"
 end
 ```
@@ -128,9 +128,9 @@ List all current member corporations of an alliance  ---  Alternate route: `/v1/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::AllianceApi.new
+api_instance = Esi::AllianceApi.new
 
 alliance_id = 56 # Integer | An EVE alliance ID
 
@@ -144,7 +144,7 @@ begin
   #List alliance's corporations
   result = api_instance.get_alliance_corporations(alliance_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling AllianceApi->get_alliance_corporations: #{e}"
 end
 ```
@@ -183,9 +183,9 @@ Get the icon urls for a alliance  ---  Alternate route: `/v1/alliances/{alliance
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::AllianceApi.new
+api_instance = Esi::AllianceApi.new
 
 alliance_id = 56 # Integer | An EVE alliance ID
 
@@ -199,7 +199,7 @@ begin
   #Get alliance icon
   result = api_instance.get_alliance_icon(alliance_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling AllianceApi->get_alliance_icon: #{e}"
 end
 ```
@@ -238,9 +238,9 @@ Resolve a set of alliance IDs to alliance names  ---  Alternate route: `/v1/alli
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::AllianceApi.new
+api_instance = Esi::AllianceApi.new
 
 alliance_ids = [56] # Array<Integer> | A comma separated list of alliance IDs
 
@@ -254,7 +254,7 @@ begin
   #Get alliance names
   result = api_instance.get_alliance_name(alliance_ids, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling AllianceApi->get_alliance_name: #{e}"
 end
 ```

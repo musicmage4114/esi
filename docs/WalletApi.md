@@ -1,4 +1,4 @@
-# SwaggerClient::WalletApi
+# Esi::WalletApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -17,14 +17,14 @@ List your wallets and their balances. Characters typically have only one wallet,
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::WalletApi.new
+api_instance = Esi::WalletApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -39,7 +39,7 @@ begin
   #List wallets and balances
   result = api_instance.get_wallets(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling WalletApi->get_wallets: #{e}"
 end
 ```

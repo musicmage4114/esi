@@ -1,4 +1,4 @@
-# SwaggerClient::Alliance
+# Esi::Alliance
 
 ## Properties
 Name | Type | Description | Notes

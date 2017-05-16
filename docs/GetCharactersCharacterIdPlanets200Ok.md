@@ -1,4 +1,4 @@
-# SwaggerClient::Colony
+# Esi::Colony
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteWingNotFound
+# Esi::DeleteWingNotFound
 
 ## Properties
 Name | Type | Description | Notes

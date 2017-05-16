@@ -1,4 +1,4 @@
-# SwaggerClient::PostUniverseNamesInternalServerError
+# Esi::PostUniverseNamesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

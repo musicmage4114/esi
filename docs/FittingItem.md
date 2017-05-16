@@ -1,4 +1,4 @@
-# SwaggerClient::FittingItem
+# Esi::FittingItem
 
 ## Properties
 Name | Type | Description | Notes

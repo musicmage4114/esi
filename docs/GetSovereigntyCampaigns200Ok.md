@@ -1,4 +1,4 @@
-# SwaggerClient::SovereigntyCampaign
+# Esi::SovereigntyCampaign
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterSkillsInternalServerError
+# Esi::GetCharacterSkillsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

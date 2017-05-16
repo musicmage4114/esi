@@ -1,4 +1,4 @@
-# SwaggerClient::GetStructureByIdNotFound
+# Esi::GetStructureByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

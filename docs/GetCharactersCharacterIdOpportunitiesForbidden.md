@@ -1,4 +1,4 @@
-# SwaggerClient::GetCompletedOpportunitiesForbidden
+# Esi::GetCompletedOpportunitiesForbidden
 
 ## Properties
 Name | Type | Description | Notes

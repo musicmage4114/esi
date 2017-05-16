@@ -1,4 +1,4 @@
-# SwaggerClient::GetConstellationByIdInternalServerError
+# Esi::GetConstellationByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

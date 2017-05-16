@@ -1,4 +1,4 @@
-# SwaggerClient::Wallet
+# Esi::Wallet
 
 ## Properties
 Name | Type | Description | Notes

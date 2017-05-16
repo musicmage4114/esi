@@ -1,4 +1,4 @@
-# SwaggerClient::GetSystemJumpsInternalServerError
+# Esi::GetSystemJumpsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

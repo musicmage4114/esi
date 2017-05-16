@@ -1,4 +1,4 @@
-# SwaggerClient::CreatedFitting
+# Esi::CreatedFitting
 
 ## Properties
 Name | Type | Description | Notes

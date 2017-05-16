@@ -1,4 +1,4 @@
-# SwaggerClient::GetFittingsForbidden
+# Esi::GetFittingsForbidden
 
 ## Properties
 Name | Type | Description | Notes

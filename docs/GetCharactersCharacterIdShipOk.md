@@ -1,4 +1,4 @@
-# SwaggerClient::CurrentShip
+# Esi::CurrentShip
 
 ## Properties
 Name | Type | Description | Notes

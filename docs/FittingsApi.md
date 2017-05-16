@@ -1,4 +1,4 @@
-# SwaggerClient::FittingsApi
+# Esi::FittingsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -19,14 +19,14 @@ Delete a fitting from a character  ---  Alternate route: `/v1/characters/{charac
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FittingsApi.new
+api_instance = Esi::FittingsApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -42,7 +42,7 @@ opts = {
 begin
   #Delete fitting
   api_instance.delete_fitting(character_id, fitting_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FittingsApi->delete_fitting: #{e}"
 end
 ```
@@ -83,14 +83,14 @@ Return fittings of a character  ---  Alternate route: `/v1/characters/{character
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FittingsApi.new
+api_instance = Esi::FittingsApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -105,7 +105,7 @@ begin
   #Get fittings
   result = api_instance.get_fittings(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FittingsApi->get_fittings: #{e}"
 end
 ```
@@ -145,20 +145,20 @@ Save a new fitting for a character  ---  Alternate route: `/v1/characters/{chara
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FittingsApi.new
+api_instance = Esi::FittingsApi.new
 
 character_id = 56 # Integer | ID for a character
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  fitting: SwaggerClient::NewFitting.new, # NewFitting | Details about the new fitting
+  fitting: Esi::NewFitting.new, # NewFitting | Details about the new fitting
   token: "token_example", # String | Access token to use, if preferred over a header
   user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
   x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
@@ -168,7 +168,7 @@ begin
   #Create fitting
   result = api_instance.add_fitting(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FittingsApi->add_fitting: #{e}"
 end
 ```

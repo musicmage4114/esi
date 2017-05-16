@@ -1,4 +1,4 @@
-# SwaggerClient::IndustryCostIndex
+# Esi::IndustryCostIndex
 
 ## Properties
 Name | Type | Description | Notes

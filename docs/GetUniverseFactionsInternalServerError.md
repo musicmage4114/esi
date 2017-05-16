@@ -1,4 +1,4 @@
-# SwaggerClient::GetFactionsInternalServerError
+# Esi::GetFactionsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

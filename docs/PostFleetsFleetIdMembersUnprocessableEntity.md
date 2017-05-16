@@ -1,4 +1,4 @@
-# SwaggerClient::PostFleetsFleetIdMembersUnprocessableEntity
+# Esi::PostFleetsFleetIdMembersUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

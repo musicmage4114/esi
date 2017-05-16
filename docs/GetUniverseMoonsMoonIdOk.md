@@ -1,4 +1,4 @@
-# SwaggerClient::Moon
+# Esi::Moon
 
 ## Properties
 Name | Type | Description | Notes

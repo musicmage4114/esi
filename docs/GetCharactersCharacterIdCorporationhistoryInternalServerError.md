@@ -1,4 +1,4 @@
-# SwaggerClient::GetEmploymentHistoryInternalServerError
+# Esi::GetEmploymentHistoryInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

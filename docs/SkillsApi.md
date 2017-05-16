@@ -1,4 +1,4 @@
-# SwaggerClient::SkillsApi
+# Esi::SkillsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -18,14 +18,14 @@ List the configured skill queue for the given character  ---  Alternate route: `
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::SkillsApi.new
+api_instance = Esi::SkillsApi.new
 
 character_id = 56 # Integer | Character id of the target character
 
@@ -40,7 +40,7 @@ begin
   #Get character's skill queue
   result = api_instance.get_skill_queue(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling SkillsApi->get_skill_queue: #{e}"
 end
 ```
@@ -80,14 +80,14 @@ List all trained skills for the given character  ---  Alternate route: `/v3/char
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::SkillsApi.new
+api_instance = Esi::SkillsApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -102,7 +102,7 @@ begin
   #Get character skills
   result = api_instance.get_character_skills(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling SkillsApi->get_character_skills: #{e}"
 end
 ```

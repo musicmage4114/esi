@@ -1,4 +1,4 @@
-# SwaggerClient::ColonyLink
+# Esi::ColonyLink
 
 ## Properties
 Name | Type | Description | Notes

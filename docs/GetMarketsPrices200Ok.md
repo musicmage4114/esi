@@ -1,4 +1,4 @@
-# SwaggerClient::MarketPrice
+# Esi::MarketPrice
 
 ## Properties
 Name | Type | Description | Notes

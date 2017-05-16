@@ -1,4 +1,4 @@
-# SwaggerClient::PutCharactersCharacterIdMailMailIdBadRequest
+# Esi::PutCharactersCharacterIdMailMailIdBadRequest
 
 ## Properties
 Name | Type | Description | Notes

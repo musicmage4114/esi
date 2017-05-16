@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterPortrait
+# Esi::CharacterPortrait
 
 ## Properties
 Name | Type | Description | Notes

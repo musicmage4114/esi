@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterSearchByStringForbidden
+# Esi::CharacterSearchByStringForbidden
 
 ## Properties
 Name | Type | Description | Notes

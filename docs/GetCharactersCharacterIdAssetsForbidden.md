@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterAssetsForbidden
+# Esi::GetCharacterAssetsForbidden
 
 ## Properties
 Name | Type | Description | Notes

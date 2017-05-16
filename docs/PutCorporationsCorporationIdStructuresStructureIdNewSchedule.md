@@ -1,4 +1,4 @@
-# SwaggerClient::NewVulnerabilitySchedule
+# Esi::NewVulnerabilitySchedule
 
 ## Properties
 Name | Type | Description | Notes

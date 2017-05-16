@@ -1,4 +1,4 @@
-# SwaggerClient::SearchByStringInternalServerError
+# Esi::SearchByStringInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

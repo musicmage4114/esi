@@ -1,4 +1,4 @@
-# SwaggerClient::SystemSovereignty
+# Esi::SystemSovereignty
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PastAlliance
+# Esi::PastAlliance
 
 ## Properties
 Name | Type | Description | Notes

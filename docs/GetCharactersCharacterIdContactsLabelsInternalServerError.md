@@ -1,4 +1,4 @@
-# SwaggerClient::GetContactsLabelsInternalServerError
+# Esi::GetContactsLabelsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::NotFoundError
+# Esi::NotFoundError
 
 ## Properties
 Name | Type | Description | Notes

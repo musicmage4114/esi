@@ -1,4 +1,4 @@
-# SwaggerClient::GetClonesForbidden
+# Esi::GetClonesForbidden
 
 ## Properties
 Name | Type | Description | Notes

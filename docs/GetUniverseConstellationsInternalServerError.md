@@ -1,4 +1,4 @@
-# SwaggerClient::GetContellationsInternalServerError
+# Esi::GetContellationsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

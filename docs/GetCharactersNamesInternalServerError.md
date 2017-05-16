@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterNameInternalServerError
+# Esi::GetCharacterNameInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

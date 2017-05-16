@@ -1,4 +1,4 @@
-# SwaggerClient::GetStationByIdInternalServerError
+# Esi::GetStationByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

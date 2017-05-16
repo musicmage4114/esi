@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterMedalsForbidden
+# Esi::GetCharacterMedalsForbidden
 
 ## Properties
 Name | Type | Description | Notes

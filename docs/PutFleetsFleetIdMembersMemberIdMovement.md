@@ -1,4 +1,4 @@
-# SwaggerClient::FleetMemberMovement
+# Esi::FleetMemberMovement
 
 ## Properties
 Name | Type | Description | Notes

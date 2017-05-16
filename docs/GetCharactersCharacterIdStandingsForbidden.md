@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterStandingsForbidden
+# Esi::GetCharacterStandingsForbidden
 
 ## Properties
 Name | Type | Description | Notes

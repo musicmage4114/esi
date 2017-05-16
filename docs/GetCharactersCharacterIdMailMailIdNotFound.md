@@ -1,4 +1,4 @@
-# SwaggerClient::ReadMailNotFound
+# Esi::ReadMailNotFound
 
 ## Properties
 Name | Type | Description | Notes

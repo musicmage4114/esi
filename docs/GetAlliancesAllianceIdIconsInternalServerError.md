@@ -1,4 +1,4 @@
-# SwaggerClient::GetAllianceIconInternalServerError
+# Esi::GetAllianceIconInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

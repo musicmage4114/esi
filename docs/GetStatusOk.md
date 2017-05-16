@@ -1,4 +1,4 @@
-# SwaggerClient::ServerStatus
+# Esi::ServerStatus
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetServerStatusInternalServerError
+# Esi::GetServerStatusInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

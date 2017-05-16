@@ -1,4 +1,4 @@
-# SwaggerClient::AllianceSummary
+# Esi::AllianceSummary
 
 ## Properties
 Name | Type | Description | Notes

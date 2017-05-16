@@ -1,4 +1,4 @@
-# SwaggerClient::CorporationApi
+# Esi::CorporationApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -25,9 +25,9 @@ Public information about a corporation  ---  Alternate route: `/v3/corporations/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_id = 56 # Integer | An Eve corporation ID
 
@@ -41,7 +41,7 @@ begin
   #Get corporation information
   result = api_instance.get_corporation_by_id(corporation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_corporation_by_id: #{e}"
 end
 ```
@@ -80,9 +80,9 @@ Get a list of all the alliances a corporation has been a member of  ---  Alterna
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_id = 56 # Integer | An EVE corporation ID
 
@@ -96,7 +96,7 @@ begin
   #Get alliance history
   result = api_instance.get_alliance_history(corporation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_alliance_history: #{e}"
 end
 ```
@@ -135,9 +135,9 @@ Get the icon urls for a corporation  ---  Alternate route: `/v1/corporations/{co
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_id = 56 # Integer | An EVE corporation ID
 
@@ -151,7 +151,7 @@ begin
   #Get corporation icon
   result = api_instance.get_corporation_icon(corporation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_corporation_icon: #{e}"
 end
 ```
@@ -190,14 +190,14 @@ Read the current list of members if the calling character is a member.  ---  Alt
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_id = 56 # Integer | A corporation ID
 
@@ -212,7 +212,7 @@ begin
   #Get corporation members
   result = api_instance.get_corporation_members(corporation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_corporation_members: #{e}"
 end
 ```
@@ -252,14 +252,14 @@ Return the roles of all members if the character has the personnel manager role 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_id = 56 # Integer | A corporation ID
 
@@ -274,7 +274,7 @@ begin
   #Get corporation member roles
   result = api_instance.get_corporation_roles(corporation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_corporation_roles: #{e}"
 end
 ```
@@ -314,14 +314,14 @@ Get a list of corporation structures  ---  Alternate route: `/v1/corporations/{c
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_id = 56 # Integer | A corporation ID
 
@@ -338,7 +338,7 @@ begin
   #Get corporation structures
   result = api_instance.get_corporation_structures(corporation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_corporation_structures: #{e}"
 end
 ```
@@ -380,9 +380,9 @@ Resolve a set of corporation IDs to corporation names  ---  Alternate route: `/v
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_ids = [56] # Array<Integer> | A comma separated list of corporation IDs
 
@@ -396,7 +396,7 @@ begin
   #Get corporation names
   result = api_instance.get_corporation_name(corporation_ids, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_corporation_name: #{e}"
 end
 ```
@@ -435,9 +435,9 @@ Get a list of npc corporations  ---  Alternate route: `/v1/corporations/npccorps
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -449,7 +449,7 @@ begin
   #Get npc corporations
   result = api_instance.get_npc_corporations(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->get_npc_corporations: #{e}"
 end
 ```
@@ -487,18 +487,18 @@ Update the vulnerability window schedule of a corporation structure  ---  Altern
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CorporationApi.new
+api_instance = Esi::CorporationApi.new
 
 corporation_id = 56 # Integer | A corporation ID
 
-new_schedule = [SwaggerClient::NewVulnerabilitySchedule.new] # Array<NewVulnerabilitySchedule> | New vulnerability window schedule for the structure
+new_schedule = [Esi::NewVulnerabilitySchedule.new] # Array<NewVulnerabilitySchedule> | New vulnerability window schedule for the structure
 
 structure_id = 789 # Integer | A structure ID
 
@@ -512,7 +512,7 @@ opts = {
 begin
   #Update structure vulnerability schedule
   api_instance.update_structure_vulnerability(corporation_id, new_schedule, structure_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CorporationApi->update_structure_vulnerability: #{e}"
 end
 ```

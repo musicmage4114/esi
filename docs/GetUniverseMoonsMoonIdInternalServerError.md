@@ -1,4 +1,4 @@
-# SwaggerClient::GetMoonByIdInternalServerError
+# Esi::GetMoonByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

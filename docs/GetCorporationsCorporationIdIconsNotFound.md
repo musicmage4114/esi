@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationIconNotFound
+# Esi::GetCorporationIconNotFound
 
 ## Properties
 Name | Type | Description | Notes

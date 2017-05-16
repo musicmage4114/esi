@@ -1,4 +1,4 @@
-# SwaggerClient::GetOpportunitiesTaskByIdInternalServerError
+# Esi::GetOpportunitiesTaskByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

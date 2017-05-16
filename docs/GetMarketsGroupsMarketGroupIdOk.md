@@ -1,4 +1,4 @@
-# SwaggerClient::MarketGroup
+# Esi::MarketGroup
 
 ## Properties
 Name | Type | Description | Notes

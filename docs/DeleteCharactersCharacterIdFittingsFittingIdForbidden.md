@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteFittingForbidden
+# Esi::DeleteFittingForbidden
 
 ## Properties
 Name | Type | Description | Notes

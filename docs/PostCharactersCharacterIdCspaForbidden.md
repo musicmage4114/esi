@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdCspaForbidden
+# Esi::PostCharactersCharacterIdCspaForbidden
 
 ## Properties
 Name | Type | Description | Notes

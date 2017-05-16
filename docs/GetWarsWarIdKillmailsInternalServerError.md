@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarKillmailsInternalServerError
+# Esi::GetWarKillmailsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

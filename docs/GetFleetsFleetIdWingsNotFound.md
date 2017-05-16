@@ -1,4 +1,4 @@
-# SwaggerClient::GetWingsNotFound
+# Esi::GetWingsNotFound
 
 ## Properties
 Name | Type | Description | Notes

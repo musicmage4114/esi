@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiOpenwindowMarketdetailsInternalServerError
+# Esi::PostUiOpenwindowMarketdetailsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

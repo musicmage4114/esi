@@ -1,4 +1,4 @@
-# SwaggerClient::GetRegionMarketOrdersInternalServerError
+# Esi::GetRegionMarketOrdersInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

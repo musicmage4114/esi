@@ -1,4 +1,4 @@
-# SwaggerClient::GetKillmailUnprocessableEntity
+# Esi::GetKillmailUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

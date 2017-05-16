@@ -1,4 +1,4 @@
-# SwaggerClient::CompletedOpportunity
+# Esi::CompletedOpportunity
 
 ## Properties
 Name | Type | Description | Notes

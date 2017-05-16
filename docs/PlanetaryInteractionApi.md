@@ -1,4 +1,4 @@
-# SwaggerClient::PlanetaryInteractionApi
+# Esi::PlanetaryInteractionApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -19,14 +19,14 @@ Returns a list of all planetary colonies owned by a character.  ---  Alternate r
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::PlanetaryInteractionApi.new
+api_instance = Esi::PlanetaryInteractionApi.new
 
 character_id = 56 # Integer | Character id of the target character
 
@@ -41,7 +41,7 @@ begin
   #Get colonies
   result = api_instance.get_colonies(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling PlanetaryInteractionApi->get_colonies: #{e}"
 end
 ```
@@ -81,14 +81,14 @@ Returns full details on the layout of a single planetary colony, including links
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::PlanetaryInteractionApi.new
+api_instance = Esi::PlanetaryInteractionApi.new
 
 character_id = 56 # Integer | Character id of the target character
 
@@ -105,7 +105,7 @@ begin
   #Get colony layout
   result = api_instance.get_colony(character_id, planet_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling PlanetaryInteractionApi->get_colony: #{e}"
 end
 ```
@@ -146,9 +146,9 @@ Get information on a planetary factory schematic  ---  Alternate route: `/v1/uni
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::PlanetaryInteractionApi.new
+api_instance = Esi::PlanetaryInteractionApi.new
 
 schematic_id = 56 # Integer | A PI schematic ID
 
@@ -162,7 +162,7 @@ begin
   #Get schematic information
   result = api_instance.get_schematic(schematic_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling PlanetaryInteractionApi->get_schematic: #{e}"
 end
 ```

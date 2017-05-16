@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdContactsInternalServerError
+# Esi::PostCharactersCharacterIdContactsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

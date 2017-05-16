@@ -1,4 +1,4 @@
-# SwaggerClient::KickFleetMemberInternalServerError
+# Esi::KickFleetMemberInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

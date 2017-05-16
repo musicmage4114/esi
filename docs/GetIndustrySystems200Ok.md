@@ -1,4 +1,4 @@
-# SwaggerClient::IndustrySystem
+# Esi::IndustrySystem
 
 ## Properties
 Name | Type | Description | Notes

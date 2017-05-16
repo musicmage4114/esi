@@ -1,4 +1,4 @@
-# SwaggerClient::InsuranceLevel
+# Esi::InsuranceLevel
 
 ## Properties
 Name | Type | Description | Notes

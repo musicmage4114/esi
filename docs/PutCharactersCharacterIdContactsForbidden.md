@@ -1,4 +1,4 @@
-# SwaggerClient::PutCharactersCharacterIdContactsForbidden
+# Esi::PutCharactersCharacterIdContactsForbidden
 
 ## Properties
 Name | Type | Description | Notes

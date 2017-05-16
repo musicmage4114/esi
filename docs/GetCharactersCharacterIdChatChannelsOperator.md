@@ -1,4 +1,4 @@
-# SwaggerClient::ChatChannelOperator
+# Esi::ChatChannelOperator
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdWingsWingIdInternalServerError
+# Esi::PutFleetsFleetIdWingsWingIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

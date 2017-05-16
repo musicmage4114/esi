@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiOpenwindowNewmailUnprocessableEntity
+# Esi::PostUiOpenwindowNewmailUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetMembersForbidden
+# Esi::GetFleetMembersForbidden
 
 ## Properties
 Name | Type | Description | Notes

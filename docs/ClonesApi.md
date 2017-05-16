@@ -1,4 +1,4 @@
-# SwaggerClient::ClonesApi
+# Esi::ClonesApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -17,14 +17,14 @@ A list of the character's clones  ---  Alternate route: `/v2/characters/{charact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::ClonesApi.new
+api_instance = Esi::ClonesApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -39,7 +39,7 @@ begin
   #Get clones
   result = api_instance.get_clones(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling ClonesApi->get_clones: #{e}"
 end
 ```

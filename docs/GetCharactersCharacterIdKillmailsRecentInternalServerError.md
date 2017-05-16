@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterRecentKillmailsInternalServerError
+# Esi::GetCharacterRecentKillmailsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

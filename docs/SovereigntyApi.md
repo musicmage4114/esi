@@ -1,4 +1,4 @@
-# SwaggerClient::SovereigntyApi
+# Esi::SovereigntyApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -19,9 +19,9 @@ Shows sovereignty data for campaigns.  ---  Alternate route: `/v1/sovereignty/ca
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::SovereigntyApi.new
+api_instance = Esi::SovereigntyApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -33,7 +33,7 @@ begin
   #List sovereignty campaigns
   result = api_instance.get_sovereignty_campaigns(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling SovereigntyApi->get_sovereignty_campaigns: #{e}"
 end
 ```
@@ -71,9 +71,9 @@ Shows sovereignty information for solar systems  ---  Alternate route: `/v1/sove
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::SovereigntyApi.new
+api_instance = Esi::SovereigntyApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -85,7 +85,7 @@ begin
   #List sovereignty of systems
   result = api_instance.get_sovereignty_map(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling SovereigntyApi->get_sovereignty_map: #{e}"
 end
 ```
@@ -123,9 +123,9 @@ Shows sovereignty data for structures.  ---  Alternate route: `/v1/sovereignty/s
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::SovereigntyApi.new
+api_instance = Esi::SovereigntyApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -137,7 +137,7 @@ begin
   #List sovereignty structures
   result = api_instance.get_sovereignty_structures(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling SovereigntyApi->get_sovereignty_structures: #{e}"
 end
 ```

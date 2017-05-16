@@ -1,4 +1,4 @@
-# SwaggerClient::StatusApi
+# Esi::StatusApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -17,9 +17,9 @@ EVE Server status  ---  Alternate route: `/v1/status/`  Alternate route: `/legac
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::StatusApi.new
+api_instance = Esi::StatusApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -31,7 +31,7 @@ begin
   #Retrieve the uptime and player counts
   result = api_instance.get_server_status(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling StatusApi->get_server_status: #{e}"
 end
 ```

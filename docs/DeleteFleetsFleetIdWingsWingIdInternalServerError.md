@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteWingInternalServerError
+# Esi::DeleteWingInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

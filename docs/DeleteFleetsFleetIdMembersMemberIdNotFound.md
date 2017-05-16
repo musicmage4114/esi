@@ -1,4 +1,4 @@
-# SwaggerClient::KickFleetMemberNotFound
+# Esi::KickFleetMemberNotFound
 
 ## Properties
 Name | Type | Description | Notes

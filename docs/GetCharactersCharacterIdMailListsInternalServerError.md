@@ -1,4 +1,4 @@
-# SwaggerClient::GetMailingListsInternalServerError
+# Esi::GetMailingListsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

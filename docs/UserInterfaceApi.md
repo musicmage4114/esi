@@ -1,4 +1,4 @@
-# SwaggerClient::UserInterfaceApi
+# Esi::UserInterfaceApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -21,14 +21,14 @@ Set a solar system as autopilot waypoint  ---  Alternate route: `/v2/ui/autopilo
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::UserInterfaceApi.new
+api_instance = Esi::UserInterfaceApi.new
 
 add_to_beginning = false # BOOLEAN | Whether this solar system should be added to the beginning of all waypoints
 
@@ -46,7 +46,7 @@ opts = {
 begin
   #Set Autopilot Waypoint
   api_instance.set_autopilot_waypoint(add_to_beginning, clear_other_waypoints, destination_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UserInterfaceApi->set_autopilot_waypoint: #{e}"
 end
 ```
@@ -88,14 +88,14 @@ Open the contract window inside the client  ---  Alternate route: `/v1/ui/openwi
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::UserInterfaceApi.new
+api_instance = Esi::UserInterfaceApi.new
 
 contract_id = 56 # Integer | The contract to open
 
@@ -109,7 +109,7 @@ opts = {
 begin
   #Open Contract Window
   api_instance.open_contract_window(contract_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UserInterfaceApi->open_contract_window: #{e}"
 end
 ```
@@ -149,14 +149,14 @@ Open the information window for a character, corporation or alliance inside the 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::UserInterfaceApi.new
+api_instance = Esi::UserInterfaceApi.new
 
 target_id = 56 # Integer | The target to open
 
@@ -170,7 +170,7 @@ opts = {
 begin
   #Open Information Window
   api_instance.show_info_by_id(target_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UserInterfaceApi->show_info_by_id: #{e}"
 end
 ```
@@ -210,14 +210,14 @@ Open the market details window for a specific typeID inside the client  ---  Alt
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::UserInterfaceApi.new
+api_instance = Esi::UserInterfaceApi.new
 
 type_id = 56 # Integer | The item type to open in market window
 
@@ -231,7 +231,7 @@ opts = {
 begin
   #Open Market Details
   api_instance.open_market_details(type_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UserInterfaceApi->open_market_details: #{e}"
 end
 ```
@@ -271,16 +271,16 @@ Open the New Mail window, according to settings from the request if applicable  
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::UserInterfaceApi.new
+api_instance = Esi::UserInterfaceApi.new
 
-new_mail = SwaggerClient::NewEvemail.new # NewEvemail | The details of mail to create
+new_mail = Esi::NewEvemail.new # NewEvemail | The details of mail to create
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -292,7 +292,7 @@ opts = {
 begin
   #Open New Mail Window
   api_instance.open_new_mail(new_mail, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UserInterfaceApi->open_new_mail: #{e}"
 end
 ```

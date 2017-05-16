@@ -1,4 +1,4 @@
-# SwaggerClient::GetRegionMarketOrdersUnprocessableEntity
+# Esi::GetRegionMarketOrdersUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

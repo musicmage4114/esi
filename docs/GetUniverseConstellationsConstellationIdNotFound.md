@@ -1,4 +1,4 @@
-# SwaggerClient::GetConstellationByIdNotFound
+# Esi::GetConstellationByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

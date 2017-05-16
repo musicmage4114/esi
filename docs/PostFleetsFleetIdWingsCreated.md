@@ -1,4 +1,4 @@
-# SwaggerClient::CreatedWing
+# Esi::CreatedWing
 
 ## Properties
 Name | Type | Description | Notes

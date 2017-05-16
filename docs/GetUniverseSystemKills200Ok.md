@@ -1,4 +1,4 @@
-# SwaggerClient::SystemKillsInfo
+# Esi::SystemKillsInfo
 
 ## Properties
 Name | Type | Description | Notes

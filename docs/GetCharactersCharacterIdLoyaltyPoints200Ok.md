@@ -1,4 +1,4 @@
-# SwaggerClient::LoyaltyPointsAmount
+# Esi::LoyaltyPointsAmount
 
 ## Properties
 Name | Type | Description | Notes

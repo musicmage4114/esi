@@ -1,4 +1,4 @@
-# SwaggerClient::GetEventByIdForbidden
+# Esi::GetEventByIdForbidden
 
 ## Properties
 Name | Type | Description | Notes

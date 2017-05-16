@@ -1,4 +1,4 @@
-# SwaggerClient::OpportunitiesApi
+# Esi::OpportunitiesApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -21,14 +21,14 @@ Return a list of tasks finished by a character  ---  Alternate route: `/v1/chara
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::OpportunitiesApi.new
+api_instance = Esi::OpportunitiesApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -43,7 +43,7 @@ begin
   #Get a character's completed tasks
   result = api_instance.get_completed_opportunities(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling OpportunitiesApi->get_completed_opportunities: #{e}"
 end
 ```
@@ -83,9 +83,9 @@ Return a list of opportunities groups  ---  Alternate route: `/v1/opportunities/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::OpportunitiesApi.new
+api_instance = Esi::OpportunitiesApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -97,7 +97,7 @@ begin
   #Get opportunities groups
   result = api_instance.get_opportunities_groups(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling OpportunitiesApi->get_opportunities_groups: #{e}"
 end
 ```
@@ -135,9 +135,9 @@ Return information of an opportunities group  ---  Alternate route: `/v1/opportu
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::OpportunitiesApi.new
+api_instance = Esi::OpportunitiesApi.new
 
 group_id = 56 # Integer | ID of an opportunities group
 
@@ -152,7 +152,7 @@ begin
   #Get opportunities group
   result = api_instance.get_opportunities_group_by_id(group_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling OpportunitiesApi->get_opportunities_group_by_id: #{e}"
 end
 ```
@@ -192,9 +192,9 @@ Return a list of opportunities tasks  ---  Alternate route: `/v1/opportunities/t
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::OpportunitiesApi.new
+api_instance = Esi::OpportunitiesApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -206,7 +206,7 @@ begin
   #Get opportunities tasks
   result = api_instance.get_opportunities_tasks(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling OpportunitiesApi->get_opportunities_tasks: #{e}"
 end
 ```
@@ -244,9 +244,9 @@ Return information of an opportunities task  ---  Alternate route: `/v1/opportun
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::OpportunitiesApi.new
+api_instance = Esi::OpportunitiesApi.new
 
 task_id = 56 # Integer | ID of an opportunities task
 
@@ -260,7 +260,7 @@ begin
   #Get opportunities task
   result = api_instance.get_opportunities_task_by_id(task_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling OpportunitiesApi->get_opportunities_task_by_id: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::GetRegionByIdInternalServerError
+# Esi::GetRegionByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketGroupByIdNotFound
+# Esi::GetMarketGroupByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

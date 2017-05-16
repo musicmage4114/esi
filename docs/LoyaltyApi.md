@@ -1,4 +1,4 @@
-# SwaggerClient::LoyaltyApi
+# Esi::LoyaltyApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -18,14 +18,14 @@ Return a list of loyalty points for all corporations the character has worked fo
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::LoyaltyApi.new
+api_instance = Esi::LoyaltyApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -40,7 +40,7 @@ begin
   #Get loyalty points
   result = api_instance.get_loyalty_points(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling LoyaltyApi->get_loyalty_points: #{e}"
 end
 ```
@@ -80,9 +80,9 @@ Return a list of offers from a specific corporation's loyalty store  ---  Altern
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::LoyaltyApi.new
+api_instance = Esi::LoyaltyApi.new
 
 corporation_id = 56 # Integer | ID of a corporation
 
@@ -96,7 +96,7 @@ begin
   #List loyalty store offers
   result = api_instance.get_loyalty_store_by_id(corporation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling LoyaltyApi->get_loyalty_store_by_id: #{e}"
 end
 ```

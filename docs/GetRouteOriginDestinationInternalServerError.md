@@ -1,4 +1,4 @@
-# SwaggerClient::GetRouteInternalServerError
+# Esi::GetRouteInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

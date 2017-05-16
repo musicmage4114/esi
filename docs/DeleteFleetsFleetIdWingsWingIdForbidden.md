@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteWingForbidden
+# Esi::DeleteWingForbidden
 
 ## Properties
 Name | Type | Description | Notes

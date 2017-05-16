@@ -1,4 +1,4 @@
-# SwaggerClient::GetMailForbidden
+# Esi::GetMailForbidden
 
 ## Properties
 Name | Type | Description | Notes

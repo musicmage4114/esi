@@ -1,4 +1,4 @@
-# SwaggerClient::GetDogmaAttributeByIdInternalServerError
+# Esi::GetDogmaAttributeByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

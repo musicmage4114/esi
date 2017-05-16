@@ -1,4 +1,4 @@
-# SwaggerClient::Planet
+# Esi::Planet
 
 ## Properties
 Name | Type | Description | Notes

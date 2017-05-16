@@ -1,4 +1,4 @@
-# SwaggerClient::GetRegionByIdNotFound
+# Esi::GetRegionByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::MailApi
+# Esi::MailApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -25,14 +25,14 @@ Delete a mail label  ---  Alternate route: `/v1/characters/{character_id}/mail/l
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -48,7 +48,7 @@ opts = {
 begin
   #Delete a mail label
   api_instance.delete_mail_label(character_id, label_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->delete_mail_label: #{e}"
 end
 ```
@@ -89,14 +89,14 @@ Delete a mail  ---  Alternate route: `/v1/characters/{character_id}/mail/{mail_i
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -112,7 +112,7 @@ opts = {
 begin
   #Delete a mail
   api_instance.delete_mail(character_id, mail_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->delete_mail: #{e}"
 end
 ```
@@ -153,14 +153,14 @@ Return the 50 most recent mail headers belonging to the character that match the
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -177,7 +177,7 @@ begin
   #Return mail headers
   result = api_instance.get_mail(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->get_mail: #{e}"
 end
 ```
@@ -219,14 +219,14 @@ Return a list of the users mail labels, unread counts for each label and a total
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -241,7 +241,7 @@ begin
   #Get mail labels and unread counts
   result = api_instance.get_mail_labels(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->get_mail_labels: #{e}"
 end
 ```
@@ -281,14 +281,14 @@ Return all mailing lists that the character is subscribed to   ---  Alternate ro
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -303,7 +303,7 @@ begin
   #Return mailing list subscriptions
   result = api_instance.get_mailing_lists(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->get_mailing_lists: #{e}"
 end
 ```
@@ -343,14 +343,14 @@ Return the contents of an EVE mail  ---  Alternate route: `/v1/characters/{chara
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -367,7 +367,7 @@ begin
   #Return a mail
   result = api_instance.read_mail(character_id, mail_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->read_mail: #{e}"
 end
 ```
@@ -408,18 +408,18 @@ Create and send a new mail  ---  Alternate route: `/v1/characters/{character_id}
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | The sender's character ID
 
-mail = SwaggerClient::SentEvemail.new # SentEvemail | The mail to send
+mail = Esi::SentEvemail.new # SentEvemail | The mail to send
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -432,7 +432,7 @@ begin
   #Send a new mail
   result = api_instance.send_mail(character_id, mail, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->send_mail: #{e}"
 end
 ```
@@ -473,20 +473,20 @@ Create a mail label  ---  Alternate route: `/v2/characters/{character_id}/mail/l
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  label: SwaggerClient::NewMailLabel.new, # NewMailLabel | Label to create
+  label: Esi::NewMailLabel.new, # NewMailLabel | Label to create
   token: "token_example", # String | Access token to use, if preferred over a header
   user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
   x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
@@ -496,7 +496,7 @@ begin
   #Create a mail label
   result = api_instance.add_mail_label(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->add_mail_label: #{e}"
 end
 ```
@@ -537,18 +537,18 @@ Update metadata about a mail  ---  Alternate route: `/v1/characters/{character_i
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MailApi.new
+api_instance = Esi::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
-contents = SwaggerClient::EvemailUpdate.new # EvemailUpdate | Data used to update the mail
+contents = Esi::EvemailUpdate.new # EvemailUpdate | Data used to update the mail
 
 mail_id = 56 # Integer | An EVE mail ID
 
@@ -562,7 +562,7 @@ opts = {
 begin
   #Update metadata about a mail
   api_instance.update_mail(character_id, contents, mail_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MailApi->update_mail: #{e}"
 end
 ```

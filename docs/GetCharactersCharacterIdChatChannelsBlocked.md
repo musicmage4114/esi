@@ -1,4 +1,4 @@
-# SwaggerClient::ChatChannelBlocked
+# Esi::ChatChannelBlocked
 
 ## Properties
 Name | Type | Description | Notes

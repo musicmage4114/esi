@@ -1,4 +1,4 @@
-# SwaggerClient::GetCurrentShipForbidden
+# Esi::GetCurrentShipForbidden
 
 ## Properties
 Name | Type | Description | Notes

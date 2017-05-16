@@ -1,4 +1,4 @@
-# SwaggerClient::PostFleetsFleetIdWingsInternalServerError
+# Esi::PostFleetsFleetIdWingsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

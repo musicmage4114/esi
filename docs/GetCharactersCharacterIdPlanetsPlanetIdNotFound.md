@@ -1,4 +1,4 @@
-# SwaggerClient::GetColonyNotFound
+# Esi::GetColonyNotFound
 
 ## Properties
 Name | Type | Description | Notes

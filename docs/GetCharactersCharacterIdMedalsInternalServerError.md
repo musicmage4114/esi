@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterMedalsInternalServerError
+# Esi::GetCharacterMedalsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

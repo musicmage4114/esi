@@ -1,4 +1,4 @@
-# SwaggerClient::ItemGroup
+# Esi::ItemGroup
 
 ## Properties
 Name | Type | Description | Notes

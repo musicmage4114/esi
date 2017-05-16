@@ -1,4 +1,4 @@
-# SwaggerClient::GetIncursionsInternalServerError
+# Esi::GetIncursionsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

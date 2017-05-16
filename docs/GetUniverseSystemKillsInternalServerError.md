@@ -1,4 +1,4 @@
-# SwaggerClient::GetSystemKillsInternalServerError
+# Esi::GetSystemKillsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

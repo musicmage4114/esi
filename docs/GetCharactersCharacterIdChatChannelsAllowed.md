@@ -1,4 +1,4 @@
-# SwaggerClient::ChatChannelAllowed
+# Esi::ChatChannelAllowed
 
 ## Properties
 Name | Type | Description | Notes

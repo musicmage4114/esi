@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketHistoryByIdInternalServerError
+# Esi::GetMarketHistoryByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

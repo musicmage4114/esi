@@ -1,4 +1,4 @@
-# SwaggerClient::Faction
+# Esi::Faction
 
 ## Properties
 Name | Type | Description | Notes

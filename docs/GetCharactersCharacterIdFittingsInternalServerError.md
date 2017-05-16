@@ -1,4 +1,4 @@
-# SwaggerClient::GetFittingsInternalServerError
+# Esi::GetFittingsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterChatChannelsForbidden
+# Esi::GetCharacterChatChannelsForbidden
 
 ## Properties
 Name | Type | Description | Notes

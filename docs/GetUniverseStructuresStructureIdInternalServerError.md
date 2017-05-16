@@ -1,4 +1,4 @@
-# SwaggerClient::GetStructureByIdInternalServerError
+# Esi::GetStructureByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

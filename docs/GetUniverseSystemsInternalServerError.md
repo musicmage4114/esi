@@ -1,4 +1,4 @@
-# SwaggerClient::GetSystemsInternalServerError
+# Esi::GetSystemsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

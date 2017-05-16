@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdNotFound
+# Esi::PutFleetsFleetIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

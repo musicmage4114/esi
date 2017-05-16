@@ -1,4 +1,4 @@
-# SwaggerClient::LocationApi
+# Esi::LocationApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -18,14 +18,14 @@ Information about the characters current location. Returns the current solar sys
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::LocationApi.new
+api_instance = Esi::LocationApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -40,7 +40,7 @@ begin
   #Get character location
   result = api_instance.get_character_location(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling LocationApi->get_character_location: #{e}"
 end
 ```
@@ -80,14 +80,14 @@ Get the current ship type, name and id  ---  Alternate route: `/v1/characters/{c
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::LocationApi.new
+api_instance = Esi::LocationApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -102,7 +102,7 @@ begin
   #Get current ship
   result = api_instance.get_current_ship(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling LocationApi->get_current_ship: #{e}"
 end
 ```

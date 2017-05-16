@@ -1,4 +1,4 @@
-# SwaggerClient::Bookmark
+# Esi::Bookmark
 
 ## Properties
 Name | Type | Description | Notes

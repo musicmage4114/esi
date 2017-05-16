@@ -1,4 +1,4 @@
-# SwaggerClient::RespondToEventInternalServerError
+# Esi::RespondToEventInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

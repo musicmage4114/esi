@@ -1,4 +1,4 @@
-# SwaggerClient::NewSquadName
+# Esi::NewSquadName
 
 ## Properties
 Name | Type | Description | Notes

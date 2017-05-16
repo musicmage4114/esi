@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersAffiliationInternalServerError
+# Esi::PostCharactersAffiliationInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

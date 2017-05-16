@@ -1,4 +1,4 @@
-# SwaggerClient::GetAllianceIconNotFound
+# Esi::GetAllianceIconNotFound
 
 ## Properties
 Name | Type | Description | Notes

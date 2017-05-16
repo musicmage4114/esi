@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiOpenwindowNewmailForbidden
+# Esi::PostUiOpenwindowNewmailForbidden
 
 ## Properties
 Name | Type | Description | Notes

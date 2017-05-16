@@ -1,4 +1,4 @@
-# SwaggerClient::JumpClone
+# Esi::JumpClone
 
 ## Properties
 Name | Type | Description | Notes

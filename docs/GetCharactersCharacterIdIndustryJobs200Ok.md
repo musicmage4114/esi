@@ -1,4 +1,4 @@
-# SwaggerClient::IndustryJob
+# Esi::IndustryJob
 
 ## Properties
 Name | Type | Description | Notes

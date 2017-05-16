@@ -1,4 +1,4 @@
-# SwaggerClient::FleetsApi
+# Esi::FleetsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -29,14 +29,14 @@ Kick a fleet member  ---  Alternate route: `/v1/fleets/{fleet_id}/members/{membe
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -52,7 +52,7 @@ opts = {
 begin
   #Kick fleet member
   api_instance.kick_fleet_member(fleet_id, member_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->kick_fleet_member: #{e}"
 end
 ```
@@ -93,14 +93,14 @@ Delete a fleet squad, only empty squads can be deleted  ---  Alternate route: `/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -116,7 +116,7 @@ opts = {
 begin
   #Delete fleet squad
   api_instance.delete_squad(fleet_id, squad_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->delete_squad: #{e}"
 end
 ```
@@ -157,14 +157,14 @@ Delete a fleet wing, only empty wings can be deleted. The wing may contain squad
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -180,7 +180,7 @@ opts = {
 begin
   #Delete fleet wing
   api_instance.delete_wing(fleet_id, wing_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->delete_wing: #{e}"
 end
 ```
@@ -221,14 +221,14 @@ Return details about a fleet  ---  Alternate route: `/v1/fleets/{fleet_id}/`  Al
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -243,7 +243,7 @@ begin
   #Get fleet information
   result = api_instance.get_fleet(fleet_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->get_fleet: #{e}"
 end
 ```
@@ -283,14 +283,14 @@ Return information about fleet members  ---  Alternate route: `/v1/fleets/{fleet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -306,7 +306,7 @@ begin
   #Get fleet members
   result = api_instance.get_fleet_members(fleet_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->get_fleet_members: #{e}"
 end
 ```
@@ -347,14 +347,14 @@ Return information about wings in a fleet  ---  Alternate route: `/v1/fleets/{fl
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -370,7 +370,7 @@ begin
   #Get fleet wings
   result = api_instance.get_wings(fleet_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->get_wings: #{e}"
 end
 ```
@@ -411,18 +411,18 @@ Invite a character into the fleet, if a character has a CSPA charge set, it is n
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-invitation = SwaggerClient::FleetInvitation.new # FleetInvitation | Details of the invitation
+invitation = Esi::FleetInvitation.new # FleetInvitation | Details of the invitation
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -434,7 +434,7 @@ opts = {
 begin
   #Create fleet invitation
   api_instance.invite_to_fleet(fleet_id, invitation, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->invite_to_fleet: #{e}"
 end
 ```
@@ -475,14 +475,14 @@ Create a new wing in a fleet  ---  Alternate route: `/v1/fleets/{fleet_id}/wings
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -497,7 +497,7 @@ begin
   #Create fleet wing
   result = api_instance.create_wing(fleet_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->create_wing: #{e}"
 end
 ```
@@ -537,14 +537,14 @@ Create a new squad in a fleet  ---  Alternate route: `/v1/fleets/{fleet_id}/wing
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
@@ -561,7 +561,7 @@ begin
   #Create fleet squad
   result = api_instance.create_squad(fleet_id, wing_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->create_squad: #{e}"
 end
 ```
@@ -602,18 +602,18 @@ Update settings about a fleet  ---  Alternate route: `/v1/fleets/{fleet_id}/`  A
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-new_settings = SwaggerClient::FleetNewSetting.new # FleetNewSetting | What to update for this fleet
+new_settings = Esi::FleetNewSetting.new # FleetNewSetting | What to update for this fleet
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -625,7 +625,7 @@ opts = {
 begin
   #Update fleet
   api_instance.update_fleet(fleet_id, new_settings, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->update_fleet: #{e}"
 end
 ```
@@ -666,20 +666,20 @@ Move a fleet member around  ---  Alternate route: `/v1/fleets/{fleet_id}/members
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
 member_id = 56 # Integer | The character ID of a member in this fleet
 
-movement = SwaggerClient::FleetMemberMovement.new # FleetMemberMovement | Details of the invitation
+movement = Esi::FleetMemberMovement.new # FleetMemberMovement | Details of the invitation
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -691,7 +691,7 @@ opts = {
 begin
   #Move fleet member
   api_instance.move_fleet_member(fleet_id, member_id, movement, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->move_fleet_member: #{e}"
 end
 ```
@@ -733,18 +733,18 @@ Rename a fleet squad  ---  Alternate route: `/v1/fleets/{fleet_id}/squads/{squad
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-naming = SwaggerClient::NewSquadName.new # NewSquadName | New name of the squad
+naming = Esi::NewSquadName.new # NewSquadName | New name of the squad
 
 squad_id = 789 # Integer | The squad to rename
 
@@ -758,7 +758,7 @@ opts = {
 begin
   #Rename fleet squad
   api_instance.rename_squad(fleet_id, naming, squad_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->rename_squad: #{e}"
 end
 ```
@@ -800,18 +800,18 @@ Rename a fleet wing  ---  Alternate route: `/v1/fleets/{fleet_id}/wings/{wing_id
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::FleetsApi.new
+api_instance = Esi::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-naming = SwaggerClient::NewWingName.new # NewWingName | New name of the wing
+naming = Esi::NewWingName.new # NewWingName | New name of the wing
 
 wing_id = 789 # Integer | The wing to rename
 
@@ -825,7 +825,7 @@ opts = {
 begin
   #Rename fleet wing
   api_instance.rename_wing(fleet_id, naming, wing_id, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling FleetsApi->rename_wing: #{e}"
 end
 ```

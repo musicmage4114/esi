@@ -1,4 +1,4 @@
-# SwaggerClient::GetGameGraphicByIdInternalServerError
+# Esi::GetGameGraphicByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

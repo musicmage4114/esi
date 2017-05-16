@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteSquadInternalServerError
+# Esi::DeleteSquadInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetStargateByIdInternalServerError
+# Esi::GetStargateByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

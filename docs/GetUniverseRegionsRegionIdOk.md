@@ -1,4 +1,4 @@
-# SwaggerClient::Region
+# Esi::Region
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::StructureService
+# Esi::StructureService
 
 ## Properties
 Name | Type | Description | Notes

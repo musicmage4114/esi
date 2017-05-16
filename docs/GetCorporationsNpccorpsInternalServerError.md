@@ -1,4 +1,4 @@
-# SwaggerClient::GetNpcCorporationsInternalServerError
+# Esi::GetNpcCorporationsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::ContactsApi
+# Esi::ContactsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -21,18 +21,18 @@ Bulk delete contacts  ---  Alternate route: `/v1/characters/{character_id}/conta
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Esi::ContactsApi.new
 
 character_id = 56 # Integer | ID for a character
 
-contact_ids = [SwaggerClient::Array<Integer>.new] # Array<Integer> | A list of contacts to edit
+contact_ids = [Esi::Array<Integer>.new] # Array<Integer> | A list of contacts to edit
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -44,7 +44,7 @@ opts = {
 begin
   #Delete contacts
   api_instance.delete_contacts(character_id, contact_ids, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling ContactsApi->delete_contacts: #{e}"
 end
 ```
@@ -85,14 +85,14 @@ Return contacts of a character  ---  Alternate route: `/v1/characters/{character
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Esi::ContactsApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -108,7 +108,7 @@ begin
   #Get contacts
   result = api_instance.get_contacts(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling ContactsApi->get_contacts: #{e}"
 end
 ```
@@ -149,14 +149,14 @@ Return custom labels for contacts the character defined  ---  Alternate route: `
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Esi::ContactsApi.new
 
 character_id = 56 # Integer | ID for a character
 
@@ -171,7 +171,7 @@ begin
   #Get contact labels
   result = api_instance.get_contacts_labels(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling ContactsApi->get_contacts_labels: #{e}"
 end
 ```
@@ -211,18 +211,18 @@ Bulk add contacts with same settings  ---  Alternate route: `/v1/characters/{cha
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Esi::ContactsApi.new
 
 character_id = 56 # Integer | ID for a character
 
-contact_ids = [SwaggerClient::Array<Integer>.new] # Array<Integer> | A list of contacts to add
+contact_ids = [Esi::Array<Integer>.new] # Array<Integer> | A list of contacts to add
 
 standing = 3.4 # Float | Standing for the new contact
 
@@ -239,7 +239,7 @@ begin
   #Add contacts
   result = api_instance.add_contacts(character_id, contact_ids, standing, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling ContactsApi->add_contacts: #{e}"
 end
 ```
@@ -283,18 +283,18 @@ Bulk edit contacts with same settings  ---  Alternate route: `/v1/characters/{ch
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::ContactsApi.new
+api_instance = Esi::ContactsApi.new
 
 character_id = 56 # Integer | ID for a character
 
-contact_ids = [SwaggerClient::Array<Integer>.new] # Array<Integer> | A list of contacts to edit
+contact_ids = [Esi::Array<Integer>.new] # Array<Integer> | A list of contacts to edit
 
 standing = 3.4 # Float | Standing for the contact
 
@@ -310,7 +310,7 @@ opts = {
 begin
   #Edit contacts
   api_instance.edit_contacts(character_id, contact_ids, standing, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling ContactsApi->edit_contacts: #{e}"
 end
 ```

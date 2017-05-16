@@ -1,4 +1,4 @@
-# SwaggerClient::ViewableMarketOrder
+# Esi::ViewableMarketOrder
 
 ## Properties
 Name | Type | Description | Notes

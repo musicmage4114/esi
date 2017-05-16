@@ -1,4 +1,4 @@
-# SwaggerClient::GetLoyaltyStoreByIdInternalServerError
+# Esi::GetLoyaltyStoreByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

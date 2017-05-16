@@ -1,4 +1,4 @@
-# SwaggerClient::MedalGraphic
+# Esi::MedalGraphic
 
 ## Properties
 Name | Type | Description | Notes

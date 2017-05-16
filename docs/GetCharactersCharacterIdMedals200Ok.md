@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterMedal
+# Esi::CharacterMedal
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::CampaignAlliance
+# Esi::CampaignAlliance
 
 ## Properties
 Name | Type | Description | Notes

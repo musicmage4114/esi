@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiAutopilotWaypointInternalServerError
+# Esi::PostUiAutopilotWaypointInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

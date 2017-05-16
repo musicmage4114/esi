@@ -1,4 +1,4 @@
-# SwaggerClient::ReadMailInternalServerError
+# Esi::ReadMailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

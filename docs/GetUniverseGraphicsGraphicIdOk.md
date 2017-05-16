@@ -1,4 +1,4 @@
-# SwaggerClient::GameGraphic
+# Esi::GameGraphic
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiOpenwindowNewmailInternalServerError
+# Esi::PostUiOpenwindowNewmailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetWingsInternalServerError
+# Esi::GetWingsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

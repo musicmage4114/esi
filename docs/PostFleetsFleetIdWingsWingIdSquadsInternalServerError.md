@@ -1,4 +1,4 @@
-# SwaggerClient::PostFleetsFleetIdWingsWingIdSquadsInternalServerError
+# Esi::PostFleetsFleetIdWingsWingIdSquadsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

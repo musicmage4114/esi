@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterBookmarksForbidden
+# Esi::GetCharacterBookmarksForbidden
 
 ## Properties
 Name | Type | Description | Notes

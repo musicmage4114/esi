@@ -1,4 +1,4 @@
-# SwaggerClient::PersonalMarketOrder
+# Esi::PersonalMarketOrder
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseTypeByIdInternalServerError
+# Esi::GetUniverseTypeByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

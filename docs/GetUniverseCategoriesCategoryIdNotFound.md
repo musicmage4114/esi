@@ -1,4 +1,4 @@
-# SwaggerClient::GetItemCategoryByIdNotFound
+# Esi::GetItemCategoryByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

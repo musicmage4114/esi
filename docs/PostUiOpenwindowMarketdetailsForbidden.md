@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiOpenwindowMarketdetailsForbidden
+# Esi::PostUiOpenwindowMarketdetailsForbidden
 
 ## Properties
 Name | Type | Description | Notes

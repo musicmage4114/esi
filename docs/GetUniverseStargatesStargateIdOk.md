@@ -1,4 +1,4 @@
-# SwaggerClient::Stargate
+# Esi::Stargate
 
 ## Properties
 Name | Type | Description | Notes

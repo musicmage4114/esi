@@ -1,4 +1,4 @@
-# SwaggerClient::SentEvemail
+# Esi::SentEvemail
 
 ## Properties
 Name | Type | Description | Notes

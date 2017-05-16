@@ -1,4 +1,4 @@
-# SwaggerClient::GetSystemByIdNotFound
+# Esi::GetSystemByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

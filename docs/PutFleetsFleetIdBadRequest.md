@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdBadRequest
+# Esi::PutFleetsFleetIdBadRequest
 
 ## Properties
 Name | Type | Description | Notes

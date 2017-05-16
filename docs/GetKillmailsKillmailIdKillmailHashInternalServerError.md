@@ -1,4 +1,4 @@
-# SwaggerClient::GetKillmailInternalServerError
+# Esi::GetKillmailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

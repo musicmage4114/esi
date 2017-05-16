@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiAutopilotWaypointForbidden
+# Esi::PostUiAutopilotWaypointForbidden
 
 ## Properties
 Name | Type | Description | Notes

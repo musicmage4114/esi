@@ -1,4 +1,4 @@
-# SwaggerClient::GetMoonByIdNotFound
+# Esi::GetMoonByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

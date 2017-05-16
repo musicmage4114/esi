@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetNotFound
+# Esi::GetFleetNotFound
 
 ## Properties
 Name | Type | Description | Notes

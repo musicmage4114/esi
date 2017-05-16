@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarsInternalServerError
+# Esi::GetWarsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

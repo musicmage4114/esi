@@ -1,4 +1,4 @@
-# SwaggerClient::AssetsApi
+# Esi::AssetsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -17,14 +17,14 @@ Return a list of the characters assets  ---  Alternate route: `/v1/characters/{c
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::AssetsApi.new
+api_instance = Esi::AssetsApi.new
 
 character_id = 56 # Integer | Character id of the target character
 
@@ -39,7 +39,7 @@ begin
   #Get character assets
   result = api_instance.get_character_assets(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling AssetsApi->get_character_assets: #{e}"
 end
 ```

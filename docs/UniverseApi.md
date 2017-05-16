@@ -1,4 +1,4 @@
-# SwaggerClient::UniverseApi
+# Esi::UniverseApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -42,9 +42,9 @@ Get a list of bloodlines  ---  Alternate route: `/v1/universe/bloodlines/`  Alte
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -57,7 +57,7 @@ begin
   #Get bloodlines
   result = api_instance.get_bloodlines(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_bloodlines: #{e}"
 end
 ```
@@ -96,9 +96,9 @@ Get a list of item categories  ---  Alternate route: `/v1/universe/categories/` 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -110,7 +110,7 @@ begin
   #Get item categories
   result = api_instance.get_item_categories(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_item_categories: #{e}"
 end
 ```
@@ -148,9 +148,9 @@ Get information of an item category  ---  Alternate route: `/v1/universe/categor
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 category_id = 56 # Integer | An Eve item category ID
 
@@ -165,7 +165,7 @@ begin
   #Get item category information
   result = api_instance.get_item_category_by_id(category_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_item_category_by_id: #{e}"
 end
 ```
@@ -205,9 +205,9 @@ Get a list of constellations  ---  Alternate route: `/v1/universe/constellations
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -219,7 +219,7 @@ begin
   #Get constellations
   result = api_instance.get_constellations(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_constellations: #{e}"
 end
 ```
@@ -257,9 +257,9 @@ Get information on a constellation  ---  Alternate route: `/v1/universe/constell
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 constellation_id = 56 # Integer | constellation_id integer
 
@@ -274,7 +274,7 @@ begin
   #Get constellation information
   result = api_instance.get_constellation_by_id(constellation_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_constellation_by_id: #{e}"
 end
 ```
@@ -314,9 +314,9 @@ Get a list of factions  ---  Alternate route: `/v1/universe/factions/`  Alternat
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -329,7 +329,7 @@ begin
   #Get factions
   result = api_instance.get_factions(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_factions: #{e}"
 end
 ```
@@ -368,9 +368,9 @@ Get a list of graphics  ---  Alternate route: `/v1/universe/graphics/`  Alternat
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -382,7 +382,7 @@ begin
   #Get graphics
   result = api_instance.get_game_graphics(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_game_graphics: #{e}"
 end
 ```
@@ -420,9 +420,9 @@ Get information on a graphic  ---  Alternate route: `/v1/universe/graphics/{grap
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 graphic_id = 56 # Integer | graphic_id integer
 
@@ -436,7 +436,7 @@ begin
   #Get graphic information
   result = api_instance.get_game_graphic_by_id(graphic_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_game_graphic_by_id: #{e}"
 end
 ```
@@ -475,9 +475,9 @@ Get a list of item groups  ---  Alternate route: `/v1/universe/groups/`  Alterna
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -490,7 +490,7 @@ begin
   #Get item groups
   result = api_instance.get_item_groups(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_item_groups: #{e}"
 end
 ```
@@ -529,9 +529,9 @@ Get information on an item group  ---  Alternate route: `/v1/universe/groups/{gr
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 group_id = 56 # Integer | An Eve item group ID
 
@@ -546,7 +546,7 @@ begin
   #Get item group information
   result = api_instance.get_item_group_by_id(group_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_item_group_by_id: #{e}"
 end
 ```
@@ -586,9 +586,9 @@ Get information on a moon  ---  Alternate route: `/v1/universe/moons/{moon_id}/`
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 moon_id = 56 # Integer | moon_id integer
 
@@ -602,7 +602,7 @@ begin
   #Get moon information
   result = api_instance.get_moon_by_id(moon_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_moon_by_id: #{e}"
 end
 ```
@@ -641,9 +641,9 @@ Get information on a planet  ---  Alternate route: `/v1/universe/planets/{planet
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 planet_id = 56 # Integer | planet_id integer
 
@@ -657,7 +657,7 @@ begin
   #Get planet information
   result = api_instance.get_planet_by_id(planet_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_planet_by_id: #{e}"
 end
 ```
@@ -696,9 +696,9 @@ Get a list of character races  ---  Alternate route: `/v1/universe/races/`  Alte
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -711,7 +711,7 @@ begin
   #Get character races
   result = api_instance.get_races(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_races: #{e}"
 end
 ```
@@ -750,9 +750,9 @@ Get a list of regions  ---  Alternate route: `/v1/universe/regions/`  Alternate 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -764,7 +764,7 @@ begin
   #Get regions
   result = api_instance.get_regions(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_regions: #{e}"
 end
 ```
@@ -802,9 +802,9 @@ Get information on a region  ---  Alternate route: `/v1/universe/regions/{region
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 region_id = 56 # Integer | region_id integer
 
@@ -819,7 +819,7 @@ begin
   #Get region information
   result = api_instance.get_region_by_id(region_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_region_by_id: #{e}"
 end
 ```
@@ -859,9 +859,9 @@ Get information on a stargate  ---  Alternate route: `/v1/universe/stargates/{st
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 stargate_id = 56 # Integer | stargate_id integer
 
@@ -875,7 +875,7 @@ begin
   #Get stargate information
   result = api_instance.get_stargate_by_id(stargate_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_stargate_by_id: #{e}"
 end
 ```
@@ -914,9 +914,9 @@ Get information on a station  ---  Alternate route: `/v2/universe/stations/{stat
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 station_id = 56 # Integer | station_id integer
 
@@ -930,7 +930,7 @@ begin
   #Get station information
   result = api_instance.get_station_by_id(station_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_station_by_id: #{e}"
 end
 ```
@@ -969,9 +969,9 @@ List all public structures  ---  Alternate route: `/v1/universe/structures/`  Al
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -983,7 +983,7 @@ begin
   #List all public structures
   result = api_instance.get_public_structures(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_public_structures: #{e}"
 end
 ```
@@ -1021,14 +1021,14 @@ Returns information on requested structure, if you are on the ACL. Otherwise, re
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 structure_id = 789 # Integer | An Eve structure ID
 
@@ -1043,7 +1043,7 @@ begin
   #Get structure information
   result = api_instance.get_structure_by_id(structure_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_structure_by_id: #{e}"
 end
 ```
@@ -1083,9 +1083,9 @@ Get the number of jumps in solar systems within the last hour, excluding wormhol
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -1097,7 +1097,7 @@ begin
   #Get system jumps
   result = api_instance.get_system_jumps(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_system_jumps: #{e}"
 end
 ```
@@ -1135,9 +1135,9 @@ Get the number of ship, pod and NPC kills per solar system within the last hour,
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -1149,7 +1149,7 @@ begin
   #Get system kills
   result = api_instance.get_system_kills(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_system_kills: #{e}"
 end
 ```
@@ -1187,9 +1187,9 @@ Get a list of solar systems  ---  Alternate route: `/v1/universe/systems/`  Alte
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -1201,7 +1201,7 @@ begin
   #Get solar systems
   result = api_instance.get_systems(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_systems: #{e}"
 end
 ```
@@ -1239,9 +1239,9 @@ Get information on a solar system  ---  Alternate route: `/v2/universe/systems/{
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 system_id = 56 # Integer | system_id integer
 
@@ -1256,7 +1256,7 @@ begin
   #Get solar system information
   result = api_instance.get_system_by_id(system_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_system_by_id: #{e}"
 end
 ```
@@ -1296,9 +1296,9 @@ Get a list of type ids  ---  Alternate route: `/v1/universe/types/`  Alternate r
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -1311,7 +1311,7 @@ begin
   #Get types
   result = api_instance.get_universe_types(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_types: #{e}"
 end
 ```
@@ -1350,9 +1350,9 @@ Get information on a type  ---  Alternate route: `/v3/universe/types/{type_id}/`
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
 type_id = 56 # Integer | An Eve item type ID
 
@@ -1367,7 +1367,7 @@ begin
   #Get type information
   result = api_instance.get_universe_type_by_id(type_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_type_by_id: #{e}"
 end
 ```
@@ -1407,11 +1407,11 @@ Resolve a set of IDs to names and categories. Supported ID's for resolving are: 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::UniverseApi.new
+api_instance = Esi::UniverseApi.new
 
-ids = [SwaggerClient::Array<Integer>.new] # Array<Integer> | The ids to resolve
+ids = [Esi::Array<Integer>.new] # Array<Integer> | The ids to resolve
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -1423,7 +1423,7 @@ begin
   #Get names and categories for a set of ID's
   result = api_instance.lookup_id(ids, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling UniverseApi->lookup_id: #{e}"
 end
 ```

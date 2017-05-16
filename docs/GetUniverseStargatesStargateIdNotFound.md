@@ -1,4 +1,4 @@
-# SwaggerClient::GetStargateByIdNotFound
+# Esi::GetStargateByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

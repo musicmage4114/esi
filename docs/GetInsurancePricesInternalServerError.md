@@ -1,4 +1,4 @@
-# SwaggerClient::GetInsurancePricesInternalServerError
+# Esi::GetInsurancePricesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

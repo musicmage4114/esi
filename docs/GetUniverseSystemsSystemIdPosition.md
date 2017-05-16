@@ -1,4 +1,4 @@
-# SwaggerClient::Coordinate
+# Esi::Coordinate
 
 ## Properties
 Name | Type | Description | Notes

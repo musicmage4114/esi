@@ -1,4 +1,4 @@
-# SwaggerClient::Bloodline
+# Esi::Bloodline
 
 ## Properties
 Name | Type | Description | Notes

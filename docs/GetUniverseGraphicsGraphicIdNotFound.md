@@ -1,4 +1,4 @@
-# SwaggerClient::GetGameGraphicByIdNotFound
+# Esi::GetGameGraphicByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

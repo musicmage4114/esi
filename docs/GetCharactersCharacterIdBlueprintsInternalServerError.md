@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterBlueprintsInternalServerError
+# Esi::GetCharacterBlueprintsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

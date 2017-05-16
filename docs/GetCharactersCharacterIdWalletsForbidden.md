@@ -1,4 +1,4 @@
-# SwaggerClient::GetWalletsForbidden
+# Esi::GetWalletsForbidden
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCalendarForbidden
+# Esi::GetCalendarForbidden
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PastCorporation
+# Esi::PastCorporation
 
 ## Properties
 Name | Type | Description | Notes

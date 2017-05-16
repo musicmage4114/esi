@@ -1,4 +1,4 @@
-# SwaggerClient::WarAggressor
+# Esi::WarAggressor
 
 ## Properties
 Name | Type | Description | Notes

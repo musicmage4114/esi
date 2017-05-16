@@ -1,4 +1,4 @@
-# SwaggerClient::PostUniverseNamesNotFound
+# Esi::PostUniverseNamesNotFound
 
 ## Properties
 Name | Type | Description | Notes

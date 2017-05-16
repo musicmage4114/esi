@@ -1,4 +1,4 @@
-# SwaggerClient::PutCorporationsCorporationIdStructuresStructureIdForbidden
+# Esi::PutCorporationsCorporationIdStructuresStructureIdForbidden
 
 ## Properties
 Name | Type | Description | Notes

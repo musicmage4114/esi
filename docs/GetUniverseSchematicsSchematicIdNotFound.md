@@ -1,4 +1,4 @@
-# SwaggerClient::GetSchematicNotFound
+# Esi::GetSchematicNotFound
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::Schematic
+# Esi::Schematic
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteMailInternalServerError
+# Esi::DeleteMailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

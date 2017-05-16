@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketPricesInternalServerError
+# Esi::GetMarketPricesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

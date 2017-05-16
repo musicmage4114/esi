@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetInternalServerError
+# Esi::GetFleetInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

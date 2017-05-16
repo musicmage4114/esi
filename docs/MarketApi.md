@@ -1,4 +1,4 @@
-# SwaggerClient::MarketApi
+# Esi::MarketApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -23,14 +23,14 @@ List market orders placed by a character  ---  Alternate route: `/v1/characters/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MarketApi.new
+api_instance = Esi::MarketApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -45,7 +45,7 @@ begin
   #List orders from a character
   result = api_instance.get_character_market_orders(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MarketApi->get_character_market_orders: #{e}"
 end
 ```
@@ -85,9 +85,9 @@ Get a list of item groups  ---  Alternate route: `/v1/markets/groups/`  Alternat
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::MarketApi.new
+api_instance = Esi::MarketApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -99,7 +99,7 @@ begin
   #Get item groups
   result = api_instance.get_market_groups(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MarketApi->get_market_groups: #{e}"
 end
 ```
@@ -137,9 +137,9 @@ Get information on an item group  ---  Alternate route: `/v1/markets/groups/{mar
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::MarketApi.new
+api_instance = Esi::MarketApi.new
 
 market_group_id = 56 # Integer | An Eve item group ID
 
@@ -154,7 +154,7 @@ begin
   #Get item group information
   result = api_instance.get_market_group_by_id(market_group_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MarketApi->get_market_group_by_id: #{e}"
 end
 ```
@@ -194,9 +194,9 @@ Return a list of prices  ---  Alternate route: `/v1/markets/prices/`  Alternate 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::MarketApi.new
+api_instance = Esi::MarketApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -208,7 +208,7 @@ begin
   #List market prices
   result = api_instance.get_market_prices(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MarketApi->get_market_prices: #{e}"
 end
 ```
@@ -246,9 +246,9 @@ Return a list of historical market statistics for the specified type in a region
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::MarketApi.new
+api_instance = Esi::MarketApi.new
 
 region_id = 56 # Integer | Return statistics in this region
 
@@ -264,7 +264,7 @@ begin
   #List historical market statistics in a region
   result = api_instance.get_market_history_by_id(region_id, type_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MarketApi->get_market_history_by_id: #{e}"
 end
 ```
@@ -304,9 +304,9 @@ Return a list of orders in a region  ---  Alternate route: `/v1/markets/{region_
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::MarketApi.new
+api_instance = Esi::MarketApi.new
 
 order_type = "all" # String | Filter buy/sell orders, return all orders by default. If you query without type_id, we always return both buy and sell orders. 
 
@@ -324,7 +324,7 @@ begin
   #List orders in a region
   result = api_instance.get_region_market_orders(order_type, region_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MarketApi->get_region_market_orders: #{e}"
 end
 ```
@@ -366,14 +366,14 @@ Return all orders in a structure  ---  Alternate route: `/v1/markets/structures/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::MarketApi.new
+api_instance = Esi::MarketApi.new
 
 structure_id = 789 # Integer | Return orders in this structure
 
@@ -389,7 +389,7 @@ begin
   #List orders in a structure
   result = api_instance.get_structure_market_orders(structure_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling MarketApi->get_structure_market_orders: #{e}"
 end
 ```

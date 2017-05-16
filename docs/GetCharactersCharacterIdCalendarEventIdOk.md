@@ -1,4 +1,4 @@
-# SwaggerClient::Event
+# Esi::Event
 
 ## Properties
 Name | Type | Description | Notes

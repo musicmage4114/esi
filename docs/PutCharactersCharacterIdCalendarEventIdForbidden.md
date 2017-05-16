@@ -1,4 +1,4 @@
-# SwaggerClient::RespondToEventForbidden
+# Esi::RespondToEventForbidden
 
 ## Properties
 Name | Type | Description | Notes

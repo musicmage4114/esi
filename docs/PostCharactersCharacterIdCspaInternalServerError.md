@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdCspaInternalServerError
+# Esi::PostCharactersCharacterIdCspaInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

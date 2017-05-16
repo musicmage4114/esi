@@ -1,4 +1,4 @@
-# SwaggerClient::ShipInsurance
+# Esi::ShipInsurance
 
 ## Properties
 Name | Type | Description | Notes

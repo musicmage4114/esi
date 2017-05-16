@@ -1,4 +1,4 @@
-# SwaggerClient::GetColonyInternalServerError
+# Esi::GetColonyInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

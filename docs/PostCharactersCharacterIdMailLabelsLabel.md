@@ -1,4 +1,4 @@
-# SwaggerClient::NewMailLabel
+# Esi::NewMailLabel
 
 ## Properties
 Name | Type | Description | Notes

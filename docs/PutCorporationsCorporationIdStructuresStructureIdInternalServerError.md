@@ -1,4 +1,4 @@
-# SwaggerClient::PutCorporationsCorporationIdStructuresStructureIdInternalServerError
+# Esi::PutCorporationsCorporationIdStructuresStructureIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::SearchApi
+# Esi::SearchApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -18,14 +18,14 @@ Search for entities that match a given sub-string.  ---  Alternate route: `/v3/c
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::SearchApi.new
+api_instance = Esi::SearchApi.new
 
 categories = ["categories_example"] # Array<String> | Type of entities to search for
 
@@ -46,7 +46,7 @@ begin
   #Search on a string
   result = api_instance.character_search_by_string(categories, character_id, search, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling SearchApi->character_search_by_string: #{e}"
 end
 ```
@@ -90,9 +90,9 @@ Search for entities that match a given sub-string.  ---  Alternate route: `/v2/s
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::SearchApi.new
+api_instance = Esi::SearchApi.new
 
 categories = ["categories_example"] # Array<String> | Type of entities to search for
 
@@ -110,7 +110,7 @@ begin
   #Search on a string
   result = api_instance.search_by_string(categories, search, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling SearchApi->search_by_string: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteMailLabelInternalServerError
+# Esi::DeleteMailLabelInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

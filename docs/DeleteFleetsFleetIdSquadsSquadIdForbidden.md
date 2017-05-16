@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteSquadForbidden
+# Esi::DeleteSquadForbidden
 
 ## Properties
 Name | Type | Description | Notes

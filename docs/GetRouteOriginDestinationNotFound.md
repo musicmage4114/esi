@@ -1,4 +1,4 @@
-# SwaggerClient::GetRouteNotFound
+# Esi::GetRouteNotFound
 
 ## Properties
 Name | Type | Description | Notes

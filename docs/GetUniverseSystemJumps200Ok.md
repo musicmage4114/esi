@@ -1,4 +1,4 @@
-# SwaggerClient::SystemJumpInfo
+# Esi::SystemJumpInfo
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdMailForbidden
+# Esi::PostCharactersCharacterIdMailForbidden
 
 ## Properties
 Name | Type | Description | Notes

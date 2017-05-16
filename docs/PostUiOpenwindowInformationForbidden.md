@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiOpenwindowInformationForbidden
+# Esi::PostUiOpenwindowInformationForbidden
 
 ## Properties
 Name | Type | Description | Notes

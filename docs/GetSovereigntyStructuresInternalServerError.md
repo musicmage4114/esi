@@ -1,4 +1,4 @@
-# SwaggerClient::GetSovereigntyStructuresInternalServerError
+# Esi::GetSovereigntyStructuresInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

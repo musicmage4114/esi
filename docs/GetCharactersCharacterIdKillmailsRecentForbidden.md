@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterRecentKillmailsForbidden
+# Esi::GetCharacterRecentKillmailsForbidden
 
 ## Properties
 Name | Type | Description | Notes

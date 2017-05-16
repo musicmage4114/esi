@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarByIdInternalServerError
+# Esi::GetWarByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

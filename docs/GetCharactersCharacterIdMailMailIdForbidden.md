@@ -1,4 +1,4 @@
-# SwaggerClient::ReadMailForbidden
+# Esi::ReadMailForbidden
 
 ## Properties
 Name | Type | Description | Notes

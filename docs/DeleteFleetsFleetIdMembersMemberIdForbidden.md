@@ -1,4 +1,4 @@
-# SwaggerClient::KickFleetMemberForbidden
+# Esi::KickFleetMemberForbidden
 
 ## Properties
 Name | Type | Description | Notes

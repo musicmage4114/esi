@@ -1,4 +1,4 @@
-# SwaggerClient::LoyaltyOffer
+# Esi::LoyaltyOffer
 
 ## Properties
 Name | Type | Description | Notes

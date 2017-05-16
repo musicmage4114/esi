@@ -1,4 +1,4 @@
-# SwaggerClient::EvemailHeader
+# Esi::EvemailHeader
 
 ## Properties
 Name | Type | Description | Notes

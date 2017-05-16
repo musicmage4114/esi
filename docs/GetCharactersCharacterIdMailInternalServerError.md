@@ -1,4 +1,4 @@
-# SwaggerClient::GetMailInternalServerError
+# Esi::GetMailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetLoyaltyPointsAmountInternalServerError
+# Esi::GetLoyaltyPointsAmountInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

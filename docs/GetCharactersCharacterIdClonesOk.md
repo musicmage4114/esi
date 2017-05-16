@@ -1,4 +1,4 @@
-# SwaggerClient::CloneSummary
+# Esi::CloneSummary
 
 ## Properties
 Name | Type | Description | Notes

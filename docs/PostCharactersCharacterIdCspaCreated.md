@@ -1,4 +1,4 @@
-# SwaggerClient::CspaCharge
+# Esi::CspaCharge
 
 ## Properties
 Name | Type | Description | Notes

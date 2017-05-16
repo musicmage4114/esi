@@ -1,4 +1,4 @@
-# SwaggerClient::GetPlanetByIdNotFound
+# Esi::GetPlanetByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

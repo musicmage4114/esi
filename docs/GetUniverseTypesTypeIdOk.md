@@ -1,4 +1,4 @@
-# SwaggerClient::UniverseType
+# Esi::UniverseType
 
 ## Properties
 Name | Type | Description | Notes

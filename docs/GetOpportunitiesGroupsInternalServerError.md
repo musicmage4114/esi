@@ -1,4 +1,4 @@
-# SwaggerClient::GetOpportunitiesGroupsInternalServerError
+# Esi::GetOpportunitiesGroupsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

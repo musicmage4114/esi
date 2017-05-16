@@ -1,4 +1,4 @@
-# SwaggerClient::GetColonyForbidden
+# Esi::GetColonyForbidden
 
 ## Properties
 Name | Type | Description | Notes

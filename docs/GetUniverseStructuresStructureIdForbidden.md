@@ -1,4 +1,4 @@
-# SwaggerClient::GetStructureByIdForbidden
+# Esi::GetStructureByIdForbidden
 
 ## Properties
 Name | Type | Description | Notes

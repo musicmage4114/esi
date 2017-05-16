@@ -1,4 +1,4 @@
-# SwaggerClient::ColonyWaypoint
+# Esi::ColonyWaypoint
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketGroupsInternalServerError
+# Esi::GetMarketGroupsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

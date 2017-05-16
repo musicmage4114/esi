@@ -1,4 +1,4 @@
-# SwaggerClient::GetBloodlinesInternalServerError
+# Esi::GetBloodlinesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

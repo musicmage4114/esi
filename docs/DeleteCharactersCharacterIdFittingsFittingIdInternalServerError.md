@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteFittingInternalServerError
+# Esi::DeleteFittingInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

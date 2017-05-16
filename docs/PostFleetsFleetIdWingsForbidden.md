@@ -1,4 +1,4 @@
-# SwaggerClient::PostFleetsFleetIdWingsForbidden
+# Esi::PostFleetsFleetIdWingsForbidden
 
 ## Properties
 Name | Type | Description | Notes

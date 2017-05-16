@@ -1,4 +1,4 @@
-# SwaggerClient::GetSovereigntyMapInternalServerError
+# Esi::GetSovereigntyMapInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

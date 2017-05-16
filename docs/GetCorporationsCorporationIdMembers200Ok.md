@@ -1,4 +1,4 @@
-# SwaggerClient::CorporationMember
+# Esi::CorporationMember
 
 ## Properties
 Name | Type | Description | Notes

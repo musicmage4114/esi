@@ -1,4 +1,4 @@
-# SwaggerClient::GetStationByIdNotFound
+# Esi::GetStationByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

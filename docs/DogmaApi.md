@@ -1,4 +1,4 @@
-# SwaggerClient::DogmaApi
+# Esi::DogmaApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -20,9 +20,9 @@ Get a list of dogma attribute ids  ---  Alternate route: `/v1/dogma/attributes/`
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::DogmaApi.new
+api_instance = Esi::DogmaApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -34,7 +34,7 @@ begin
   #Get attributes
   result = api_instance.get_dogma_attributes(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling DogmaApi->get_dogma_attributes: #{e}"
 end
 ```
@@ -72,9 +72,9 @@ Get information on a dogma attribute  ---  Alternate route: `/v1/dogma/attribute
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::DogmaApi.new
+api_instance = Esi::DogmaApi.new
 
 attribute_id = 56 # Integer | A dogma attribute ID
 
@@ -88,7 +88,7 @@ begin
   #Get attribute information
   result = api_instance.get_dogma_attribute_by_id(attribute_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling DogmaApi->get_dogma_attribute_by_id: #{e}"
 end
 ```
@@ -127,9 +127,9 @@ Get a list of dogma effect ids  ---  Alternate route: `/v1/dogma/effects/`  Alte
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::DogmaApi.new
+api_instance = Esi::DogmaApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -141,7 +141,7 @@ begin
   #Get effects
   result = api_instance.get_dogma_effects(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling DogmaApi->get_dogma_effects: #{e}"
 end
 ```
@@ -179,9 +179,9 @@ Get information on a dogma effect  ---  Alternate route: `/v1/dogma/effects/{eff
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::DogmaApi.new
+api_instance = Esi::DogmaApi.new
 
 effect_id = 56 # Integer | A dogma effect ID
 
@@ -195,7 +195,7 @@ begin
   #Get effect information
   result = api_instance.get_dogma_effect_by_id(effect_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling DogmaApi->get_dogma_effect_by_id: #{e}"
 end
 ```

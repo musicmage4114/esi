@@ -1,4 +1,4 @@
-# SwaggerClient::IndustryApi
+# Esi::IndustryApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -19,14 +19,14 @@ List industry jobs placed by a character  ---  Alternate route: `/v1/characters/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::IndustryApi.new
+api_instance = Esi::IndustryApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -42,7 +42,7 @@ begin
   #List character industry jobs
   result = api_instance.get_industry_jobs(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling IndustryApi->get_industry_jobs: #{e}"
 end
 ```
@@ -83,9 +83,9 @@ Return a list of industry facilities  ---  Alternate route: `/v1/industry/facili
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::IndustryApi.new
+api_instance = Esi::IndustryApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -97,7 +97,7 @@ begin
   #List industry facilities
   result = api_instance.get_industry_facilities(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling IndustryApi->get_industry_facilities: #{e}"
 end
 ```
@@ -135,9 +135,9 @@ Return cost indices for solar systems  ---  Alternate route: `/v1/industry/syste
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::IndustryApi.new
+api_instance = Esi::IndustryApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -149,7 +149,7 @@ begin
   #List solar system cost indices
   result = api_instance.get_industry_systems(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling IndustryApi->get_industry_systems: #{e}"
 end
 ```

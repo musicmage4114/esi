@@ -1,4 +1,4 @@
-# SwaggerClient::MailRecipient
+# Esi::MailRecipient
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::BookmarksApi
+# Esi::BookmarksApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -18,14 +18,14 @@ List your character's personal bookmarks  ---  Alternate route: `/v1/characters/
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::BookmarksApi.new
+api_instance = Esi::BookmarksApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -40,7 +40,7 @@ begin
   #List bookmarks
   result = api_instance.get_character_bookmarks(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling BookmarksApi->get_character_bookmarks: #{e}"
 end
 ```
@@ -80,14 +80,14 @@ List your character's personal bookmark folders  ---  Alternate route: `/v1/char
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::BookmarksApi.new
+api_instance = Esi::BookmarksApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -102,7 +102,7 @@ begin
   #List bookmark folders
   result = api_instance.get_character_bookmarks_folders(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling BookmarksApi->get_character_bookmarks_folders: #{e}"
 end
 ```

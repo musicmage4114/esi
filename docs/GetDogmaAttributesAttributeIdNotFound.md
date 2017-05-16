@@ -1,4 +1,4 @@
-# SwaggerClient::GetDogmaAttributeByIdNotFound
+# Esi::GetDogmaAttributeByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

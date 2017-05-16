@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdMembersMemberIdForbidden
+# Esi::PutFleetsFleetIdMembersMemberIdForbidden
 
 ## Properties
 Name | Type | Description | Notes

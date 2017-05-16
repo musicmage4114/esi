@@ -1,4 +1,4 @@
-# SwaggerClient::SkillQueueEntry
+# Esi::SkillQueueEntry
 
 ## Properties
 Name | Type | Description | Notes

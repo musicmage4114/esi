@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterBlueprintsForbidden
+# Esi::GetCharacterBlueprintsForbidden
 
 ## Properties
 Name | Type | Description | Notes

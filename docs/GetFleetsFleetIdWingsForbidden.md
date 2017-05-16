@@ -1,4 +1,4 @@
-# SwaggerClient::GetWingsForbidden
+# Esi::GetWingsForbidden
 
 ## Properties
 Name | Type | Description | Notes

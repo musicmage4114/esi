@@ -1,4 +1,4 @@
-# SwaggerClient::CurrentVulnerability
+# Esi::CurrentVulnerability
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetLoyaltyPointsAmountForbidden
+# Esi::GetLoyaltyPointsAmountForbidden
 
 ## Properties
 Name | Type | Description | Notes

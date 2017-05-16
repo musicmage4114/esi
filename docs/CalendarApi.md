@@ -1,4 +1,4 @@
-# SwaggerClient::CalendarApi
+# Esi::CalendarApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -19,14 +19,14 @@ Get 50 event summaries from the calendar. If no event ID is given, the resource 
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CalendarApi.new
+api_instance = Esi::CalendarApi.new
 
 character_id = 56 # Integer | The character to retrieve events from
 
@@ -42,7 +42,7 @@ begin
   #List calendar event summaries
   result = api_instance.get_calendar(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CalendarApi->get_calendar: #{e}"
 end
 ```
@@ -83,14 +83,14 @@ Get all the information for a specific event  ---  Alternate route: `/v3/charact
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CalendarApi.new
+api_instance = Esi::CalendarApi.new
 
 character_id = 56 # Integer | The character id requesting the event
 
@@ -107,7 +107,7 @@ begin
   #Get an event
   result = api_instance.get_event_by_id(character_id, event_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CalendarApi->get_event_by_id: #{e}"
 end
 ```
@@ -148,20 +148,20 @@ Set your response status to an event  ---  Alternate route: `/v3/characters/{cha
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::CalendarApi.new
+api_instance = Esi::CalendarApi.new
 
 character_id = 56 # Integer | The character ID requesting the event
 
 event_id = 56 # Integer | The ID of the event requested
 
-response = SwaggerClient::EventResponse.new # EventResponse | The response value to set, overriding current value.
+response = Esi::EventResponse.new # EventResponse | The response value to set, overriding current value.
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -173,7 +173,7 @@ opts = {
 begin
   #Respond to an event
   api_instance.respond_to_event(character_id, event_id, response, opts)
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling CalendarApi->respond_to_event: #{e}"
 end
 ```

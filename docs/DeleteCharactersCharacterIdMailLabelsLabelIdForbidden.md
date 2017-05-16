@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteMailLabelForbidden
+# Esi::DeleteMailLabelForbidden
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetSovereigntyCampaignsInternalServerError
+# Esi::GetSovereigntyCampaignsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

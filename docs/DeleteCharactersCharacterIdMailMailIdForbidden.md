@@ -1,4 +1,4 @@
-# SwaggerClient::DeleteMailForbidden
+# Esi::DeleteMailForbidden
 
 ## Properties
 Name | Type | Description | Notes

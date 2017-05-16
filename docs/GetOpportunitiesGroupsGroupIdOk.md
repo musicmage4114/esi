@@ -1,4 +1,4 @@
-# SwaggerClient::OpportunitiesGroup
+# Esi::OpportunitiesGroup
 
 ## Properties
 Name | Type | Description | Notes

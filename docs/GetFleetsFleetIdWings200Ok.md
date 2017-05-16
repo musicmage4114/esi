@@ -1,4 +1,4 @@
-# SwaggerClient::Wing
+# Esi::Wing
 
 ## Properties
 Name | Type | Description | Notes

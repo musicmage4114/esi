@@ -1,4 +1,4 @@
-# SwaggerClient::GetItemCategoriesInternalServerError
+# Esi::GetItemCategoriesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

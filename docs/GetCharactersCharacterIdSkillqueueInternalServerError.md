@@ -1,4 +1,4 @@
-# SwaggerClient::GetSkillQueueInternalServerError
+# Esi::GetSkillQueueInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

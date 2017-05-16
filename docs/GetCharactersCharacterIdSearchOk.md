@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterSearchResult
+# Esi::CharacterSearchResult
 
 ## Properties
 Name | Type | Description | Notes

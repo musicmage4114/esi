@@ -1,4 +1,4 @@
-# SwaggerClient::HomeStation
+# Esi::HomeStation
 
 ## Properties
 Name | Type | Description | Notes

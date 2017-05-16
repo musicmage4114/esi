@@ -1,4 +1,4 @@
-# SwaggerClient::GetIndustryJobsForbidden
+# Esi::GetIndustryJobsForbidden
 
 ## Properties
 Name | Type | Description | Notes

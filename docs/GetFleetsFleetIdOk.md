@@ -1,4 +1,4 @@
-# SwaggerClient::Fleet
+# Esi::Fleet
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::DogmaAttributeValue
+# Esi::DogmaAttributeValue
 
 ## Properties
 Name | Type | Description | Notes

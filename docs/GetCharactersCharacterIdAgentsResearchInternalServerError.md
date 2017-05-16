@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterResearchAgentsInternalServerError
+# Esi::GetCharacterResearchAgentsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

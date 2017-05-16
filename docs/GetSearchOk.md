@@ -1,4 +1,4 @@
-# SwaggerClient::GeneralSearchResult
+# Esi::GeneralSearchResult
 
 ## Properties
 Name | Type | Description | Notes

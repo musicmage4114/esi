@@ -1,4 +1,4 @@
-# SwaggerClient::GetItemGroupByIdNotFound
+# Esi::GetItemGroupByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

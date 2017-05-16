@@ -1,4 +1,4 @@
-# SwaggerClient::IncursionsApi
+# Esi::IncursionsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -17,9 +17,9 @@ Return a list of current incursions  ---  Alternate route: `/v1/incursions/`  Al
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::IncursionsApi.new
+api_instance = Esi::IncursionsApi.new
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -31,7 +31,7 @@ begin
   #List incursions
   result = api_instance.get_incursions(opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling IncursionsApi->get_incursions: #{e}"
 end
 ```

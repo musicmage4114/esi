@@ -1,4 +1,4 @@
-# SwaggerClient::GetSchematicInternalServerError
+# Esi::GetSchematicInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

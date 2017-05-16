@@ -1,4 +1,4 @@
-# SwaggerClient::ChatChannelMuted
+# Esi::ChatChannelMuted
 
 ## Properties
 Name | Type | Description | Notes

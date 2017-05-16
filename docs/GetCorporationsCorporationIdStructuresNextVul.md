@@ -1,4 +1,4 @@
-# SwaggerClient::NextVulnerability
+# Esi::NextVulnerability
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::ColonyRoute
+# Esi::ColonyRoute
 
 ## Properties
 Name | Type | Description | Notes

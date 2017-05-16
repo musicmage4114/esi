@@ -1,4 +1,4 @@
-# SwaggerClient::KillmailsApi
+# Esi::KillmailsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/dev*
 
@@ -18,14 +18,14 @@ Return a list of character's recent kills and losses  ---  Alternate route: `/v1
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 # setup authorization
-SwaggerClient.configure do |config|
+Esi.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = SwaggerClient::KillmailsApi.new
+api_instance = Esi::KillmailsApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -42,7 +42,7 @@ begin
   #List kills and losses
   result = api_instance.get_character_recent_killmails(character_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling KillmailsApi->get_character_recent_killmails: #{e}"
 end
 ```
@@ -84,9 +84,9 @@ Return a single killmail from its ID and hash  ---  Alternate route: `/v1/killma
 ### Example
 ```ruby
 # load the gem
-require 'swagger_client'
+require 'esi'
 
-api_instance = SwaggerClient::KillmailsApi.new
+api_instance = Esi::KillmailsApi.new
 
 killmail_hash = "killmail_hash_example" # String | The killmail hash for verification
 
@@ -102,7 +102,7 @@ begin
   #Get a single killmail
   result = api_instance.get_killmail(killmail_hash, killmail_id, opts)
   p result
-rescue SwaggerClient::ApiError => e
+rescue Esi::ApiError => e
   puts "Exception when calling KillmailsApi->get_killmail: #{e}"
 end
 ```

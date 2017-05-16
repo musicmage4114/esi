@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersAffiliationUnprocessableEntity
+# Esi::PostCharactersAffiliationUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

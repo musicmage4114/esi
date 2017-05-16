@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterBookmarksFoldersInternalServerError
+# Esi::GetCharacterBookmarksFoldersInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

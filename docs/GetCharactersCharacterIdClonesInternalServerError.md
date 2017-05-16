@@ -1,4 +1,4 @@
-# SwaggerClient::GetClonesInternalServerError
+# Esi::GetClonesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

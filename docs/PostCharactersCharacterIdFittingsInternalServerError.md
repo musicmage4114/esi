@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdFittingsInternalServerError
+# Esi::PostCharactersCharacterIdFittingsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

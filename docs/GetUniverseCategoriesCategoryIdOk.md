@@ -1,4 +1,4 @@
-# SwaggerClient::ItemCategory
+# Esi::ItemCategory
 
 ## Properties
 Name | Type | Description | Notes

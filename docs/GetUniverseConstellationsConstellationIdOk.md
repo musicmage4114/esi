@@ -1,4 +1,4 @@
-# SwaggerClient::Constellation
+# Esi::Constellation
 
 ## Properties
 Name | Type | Description | Notes

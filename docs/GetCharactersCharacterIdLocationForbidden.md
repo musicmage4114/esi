@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterLocationForbidden
+# Esi::GetCharacterLocationForbidden
 
 ## Properties
 Name | Type | Description | Notes

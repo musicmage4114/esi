@@ -1,4 +1,4 @@
-# SwaggerClient::Killmail
+# Esi::Killmail
 
 ## Properties
 Name | Type | Description | Notes

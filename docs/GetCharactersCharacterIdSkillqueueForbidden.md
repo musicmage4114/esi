@@ -1,4 +1,4 @@
-# SwaggerClient::GetSkillQueueForbidden
+# Esi::GetSkillQueueForbidden
 
 ## Properties
 Name | Type | Description | Notes

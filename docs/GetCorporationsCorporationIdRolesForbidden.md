@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationRolesForbidden
+# Esi::GetCorporationRolesForbidden
 
 ## Properties
 Name | Type | Description | Notes

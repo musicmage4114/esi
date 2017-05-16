@@ -1,4 +1,4 @@
-# SwaggerClient::Race
+# Esi::Race
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetWalletsInternalServerError
+# Esi::GetWalletsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

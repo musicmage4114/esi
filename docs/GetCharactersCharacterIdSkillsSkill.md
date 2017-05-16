@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterSkill
+# Esi::CharacterSkill
 
 ## Properties
 Name | Type | Description | Notes

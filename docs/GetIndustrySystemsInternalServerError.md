@@ -1,4 +1,4 @@
-# SwaggerClient::GetIndustrySystemsInternalServerError
+# Esi::GetIndustrySystemsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

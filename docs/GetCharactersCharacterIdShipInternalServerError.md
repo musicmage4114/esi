@@ -1,4 +1,4 @@
-# SwaggerClient::GetCurrentShipInternalServerError
+# Esi::GetCurrentShipInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

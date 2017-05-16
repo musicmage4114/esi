@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationByIdNotFound
+# Esi::GetCorporationByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

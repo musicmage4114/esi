@@ -1,4 +1,4 @@
-# SwaggerClient::GetAllianceHistoryInternalServerError
+# Esi::GetAllianceHistoryInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

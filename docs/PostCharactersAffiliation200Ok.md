@@ -1,4 +1,4 @@
-# SwaggerClient::CharacterAffiliation
+# Esi::CharacterAffiliation
 
 ## Properties
 Name | Type | Description | Notes

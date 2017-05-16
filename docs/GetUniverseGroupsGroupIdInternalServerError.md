@@ -1,4 +1,4 @@
-# SwaggerClient::GetItemGroupByIdInternalServerError
+# Esi::GetItemGroupByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

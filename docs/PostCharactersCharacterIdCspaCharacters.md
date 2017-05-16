@@ -1,4 +1,4 @@
-# SwaggerClient::CspaCharacter
+# Esi::CspaCharacter
 
 ## Properties
 Name | Type | Description | Notes

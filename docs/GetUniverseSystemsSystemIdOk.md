@@ -1,4 +1,4 @@
-# SwaggerClient::System
+# Esi::System
 
 ## Properties
 Name | Type | Description | Notes

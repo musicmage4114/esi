@@ -1,4 +1,4 @@
-# SwaggerClient::DogmaEffectValue
+# Esi::DogmaEffectValue
 
 ## Properties
 Name | Type | Description | Notes

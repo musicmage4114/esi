@@ -1,4 +1,4 @@
-# SwaggerClient::WarAlly
+# Esi::WarAlly
 
 ## Properties
 Name | Type | Description | Notes

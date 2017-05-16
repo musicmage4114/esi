@@ -1,4 +1,4 @@
-# SwaggerClient::LoyaltyRequiredItem
+# Esi::LoyaltyRequiredItem
 
 ## Properties
 Name | Type | Description | Notes

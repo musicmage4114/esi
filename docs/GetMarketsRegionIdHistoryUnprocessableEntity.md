@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketHistoryByIdUnprocessableEntity
+# Esi::GetMarketHistoryByIdUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

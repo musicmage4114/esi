@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterMarketOrdersForbidden
+# Esi::GetCharacterMarketOrdersForbidden
 
 ## Properties
 Name | Type | Description | Notes

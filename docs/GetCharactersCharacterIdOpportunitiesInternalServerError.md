@@ -1,4 +1,4 @@
-# SwaggerClient::GetCompletedOpportunitiesInternalServerError
+# Esi::GetCompletedOpportunitiesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

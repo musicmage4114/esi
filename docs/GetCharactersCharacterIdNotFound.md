@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharacterByIdNotFound
+# Esi::GetCharacterByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

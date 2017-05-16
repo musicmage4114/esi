@@ -1,4 +1,4 @@
-# SwaggerClient::GetPlanetByIdInternalServerError
+# Esi::GetPlanetByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

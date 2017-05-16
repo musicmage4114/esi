@@ -1,4 +1,4 @@
-# SwaggerClient::GetPublicStructuresInternalServerError
+# Esi::GetPublicStructuresInternalServerError
 
 ## Properties
 Name | Type | Description | Notes
