@@ -155,7 +155,7 @@ describe 'CorporationApi' do
     end
   end
 
-  # unit tests for update_structure_vulnerability
+  # unit tests for update_vulnerability
   # Update structure vulnerability schedule
   # Update the vulnerability window schedule of a corporation structure  ---  Alternate route: &#x60;/v1/corporations/{corporation_id}/structures/{structure_id}/&#x60;  Alternate route: &#x60;/legacy/corporations/{corporation_id}/structures/{structure_id}/&#x60;  Alternate route: &#x60;/latest/corporations/{corporation_id}/structures/{structure_id}/&#x60; 
   # @param corporation_id A corporation ID
@@ -167,7 +167,7 @@ describe 'CorporationApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [nil]
-  describe 'update_structure_vulnerability test' do
+  describe 'update_vulnerability test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

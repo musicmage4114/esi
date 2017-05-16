@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**get_corporation_structures**](CorporationApi.md#get_corporation_structures) | **GET** /corporations/{corporation_id}/structures/ | Get corporation structures
 [**get_corporation_name**](CorporationApi.md#get_corporation_name) | **GET** /corporations/names/ | Get corporation names
 [**get_npc_corporations**](CorporationApi.md#get_npc_corporations) | **GET** /corporations/npccorps/ | Get npc corporations
-[**update_structure_vulnerability**](CorporationApi.md#update_structure_vulnerability) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
+[**update_vulnerability**](CorporationApi.md#update_vulnerability) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
 
 
 # **get_corporation_by_id**
@@ -477,8 +477,8 @@ No authorization required
 
 
 
-# **update_structure_vulnerability**
-> update_structure_vulnerability(corporation_id, new_schedule, structure_id, opts)
+# **update_vulnerability**
+> update_vulnerability(corporation_id, new_schedule, structure_id, opts)
 
 Update structure vulnerability schedule
 
@@ -511,9 +511,9 @@ opts = {
 
 begin
   #Update structure vulnerability schedule
-  api_instance.update_structure_vulnerability(corporation_id, new_schedule, structure_id, opts)
+  api_instance.update_vulnerability(corporation_id, new_schedule, structure_id, opts)
 rescue Esi::ApiError => e
-  puts "Exception when calling CorporationApi->update_structure_vulnerability: #{e}"
+  puts "Exception when calling CorporationApi->update_vulnerability: #{e}"
 end
 ```
 

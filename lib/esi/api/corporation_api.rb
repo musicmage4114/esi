@@ -557,8 +557,8 @@ module Esi
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [nil]
-    def update_structure_vulnerability(corporation_id, new_schedule, structure_id, opts = {})
-      update_structure_vulnerability_with_http_info(corporation_id, new_schedule, structure_id, opts)
+    def update_vulnerability(corporation_id, new_schedule, structure_id, opts = {})
+      update_vulnerability_with_http_info(corporation_id, new_schedule, structure_id, opts)
       return nil
     end
 
@@ -573,16 +573,16 @@ module Esi
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def update_structure_vulnerability_with_http_info(corporation_id, new_schedule, structure_id, opts = {})
+    def update_vulnerability_with_http_info(corporation_id, new_schedule, structure_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CorporationApi.update_structure_vulnerability ..."
+        @api_client.config.logger.debug "Calling API: CorporationApi.update_vulnerability ..."
       end
       # verify the required parameter 'corporation_id' is set
-      fail ArgumentError, "Missing the required parameter 'corporation_id' when calling CorporationApi.update_structure_vulnerability" if corporation_id.nil?
+      fail ArgumentError, "Missing the required parameter 'corporation_id' when calling CorporationApi.update_vulnerability" if corporation_id.nil?
       # verify the required parameter 'new_schedule' is set
-      fail ArgumentError, "Missing the required parameter 'new_schedule' when calling CorporationApi.update_structure_vulnerability" if new_schedule.nil?
+      fail ArgumentError, "Missing the required parameter 'new_schedule' when calling CorporationApi.update_vulnerability" if new_schedule.nil?
       # verify the required parameter 'structure_id' is set
-      fail ArgumentError, "Missing the required parameter 'structure_id' when calling CorporationApi.update_structure_vulnerability" if structure_id.nil?
+      fail ArgumentError, "Missing the required parameter 'structure_id' when calling CorporationApi.update_vulnerability" if structure_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -614,7 +614,7 @@ module Esi
         :body => post_body,
         :auth_names => auth_names)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CorporationApi#update_structure_vulnerability\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CorporationApi#update_vulnerability\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
