@@ -44,5 +44,3 @@ module OmniAuth
     end
   end
 end
-
-OmniAuth.config.add_camelization "esi", "ESI"
