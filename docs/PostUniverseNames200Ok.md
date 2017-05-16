@@ -1,4 +1,4 @@
-# SwaggerClient::PostUniverseNames200Ok
+# SwaggerClient::IdSummary
 
 ## Properties
 Name | Type | Description | Notes

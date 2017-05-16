@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarsWarIdKillmailsUnprocessableEntity
+# SwaggerClient::GetWarKillmailsUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

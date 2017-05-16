@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMailLabelsLabel
+# SwaggerClient::MailLabelInfo
 
 ## Properties
 Name | Type | Description | Notes

@@ -12,13 +12,13 @@ Method | HTTP request | Description
 [**get_character_medals**](CharacterApi.md#get_character_medals) | **GET** /characters/{character_id}/medals/ | Get medals
 [**get_character_portrait**](CharacterApi.md#get_character_portrait) | **GET** /characters/{character_id}/portrait/ | Get character portraits
 [**get_character_standings**](CharacterApi.md#get_character_standings) | **GET** /characters/{character_id}/standings/ | Get standings
-[**get_character_names**](CharacterApi.md#get_character_names) | **GET** /characters/names/ | Get character names
-[**get_characters_affiliation_by_id**](CharacterApi.md#get_characters_affiliation_by_id) | **POST** /characters/affiliation/ | Character affiliation
-[**calculate_cspa_charge**](CharacterApi.md#calculate_cspa_charge) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
+[**get_character_name**](CharacterApi.md#get_character_name) | **GET** /characters/names/ | Get character names
+[**get_character_affiliation**](CharacterApi.md#get_character_affiliation) | **POST** /characters/affiliation/ | Character affiliation
+[**calculate_cspa**](CharacterApi.md#calculate_cspa) | **POST** /characters/{character_id}/cspa/ | Calculate a CSPA charge cost
 
 
 # **get_character_by_id**
-> GetCharactersCharacterIdOk get_character_by_id(character_id, opts)
+> Character get_character_by_id(character_id, opts)
 
 Get character's public information
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdOk**](GetCharactersCharacterIdOk.md)
+[**Character**](Character.md)
 
 ### Authorization
 
@@ -314,7 +314,7 @@ No authorization required
 
 
 # **get_character_medals**
-> Array&lt;GetCharactersCharacterIdMedals200Ok&gt; get_character_medals(character_id, opts)
+> Array&lt;CharacterMedal&gt; get_character_medals(character_id, opts)
 
 Get medals
 
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdMedals200Ok&gt;**](GetCharactersCharacterIdMedals200Ok.md)
+[**Array&lt;CharacterMedal&gt;**](CharacterMedal.md)
 
 ### Authorization
 
@@ -376,7 +376,7 @@ Name | Type | Description  | Notes
 
 
 # **get_character_portrait**
-> GetCharactersCharacterIdPortraitOk get_character_portrait(character_id, opts)
+> CharacterPortrait get_character_portrait(character_id, opts)
 
 Get character portraits
 
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdPortraitOk**](GetCharactersCharacterIdPortraitOk.md)
+[**CharacterPortrait**](CharacterPortrait.md)
 
 ### Authorization
 
@@ -431,7 +431,7 @@ No authorization required
 
 
 # **get_character_standings**
-> Array&lt;GetCharactersCharacterIdStandings200Ok&gt; get_character_standings(character_id, opts)
+> Array&lt;CharacterStanding&gt; get_character_standings(character_id, opts)
 
 Get standings
 
@@ -479,7 +479,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdStandings200Ok&gt;**](GetCharactersCharacterIdStandings200Ok.md)
+[**Array&lt;CharacterStanding&gt;**](CharacterStanding.md)
 
 ### Authorization
 
@@ -492,8 +492,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_character_names**
-> Array&lt;GetCharactersNames200Ok&gt; get_character_names(character_ids, opts)
+# **get_character_name**
+> Array&lt;CharacterName&gt; get_character_name(character_ids, opts)
 
 Get character names
 
@@ -516,10 +516,10 @@ opts = {
 
 begin
   #Get character names
-  result = api_instance.get_character_names(character_ids, opts)
+  result = api_instance.get_character_name(character_ids, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_character_names: #{e}"
+  puts "Exception when calling CharacterApi->get_character_name: #{e}"
 end
 ```
 
@@ -534,7 +534,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersNames200Ok&gt;**](GetCharactersNames200Ok.md)
+[**Array&lt;CharacterName&gt;**](CharacterName.md)
 
 ### Authorization
 
@@ -547,8 +547,8 @@ No authorization required
 
 
 
-# **get_characters_affiliation_by_id**
-> Array&lt;PostCharactersAffiliation200Ok&gt; get_characters_affiliation_by_id(characters, opts)
+# **get_character_affiliation**
+> Array&lt;CharacterAffiliation&gt; get_character_affiliation(characters, opts)
 
 Character affiliation
 
@@ -571,10 +571,10 @@ opts = {
 
 begin
   #Character affiliation
-  result = api_instance.get_characters_affiliation_by_id(characters, opts)
+  result = api_instance.get_character_affiliation(characters, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->get_characters_affiliation_by_id: #{e}"
+  puts "Exception when calling CharacterApi->get_character_affiliation: #{e}"
 end
 ```
 
@@ -589,7 +589,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;PostCharactersAffiliation200Ok&gt;**](PostCharactersAffiliation200Ok.md)
+[**Array&lt;CharacterAffiliation&gt;**](CharacterAffiliation.md)
 
 ### Authorization
 
@@ -602,8 +602,8 @@ No authorization required
 
 
 
-# **calculate_cspa_charge**
-> PostCharactersCharacterIdCspaCreated calculate_cspa_charge(character_id, characters, opts)
+# **calculate_cspa**
+> CspaCharge calculate_cspa(character_id, characters, opts)
 
 Calculate a CSPA charge cost
 
@@ -623,7 +623,7 @@ api_instance = SwaggerClient::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
-characters = SwaggerClient::PostCharactersCharacterIdCspaCharacters.new # PostCharactersCharacterIdCspaCharacters | The target characters to calculate the charge for
+characters = SwaggerClient::CspaCharacter.new # CspaCharacter | The target characters to calculate the charge for
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -634,10 +634,10 @@ opts = {
 
 begin
   #Calculate a CSPA charge cost
-  result = api_instance.calculate_cspa_charge(character_id, characters, opts)
+  result = api_instance.calculate_cspa(character_id, characters, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CharacterApi->calculate_cspa_charge: #{e}"
+  puts "Exception when calling CharacterApi->calculate_cspa: #{e}"
 end
 ```
 
@@ -646,7 +646,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| An EVE character ID | 
- **characters** | [**PostCharactersCharacterIdCspaCharacters**](PostCharactersCharacterIdCspaCharacters.md)| The target characters to calculate the charge for | 
+ **characters** | [**CspaCharacter**](CspaCharacter.md)| The target characters to calculate the charge for | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
@@ -654,7 +654,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PostCharactersCharacterIdCspaCreated**](PostCharactersCharacterIdCspaCreated.md)
+[**CspaCharge**](CspaCharge.md)
 
 ### Authorization
 

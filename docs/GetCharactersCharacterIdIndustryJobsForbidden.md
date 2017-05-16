@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdIndustryJobsForbidden
+# SwaggerClient::GetIndustryJobsForbidden
 
 ## Properties
 Name | Type | Description | Notes

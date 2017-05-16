@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseTypesTypeIdNotFound
+# SwaggerClient::GetUniverseTypeByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

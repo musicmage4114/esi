@@ -1,4 +1,4 @@
-# SwaggerClient::GetIncursions200Ok
+# SwaggerClient::Incursion
 
 ## Properties
 Name | Type | Description | Notes

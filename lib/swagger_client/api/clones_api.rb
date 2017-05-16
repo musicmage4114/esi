@@ -27,7 +27,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [CloneInfo]
+    # @return [CloneSummary]
     def get_clones(character_id, opts = {})
       data, _status_code, _headers = get_clones_with_http_info(character_id, opts)
       return data
@@ -41,7 +41,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(CloneInfo, Fixnum, Hash)>] CloneInfo data, response status code and response headers
+    # @return [Array<(CloneSummary, Fixnum, Hash)>] CloneSummary data, response status code and response headers
     def get_clones_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: ClonesApi.get_clones ..."
@@ -78,7 +78,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'CloneInfo')
+        :return_type => 'CloneSummary')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: ClonesApi#get_clones\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

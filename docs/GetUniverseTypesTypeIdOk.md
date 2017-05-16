@@ -1,12 +1,12 @@
-# SwaggerClient::GetUniverseTypesTypeIdOk
+# SwaggerClient::UniverseType
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **capacity** | **Float** | capacity number | [optional] 
 **description** | **String** | description string | 
-**dogma_attributes** | [**Array&lt;GetUniverseTypesTypeIdDogmaAttribute&gt;**](GetUniverseTypesTypeIdDogmaAttribute.md) | dogma_attributes array | [optional] 
-**dogma_effects** | [**Array&lt;GetUniverseTypesTypeIdDogmaEffect&gt;**](GetUniverseTypesTypeIdDogmaEffect.md) | dogma_effects array | [optional] 
+**dogma_attributes** | [**Array&lt;DogmaAttributeValue&gt;**](DogmaAttributeValue.md) | dogma_attributes array | [optional] 
+**dogma_effects** | [**Array&lt;DogmaEffectValue&gt;**](DogmaEffectValue.md) | dogma_effects array | [optional] 
 **graphic_id** | **Integer** | graphic_id integer | [optional] 
 **group_id** | **Integer** | group_id integer | 
 **icon_id** | **Integer** | icon_id integer | [optional] 

@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsStructuresStructureIdInternalServerError
+# SwaggerClient::GetStructureMarketOrdersInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

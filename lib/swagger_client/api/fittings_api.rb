@@ -159,11 +159,11 @@ module SwaggerClient
     # @param character_id ID for a character
     # @param [Hash] opts the optional parameters
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
-    # @option opts [PostCharactersCharacterIdFittingsFitting] :fitting Details about the new fitting
+    # @option opts [NewFitting] :fitting Details about the new fitting
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [PostCharactersCharacterIdFittingsCreated]
+    # @return [CreatedFitting]
     def add_fitting(character_id, opts = {})
       data, _status_code, _headers = add_fitting_with_http_info(character_id, opts)
       return data
@@ -174,11 +174,11 @@ module SwaggerClient
     # @param character_id ID for a character
     # @param [Hash] opts the optional parameters
     # @option opts [String] :datasource The server name you would like data from
-    # @option opts [PostCharactersCharacterIdFittingsFitting] :fitting Details about the new fitting
+    # @option opts [NewFitting] :fitting Details about the new fitting
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(PostCharactersCharacterIdFittingsCreated, Fixnum, Hash)>] PostCharactersCharacterIdFittingsCreated data, response status code and response headers
+    # @return [Array<(CreatedFitting, Fixnum, Hash)>] CreatedFitting data, response status code and response headers
     def add_fitting_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: FittingsApi.add_fitting ..."
@@ -215,7 +215,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'PostCharactersCharacterIdFittingsCreated')
+        :return_type => 'CreatedFitting')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: FittingsApi#add_fitting\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

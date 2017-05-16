@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsForbidden
+# SwaggerClient::GetColoniesForbidden
 
 ## Properties
 Name | Type | Description | Notes

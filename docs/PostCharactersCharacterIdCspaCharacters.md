@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdCspaCharacters
+# SwaggerClient::CspaCharacter
 
 ## Properties
 Name | Type | Description | Notes

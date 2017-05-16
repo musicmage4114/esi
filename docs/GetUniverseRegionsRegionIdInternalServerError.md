@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseRegionsRegionIdInternalServerError
+# SwaggerClient::GetRegionByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

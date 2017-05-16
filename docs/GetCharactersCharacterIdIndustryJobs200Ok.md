@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdIndustryJobs200Ok
+# SwaggerClient::IndustryJob
 
 ## Properties
 Name | Type | Description | Notes

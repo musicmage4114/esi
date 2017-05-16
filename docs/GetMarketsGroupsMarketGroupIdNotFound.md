@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsGroupsMarketGroupIdNotFound
+# SwaggerClient::GetMarketGroupByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

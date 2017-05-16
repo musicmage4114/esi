@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_character_recent_killmails**
-> Array&lt;GetCharactersCharacterIdKillmailsRecent200Ok&gt; get_character_recent_killmails(character_id, opts)
+> Array&lt;KillmailSummary&gt; get_character_recent_killmails(character_id, opts)
 
 List kills and losses
 
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdKillmailsRecent200Ok&gt;**](GetCharactersCharacterIdKillmailsRecent200Ok.md)
+[**Array&lt;KillmailSummary&gt;**](KillmailSummary.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 
 # **get_killmail**
-> GetKillmailsKillmailIdKillmailHashOk get_killmail(killmail_hash, killmail_id, opts)
+> Killmail get_killmail(killmail_hash, killmail_id, opts)
 
 Get a single killmail
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetKillmailsKillmailIdKillmailHashOk**](GetKillmailsKillmailIdKillmailHashOk.md)
+[**Killmail**](Killmail.md)
 
 ### Authorization
 

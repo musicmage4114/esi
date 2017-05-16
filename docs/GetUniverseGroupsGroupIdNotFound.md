@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseGroupsGroupIdNotFound
+# SwaggerClient::GetItemGroupByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

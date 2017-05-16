@@ -33,7 +33,7 @@ Method | HTTP request | Description
 
 
 # **get_bloodlines**
-> Array&lt;GetUniverseBloodlines200Ok&gt; get_bloodlines(opts)
+> Array&lt;Bloodline&gt; get_bloodlines(opts)
 
 Get bloodlines
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetUniverseBloodlines200Ok&gt;**](GetUniverseBloodlines200Ok.md)
+[**Array&lt;Bloodline&gt;**](Bloodline.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ No authorization required
 
 
 # **get_item_category_by_id**
-> GetUniverseCategoriesCategoryIdOk get_item_category_by_id(category_id, opts)
+> ItemCategory get_item_category_by_id(category_id, opts)
 
 Get item category information
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseCategoriesCategoryIdOk**](GetUniverseCategoriesCategoryIdOk.md)
+[**ItemCategory**](ItemCategory.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ No authorization required
 
 
 # **get_constellation_by_id**
-> GetUniverseConstellationsConstellationIdOk get_constellation_by_id(constellation_id, opts)
+> Constellation get_constellation_by_id(constellation_id, opts)
 
 Get constellation information
 
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseConstellationsConstellationIdOk**](GetUniverseConstellationsConstellationIdOk.md)
+[**Constellation**](Constellation.md)
 
 ### Authorization
 
@@ -305,7 +305,7 @@ No authorization required
 
 
 # **get_factions**
-> Array&lt;GetUniverseFactions200Ok&gt; get_factions(opts)
+> Array&lt;Faction&gt; get_factions(opts)
 
 Get factions
 
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetUniverseFactions200Ok&gt;**](GetUniverseFactions200Ok.md)
+[**Array&lt;Faction&gt;**](Faction.md)
 
 ### Authorization
 
@@ -411,7 +411,7 @@ No authorization required
 
 
 # **get_game_graphic_by_id**
-> GetUniverseGraphicsGraphicIdOk get_game_graphic_by_id(graphic_id, opts)
+> GameGraphic get_game_graphic_by_id(graphic_id, opts)
 
 Get graphic information
 
@@ -452,7 +452,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseGraphicsGraphicIdOk**](GetUniverseGraphicsGraphicIdOk.md)
+[**GameGraphic**](GameGraphic.md)
 
 ### Authorization
 
@@ -520,7 +520,7 @@ No authorization required
 
 
 # **get_item_group_by_id**
-> GetUniverseGroupsGroupIdOk get_item_group_by_id(group_id, opts)
+> ItemGroup get_item_group_by_id(group_id, opts)
 
 Get item group information
 
@@ -563,7 +563,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseGroupsGroupIdOk**](GetUniverseGroupsGroupIdOk.md)
+[**ItemGroup**](ItemGroup.md)
 
 ### Authorization
 
@@ -577,7 +577,7 @@ No authorization required
 
 
 # **get_moon_by_id**
-> GetUniverseMoonsMoonIdOk get_moon_by_id(moon_id, opts)
+> Moon get_moon_by_id(moon_id, opts)
 
 Get moon information
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseMoonsMoonIdOk**](GetUniverseMoonsMoonIdOk.md)
+[**Moon**](Moon.md)
 
 ### Authorization
 
@@ -632,7 +632,7 @@ No authorization required
 
 
 # **get_planet_by_id**
-> GetUniversePlanetsPlanetIdOk get_planet_by_id(planet_id, opts)
+> Planet get_planet_by_id(planet_id, opts)
 
 Get planet information
 
@@ -673,7 +673,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniversePlanetsPlanetIdOk**](GetUniversePlanetsPlanetIdOk.md)
+[**Planet**](Planet.md)
 
 ### Authorization
 
@@ -687,7 +687,7 @@ No authorization required
 
 
 # **get_races**
-> Array&lt;GetUniverseRaces200Ok&gt; get_races(opts)
+> Array&lt;Race&gt; get_races(opts)
 
 Get character races
 
@@ -727,7 +727,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetUniverseRaces200Ok&gt;**](GetUniverseRaces200Ok.md)
+[**Array&lt;Race&gt;**](Race.md)
 
 ### Authorization
 
@@ -793,7 +793,7 @@ No authorization required
 
 
 # **get_region_by_id**
-> GetUniverseRegionsRegionIdOk get_region_by_id(region_id, opts)
+> Region get_region_by_id(region_id, opts)
 
 Get region information
 
@@ -836,7 +836,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseRegionsRegionIdOk**](GetUniverseRegionsRegionIdOk.md)
+[**Region**](Region.md)
 
 ### Authorization
 
@@ -850,7 +850,7 @@ No authorization required
 
 
 # **get_stargate_by_id**
-> GetUniverseStargatesStargateIdOk get_stargate_by_id(stargate_id, opts)
+> Stargate get_stargate_by_id(stargate_id, opts)
 
 Get stargate information
 
@@ -891,7 +891,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseStargatesStargateIdOk**](GetUniverseStargatesStargateIdOk.md)
+[**Stargate**](Stargate.md)
 
 ### Authorization
 
@@ -905,7 +905,7 @@ No authorization required
 
 
 # **get_station_by_id**
-> GetUniverseStationsStationIdOk get_station_by_id(station_id, opts)
+> Station get_station_by_id(station_id, opts)
 
 Get station information
 
@@ -946,7 +946,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseStationsStationIdOk**](GetUniverseStationsStationIdOk.md)
+[**Station**](Station.md)
 
 ### Authorization
 
@@ -1012,7 +1012,7 @@ No authorization required
 
 
 # **get_structure_by_id**
-> GetUniverseStructuresStructureIdOk get_structure_by_id(structure_id, opts)
+> Structure get_structure_by_id(structure_id, opts)
 
 Get structure information
 
@@ -1060,7 +1060,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseStructuresStructureIdOk**](GetUniverseStructuresStructureIdOk.md)
+[**Structure**](Structure.md)
 
 ### Authorization
 
@@ -1074,7 +1074,7 @@ Name | Type | Description  | Notes
 
 
 # **get_system_jumps**
-> Array&lt;GetUniverseSystemJumps200Ok&gt; get_system_jumps(opts)
+> Array&lt;SystemJumpInfo&gt; get_system_jumps(opts)
 
 Get system jumps
 
@@ -1112,7 +1112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetUniverseSystemJumps200Ok&gt;**](GetUniverseSystemJumps200Ok.md)
+[**Array&lt;SystemJumpInfo&gt;**](SystemJumpInfo.md)
 
 ### Authorization
 
@@ -1126,7 +1126,7 @@ No authorization required
 
 
 # **get_system_kills**
-> Array&lt;GetUniverseSystemKills200Ok&gt; get_system_kills(opts)
+> Array&lt;SystemKillsInfo&gt; get_system_kills(opts)
 
 Get system kills
 
@@ -1164,7 +1164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetUniverseSystemKills200Ok&gt;**](GetUniverseSystemKills200Ok.md)
+[**Array&lt;SystemKillsInfo&gt;**](SystemKillsInfo.md)
 
 ### Authorization
 
@@ -1230,7 +1230,7 @@ No authorization required
 
 
 # **get_system_by_id**
-> GetUniverseSystemsSystemIdOk get_system_by_id(system_id, opts)
+> System get_system_by_id(system_id, opts)
 
 Get solar system information
 
@@ -1273,7 +1273,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseSystemsSystemIdOk**](GetUniverseSystemsSystemIdOk.md)
+[**System**](System.md)
 
 ### Authorization
 
@@ -1341,7 +1341,7 @@ No authorization required
 
 
 # **get_universe_type_by_id**
-> GetUniverseTypesTypeIdOk get_universe_type_by_id(type_id, opts)
+> UniverseType get_universe_type_by_id(type_id, opts)
 
 Get type information
 
@@ -1384,7 +1384,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseTypesTypeIdOk**](GetUniverseTypesTypeIdOk.md)
+[**UniverseType**](UniverseType.md)
 
 ### Authorization
 
@@ -1398,7 +1398,7 @@ No authorization required
 
 
 # **lookup_id**
-> Array&lt;PostUniverseNames200Ok&gt; lookup_id(ids, opts)
+> Array&lt;IdSummary&gt; lookup_id(ids, opts)
 
 Get names and categories for a set of ID's
 
@@ -1439,7 +1439,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;PostUniverseNames200Ok&gt;**](PostUniverseNames200Ok.md)
+[**Array&lt;IdSummary&gt;**](IdSummary.md)
 
 ### Authorization
 

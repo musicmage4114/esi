@@ -1,4 +1,4 @@
-# SwaggerClient::GetDogmaEffectsEffectIdInternalServerError
+# SwaggerClient::GetDogmaEffectByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

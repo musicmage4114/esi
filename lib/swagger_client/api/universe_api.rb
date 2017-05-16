@@ -26,7 +26,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetUniverseBloodlines200Ok>]
+    # @return [Array<Bloodline>]
     def get_bloodlines(opts = {})
       data, _status_code, _headers = get_bloodlines_with_http_info(opts)
       return data
@@ -39,7 +39,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetUniverseBloodlines200Ok>, Fixnum, Hash)>] Array<GetUniverseBloodlines200Ok> data, response status code and response headers
+    # @return [Array<(Array<Bloodline>, Fixnum, Hash)>] Array<Bloodline> data, response status code and response headers
     def get_bloodlines_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_bloodlines ..."
@@ -77,7 +77,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetUniverseBloodlines200Ok>')
+        :return_type => 'Array<Bloodline>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_bloodlines\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -151,7 +151,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseCategoriesCategoryIdOk]
+    # @return [ItemCategory]
     def get_item_category_by_id(category_id, opts = {})
       data, _status_code, _headers = get_item_category_by_id_with_http_info(category_id, opts)
       return data
@@ -165,7 +165,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseCategoriesCategoryIdOk, Fixnum, Hash)>] GetUniverseCategoriesCategoryIdOk data, response status code and response headers
+    # @return [Array<(ItemCategory, Fixnum, Hash)>] ItemCategory data, response status code and response headers
     def get_item_category_by_id_with_http_info(category_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_item_category_by_id ..."
@@ -205,7 +205,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseCategoriesCategoryIdOk')
+        :return_type => 'ItemCategory')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_item_category_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -279,7 +279,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseConstellationsConstellationIdOk]
+    # @return [Constellation]
     def get_constellation_by_id(constellation_id, opts = {})
       data, _status_code, _headers = get_constellation_by_id_with_http_info(constellation_id, opts)
       return data
@@ -293,7 +293,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseConstellationsConstellationIdOk, Fixnum, Hash)>] GetUniverseConstellationsConstellationIdOk data, response status code and response headers
+    # @return [Array<(Constellation, Fixnum, Hash)>] Constellation data, response status code and response headers
     def get_constellation_by_id_with_http_info(constellation_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_constellation_by_id ..."
@@ -333,7 +333,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseConstellationsConstellationIdOk')
+        :return_type => 'Constellation')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_constellation_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -347,7 +347,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetUniverseFactions200Ok>]
+    # @return [Array<Faction>]
     def get_factions(opts = {})
       data, _status_code, _headers = get_factions_with_http_info(opts)
       return data
@@ -360,7 +360,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetUniverseFactions200Ok>, Fixnum, Hash)>] Array<GetUniverseFactions200Ok> data, response status code and response headers
+    # @return [Array<(Array<Faction>, Fixnum, Hash)>] Array<Faction> data, response status code and response headers
     def get_factions_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_factions ..."
@@ -398,7 +398,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetUniverseFactions200Ok>')
+        :return_type => 'Array<Faction>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_factions\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -471,7 +471,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseGraphicsGraphicIdOk]
+    # @return [GameGraphic]
     def get_game_graphic_by_id(graphic_id, opts = {})
       data, _status_code, _headers = get_game_graphic_by_id_with_http_info(graphic_id, opts)
       return data
@@ -484,7 +484,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseGraphicsGraphicIdOk, Fixnum, Hash)>] GetUniverseGraphicsGraphicIdOk data, response status code and response headers
+    # @return [Array<(GameGraphic, Fixnum, Hash)>] GameGraphic data, response status code and response headers
     def get_game_graphic_by_id_with_http_info(graphic_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_game_graphic_by_id ..."
@@ -520,7 +520,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseGraphicsGraphicIdOk')
+        :return_type => 'GameGraphic')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_game_graphic_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -601,7 +601,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseGroupsGroupIdOk]
+    # @return [ItemGroup]
     def get_item_group_by_id(group_id, opts = {})
       data, _status_code, _headers = get_item_group_by_id_with_http_info(group_id, opts)
       return data
@@ -615,7 +615,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseGroupsGroupIdOk, Fixnum, Hash)>] GetUniverseGroupsGroupIdOk data, response status code and response headers
+    # @return [Array<(ItemGroup, Fixnum, Hash)>] ItemGroup data, response status code and response headers
     def get_item_group_by_id_with_http_info(group_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_item_group_by_id ..."
@@ -655,7 +655,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseGroupsGroupIdOk')
+        :return_type => 'ItemGroup')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_item_group_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -669,7 +669,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseMoonsMoonIdOk]
+    # @return [Moon]
     def get_moon_by_id(moon_id, opts = {})
       data, _status_code, _headers = get_moon_by_id_with_http_info(moon_id, opts)
       return data
@@ -682,7 +682,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseMoonsMoonIdOk, Fixnum, Hash)>] GetUniverseMoonsMoonIdOk data, response status code and response headers
+    # @return [Array<(Moon, Fixnum, Hash)>] Moon data, response status code and response headers
     def get_moon_by_id_with_http_info(moon_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_moon_by_id ..."
@@ -718,7 +718,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseMoonsMoonIdOk')
+        :return_type => 'Moon')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_moon_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -732,7 +732,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniversePlanetsPlanetIdOk]
+    # @return [Planet]
     def get_planet_by_id(planet_id, opts = {})
       data, _status_code, _headers = get_planet_by_id_with_http_info(planet_id, opts)
       return data
@@ -745,7 +745,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniversePlanetsPlanetIdOk, Fixnum, Hash)>] GetUniversePlanetsPlanetIdOk data, response status code and response headers
+    # @return [Array<(Planet, Fixnum, Hash)>] Planet data, response status code and response headers
     def get_planet_by_id_with_http_info(planet_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_planet_by_id ..."
@@ -781,7 +781,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniversePlanetsPlanetIdOk')
+        :return_type => 'Planet')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_planet_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -795,7 +795,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetUniverseRaces200Ok>]
+    # @return [Array<Race>]
     def get_races(opts = {})
       data, _status_code, _headers = get_races_with_http_info(opts)
       return data
@@ -808,7 +808,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetUniverseRaces200Ok>, Fixnum, Hash)>] Array<GetUniverseRaces200Ok> data, response status code and response headers
+    # @return [Array<(Array<Race>, Fixnum, Hash)>] Array<Race> data, response status code and response headers
     def get_races_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_races ..."
@@ -846,7 +846,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetUniverseRaces200Ok>')
+        :return_type => 'Array<Race>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_races\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -920,7 +920,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseRegionsRegionIdOk]
+    # @return [Region]
     def get_region_by_id(region_id, opts = {})
       data, _status_code, _headers = get_region_by_id_with_http_info(region_id, opts)
       return data
@@ -934,7 +934,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseRegionsRegionIdOk, Fixnum, Hash)>] GetUniverseRegionsRegionIdOk data, response status code and response headers
+    # @return [Array<(Region, Fixnum, Hash)>] Region data, response status code and response headers
     def get_region_by_id_with_http_info(region_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_region_by_id ..."
@@ -974,7 +974,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseRegionsRegionIdOk')
+        :return_type => 'Region')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_region_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -988,7 +988,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseStargatesStargateIdOk]
+    # @return [Stargate]
     def get_stargate_by_id(stargate_id, opts = {})
       data, _status_code, _headers = get_stargate_by_id_with_http_info(stargate_id, opts)
       return data
@@ -1001,7 +1001,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseStargatesStargateIdOk, Fixnum, Hash)>] GetUniverseStargatesStargateIdOk data, response status code and response headers
+    # @return [Array<(Stargate, Fixnum, Hash)>] Stargate data, response status code and response headers
     def get_stargate_by_id_with_http_info(stargate_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_stargate_by_id ..."
@@ -1037,7 +1037,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseStargatesStargateIdOk')
+        :return_type => 'Stargate')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_stargate_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1051,7 +1051,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseStationsStationIdOk]
+    # @return [Station]
     def get_station_by_id(station_id, opts = {})
       data, _status_code, _headers = get_station_by_id_with_http_info(station_id, opts)
       return data
@@ -1064,7 +1064,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseStationsStationIdOk, Fixnum, Hash)>] GetUniverseStationsStationIdOk data, response status code and response headers
+    # @return [Array<(Station, Fixnum, Hash)>] Station data, response status code and response headers
     def get_station_by_id_with_http_info(station_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_station_by_id ..."
@@ -1100,7 +1100,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseStationsStationIdOk')
+        :return_type => 'Station')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_station_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1174,7 +1174,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseStructuresStructureIdOk]
+    # @return [Structure]
     def get_structure_by_id(structure_id, opts = {})
       data, _status_code, _headers = get_structure_by_id_with_http_info(structure_id, opts)
       return data
@@ -1188,7 +1188,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseStructuresStructureIdOk, Fixnum, Hash)>] GetUniverseStructuresStructureIdOk data, response status code and response headers
+    # @return [Array<(Structure, Fixnum, Hash)>] Structure data, response status code and response headers
     def get_structure_by_id_with_http_info(structure_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_structure_by_id ..."
@@ -1225,7 +1225,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseStructuresStructureIdOk')
+        :return_type => 'Structure')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_structure_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1238,7 +1238,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetUniverseSystemJumps200Ok>]
+    # @return [Array<SystemJumpInfo>]
     def get_system_jumps(opts = {})
       data, _status_code, _headers = get_system_jumps_with_http_info(opts)
       return data
@@ -1250,7 +1250,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetUniverseSystemJumps200Ok>, Fixnum, Hash)>] Array<GetUniverseSystemJumps200Ok> data, response status code and response headers
+    # @return [Array<(Array<SystemJumpInfo>, Fixnum, Hash)>] Array<SystemJumpInfo> data, response status code and response headers
     def get_system_jumps_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_system_jumps ..."
@@ -1284,7 +1284,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetUniverseSystemJumps200Ok>')
+        :return_type => 'Array<SystemJumpInfo>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_system_jumps\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1297,7 +1297,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetUniverseSystemKills200Ok>]
+    # @return [Array<SystemKillsInfo>]
     def get_system_kills(opts = {})
       data, _status_code, _headers = get_system_kills_with_http_info(opts)
       return data
@@ -1309,7 +1309,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetUniverseSystemKills200Ok>, Fixnum, Hash)>] Array<GetUniverseSystemKills200Ok> data, response status code and response headers
+    # @return [Array<(Array<SystemKillsInfo>, Fixnum, Hash)>] Array<SystemKillsInfo> data, response status code and response headers
     def get_system_kills_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_system_kills ..."
@@ -1343,7 +1343,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetUniverseSystemKills200Ok>')
+        :return_type => 'Array<SystemKillsInfo>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_system_kills\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1417,7 +1417,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseSystemsSystemIdOk]
+    # @return [System]
     def get_system_by_id(system_id, opts = {})
       data, _status_code, _headers = get_system_by_id_with_http_info(system_id, opts)
       return data
@@ -1431,7 +1431,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseSystemsSystemIdOk, Fixnum, Hash)>] GetUniverseSystemsSystemIdOk data, response status code and response headers
+    # @return [Array<(System, Fixnum, Hash)>] System data, response status code and response headers
     def get_system_by_id_with_http_info(system_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_system_by_id ..."
@@ -1471,7 +1471,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseSystemsSystemIdOk')
+        :return_type => 'System')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_system_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1552,7 +1552,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetUniverseTypesTypeIdOk]
+    # @return [UniverseType]
     def get_universe_type_by_id(type_id, opts = {})
       data, _status_code, _headers = get_universe_type_by_id_with_http_info(type_id, opts)
       return data
@@ -1566,7 +1566,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetUniverseTypesTypeIdOk, Fixnum, Hash)>] GetUniverseTypesTypeIdOk data, response status code and response headers
+    # @return [Array<(UniverseType, Fixnum, Hash)>] UniverseType data, response status code and response headers
     def get_universe_type_by_id_with_http_info(type_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.get_universe_type_by_id ..."
@@ -1606,7 +1606,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetUniverseTypesTypeIdOk')
+        :return_type => 'UniverseType')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#get_universe_type_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -1620,7 +1620,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<PostUniverseNames200Ok>]
+    # @return [Array<IdSummary>]
     def lookup_id(ids, opts = {})
       data, _status_code, _headers = lookup_id_with_http_info(ids, opts)
       return data
@@ -1633,7 +1633,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<PostUniverseNames200Ok>, Fixnum, Hash)>] Array<PostUniverseNames200Ok> data, response status code and response headers
+    # @return [Array<(Array<IdSummary>, Fixnum, Hash)>] Array<IdSummary> data, response status code and response headers
     def lookup_id_with_http_info(ids, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: UniverseApi.lookup_id ..."
@@ -1669,7 +1669,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<PostUniverseNames200Ok>')
+        :return_type => 'Array<IdSummary>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: UniverseApi#lookup_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

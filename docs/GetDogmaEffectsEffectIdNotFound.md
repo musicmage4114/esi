@@ -1,4 +1,4 @@
-# SwaggerClient::GetDogmaEffectsEffectIdNotFound
+# SwaggerClient::GetDogmaEffectByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

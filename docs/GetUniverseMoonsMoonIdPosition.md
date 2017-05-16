@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseMoonsMoonIdPosition
+# SwaggerClient::Coordinate
 
 ## Properties
 Name | Type | Description | Notes

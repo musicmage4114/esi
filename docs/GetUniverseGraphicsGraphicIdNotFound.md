@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseGraphicsGraphicIdNotFound
+# SwaggerClient::GetGameGraphicByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

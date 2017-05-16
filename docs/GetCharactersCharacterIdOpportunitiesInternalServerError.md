@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdOpportunitiesInternalServerError
+# SwaggerClient::GetCompletedOpportunitiesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

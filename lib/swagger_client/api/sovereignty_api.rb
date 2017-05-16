@@ -25,7 +25,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetSovereigntyCampaigns200Ok>]
+    # @return [Array<SovereigntyCampaign>]
     def get_sovereignty_campaigns(opts = {})
       data, _status_code, _headers = get_sovereignty_campaigns_with_http_info(opts)
       return data
@@ -37,7 +37,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetSovereigntyCampaigns200Ok>, Fixnum, Hash)>] Array<GetSovereigntyCampaigns200Ok> data, response status code and response headers
+    # @return [Array<(Array<SovereigntyCampaign>, Fixnum, Hash)>] Array<SovereigntyCampaign> data, response status code and response headers
     def get_sovereignty_campaigns_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: SovereigntyApi.get_sovereignty_campaigns ..."
@@ -71,7 +71,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetSovereigntyCampaigns200Ok>')
+        :return_type => 'Array<SovereigntyCampaign>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: SovereigntyApi#get_sovereignty_campaigns\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -84,7 +84,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetSovereigntyMap200Ok>]
+    # @return [Array<SystemSovereignty>]
     def get_sovereignty_map(opts = {})
       data, _status_code, _headers = get_sovereignty_map_with_http_info(opts)
       return data
@@ -96,7 +96,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetSovereigntyMap200Ok>, Fixnum, Hash)>] Array<GetSovereigntyMap200Ok> data, response status code and response headers
+    # @return [Array<(Array<SystemSovereignty>, Fixnum, Hash)>] Array<SystemSovereignty> data, response status code and response headers
     def get_sovereignty_map_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: SovereigntyApi.get_sovereignty_map ..."
@@ -130,7 +130,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetSovereigntyMap200Ok>')
+        :return_type => 'Array<SystemSovereignty>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: SovereigntyApi#get_sovereignty_map\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -143,7 +143,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetSovereigntyStructures200Ok>]
+    # @return [Array<SovereigntyStructure>]
     def get_sovereignty_structures(opts = {})
       data, _status_code, _headers = get_sovereignty_structures_with_http_info(opts)
       return data
@@ -155,7 +155,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetSovereigntyStructures200Ok>, Fixnum, Hash)>] Array<GetSovereigntyStructures200Ok> data, response status code and response headers
+    # @return [Array<(Array<SovereigntyStructure>, Fixnum, Hash)>] Array<SovereigntyStructure> data, response status code and response headers
     def get_sovereignty_structures_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: SovereigntyApi.get_sovereignty_structures ..."
@@ -189,7 +189,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetSovereigntyStructures200Ok>')
+        :return_type => 'Array<SovereigntyStructure>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: SovereigntyApi#get_sovereignty_structures\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

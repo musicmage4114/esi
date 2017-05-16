@@ -1,4 +1,4 @@
-# SwaggerClient::PostUiOpenwindowNewmailNewMail
+# SwaggerClient::NewEvemail
 
 ## Properties
 Name | Type | Description | Notes

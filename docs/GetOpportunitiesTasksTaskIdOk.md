@@ -1,4 +1,4 @@
-# SwaggerClient::GetOpportunitiesTasksTaskIdOk
+# SwaggerClient::OpportunitiesTask
 
 ## Properties
 Name | Type | Description | Notes

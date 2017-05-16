@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseCategoriesCategoryIdNotFound
+# SwaggerClient::GetItemCategoryByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarsWarIdAggressor
+# SwaggerClient::WarAggressor
 
 ## Properties
 Name | Type | Description | Notes

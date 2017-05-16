@@ -39,14 +39,14 @@ describe 'CorporationApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCorporationsCorporationIdOk]
+  # @return [Corporation]
   describe 'get_corporation_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_corporation_alliance_history
+  # unit tests for get_alliance_history
   # Get alliance history
   # Get a list of all the alliances a corporation has been a member of  ---  Alternate route: &#x60;/v1/corporations/{corporation_id}/alliancehistory/&#x60;  Alternate route: &#x60;/legacy/corporations/{corporation_id}/alliancehistory/&#x60;  Alternate route: &#x60;/latest/corporations/{corporation_id}/alliancehistory/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param corporation_id An EVE corporation ID
@@ -54,8 +54,8 @@ describe 'CorporationApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCorporationsCorporationIdAlliancehistory200Ok>]
-  describe 'get_corporation_alliance_history test' do
+  # @return [Array<PastAlliance>]
+  describe 'get_alliance_history test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -69,7 +69,7 @@ describe 'CorporationApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCorporationsCorporationIdIconsOk]
+  # @return [CorporationIcon]
   describe 'get_corporation_icon test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -85,7 +85,7 @@ describe 'CorporationApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCorporationsCorporationIdMembers200Ok>]
+  # @return [Array<CorporationMember>]
   describe 'get_corporation_members test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -101,7 +101,7 @@ describe 'CorporationApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCorporationsCorporationIdRoles200Ok>]
+  # @return [Array<CorporationMemberRole>]
   describe 'get_corporation_roles test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -119,14 +119,14 @@ describe 'CorporationApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCorporationsCorporationIdStructures200Ok>]
+  # @return [Array<CorporationStructure>]
   describe 'get_corporation_structures test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_corporation_names
+  # unit tests for get_corporation_name
   # Get corporation names
   # Resolve a set of corporation IDs to corporation names  ---  Alternate route: &#x60;/v1/corporations/names/&#x60;  Alternate route: &#x60;/legacy/corporations/names/&#x60;  Alternate route: &#x60;/latest/corporations/names/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param corporation_ids A comma separated list of corporation IDs
@@ -134,8 +134,8 @@ describe 'CorporationApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCorporationsNames200Ok>]
-  describe 'get_corporation_names test' do
+  # @return [Array<CorporationName>]
+  describe 'get_corporation_name test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

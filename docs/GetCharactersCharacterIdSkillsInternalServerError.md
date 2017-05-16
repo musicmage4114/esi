@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdSkillsInternalServerError
+# SwaggerClient::GetCharacterSkillsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

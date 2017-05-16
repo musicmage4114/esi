@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdStructuresService
+# SwaggerClient::StructureService
 
 ## Properties
 Name | Type | Description | Notes

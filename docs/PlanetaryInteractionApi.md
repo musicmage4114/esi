@@ -6,11 +6,11 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_colonies**](PlanetaryInteractionApi.md#get_colonies) | **GET** /characters/{character_id}/planets/ | Get colonies
 [**get_colony**](PlanetaryInteractionApi.md#get_colony) | **GET** /characters/{character_id}/planets/{planet_id}/ | Get colony layout
-[**get_schematic_by_id**](PlanetaryInteractionApi.md#get_schematic_by_id) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
+[**get_schematic**](PlanetaryInteractionApi.md#get_schematic) | **GET** /universe/schematics/{schematic_id}/ | Get schematic information
 
 
 # **get_colonies**
-> Array&lt;GetCharactersCharacterIdPlanets200Ok&gt; get_colonies(character_id, opts)
+> Array&lt;Colony&gt; get_colonies(character_id, opts)
 
 Get colonies
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdPlanets200Ok&gt;**](GetCharactersCharacterIdPlanets200Ok.md)
+[**Array&lt;Colony&gt;**](Colony.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 
 # **get_colony**
-> GetCharactersCharacterIdPlanetsPlanetIdOk get_colony(character_id, planet_id, opts)
+> ColonyDetail get_colony(character_id, planet_id, opts)
 
 Get colony layout
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdPlanetsPlanetIdOk**](GetCharactersCharacterIdPlanetsPlanetIdOk.md)
+[**ColonyDetail**](ColonyDetail.md)
 
 ### Authorization
 
@@ -136,8 +136,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_schematic_by_id**
-> GetUniverseSchematicsSchematicIdOk get_schematic_by_id(schematic_id, opts)
+# **get_schematic**
+> Schematic get_schematic(schematic_id, opts)
 
 Get schematic information
 
@@ -160,10 +160,10 @@ opts = {
 
 begin
   #Get schematic information
-  result = api_instance.get_schematic_by_id(schematic_id, opts)
+  result = api_instance.get_schematic(schematic_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling PlanetaryInteractionApi->get_schematic_by_id: #{e}"
+  puts "Exception when calling PlanetaryInteractionApi->get_schematic: #{e}"
 end
 ```
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUniverseSchematicsSchematicIdOk**](GetUniverseSchematicsSchematicIdOk.md)
+[**Schematic**](Schematic.md)
 
 ### Authorization
 

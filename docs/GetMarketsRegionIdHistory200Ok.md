@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsRegionIdHistory200Ok
+# SwaggerClient::RegionPriceHistory
 
 ## Properties
 Name | Type | Description | Notes

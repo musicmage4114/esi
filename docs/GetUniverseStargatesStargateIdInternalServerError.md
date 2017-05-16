@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStargatesStargateIdInternalServerError
+# SwaggerClient::GetStargateByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

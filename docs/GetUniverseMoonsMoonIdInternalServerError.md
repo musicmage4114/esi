@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseMoonsMoonIdInternalServerError
+# SwaggerClient::GetMoonByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

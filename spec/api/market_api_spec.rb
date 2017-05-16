@@ -40,7 +40,7 @@ describe 'MarketApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdOrders200Ok>]
+  # @return [Array<PersonalMarketOrder>]
   describe 'get_character_market_orders test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -70,7 +70,7 @@ describe 'MarketApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetMarketsGroupsMarketGroupIdOk]
+  # @return [MarketGroup]
   describe 'get_market_group_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -84,14 +84,14 @@ describe 'MarketApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetMarketsPrices200Ok>]
+  # @return [Array<MarketPrice>]
   describe 'get_market_prices test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_region_market_history_by_id
+  # unit tests for get_market_history_by_id
   # List historical market statistics in a region
   # Return a list of historical market statistics for the specified type in a region  ---  Alternate route: &#x60;/v1/markets/{region_id}/history/&#x60;  Alternate route: &#x60;/legacy/markets/{region_id}/history/&#x60;  Alternate route: &#x60;/latest/markets/{region_id}/history/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param region_id Return statistics in this region
@@ -100,8 +100,8 @@ describe 'MarketApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetMarketsRegionIdHistory200Ok>]
-  describe 'get_region_market_history_by_id test' do
+  # @return [Array<RegionPriceHistory>]
+  describe 'get_market_history_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -118,7 +118,7 @@ describe 'MarketApi' do
   # @option opts [Integer] :type_id Return orders only for this type
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetMarketsRegionIdOrders200Ok>]
+  # @return [Array<ViewableMarketOrder>]
   describe 'get_region_market_orders test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -135,7 +135,7 @@ describe 'MarketApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetMarketsStructuresStructureId200Ok>]
+  # @return [Array<ViewableMarketOrder>]
   describe 'get_structure_market_orders test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

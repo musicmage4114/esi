@@ -31,8 +31,8 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<Integer>]
-    def set_route(destination, origin, opts = {})
-      data, _status_code, _headers = set_route_with_http_info(destination, origin, opts)
+    def get_route(destination, origin, opts = {})
+      data, _status_code, _headers = get_route_with_http_info(destination, origin, opts)
       return data
     end
 
@@ -48,20 +48,20 @@ module SwaggerClient
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
     # @return [Array<(Array<Integer>, Fixnum, Hash)>] Array<Integer> data, response status code and response headers
-    def set_route_with_http_info(destination, origin, opts = {})
+    def get_route_with_http_info(destination, origin, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: RoutesApi.set_route ..."
+        @api_client.config.logger.debug "Calling API: RoutesApi.get_route ..."
       end
       # verify the required parameter 'destination' is set
-      fail ArgumentError, "Missing the required parameter 'destination' when calling RoutesApi.set_route" if destination.nil?
+      fail ArgumentError, "Missing the required parameter 'destination' when calling RoutesApi.get_route" if destination.nil?
       # verify the required parameter 'origin' is set
-      fail ArgumentError, "Missing the required parameter 'origin' when calling RoutesApi.set_route" if origin.nil?
+      fail ArgumentError, "Missing the required parameter 'origin' when calling RoutesApi.get_route" if origin.nil?
       if !opts[:'avoid'].nil? && opts[:'avoid'].length > 100
-        fail ArgumentError, 'invalid value for "opts[:"avoid"]" when calling RoutesApi.set_route, number of items must be less than or equal to 100.'
+        fail ArgumentError, 'invalid value for "opts[:"avoid"]" when calling RoutesApi.get_route, number of items must be less than or equal to 100.'
       end
 
       if !opts[:'connections'].nil? && opts[:'connections'].length > 100
-        fail ArgumentError, 'invalid value for "opts[:"connections"]" when calling RoutesApi.set_route, number of items must be less than or equal to 100.'
+        fail ArgumentError, 'invalid value for "opts[:"connections"]" when calling RoutesApi.get_route, number of items must be less than or equal to 100.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -101,7 +101,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'Array<Integer>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: RoutesApi#set_route\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: RoutesApi#get_route\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

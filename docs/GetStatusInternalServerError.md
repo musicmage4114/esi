@@ -1,4 +1,4 @@
-# SwaggerClient::GetStatusInternalServerError
+# SwaggerClient::GetServerStatusInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

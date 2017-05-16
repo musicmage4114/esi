@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdShipOk
+# SwaggerClient::CurrentShip
 
 ## Properties
 Name | Type | Description | Notes

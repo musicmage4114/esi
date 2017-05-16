@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_character_location**
-> GetCharactersCharacterIdLocationOk get_character_location(character_id, opts)
+> CharacterLocation get_character_location(character_id, opts)
 
 Get character location
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdLocationOk**](GetCharactersCharacterIdLocationOk.md)
+[**CharacterLocation**](CharacterLocation.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 
 
 # **get_current_ship**
-> GetCharactersCharacterIdShipOk get_current_ship(character_id, opts)
+> CurrentShip get_current_ship(character_id, opts)
 
 Get current ship
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdShipOk**](GetCharactersCharacterIdShipOk.md)
+[**CurrentShip**](CurrentShip.md)
 
 ### Authorization
 

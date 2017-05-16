@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniversePlanetsPlanetIdNotFound
+# SwaggerClient::GetPlanetByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMailMailIdRecipient
+# SwaggerClient::MailRecipient
 
 ## Properties
 Name | Type | Description | Notes

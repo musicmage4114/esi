@@ -42,7 +42,7 @@ describe 'KillmailsApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdKillmailsRecent200Ok>]
+  # @return [Array<KillmailSummary>]
   describe 'get_character_recent_killmails test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -58,7 +58,7 @@ describe 'KillmailsApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetKillmailsKillmailIdKillmailHashOk]
+  # @return [Killmail]
   describe 'get_killmail test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

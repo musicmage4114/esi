@@ -85,7 +85,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetDogmaAttributesAttributeIdOk]
+    # @return [DogmaAttribute]
     def get_dogma_attribute_by_id(attribute_id, opts = {})
       data, _status_code, _headers = get_dogma_attribute_by_id_with_http_info(attribute_id, opts)
       return data
@@ -98,7 +98,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetDogmaAttributesAttributeIdOk, Fixnum, Hash)>] GetDogmaAttributesAttributeIdOk data, response status code and response headers
+    # @return [Array<(DogmaAttribute, Fixnum, Hash)>] DogmaAttribute data, response status code and response headers
     def get_dogma_attribute_by_id_with_http_info(attribute_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: DogmaApi.get_dogma_attribute_by_id ..."
@@ -134,7 +134,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetDogmaAttributesAttributeIdOk')
+        :return_type => 'DogmaAttribute')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: DogmaApi#get_dogma_attribute_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -207,7 +207,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetDogmaEffectsEffectIdOk]
+    # @return [DogmaEffect]
     def get_dogma_effect_by_id(effect_id, opts = {})
       data, _status_code, _headers = get_dogma_effect_by_id_with_http_info(effect_id, opts)
       return data
@@ -220,7 +220,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetDogmaEffectsEffectIdOk, Fixnum, Hash)>] GetDogmaEffectsEffectIdOk data, response status code and response headers
+    # @return [Array<(DogmaEffect, Fixnum, Hash)>] DogmaEffect data, response status code and response headers
     def get_dogma_effect_by_id_with_http_info(effect_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: DogmaApi.get_dogma_effect_by_id ..."
@@ -256,7 +256,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetDogmaEffectsEffectIdOk')
+        :return_type => 'DogmaEffect')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: DogmaApi#get_dogma_effect_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

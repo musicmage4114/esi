@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStargatesStargateIdNotFound
+# SwaggerClient::GetStargateByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

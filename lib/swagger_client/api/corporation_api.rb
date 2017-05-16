@@ -26,7 +26,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCorporationsCorporationIdOk]
+    # @return [Corporation]
     def get_corporation_by_id(corporation_id, opts = {})
       data, _status_code, _headers = get_corporation_by_id_with_http_info(corporation_id, opts)
       return data
@@ -39,7 +39,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCorporationsCorporationIdOk, Fixnum, Hash)>] GetCorporationsCorporationIdOk data, response status code and response headers
+    # @return [Array<(Corporation, Fixnum, Hash)>] Corporation data, response status code and response headers
     def get_corporation_by_id_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_by_id ..."
@@ -75,7 +75,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCorporationsCorporationIdOk')
+        :return_type => 'Corporation')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CorporationApi#get_corporation_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -89,9 +89,9 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCorporationsCorporationIdAlliancehistory200Ok>]
-    def get_corporation_alliance_history(corporation_id, opts = {})
-      data, _status_code, _headers = get_corporation_alliance_history_with_http_info(corporation_id, opts)
+    # @return [Array<PastAlliance>]
+    def get_alliance_history(corporation_id, opts = {})
+      data, _status_code, _headers = get_alliance_history_with_http_info(corporation_id, opts)
       return data
     end
 
@@ -102,13 +102,13 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCorporationsCorporationIdAlliancehistory200Ok>, Fixnum, Hash)>] Array<GetCorporationsCorporationIdAlliancehistory200Ok> data, response status code and response headers
-    def get_corporation_alliance_history_with_http_info(corporation_id, opts = {})
+    # @return [Array<(Array<PastAlliance>, Fixnum, Hash)>] Array<PastAlliance> data, response status code and response headers
+    def get_alliance_history_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_alliance_history ..."
+        @api_client.config.logger.debug "Calling API: CorporationApi.get_alliance_history ..."
       end
       # verify the required parameter 'corporation_id' is set
-      fail ArgumentError, "Missing the required parameter 'corporation_id' when calling CorporationApi.get_corporation_alliance_history" if corporation_id.nil?
+      fail ArgumentError, "Missing the required parameter 'corporation_id' when calling CorporationApi.get_alliance_history" if corporation_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -138,9 +138,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCorporationsCorporationIdAlliancehistory200Ok>')
+        :return_type => 'Array<PastAlliance>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CorporationApi#get_corporation_alliance_history\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CorporationApi#get_alliance_history\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -152,7 +152,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCorporationsCorporationIdIconsOk]
+    # @return [CorporationIcon]
     def get_corporation_icon(corporation_id, opts = {})
       data, _status_code, _headers = get_corporation_icon_with_http_info(corporation_id, opts)
       return data
@@ -165,7 +165,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCorporationsCorporationIdIconsOk, Fixnum, Hash)>] GetCorporationsCorporationIdIconsOk data, response status code and response headers
+    # @return [Array<(CorporationIcon, Fixnum, Hash)>] CorporationIcon data, response status code and response headers
     def get_corporation_icon_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_icon ..."
@@ -201,7 +201,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCorporationsCorporationIdIconsOk')
+        :return_type => 'CorporationIcon')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CorporationApi#get_corporation_icon\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -216,7 +216,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCorporationsCorporationIdMembers200Ok>]
+    # @return [Array<CorporationMember>]
     def get_corporation_members(corporation_id, opts = {})
       data, _status_code, _headers = get_corporation_members_with_http_info(corporation_id, opts)
       return data
@@ -230,7 +230,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCorporationsCorporationIdMembers200Ok>, Fixnum, Hash)>] Array<GetCorporationsCorporationIdMembers200Ok> data, response status code and response headers
+    # @return [Array<(Array<CorporationMember>, Fixnum, Hash)>] Array<CorporationMember> data, response status code and response headers
     def get_corporation_members_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_members ..."
@@ -267,7 +267,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCorporationsCorporationIdMembers200Ok>')
+        :return_type => 'Array<CorporationMember>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CorporationApi#get_corporation_members\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -282,7 +282,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCorporationsCorporationIdRoles200Ok>]
+    # @return [Array<CorporationMemberRole>]
     def get_corporation_roles(corporation_id, opts = {})
       data, _status_code, _headers = get_corporation_roles_with_http_info(corporation_id, opts)
       return data
@@ -296,7 +296,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCorporationsCorporationIdRoles200Ok>, Fixnum, Hash)>] Array<GetCorporationsCorporationIdRoles200Ok> data, response status code and response headers
+    # @return [Array<(Array<CorporationMemberRole>, Fixnum, Hash)>] Array<CorporationMemberRole> data, response status code and response headers
     def get_corporation_roles_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_roles ..."
@@ -333,7 +333,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCorporationsCorporationIdRoles200Ok>')
+        :return_type => 'Array<CorporationMemberRole>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CorporationApi#get_corporation_roles\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -350,7 +350,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCorporationsCorporationIdStructures200Ok>]
+    # @return [Array<CorporationStructure>]
     def get_corporation_structures(corporation_id, opts = {})
       data, _status_code, _headers = get_corporation_structures_with_http_info(corporation_id, opts)
       return data
@@ -366,7 +366,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCorporationsCorporationIdStructures200Ok>, Fixnum, Hash)>] Array<GetCorporationsCorporationIdStructures200Ok> data, response status code and response headers
+    # @return [Array<(Array<CorporationStructure>, Fixnum, Hash)>] Array<CorporationStructure> data, response status code and response headers
     def get_corporation_structures_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_structures ..."
@@ -412,7 +412,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCorporationsCorporationIdStructures200Ok>')
+        :return_type => 'Array<CorporationStructure>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CorporationApi#get_corporation_structures\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -426,9 +426,9 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCorporationsNames200Ok>]
-    def get_corporation_names(corporation_ids, opts = {})
-      data, _status_code, _headers = get_corporation_names_with_http_info(corporation_ids, opts)
+    # @return [Array<CorporationName>]
+    def get_corporation_name(corporation_ids, opts = {})
+      data, _status_code, _headers = get_corporation_name_with_http_info(corporation_ids, opts)
       return data
     end
 
@@ -439,15 +439,15 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCorporationsNames200Ok>, Fixnum, Hash)>] Array<GetCorporationsNames200Ok> data, response status code and response headers
-    def get_corporation_names_with_http_info(corporation_ids, opts = {})
+    # @return [Array<(Array<CorporationName>, Fixnum, Hash)>] Array<CorporationName> data, response status code and response headers
+    def get_corporation_name_with_http_info(corporation_ids, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_names ..."
+        @api_client.config.logger.debug "Calling API: CorporationApi.get_corporation_name ..."
       end
       # verify the required parameter 'corporation_ids' is set
-      fail ArgumentError, "Missing the required parameter 'corporation_ids' when calling CorporationApi.get_corporation_names" if corporation_ids.nil?
+      fail ArgumentError, "Missing the required parameter 'corporation_ids' when calling CorporationApi.get_corporation_name" if corporation_ids.nil?
       if corporation_ids.length < 1
-        fail ArgumentError, 'invalid value for "corporation_ids" when calling CorporationApi.get_corporation_names, number of items must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "corporation_ids" when calling CorporationApi.get_corporation_name, number of items must be greater than or equal to 1.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -480,9 +480,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCorporationsNames200Ok>')
+        :return_type => 'Array<CorporationName>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CorporationApi#get_corporation_names\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CorporationApi#get_corporation_name\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

@@ -27,7 +27,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdLocationOk]
+    # @return [CharacterLocation]
     def get_character_location(character_id, opts = {})
       data, _status_code, _headers = get_character_location_with_http_info(character_id, opts)
       return data
@@ -41,7 +41,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdLocationOk, Fixnum, Hash)>] GetCharactersCharacterIdLocationOk data, response status code and response headers
+    # @return [Array<(CharacterLocation, Fixnum, Hash)>] CharacterLocation data, response status code and response headers
     def get_character_location_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: LocationApi.get_character_location ..."
@@ -78,7 +78,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdLocationOk')
+        :return_type => 'CharacterLocation')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: LocationApi#get_character_location\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -93,7 +93,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdShipOk]
+    # @return [CurrentShip]
     def get_current_ship(character_id, opts = {})
       data, _status_code, _headers = get_current_ship_with_http_info(character_id, opts)
       return data
@@ -107,7 +107,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdShipOk, Fixnum, Hash)>] GetCharactersCharacterIdShipOk data, response status code and response headers
+    # @return [Array<(CurrentShip, Fixnum, Hash)>] CurrentShip data, response status code and response headers
     def get_current_ship_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: LocationApi.get_current_ship ..."
@@ -144,7 +144,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdShipOk')
+        :return_type => 'CurrentShip')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: LocationApi#get_current_ship\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

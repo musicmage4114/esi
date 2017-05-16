@@ -1,4 +1,4 @@
-# SwaggerClient::GetOpportunitiesTasksTaskIdInternalServerError
+# SwaggerClient::GetOpportunitiesTaskByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

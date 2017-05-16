@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSystemKillsInternalServerError
+# SwaggerClient::GetSystemKillsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

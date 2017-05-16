@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSystemJumps200Ok
+# SwaggerClient::SystemJumpInfo
 
 ## Properties
 Name | Type | Description | Notes

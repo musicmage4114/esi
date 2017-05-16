@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseBloodlines200Ok
+# SwaggerClient::Bloodline
 
 ## Properties
 Name | Type | Description | Notes

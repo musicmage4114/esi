@@ -4,15 +4,15 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_character_completed_opportunities**](OpportunitiesApi.md#get_character_completed_opportunities) | **GET** /characters/{character_id}/opportunities/ | Get a character&#39;s completed tasks
+[**get_completed_opportunities**](OpportunitiesApi.md#get_completed_opportunities) | **GET** /characters/{character_id}/opportunities/ | Get a character&#39;s completed tasks
 [**get_opportunities_groups**](OpportunitiesApi.md#get_opportunities_groups) | **GET** /opportunities/groups/ | Get opportunities groups
 [**get_opportunities_group_by_id**](OpportunitiesApi.md#get_opportunities_group_by_id) | **GET** /opportunities/groups/{group_id}/ | Get opportunities group
 [**get_opportunities_tasks**](OpportunitiesApi.md#get_opportunities_tasks) | **GET** /opportunities/tasks/ | Get opportunities tasks
 [**get_opportunities_task_by_id**](OpportunitiesApi.md#get_opportunities_task_by_id) | **GET** /opportunities/tasks/{task_id}/ | Get opportunities task
 
 
-# **get_character_completed_opportunities**
-> Array&lt;GetCharactersCharacterIdOpportunities200Ok&gt; get_character_completed_opportunities(character_id, opts)
+# **get_completed_opportunities**
+> Array&lt;CompletedOpportunity&gt; get_completed_opportunities(character_id, opts)
 
 Get a character's completed tasks
 
@@ -41,10 +41,10 @@ opts = {
 
 begin
   #Get a character's completed tasks
-  result = api_instance.get_character_completed_opportunities(character_id, opts)
+  result = api_instance.get_completed_opportunities(character_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling OpportunitiesApi->get_character_completed_opportunities: #{e}"
+  puts "Exception when calling OpportunitiesApi->get_completed_opportunities: #{e}"
 end
 ```
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdOpportunities200Ok&gt;**](GetCharactersCharacterIdOpportunities200Ok.md)
+[**Array&lt;CompletedOpportunity&gt;**](CompletedOpportunity.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 
 
 # **get_opportunities_group_by_id**
-> GetOpportunitiesGroupsGroupIdOk get_opportunities_group_by_id(group_id, opts)
+> OpportunitiesGroup get_opportunities_group_by_id(group_id, opts)
 
 Get opportunities group
 
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetOpportunitiesGroupsGroupIdOk**](GetOpportunitiesGroupsGroupIdOk.md)
+[**OpportunitiesGroup**](OpportunitiesGroup.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ No authorization required
 
 
 # **get_opportunities_task_by_id**
-> GetOpportunitiesTasksTaskIdOk get_opportunities_task_by_id(task_id, opts)
+> OpportunitiesTask get_opportunities_task_by_id(task_id, opts)
 
 Get opportunities task
 
@@ -276,7 +276,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetOpportunitiesTasksTaskIdOk**](GetOpportunitiesTasksTaskIdOk.md)
+[**OpportunitiesTask**](OpportunitiesTask.md)
 
 ### Authorization
 

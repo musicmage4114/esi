@@ -1,4 +1,4 @@
-# SwaggerClient::GetLoyaltyStoresCorporationIdOffers200Ok
+# SwaggerClient::LoyaltyOffer
 
 ## Properties
 Name | Type | Description | Notes
@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **lp_cost** | **Integer** | lp_cost integer | 
 **offer_id** | **Integer** | offer_id integer | 
 **quantity** | **Integer** | quantity integer | 
-**required_items** | [**Array&lt;GetLoyaltyStoresCorporationIdOffersRequiredItem&gt;**](GetLoyaltyStoresCorporationIdOffersRequiredItem.md) | required_items array | 
+**required_items** | [**Array&lt;LoyaltyRequiredItem&gt;**](LoyaltyRequiredItem.md) | required_items array | 
 **type_id** | **Integer** | type_id integer | 
 
 

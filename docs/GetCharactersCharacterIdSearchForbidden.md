@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdSearchForbidden
+# SwaggerClient::CharacterSearchByStringForbidden
 
 ## Properties
 Name | Type | Description | Notes

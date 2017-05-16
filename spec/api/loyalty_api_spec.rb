@@ -40,7 +40,7 @@ describe 'LoyaltyApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdLoyaltyPoints200Ok>]
+  # @return [Array<LoyaltyPointsAmount>]
   describe 'get_loyalty_points test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -55,7 +55,7 @@ describe 'LoyaltyApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetLoyaltyStoresCorporationIdOffers200Ok>]
+  # @return [Array<LoyaltyOffer>]
   describe 'get_loyalty_store_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

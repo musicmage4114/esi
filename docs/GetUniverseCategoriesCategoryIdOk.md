@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseCategoriesCategoryIdOk
+# SwaggerClient::ItemCategory
 
 ## Properties
 Name | Type | Description | Notes

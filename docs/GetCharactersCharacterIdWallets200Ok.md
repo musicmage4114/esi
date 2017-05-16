@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdWallets200Ok
+# SwaggerClient::Wallet
 
 ## Properties
 Name | Type | Description | Notes

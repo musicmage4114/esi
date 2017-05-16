@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseBloodlinesInternalServerError
+# SwaggerClient::GetBloodlinesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

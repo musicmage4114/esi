@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMedalsInternalServerError
+# SwaggerClient::GetCharacterMedalsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

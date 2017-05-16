@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **get_sovereignty_campaigns**
-> Array&lt;GetSovereigntyCampaigns200Ok&gt; get_sovereignty_campaigns(opts)
+> Array&lt;SovereigntyCampaign&gt; get_sovereignty_campaigns(opts)
 
 List sovereignty campaigns
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetSovereigntyCampaigns200Ok&gt;**](GetSovereigntyCampaigns200Ok.md)
+[**Array&lt;SovereigntyCampaign&gt;**](SovereigntyCampaign.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ No authorization required
 
 
 # **get_sovereignty_map**
-> Array&lt;GetSovereigntyMap200Ok&gt; get_sovereignty_map(opts)
+> Array&lt;SystemSovereignty&gt; get_sovereignty_map(opts)
 
 List sovereignty of systems
 
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetSovereigntyMap200Ok&gt;**](GetSovereigntyMap200Ok.md)
+[**Array&lt;SystemSovereignty&gt;**](SystemSovereignty.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ No authorization required
 
 
 # **get_sovereignty_structures**
-> Array&lt;GetSovereigntyStructures200Ok&gt; get_sovereignty_structures(opts)
+> Array&lt;SovereigntyStructure&gt; get_sovereignty_structures(opts)
 
 List sovereignty structures
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetSovereigntyStructures200Ok&gt;**](GetSovereigntyStructures200Ok.md)
+[**Array&lt;SovereigntyStructure&gt;**](SovereigntyStructure.md)
 
 ### Authorization
 

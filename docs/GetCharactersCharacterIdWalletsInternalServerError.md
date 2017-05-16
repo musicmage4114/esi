@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdWalletsInternalServerError
+# SwaggerClient::GetWalletsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

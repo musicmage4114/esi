@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdMembersMemberIdMovement
+# SwaggerClient::FleetMemberMovement
 
 ## Properties
 Name | Type | Description | Notes

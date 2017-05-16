@@ -63,7 +63,7 @@ No authorization required
 
 
 # **get_dogma_attribute_by_id**
-> GetDogmaAttributesAttributeIdOk get_dogma_attribute_by_id(attribute_id, opts)
+> DogmaAttribute get_dogma_attribute_by_id(attribute_id, opts)
 
 Get attribute information
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetDogmaAttributesAttributeIdOk**](GetDogmaAttributesAttributeIdOk.md)
+[**DogmaAttribute**](DogmaAttribute.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ No authorization required
 
 
 # **get_dogma_effect_by_id**
-> GetDogmaEffectsEffectIdOk get_dogma_effect_by_id(effect_id, opts)
+> DogmaEffect get_dogma_effect_by_id(effect_id, opts)
 
 Get effect information
 
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetDogmaEffectsEffectIdOk**](GetDogmaEffectsEffectIdOk.md)
+[**DogmaEffect**](DogmaEffect.md)
 
 ### Authorization
 

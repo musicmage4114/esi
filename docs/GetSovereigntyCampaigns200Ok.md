@@ -1,4 +1,4 @@
-# SwaggerClient::GetSovereigntyCampaigns200Ok
+# SwaggerClient::SovereigntyCampaign
 
 ## Properties
 Name | Type | Description | Notes
@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **defender_id** | **Integer** | Defending alliance, only present in Defense Events  | [optional] 
 **defender_score** | **Float** | Score for the defending alliance, only present in Defense Events.  | [optional] 
 **event_type** | **String** | Type of event this campaign is for. tcu_defense, ihub_defense and station_defense are referred to as \&quot;Defense Events\&quot;, station_freeport as \&quot;Freeport Events\&quot;.  | 
-**participants** | [**Array&lt;GetSovereigntyCampaignsParticipant&gt;**](GetSovereigntyCampaignsParticipant.md) | Alliance participating and their respective scores, only present in Freeport Events.  | [optional] 
+**participants** | [**Array&lt;CampaignAlliance&gt;**](CampaignAlliance.md) | Alliance participating and their respective scores, only present in Freeport Events.  | [optional] 
 **solar_system_id** | **Integer** | The solar system the structure is located in.  | 
 **start_time** | **DateTime** | Time the event is scheduled to start.  | 
 **structure_id** | **Integer** | The structure item ID that is related to this campaign.  | 

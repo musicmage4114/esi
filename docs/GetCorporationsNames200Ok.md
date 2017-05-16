@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsNames200Ok
+# SwaggerClient::CorporationName
 
 ## Properties
 Name | Type | Description | Notes

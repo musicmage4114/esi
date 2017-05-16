@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdIconsOk
+# SwaggerClient::CorporationIcon
 
 ## Properties
 Name | Type | Description | Notes

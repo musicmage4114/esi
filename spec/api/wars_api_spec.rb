@@ -54,7 +54,7 @@ describe 'WarsApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetWarsWarIdOk]
+  # @return [War]
   describe 'get_war_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -70,7 +70,7 @@ describe 'WarsApi' do
   # @option opts [Integer] :page Which page to query, starting at 1, 2000 killmails per page.
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetWarsWarIdKillmails200Ok>]
+  # @return [Array<KillmailSummary>]
   describe 'get_war_killmails test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

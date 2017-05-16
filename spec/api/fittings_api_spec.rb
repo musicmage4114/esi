@@ -70,11 +70,11 @@ describe 'FittingsApi' do
   # @param character_id ID for a character
   # @param [Hash] opts the optional parameters
   # @option opts [String] :datasource The server name you would like data from
-  # @option opts [PostCharactersCharacterIdFittingsFitting] :fitting Details about the new fitting
+  # @option opts [NewFitting] :fitting Details about the new fitting
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [PostCharactersCharacterIdFittingsCreated]
+  # @return [CreatedFitting]
   describe 'add_fitting test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

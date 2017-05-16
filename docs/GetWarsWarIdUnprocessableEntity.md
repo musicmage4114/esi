@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarsWarIdUnprocessableEntity
+# SwaggerClient::GetWarByIdUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdOrdersInternalServerError
+# SwaggerClient::GetCharacterMarketOrdersInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMedals200Ok
+# SwaggerClient::CharacterMedal
 
 ## Properties
 Name | Type | Description | Notes
@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **corporation_id** | **Integer** | corporation_id integer | 
 **date** | **DateTime** | date string | 
 **description** | **String** | description string | 
-**graphics** | [**Array&lt;GetCharactersCharacterIdMedalsGraphic&gt;**](GetCharactersCharacterIdMedalsGraphic.md) | graphics array | 
+**graphics** | [**Array&lt;MedalGraphic&gt;**](MedalGraphic.md) | graphics array | 
 **issuer_id** | **Integer** | issuer_id integer | 
 **medal_id** | **Integer** | medal_id integer | 
 **reason** | **String** | reason string | 

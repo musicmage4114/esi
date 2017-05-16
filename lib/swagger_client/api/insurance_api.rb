@@ -26,7 +26,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetInsurancePrices200Ok>]
+    # @return [Array<ShipInsurance>]
     def get_insurance_prices(opts = {})
       data, _status_code, _headers = get_insurance_prices_with_http_info(opts)
       return data
@@ -39,7 +39,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetInsurancePrices200Ok>, Fixnum, Hash)>] Array<GetInsurancePrices200Ok> data, response status code and response headers
+    # @return [Array<(Array<ShipInsurance>, Fixnum, Hash)>] Array<ShipInsurance> data, response status code and response headers
     def get_insurance_prices_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: InsuranceApi.get_insurance_prices ..."
@@ -77,7 +77,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetInsurancePrices200Ok>')
+        :return_type => 'Array<ShipInsurance>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: InsuranceApi#get_insurance_prices\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

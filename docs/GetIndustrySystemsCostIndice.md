@@ -1,4 +1,4 @@
-# SwaggerClient::GetIndustrySystemsCostIndice
+# SwaggerClient::IndustryCostIndex
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetInsurancePricesLevel
+# SwaggerClient::InsuranceLevel
 
 ## Properties
 Name | Type | Description | Notes

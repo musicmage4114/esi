@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsPlanetIdRoute
+# SwaggerClient::ColonyRoute
 
 ## Properties
 Name | Type | Description | Notes
@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **quantity** | **Float** | quantity number | 
 **route_id** | **Integer** | route_id integer | 
 **source_pin_id** | **Integer** | source_pin_id integer | 
-**waypoints** | [**Array&lt;GetCharactersCharacterIdPlanetsPlanetIdWaypoint&gt;**](GetCharactersCharacterIdPlanetsPlanetIdWaypoint.md) | waypoints array | [optional] 
+**waypoints** | [**Array&lt;ColonyWaypoint&gt;**](ColonyWaypoint.md) | waypoints array | [optional] 
 
 

@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsStructuresStructureIdForbidden
+# SwaggerClient::GetStructureMarketOrdersForbidden
 
 ## Properties
 Name | Type | Description | Notes

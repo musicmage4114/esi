@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseCategoriesInternalServerError
+# SwaggerClient::GetItemCategoriesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

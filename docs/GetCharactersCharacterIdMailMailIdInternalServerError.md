@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMailMailIdInternalServerError
+# SwaggerClient::ReadMailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

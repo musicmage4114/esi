@@ -76,7 +76,7 @@ describe 'MailApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdMail200Ok>]
+  # @return [Array<EvemailHeader>]
   describe 'get_mail test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -92,7 +92,7 @@ describe 'MailApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCharactersCharacterIdMailLabelsOk]
+  # @return [MailLabel]
   describe 'get_mail_labels test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -108,7 +108,7 @@ describe 'MailApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdMailLists200Ok>]
+  # @return [Array<MailingList>]
   describe 'get_mailing_lists test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -125,7 +125,7 @@ describe 'MailApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCharactersCharacterIdMailMailIdOk]
+  # @return [Evemail]
   describe 'read_mail test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -155,7 +155,7 @@ describe 'MailApi' do
   # @param character_id An EVE character ID
   # @param [Hash] opts the optional parameters
   # @option opts [String] :datasource The server name you would like data from
-  # @option opts [PostCharactersCharacterIdMailLabelsLabel] :label Label to create
+  # @option opts [NewMailLabel] :label Label to create
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent

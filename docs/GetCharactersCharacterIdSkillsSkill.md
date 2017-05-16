@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdSkillsSkill
+# SwaggerClient::CharacterSkill
 
 ## Properties
 Name | Type | Description | Notes

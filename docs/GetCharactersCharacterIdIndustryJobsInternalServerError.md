@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdIndustryJobsInternalServerError
+# SwaggerClient::GetIndustryJobsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdSkillqueue200Ok
+# SwaggerClient::SkillQueueEntry
 
 ## Properties
 Name | Type | Description | Notes

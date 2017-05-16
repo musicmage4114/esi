@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdLocationOk
+# SwaggerClient::CharacterLocation
 
 ## Properties
 Name | Type | Description | Notes

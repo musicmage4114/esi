@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSystemKills200Ok
+# SwaggerClient::SystemKillsInfo
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PutCorporationsCorporationIdStructuresStructureIdNewSchedule
+# SwaggerClient::NewVulnerabilitySchedule
 
 ## Properties
 Name | Type | Description | Notes

@@ -280,7 +280,7 @@ end
 
 api_instance = SwaggerClient::UserInterfaceApi.new
 
-new_mail = SwaggerClient::PostUiOpenwindowNewmailNewMail.new # PostUiOpenwindowNewmailNewMail | The details of mail to create
+new_mail = SwaggerClient::NewEvemail.new # NewEvemail | The details of mail to create
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -301,7 +301,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **new_mail** | [**PostUiOpenwindowNewmailNewMail**](PostUiOpenwindowNewmailNewMail.md)| The details of mail to create | 
+ **new_mail** | [**NewEvemail**](NewEvemail.md)| The details of mail to create | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 

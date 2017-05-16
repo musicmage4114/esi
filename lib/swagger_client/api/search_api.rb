@@ -31,9 +31,9 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdSearchOk]
-    def search_character_by_string(categories, character_id, search, opts = {})
-      data, _status_code, _headers = search_character_by_string_with_http_info(categories, character_id, search, opts)
+    # @return [CharacterSearchResult]
+    def character_search_by_string(categories, character_id, search, opts = {})
+      data, _status_code, _headers = character_search_by_string_with_http_info(categories, character_id, search, opts)
       return data
     end
 
@@ -49,23 +49,23 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdSearchOk, Fixnum, Hash)>] GetCharactersCharacterIdSearchOk data, response status code and response headers
-    def search_character_by_string_with_http_info(categories, character_id, search, opts = {})
+    # @return [Array<(CharacterSearchResult, Fixnum, Hash)>] CharacterSearchResult data, response status code and response headers
+    def character_search_by_string_with_http_info(categories, character_id, search, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: SearchApi.search_character_by_string ..."
+        @api_client.config.logger.debug "Calling API: SearchApi.character_search_by_string ..."
       end
       # verify the required parameter 'categories' is set
-      fail ArgumentError, "Missing the required parameter 'categories' when calling SearchApi.search_character_by_string" if categories.nil?
+      fail ArgumentError, "Missing the required parameter 'categories' when calling SearchApi.character_search_by_string" if categories.nil?
       if categories.length < 1
-        fail ArgumentError, 'invalid value for "categories" when calling SearchApi.search_character_by_string, number of items must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "categories" when calling SearchApi.character_search_by_string, number of items must be greater than or equal to 1.'
       end
 
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling SearchApi.search_character_by_string" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling SearchApi.character_search_by_string" if character_id.nil?
       # verify the required parameter 'search' is set
-      fail ArgumentError, "Missing the required parameter 'search' when calling SearchApi.search_character_by_string" if search.nil?
+      fail ArgumentError, "Missing the required parameter 'search' when calling SearchApi.character_search_by_string" if search.nil?
       if search.to_s.length < 3
-        fail ArgumentError, 'invalid value for "search" when calling SearchApi.search_character_by_string, the character length must be great than or equal to 3.'
+        fail ArgumentError, 'invalid value for "search" when calling SearchApi.character_search_by_string, the character length must be great than or equal to 3.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -105,9 +105,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdSearchOk')
+        :return_type => 'CharacterSearchResult')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: SearchApi#search_character_by_string\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: SearchApi#character_search_by_string\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -122,9 +122,9 @@ module SwaggerClient
     # @option opts [BOOLEAN] :strict Whether the search should be a strict match (default to false)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetSearchOk]
-    def find_entity_by_string(categories, search, opts = {})
-      data, _status_code, _headers = find_entity_by_string_with_http_info(categories, search, opts)
+    # @return [GeneralSearchResult]
+    def search_by_string(categories, search, opts = {})
+      data, _status_code, _headers = search_by_string_with_http_info(categories, search, opts)
       return data
     end
 
@@ -138,21 +138,21 @@ module SwaggerClient
     # @option opts [BOOLEAN] :strict Whether the search should be a strict match
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetSearchOk, Fixnum, Hash)>] GetSearchOk data, response status code and response headers
-    def find_entity_by_string_with_http_info(categories, search, opts = {})
+    # @return [Array<(GeneralSearchResult, Fixnum, Hash)>] GeneralSearchResult data, response status code and response headers
+    def search_by_string_with_http_info(categories, search, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: SearchApi.find_entity_by_string ..."
+        @api_client.config.logger.debug "Calling API: SearchApi.search_by_string ..."
       end
       # verify the required parameter 'categories' is set
-      fail ArgumentError, "Missing the required parameter 'categories' when calling SearchApi.find_entity_by_string" if categories.nil?
+      fail ArgumentError, "Missing the required parameter 'categories' when calling SearchApi.search_by_string" if categories.nil?
       if categories.length < 1
-        fail ArgumentError, 'invalid value for "categories" when calling SearchApi.find_entity_by_string, number of items must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "categories" when calling SearchApi.search_by_string, number of items must be greater than or equal to 1.'
       end
 
       # verify the required parameter 'search' is set
-      fail ArgumentError, "Missing the required parameter 'search' when calling SearchApi.find_entity_by_string" if search.nil?
+      fail ArgumentError, "Missing the required parameter 'search' when calling SearchApi.search_by_string" if search.nil?
       if search.to_s.length < 3
-        fail ArgumentError, 'invalid value for "search" when calling SearchApi.find_entity_by_string, the character length must be great than or equal to 3.'
+        fail ArgumentError, 'invalid value for "search" when calling SearchApi.search_by_string, the character length must be great than or equal to 3.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -191,9 +191,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetSearchOk')
+        :return_type => 'GeneralSearchResult')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: SearchApi#find_entity_by_string\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: SearchApi#search_by_string\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

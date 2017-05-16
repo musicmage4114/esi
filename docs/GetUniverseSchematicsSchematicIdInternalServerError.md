@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSchematicsSchematicIdInternalServerError
+# SwaggerClient::GetSchematicInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

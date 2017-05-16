@@ -1,4 +1,4 @@
-# SwaggerClient::GetLoyaltyStoresCorporationIdOffersRequiredItem
+# SwaggerClient::LoyaltyRequiredItem
 
 ## Properties
 Name | Type | Description | Notes

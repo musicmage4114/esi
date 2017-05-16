@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_loyalty_points**
-> Array&lt;GetCharactersCharacterIdLoyaltyPoints200Ok&gt; get_loyalty_points(character_id, opts)
+> Array&lt;LoyaltyPointsAmount&gt; get_loyalty_points(character_id, opts)
 
 Get loyalty points
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdLoyaltyPoints200Ok&gt;**](GetCharactersCharacterIdLoyaltyPoints200Ok.md)
+[**Array&lt;LoyaltyPointsAmount&gt;**](LoyaltyPointsAmount.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 
 
 # **get_loyalty_store_by_id**
-> Array&lt;GetLoyaltyStoresCorporationIdOffers200Ok&gt; get_loyalty_store_by_id(corporation_id, opts)
+> Array&lt;LoyaltyOffer&gt; get_loyalty_store_by_id(corporation_id, opts)
 
 List loyalty store offers
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetLoyaltyStoresCorporationIdOffers200Ok&gt;**](GetLoyaltyStoresCorporationIdOffers200Ok.md)
+[**Array&lt;LoyaltyOffer&gt;**](LoyaltyOffer.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsRegionIdOrders200Ok
+# SwaggerClient::ViewableMarketOrder
 
 ## Properties
 Name | Type | Description | Notes

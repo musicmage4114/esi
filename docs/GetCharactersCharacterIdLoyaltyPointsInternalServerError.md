@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdLoyaltyPointsInternalServerError
+# SwaggerClient::GetLoyaltyPointsAmountInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

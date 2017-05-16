@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseTypesTypeIdDogmaEffect
+# SwaggerClient::DogmaEffectValue
 
 ## Properties
 Name | Type | Description | Notes

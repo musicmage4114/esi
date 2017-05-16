@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseGraphicsGraphicIdOk
+# SwaggerClient::GameGraphic
 
 ## Properties
 Name | Type | Description | Notes

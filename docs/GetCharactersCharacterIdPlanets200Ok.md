@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPlanets200Ok
+# SwaggerClient::Colony
 
 ## Properties
 Name | Type | Description | Notes

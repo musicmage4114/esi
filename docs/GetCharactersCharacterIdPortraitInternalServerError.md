@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPortraitInternalServerError
+# SwaggerClient::GetCharacterPortraitInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

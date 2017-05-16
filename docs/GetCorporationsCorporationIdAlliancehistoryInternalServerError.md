@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdAlliancehistoryInternalServerError
+# SwaggerClient::GetAllianceHistoryInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

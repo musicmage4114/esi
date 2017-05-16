@@ -1,4 +1,4 @@
-# SwaggerClient::GetSovereigntyCampaignsParticipant
+# SwaggerClient::CampaignAlliance
 
 ## Properties
 Name | Type | Description | Notes

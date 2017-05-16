@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStructuresInternalServerError
+# SwaggerClient::GetPublicStructuresInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

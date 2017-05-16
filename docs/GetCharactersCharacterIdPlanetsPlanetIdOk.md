@@ -1,10 +1,10 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsPlanetIdOk
+# SwaggerClient::ColonyDetail
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**Array&lt;GetCharactersCharacterIdPlanetsPlanetIdLink&gt;**](GetCharactersCharacterIdPlanetsPlanetIdLink.md) | links array | 
-**pins** | [**Array&lt;GetCharactersCharacterIdPlanetsPlanetIdPin&gt;**](GetCharactersCharacterIdPlanetsPlanetIdPin.md) | pins array | 
-**routes** | [**Array&lt;GetCharactersCharacterIdPlanetsPlanetIdRoute&gt;**](GetCharactersCharacterIdPlanetsPlanetIdRoute.md) | routes array | 
+**links** | [**Array&lt;ColonyLink&gt;**](ColonyLink.md) | links array | 
+**pins** | [**Array&lt;ColonyPin&gt;**](ColonyPin.md) | pins array | 
+**routes** | [**Array&lt;ColonyRoute&gt;**](ColonyRoute.md) | routes array | 
 
 

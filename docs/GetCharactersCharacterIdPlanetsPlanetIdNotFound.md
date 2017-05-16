@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsPlanetIdNotFound
+# SwaggerClient::GetColonyNotFound
 
 ## Properties
 Name | Type | Description | Notes

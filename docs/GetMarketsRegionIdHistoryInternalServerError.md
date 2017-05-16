@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsRegionIdHistoryInternalServerError
+# SwaggerClient::GetMarketHistoryByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

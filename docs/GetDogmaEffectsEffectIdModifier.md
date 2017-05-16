@@ -1,4 +1,4 @@
-# SwaggerClient::GetDogmaEffectsEffectIdModifier
+# SwaggerClient::DogmaEffectModifier
 
 ## Properties
 Name | Type | Description | Notes

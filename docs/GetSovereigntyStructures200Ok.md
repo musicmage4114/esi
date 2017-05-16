@@ -1,4 +1,4 @@
-# SwaggerClient::GetSovereigntyStructures200Ok
+# SwaggerClient::SovereigntyStructure
 
 ## Properties
 Name | Type | Description | Notes

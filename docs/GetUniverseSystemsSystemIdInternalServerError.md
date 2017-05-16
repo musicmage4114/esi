@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSystemsSystemIdInternalServerError
+# SwaggerClient::GetSystemByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

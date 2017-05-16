@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdRolesForbidden
+# SwaggerClient::GetCorporationRolesForbidden
 
 ## Properties
 Name | Type | Description | Notes

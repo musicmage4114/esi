@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStargatesStargateIdPosition
+# SwaggerClient::Coordinate
 
 ## Properties
 Name | Type | Description | Notes

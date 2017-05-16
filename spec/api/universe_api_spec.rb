@@ -39,7 +39,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetUniverseBloodlines200Ok>]
+  # @return [Array<Bloodline>]
   describe 'get_bloodlines test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -69,7 +69,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseCategoriesCategoryIdOk]
+  # @return [ItemCategory]
   describe 'get_item_category_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -99,7 +99,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseConstellationsConstellationIdOk]
+  # @return [Constellation]
   describe 'get_constellation_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -114,7 +114,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetUniverseFactions200Ok>]
+  # @return [Array<Faction>]
   describe 'get_factions test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -143,7 +143,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseGraphicsGraphicIdOk]
+  # @return [GameGraphic]
   describe 'get_game_graphic_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -174,7 +174,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseGroupsGroupIdOk]
+  # @return [ItemGroup]
   describe 'get_item_group_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -189,7 +189,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseMoonsMoonIdOk]
+  # @return [Moon]
   describe 'get_moon_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -204,7 +204,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniversePlanetsPlanetIdOk]
+  # @return [Planet]
   describe 'get_planet_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -219,7 +219,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetUniverseRaces200Ok>]
+  # @return [Array<Race>]
   describe 'get_races test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -249,7 +249,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseRegionsRegionIdOk]
+  # @return [Region]
   describe 'get_region_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -264,7 +264,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseStargatesStargateIdOk]
+  # @return [Stargate]
   describe 'get_stargate_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -279,7 +279,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseStationsStationIdOk]
+  # @return [Station]
   describe 'get_station_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -309,7 +309,7 @@ describe 'UniverseApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseStructuresStructureIdOk]
+  # @return [Structure]
   describe 'get_structure_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -323,7 +323,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetUniverseSystemJumps200Ok>]
+  # @return [Array<SystemJumpInfo>]
   describe 'get_system_jumps test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -337,7 +337,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetUniverseSystemKills200Ok>]
+  # @return [Array<SystemKillsInfo>]
   describe 'get_system_kills test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -367,7 +367,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseSystemsSystemIdOk]
+  # @return [System]
   describe 'get_system_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -398,7 +398,7 @@ describe 'UniverseApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseTypesTypeIdOk]
+  # @return [UniverseType]
   describe 'get_universe_type_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -413,7 +413,7 @@ describe 'UniverseApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<PostUniverseNames200Ok>]
+  # @return [Array<IdSummary>]
   describe 'lookup_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

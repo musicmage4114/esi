@@ -8,13 +8,13 @@ Method | HTTP request | Description
 [**get_market_groups**](MarketApi.md#get_market_groups) | **GET** /markets/groups/ | Get item groups
 [**get_market_group_by_id**](MarketApi.md#get_market_group_by_id) | **GET** /markets/groups/{market_group_id}/ | Get item group information
 [**get_market_prices**](MarketApi.md#get_market_prices) | **GET** /markets/prices/ | List market prices
-[**get_region_market_history_by_id**](MarketApi.md#get_region_market_history_by_id) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
+[**get_market_history_by_id**](MarketApi.md#get_market_history_by_id) | **GET** /markets/{region_id}/history/ | List historical market statistics in a region
 [**get_region_market_orders**](MarketApi.md#get_region_market_orders) | **GET** /markets/{region_id}/orders/ | List orders in a region
 [**get_structure_market_orders**](MarketApi.md#get_structure_market_orders) | **GET** /markets/structures/{structure_id}/ | List orders in a structure
 
 
 # **get_character_market_orders**
-> Array&lt;GetCharactersCharacterIdOrders200Ok&gt; get_character_market_orders(character_id, opts)
+> Array&lt;PersonalMarketOrder&gt; get_character_market_orders(character_id, opts)
 
 List orders from a character
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdOrders200Ok&gt;**](GetCharactersCharacterIdOrders200Ok.md)
+[**Array&lt;PersonalMarketOrder&gt;**](PersonalMarketOrder.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ No authorization required
 
 
 # **get_market_group_by_id**
-> GetMarketsGroupsMarketGroupIdOk get_market_group_by_id(market_group_id, opts)
+> MarketGroup get_market_group_by_id(market_group_id, opts)
 
 Get item group information
 
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetMarketsGroupsMarketGroupIdOk**](GetMarketsGroupsMarketGroupIdOk.md)
+[**MarketGroup**](MarketGroup.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ No authorization required
 
 
 # **get_market_prices**
-> Array&lt;GetMarketsPrices200Ok&gt; get_market_prices(opts)
+> Array&lt;MarketPrice&gt; get_market_prices(opts)
 
 List market prices
 
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetMarketsPrices200Ok&gt;**](GetMarketsPrices200Ok.md)
+[**Array&lt;MarketPrice&gt;**](MarketPrice.md)
 
 ### Authorization
 
@@ -236,8 +236,8 @@ No authorization required
 
 
 
-# **get_region_market_history_by_id**
-> Array&lt;GetMarketsRegionIdHistory200Ok&gt; get_region_market_history_by_id(region_id, type_id, opts)
+# **get_market_history_by_id**
+> Array&lt;RegionPriceHistory&gt; get_market_history_by_id(region_id, type_id, opts)
 
 List historical market statistics in a region
 
@@ -262,10 +262,10 @@ opts = {
 
 begin
   #List historical market statistics in a region
-  result = api_instance.get_region_market_history_by_id(region_id, type_id, opts)
+  result = api_instance.get_market_history_by_id(region_id, type_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling MarketApi->get_region_market_history_by_id: #{e}"
+  puts "Exception when calling MarketApi->get_market_history_by_id: #{e}"
 end
 ```
 
@@ -281,7 +281,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetMarketsRegionIdHistory200Ok&gt;**](GetMarketsRegionIdHistory200Ok.md)
+[**Array&lt;RegionPriceHistory&gt;**](RegionPriceHistory.md)
 
 ### Authorization
 
@@ -295,7 +295,7 @@ No authorization required
 
 
 # **get_region_market_orders**
-> Array&lt;GetMarketsRegionIdOrders200Ok&gt; get_region_market_orders(order_type, region_id, opts)
+> Array&lt;ViewableMarketOrder&gt; get_region_market_orders(order_type, region_id, opts)
 
 List orders in a region
 
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetMarketsRegionIdOrders200Ok&gt;**](GetMarketsRegionIdOrders200Ok.md)
+[**Array&lt;ViewableMarketOrder&gt;**](ViewableMarketOrder.md)
 
 ### Authorization
 
@@ -357,7 +357,7 @@ No authorization required
 
 
 # **get_structure_market_orders**
-> Array&lt;GetMarketsStructuresStructureId200Ok&gt; get_structure_market_orders(structure_id, opts)
+> Array&lt;ViewableMarketOrder&gt; get_structure_market_orders(structure_id, opts)
 
 List orders in a structure
 
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetMarketsStructuresStructureId200Ok&gt;**](GetMarketsStructuresStructureId200Ok.md)
+[**Array&lt;ViewableMarketOrder&gt;**](ViewableMarketOrder.md)
 
 ### Authorization
 

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_incursions**
-> Array&lt;GetIncursions200Ok&gt; get_incursions(opts)
+> Array&lt;Incursion&gt; get_incursions(opts)
 
 List incursions
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetIncursions200Ok&gt;**](GetIncursions200Ok.md)
+[**Array&lt;Incursion&gt;**](Incursion.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSystemsSystemIdPosition
+# SwaggerClient::Coordinate
 
 ## Properties
 Name | Type | Description | Notes

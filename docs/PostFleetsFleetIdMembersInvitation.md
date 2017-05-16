@@ -1,4 +1,4 @@
-# SwaggerClient::PostFleetsFleetIdMembersInvitation
+# SwaggerClient::FleetInvitation
 
 ## Properties
 Name | Type | Description | Notes

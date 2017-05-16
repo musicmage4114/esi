@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdOpportunitiesForbidden
+# SwaggerClient::GetCompletedOpportunitiesForbidden
 
 ## Properties
 Name | Type | Description | Notes

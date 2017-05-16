@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdStandings200Ok
+# SwaggerClient::CharacterStanding
 
 ## Properties
 Name | Type | Description | Notes

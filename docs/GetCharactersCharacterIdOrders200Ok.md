@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdOrders200Ok
+# SwaggerClient::PersonalMarketOrder
 
 ## Properties
 Name | Type | Description | Notes

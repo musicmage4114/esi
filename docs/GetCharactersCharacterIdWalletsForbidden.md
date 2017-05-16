@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdWalletsForbidden
+# SwaggerClient::GetWalletsForbidden
 
 ## Properties
 Name | Type | Description | Notes

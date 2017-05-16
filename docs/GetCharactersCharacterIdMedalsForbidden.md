@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMedalsForbidden
+# SwaggerClient::GetCharacterMedalsForbidden
 
 ## Properties
 Name | Type | Description | Notes

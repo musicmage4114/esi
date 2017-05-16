@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdWingsWingIdNaming
+# SwaggerClient::NewWingName
 
 ## Properties
 Name | Type | Description | Notes

@@ -211,7 +211,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [AllianceIcons]
+    # @return [AllianceIcon]
     def get_alliance_icon(alliance_id, opts = {})
       data, _status_code, _headers = get_alliance_icon_with_http_info(alliance_id, opts)
       return data
@@ -224,7 +224,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(AllianceIcons, Fixnum, Hash)>] AllianceIcons data, response status code and response headers
+    # @return [Array<(AllianceIcon, Fixnum, Hash)>] AllianceIcon data, response status code and response headers
     def get_alliance_icon_with_http_info(alliance_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: AllianceApi.get_alliance_icon ..."
@@ -260,7 +260,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'AllianceIcons')
+        :return_type => 'AllianceIcon')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: AllianceApi#get_alliance_icon\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

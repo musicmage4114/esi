@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStructuresStructureIdNotFound
+# SwaggerClient::GetStructureByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetsFleetIdWingsForbidden
+# SwaggerClient::GetWingsForbidden
 
 ## Properties
 Name | Type | Description | Notes

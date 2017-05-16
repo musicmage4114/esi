@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseRacesInternalServerError
+# SwaggerClient::GetRacesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

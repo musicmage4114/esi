@@ -1,4 +1,4 @@
-# SwaggerClient::GetSearchInternalServerError
+# SwaggerClient::SearchByStringInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

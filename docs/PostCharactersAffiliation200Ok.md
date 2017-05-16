@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersAffiliation200Ok
+# SwaggerClient::CharacterAffiliation
 
 ## Properties
 Name | Type | Description | Notes

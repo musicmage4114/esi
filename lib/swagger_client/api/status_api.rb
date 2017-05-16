@@ -25,7 +25,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetStatusOk]
+    # @return [ServerStatus]
     def get_server_status(opts = {})
       data, _status_code, _headers = get_server_status_with_http_info(opts)
       return data
@@ -37,7 +37,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetStatusOk, Fixnum, Hash)>] GetStatusOk data, response status code and response headers
+    # @return [Array<(ServerStatus, Fixnum, Hash)>] ServerStatus data, response status code and response headers
     def get_server_status_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: StatusApi.get_server_status ..."
@@ -71,7 +71,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetStatusOk')
+        :return_type => 'ServerStatus')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: StatusApi#get_server_status\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

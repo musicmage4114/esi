@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsPlanetIdWaypoint
+# SwaggerClient::ColonyWaypoint
 
 ## Properties
 Name | Type | Description | Notes

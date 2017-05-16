@@ -234,7 +234,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetFleetsFleetIdOk]
+    # @return [Fleet]
     def get_fleet(fleet_id, opts = {})
       data, _status_code, _headers = get_fleet_with_http_info(fleet_id, opts)
       return data
@@ -248,7 +248,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetFleetsFleetIdOk, Fixnum, Hash)>] GetFleetsFleetIdOk data, response status code and response headers
+    # @return [Array<(Fleet, Fixnum, Hash)>] Fleet data, response status code and response headers
     def get_fleet_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: FleetsApi.get_fleet ..."
@@ -285,7 +285,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetFleetsFleetIdOk')
+        :return_type => 'Fleet')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: FleetsApi#get_fleet\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -301,7 +301,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetFleetsFleetIdMembers200Ok>]
+    # @return [Array<FleetMember>]
     def get_fleet_members(fleet_id, opts = {})
       data, _status_code, _headers = get_fleet_members_with_http_info(fleet_id, opts)
       return data
@@ -316,7 +316,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetFleetsFleetIdMembers200Ok>, Fixnum, Hash)>] Array<GetFleetsFleetIdMembers200Ok> data, response status code and response headers
+    # @return [Array<(Array<FleetMember>, Fixnum, Hash)>] Array<FleetMember> data, response status code and response headers
     def get_fleet_members_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: FleetsApi.get_fleet_members ..."
@@ -357,7 +357,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetFleetsFleetIdMembers200Ok>')
+        :return_type => 'Array<FleetMember>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: FleetsApi#get_fleet_members\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -373,7 +373,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetFleetsFleetIdWings200Ok>]
+    # @return [Array<Wing>]
     def get_wings(fleet_id, opts = {})
       data, _status_code, _headers = get_wings_with_http_info(fleet_id, opts)
       return data
@@ -388,7 +388,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetFleetsFleetIdWings200Ok>, Fixnum, Hash)>] Array<GetFleetsFleetIdWings200Ok> data, response status code and response headers
+    # @return [Array<(Array<Wing>, Fixnum, Hash)>] Array<Wing> data, response status code and response headers
     def get_wings_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: FleetsApi.get_wings ..."
@@ -429,7 +429,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetFleetsFleetIdWings200Ok>')
+        :return_type => 'Array<Wing>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: FleetsApi#get_wings\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -513,7 +513,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [PostFleetsFleetIdWingsCreated]
+    # @return [CreatedWing]
     def create_wing(fleet_id, opts = {})
       data, _status_code, _headers = create_wing_with_http_info(fleet_id, opts)
       return data
@@ -527,7 +527,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(PostFleetsFleetIdWingsCreated, Fixnum, Hash)>] PostFleetsFleetIdWingsCreated data, response status code and response headers
+    # @return [Array<(CreatedWing, Fixnum, Hash)>] CreatedWing data, response status code and response headers
     def create_wing_with_http_info(fleet_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: FleetsApi.create_wing ..."
@@ -564,7 +564,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'PostFleetsFleetIdWingsCreated')
+        :return_type => 'CreatedWing')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: FleetsApi#create_wing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -580,7 +580,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [PostFleetsFleetIdWingsWingIdSquadsCreated]
+    # @return [CreatedSquad]
     def create_squad(fleet_id, wing_id, opts = {})
       data, _status_code, _headers = create_squad_with_http_info(fleet_id, wing_id, opts)
       return data
@@ -595,7 +595,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(PostFleetsFleetIdWingsWingIdSquadsCreated, Fixnum, Hash)>] PostFleetsFleetIdWingsWingIdSquadsCreated data, response status code and response headers
+    # @return [Array<(CreatedSquad, Fixnum, Hash)>] CreatedSquad data, response status code and response headers
     def create_squad_with_http_info(fleet_id, wing_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: FleetsApi.create_squad ..."
@@ -634,7 +634,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'PostFleetsFleetIdWingsWingIdSquadsCreated')
+        :return_type => 'CreatedSquad')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: FleetsApi#create_squad\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

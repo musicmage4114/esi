@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdFittingsCreated
+# SwaggerClient::CreatedFitting
 
 ## Properties
 Name | Type | Description | Notes

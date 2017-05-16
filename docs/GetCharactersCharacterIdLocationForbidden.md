@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdLocationForbidden
+# SwaggerClient::GetCharacterLocationForbidden
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetKillmailsKillmailIdKillmailHashItem
+# SwaggerClient::KillmailItemContent
 
 ## Properties
 Name | Type | Description | Notes

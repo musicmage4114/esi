@@ -1,4 +1,4 @@
-# SwaggerClient::PostFleetsFleetIdWingsWingIdSquadsCreated
+# SwaggerClient::CreatedSquad
 
 ## Properties
 Name | Type | Description | Notes

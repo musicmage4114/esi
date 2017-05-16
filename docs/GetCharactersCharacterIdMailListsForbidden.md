@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMailListsForbidden
+# SwaggerClient::GetMailingListsForbidden
 
 ## Properties
 Name | Type | Description | Notes

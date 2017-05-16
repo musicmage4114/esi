@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdSkillqueueForbidden
+# SwaggerClient::GetSkillQueueForbidden
 
 ## Properties
 Name | Type | Description | Notes

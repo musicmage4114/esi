@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsGroupsMarketGroupIdOk
+# SwaggerClient::MarketGroup
 
 ## Properties
 Name | Type | Description | Notes

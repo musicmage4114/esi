@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarsWarIdInternalServerError
+# SwaggerClient::GetWarByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

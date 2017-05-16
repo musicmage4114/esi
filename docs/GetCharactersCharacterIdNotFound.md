@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdNotFound
+# SwaggerClient::GetCharacterByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

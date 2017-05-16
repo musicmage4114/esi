@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMailLists200Ok
+# SwaggerClient::MailingList
 
 ## Properties
 Name | Type | Description | Notes

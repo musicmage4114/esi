@@ -1,11 +1,11 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsPlanetIdPin
+# SwaggerClient::ColonyPin
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **expiry_time** | **DateTime** | expiry_time string | [optional] 
-**extractor_details** | [**GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails**](GetCharactersCharacterIdPlanetsPlanetIdExtractorDetails.md) |  | [optional] 
-**factory_details** | [**GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails**](GetCharactersCharacterIdPlanetsPlanetIdFactoryDetails.md) |  | [optional] 
+**extractor_details** | [**ColonyExtractor**](ColonyExtractor.md) |  | [optional] 
+**factory_details** | [**ColonyFactory**](ColonyFactory.md) |  | [optional] 
 **install_time** | **DateTime** | install_time string | [optional] 
 **last_cycle_start** | **DateTime** | last_cycle_start string | [optional] 
 **latitude** | **Float** | latitude number | 

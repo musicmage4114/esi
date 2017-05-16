@@ -29,7 +29,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdKillmailsRecent200Ok>]
+    # @return [Array<KillmailSummary>]
     def get_character_recent_killmails(character_id, opts = {})
       data, _status_code, _headers = get_character_recent_killmails_with_http_info(character_id, opts)
       return data
@@ -45,7 +45,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdKillmailsRecent200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdKillmailsRecent200Ok> data, response status code and response headers
+    # @return [Array<(Array<KillmailSummary>, Fixnum, Hash)>] Array<KillmailSummary> data, response status code and response headers
     def get_character_recent_killmails_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: KillmailsApi.get_character_recent_killmails ..."
@@ -88,7 +88,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdKillmailsRecent200Ok>')
+        :return_type => 'Array<KillmailSummary>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: KillmailsApi#get_character_recent_killmails\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -103,7 +103,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetKillmailsKillmailIdKillmailHashOk]
+    # @return [Killmail]
     def get_killmail(killmail_hash, killmail_id, opts = {})
       data, _status_code, _headers = get_killmail_with_http_info(killmail_hash, killmail_id, opts)
       return data
@@ -117,7 +117,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetKillmailsKillmailIdKillmailHashOk, Fixnum, Hash)>] GetKillmailsKillmailIdKillmailHashOk data, response status code and response headers
+    # @return [Array<(Killmail, Fixnum, Hash)>] Killmail data, response status code and response headers
     def get_killmail_with_http_info(killmail_hash, killmail_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: KillmailsApi.get_killmail ..."
@@ -155,7 +155,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetKillmailsKillmailIdKillmailHashOk')
+        :return_type => 'Killmail')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: KillmailsApi#get_killmail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdSquadsSquadIdNaming
+# SwaggerClient::NewSquadName
 
 ## Properties
 Name | Type | Description | Notes

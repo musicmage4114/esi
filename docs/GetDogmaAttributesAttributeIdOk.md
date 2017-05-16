@@ -1,4 +1,4 @@
-# SwaggerClient::GetDogmaAttributesAttributeIdOk
+# SwaggerClient::DogmaAttribute
 
 ## Properties
 Name | Type | Description | Notes

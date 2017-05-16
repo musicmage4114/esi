@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMailMailIdNotFound
+# SwaggerClient::ReadMailNotFound
 
 ## Properties
 Name | Type | Description | Notes

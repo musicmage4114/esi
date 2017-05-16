@@ -1,4 +1,4 @@
-# SwaggerClient::GetRouteOriginDestinationInternalServerError
+# SwaggerClient::GetRouteInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

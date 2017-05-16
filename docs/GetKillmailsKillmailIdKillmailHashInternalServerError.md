@@ -1,4 +1,4 @@
-# SwaggerClient::GetKillmailsKillmailIdKillmailHashInternalServerError
+# SwaggerClient::GetKillmailInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

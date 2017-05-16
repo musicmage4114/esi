@@ -1,4 +1,4 @@
-# SwaggerClient::GetDogmaEffectsEffectIdOk
+# SwaggerClient::DogmaEffect
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **is_assistance** | **BOOLEAN** | is_assistance boolean | [optional] 
 **is_offensive** | **BOOLEAN** | is_offensive boolean | [optional] 
 **is_warp_safe** | **BOOLEAN** | is_warp_safe boolean | [optional] 
-**modifiers** | [**Array&lt;GetDogmaEffectsEffectIdModifier&gt;**](GetDogmaEffectsEffectIdModifier.md) | modifiers array | [optional] 
+**modifiers** | [**Array&lt;DogmaEffectModifier&gt;**](DogmaEffectModifier.md) | modifiers array | [optional] 
 **name** | **String** | name string | [optional] 
 **post_expression** | **Integer** | post_expression integer | [optional] 
 **pre_expression** | **Integer** | pre_expression integer | [optional] 

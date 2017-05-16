@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdFittingsInternalServerError
+# SwaggerClient::GetFittingsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

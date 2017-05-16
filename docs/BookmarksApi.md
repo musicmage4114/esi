@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 
 
 # **get_character_bookmarks_folders**
-> Array&lt;BookmarkFolder&gt; get_character_bookmarks_folders(character_id, opts)
+> Array&lt;BookmarksFolder&gt; get_character_bookmarks_folders(character_id, opts)
 
 List bookmark folders
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;BookmarkFolder&gt;**](BookmarkFolder.md)
+[**Array&lt;BookmarksFolder&gt;**](BookmarksFolder.md)
 
 ### Authorization
 

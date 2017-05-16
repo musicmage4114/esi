@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsPricesInternalServerError
+# SwaggerClient::GetMarketPricesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -39,7 +39,7 @@ describe 'InsuranceApi' do
   # @option opts [String] :language Language to use in the response
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetInsurancePrices200Ok>]
+  # @return [Array<ShipInsurance>]
   describe 'get_insurance_prices test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

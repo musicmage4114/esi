@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_skill_queue**
-> Array&lt;GetCharactersCharacterIdSkillqueue200Ok&gt; get_skill_queue(character_id, opts)
+> Array&lt;SkillQueueEntry&gt; get_skill_queue(character_id, opts)
 
 Get character's skill queue
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdSkillqueue200Ok&gt;**](GetCharactersCharacterIdSkillqueue200Ok.md)
+[**Array&lt;SkillQueueEntry&gt;**](SkillQueueEntry.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 
 
 # **get_character_skills**
-> GetCharactersCharacterIdSkillsOk get_character_skills(character_id, opts)
+> CharacterSkillTotal get_character_skills(character_id, opts)
 
 Get character skills
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdSkillsOk**](GetCharactersCharacterIdSkillsOk.md)
+[**CharacterSkillTotal**](CharacterSkillTotal.md)
 
 ### Authorization
 

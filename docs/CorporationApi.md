@@ -5,18 +5,18 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_corporation_by_id**](CorporationApi.md#get_corporation_by_id) | **GET** /corporations/{corporation_id}/ | Get corporation information
-[**get_corporation_alliance_history**](CorporationApi.md#get_corporation_alliance_history) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
+[**get_alliance_history**](CorporationApi.md#get_alliance_history) | **GET** /corporations/{corporation_id}/alliancehistory/ | Get alliance history
 [**get_corporation_icon**](CorporationApi.md#get_corporation_icon) | **GET** /corporations/{corporation_id}/icons/ | Get corporation icon
 [**get_corporation_members**](CorporationApi.md#get_corporation_members) | **GET** /corporations/{corporation_id}/members/ | Get corporation members
 [**get_corporation_roles**](CorporationApi.md#get_corporation_roles) | **GET** /corporations/{corporation_id}/roles/ | Get corporation member roles
 [**get_corporation_structures**](CorporationApi.md#get_corporation_structures) | **GET** /corporations/{corporation_id}/structures/ | Get corporation structures
-[**get_corporation_names**](CorporationApi.md#get_corporation_names) | **GET** /corporations/names/ | Get corporation names
+[**get_corporation_name**](CorporationApi.md#get_corporation_name) | **GET** /corporations/names/ | Get corporation names
 [**get_npc_corporations**](CorporationApi.md#get_npc_corporations) | **GET** /corporations/npccorps/ | Get npc corporations
 [**update_structure_vulnerability**](CorporationApi.md#update_structure_vulnerability) | **PUT** /corporations/{corporation_id}/structures/{structure_id}/ | Update structure vulnerability schedule
 
 
 # **get_corporation_by_id**
-> GetCorporationsCorporationIdOk get_corporation_by_id(corporation_id, opts)
+> Corporation get_corporation_by_id(corporation_id, opts)
 
 Get corporation information
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCorporationsCorporationIdOk**](GetCorporationsCorporationIdOk.md)
+[**Corporation**](Corporation.md)
 
 ### Authorization
 
@@ -70,8 +70,8 @@ No authorization required
 
 
 
-# **get_corporation_alliance_history**
-> Array&lt;GetCorporationsCorporationIdAlliancehistory200Ok&gt; get_corporation_alliance_history(corporation_id, opts)
+# **get_alliance_history**
+> Array&lt;PastAlliance&gt; get_alliance_history(corporation_id, opts)
 
 Get alliance history
 
@@ -94,10 +94,10 @@ opts = {
 
 begin
   #Get alliance history
-  result = api_instance.get_corporation_alliance_history(corporation_id, opts)
+  result = api_instance.get_alliance_history(corporation_id, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporation_alliance_history: #{e}"
+  puts "Exception when calling CorporationApi->get_alliance_history: #{e}"
 end
 ```
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCorporationsCorporationIdAlliancehistory200Ok&gt;**](GetCorporationsCorporationIdAlliancehistory200Ok.md)
+[**Array&lt;PastAlliance&gt;**](PastAlliance.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 
 
 # **get_corporation_icon**
-> GetCorporationsCorporationIdIconsOk get_corporation_icon(corporation_id, opts)
+> CorporationIcon get_corporation_icon(corporation_id, opts)
 
 Get corporation icon
 
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCorporationsCorporationIdIconsOk**](GetCorporationsCorporationIdIconsOk.md)
+[**CorporationIcon**](CorporationIcon.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ No authorization required
 
 
 # **get_corporation_members**
-> Array&lt;GetCorporationsCorporationIdMembers200Ok&gt; get_corporation_members(corporation_id, opts)
+> Array&lt;CorporationMember&gt; get_corporation_members(corporation_id, opts)
 
 Get corporation members
 
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCorporationsCorporationIdMembers200Ok&gt;**](GetCorporationsCorporationIdMembers200Ok.md)
+[**Array&lt;CorporationMember&gt;**](CorporationMember.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 
 
 # **get_corporation_roles**
-> Array&lt;GetCorporationsCorporationIdRoles200Ok&gt; get_corporation_roles(corporation_id, opts)
+> Array&lt;CorporationMemberRole&gt; get_corporation_roles(corporation_id, opts)
 
 Get corporation member roles
 
@@ -291,7 +291,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCorporationsCorporationIdRoles200Ok&gt;**](GetCorporationsCorporationIdRoles200Ok.md)
+[**Array&lt;CorporationMemberRole&gt;**](CorporationMemberRole.md)
 
 ### Authorization
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 
 # **get_corporation_structures**
-> Array&lt;GetCorporationsCorporationIdStructures200Ok&gt; get_corporation_structures(corporation_id, opts)
+> Array&lt;CorporationStructure&gt; get_corporation_structures(corporation_id, opts)
 
 Get corporation structures
 
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCorporationsCorporationIdStructures200Ok&gt;**](GetCorporationsCorporationIdStructures200Ok.md)
+[**Array&lt;CorporationStructure&gt;**](CorporationStructure.md)
 
 ### Authorization
 
@@ -370,8 +370,8 @@ Name | Type | Description  | Notes
 
 
 
-# **get_corporation_names**
-> Array&lt;GetCorporationsNames200Ok&gt; get_corporation_names(corporation_ids, opts)
+# **get_corporation_name**
+> Array&lt;CorporationName&gt; get_corporation_name(corporation_ids, opts)
 
 Get corporation names
 
@@ -394,10 +394,10 @@ opts = {
 
 begin
   #Get corporation names
-  result = api_instance.get_corporation_names(corporation_ids, opts)
+  result = api_instance.get_corporation_name(corporation_ids, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling CorporationApi->get_corporation_names: #{e}"
+  puts "Exception when calling CorporationApi->get_corporation_name: #{e}"
 end
 ```
 
@@ -412,7 +412,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCorporationsNames200Ok&gt;**](GetCorporationsNames200Ok.md)
+[**Array&lt;CorporationName&gt;**](CorporationName.md)
 
 ### Authorization
 
@@ -498,7 +498,7 @@ api_instance = SwaggerClient::CorporationApi.new
 
 corporation_id = 56 # Integer | A corporation ID
 
-new_schedule = [SwaggerClient::PutCorporationsCorporationIdStructuresStructureIdNewSchedule.new] # Array<PutCorporationsCorporationIdStructuresStructureIdNewSchedule> | New vulnerability window schedule for the structure
+new_schedule = [SwaggerClient::NewVulnerabilitySchedule.new] # Array<NewVulnerabilitySchedule> | New vulnerability window schedule for the structure
 
 structure_id = 789 # Integer | A structure ID
 
@@ -522,7 +522,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **Integer**| A corporation ID | 
- **new_schedule** | [**Array&lt;PutCorporationsCorporationIdStructuresStructureIdNewSchedule&gt;**](PutCorporationsCorporationIdStructuresStructureIdNewSchedule.md)| New vulnerability window schedule for the structure | 
+ **new_schedule** | [**Array&lt;NewVulnerabilitySchedule&gt;**](NewVulnerabilitySchedule.md)| New vulnerability window schedule for the structure | 
  **structure_id** | **Integer**| A structure ID | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 

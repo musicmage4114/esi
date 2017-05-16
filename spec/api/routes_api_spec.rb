@@ -31,7 +31,7 @@ describe 'RoutesApi' do
     end
   end
 
-  # unit tests for set_route
+  # unit tests for get_route
   # Get route
   # Get the systems between origin and destination  ---  Alternate route: &#x60;/latest/route/{origin}/{destination}/&#x60;  Alternate route: &#x60;/legacy/route/{origin}/{destination}/&#x60;  Alternate route: &#x60;/v1/route/{origin}/{destination}/&#x60;   ---  This route is cached for up to 86400 seconds
   # @param destination destination solar system ID
@@ -44,7 +44,7 @@ describe 'RoutesApi' do
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
   # @return [Array<Integer>]
-  describe 'set_route test' do
+  describe 'get_route test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

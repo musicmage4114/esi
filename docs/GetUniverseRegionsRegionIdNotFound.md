@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseRegionsRegionIdNotFound
+# SwaggerClient::GetRegionByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

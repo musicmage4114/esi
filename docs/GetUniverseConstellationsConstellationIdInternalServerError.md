@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseConstellationsConstellationIdInternalServerError
+# SwaggerClient::GetConstellationByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

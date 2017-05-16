@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetsFleetIdOk
+# SwaggerClient::Fleet
 
 ## Properties
 Name | Type | Description | Notes

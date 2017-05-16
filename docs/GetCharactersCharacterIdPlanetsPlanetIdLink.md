@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsPlanetIdLink
+# SwaggerClient::ColonyLink
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::PostCharactersCharacterIdMailLabelsLabel
+# SwaggerClient::NewMailLabel
 
 ## Properties
 Name | Type | Description | Notes

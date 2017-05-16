@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseFactions200Ok
+# SwaggerClient::Faction
 
 ## Properties
 Name | Type | Description | Notes

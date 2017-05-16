@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_server_status**
-> GetStatusOk get_server_status(opts)
+> ServerStatus get_server_status(opts)
 
 Retrieve the uptime and player counts
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetStatusOk**](GetStatusOk.md)
+[**ServerStatus**](ServerStatus.md)
 
 ### Authorization
 

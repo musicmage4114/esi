@@ -4,11 +4,11 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**set_route**](RoutesApi.md#set_route) | **GET** /route/{origin}/{destination}/ | Get route
+[**get_route**](RoutesApi.md#get_route) | **GET** /route/{origin}/{destination}/ | Get route
 
 
-# **set_route**
-> Array&lt;Integer&gt; set_route(destination, origin, opts)
+# **get_route**
+> Array&lt;Integer&gt; get_route(destination, origin, opts)
 
 Get route
 
@@ -36,10 +36,10 @@ opts = {
 
 begin
   #Get route
-  result = api_instance.set_route(destination, origin, opts)
+  result = api_instance.get_route(destination, origin, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling RoutesApi->set_route: #{e}"
+  puts "Exception when calling RoutesApi->get_route: #{e}"
 end
 ```
 

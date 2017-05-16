@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStationsStationIdInternalServerError
+# SwaggerClient::GetStationByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

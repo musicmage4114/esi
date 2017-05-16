@@ -4,12 +4,12 @@ All URIs are relative to *https://esi.tech.ccp.is/dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**search_character_by_string**](SearchApi.md#search_character_by_string) | **GET** /characters/{character_id}/search/ | Search on a string
-[**find_entity_by_string**](SearchApi.md#find_entity_by_string) | **GET** /search/ | Search on a string
+[**character_search_by_string**](SearchApi.md#character_search_by_string) | **GET** /characters/{character_id}/search/ | Search on a string
+[**search_by_string**](SearchApi.md#search_by_string) | **GET** /search/ | Search on a string
 
 
-# **search_character_by_string**
-> GetCharactersCharacterIdSearchOk search_character_by_string(categories, character_id, search, opts)
+# **character_search_by_string**
+> CharacterSearchResult character_search_by_string(categories, character_id, search, opts)
 
 Search on a string
 
@@ -44,10 +44,10 @@ opts = {
 
 begin
   #Search on a string
-  result = api_instance.search_character_by_string(categories, character_id, search, opts)
+  result = api_instance.character_search_by_string(categories, character_id, search, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling SearchApi->search_character_by_string: #{e}"
+  puts "Exception when calling SearchApi->character_search_by_string: #{e}"
 end
 ```
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdSearchOk**](GetCharactersCharacterIdSearchOk.md)
+[**CharacterSearchResult**](CharacterSearchResult.md)
 
 ### Authorization
 
@@ -80,8 +80,8 @@ Name | Type | Description  | Notes
 
 
 
-# **find_entity_by_string**
-> GetSearchOk find_entity_by_string(categories, search, opts)
+# **search_by_string**
+> GeneralSearchResult search_by_string(categories, search, opts)
 
 Search on a string
 
@@ -108,10 +108,10 @@ opts = {
 
 begin
   #Search on a string
-  result = api_instance.find_entity_by_string(categories, search, opts)
+  result = api_instance.search_by_string(categories, search, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling SearchApi->find_entity_by_string: #{e}"
+  puts "Exception when calling SearchApi->search_by_string: #{e}"
 end
 ```
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetSearchOk**](GetSearchOk.md)
+[**GeneralSearchResult**](GeneralSearchResult.md)
 
 ### Authorization
 

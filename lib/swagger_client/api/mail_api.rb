@@ -167,7 +167,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdMail200Ok>]
+    # @return [Array<EvemailHeader>]
     def get_mail(character_id, opts = {})
       data, _status_code, _headers = get_mail_with_http_info(character_id, opts)
       return data
@@ -183,7 +183,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdMail200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdMail200Ok> data, response status code and response headers
+    # @return [Array<(Array<EvemailHeader>, Fixnum, Hash)>] Array<EvemailHeader> data, response status code and response headers
     def get_mail_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MailApi.get_mail ..."
@@ -226,7 +226,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdMail200Ok>')
+        :return_type => 'Array<EvemailHeader>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MailApi#get_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -241,7 +241,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdMailLabelsOk]
+    # @return [MailLabel]
     def get_mail_labels(character_id, opts = {})
       data, _status_code, _headers = get_mail_labels_with_http_info(character_id, opts)
       return data
@@ -255,7 +255,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdMailLabelsOk, Fixnum, Hash)>] GetCharactersCharacterIdMailLabelsOk data, response status code and response headers
+    # @return [Array<(MailLabel, Fixnum, Hash)>] MailLabel data, response status code and response headers
     def get_mail_labels_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MailApi.get_mail_labels ..."
@@ -292,7 +292,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdMailLabelsOk')
+        :return_type => 'MailLabel')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MailApi#get_mail_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -307,7 +307,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdMailLists200Ok>]
+    # @return [Array<MailingList>]
     def get_mailing_lists(character_id, opts = {})
       data, _status_code, _headers = get_mailing_lists_with_http_info(character_id, opts)
       return data
@@ -321,7 +321,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdMailLists200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdMailLists200Ok> data, response status code and response headers
+    # @return [Array<(Array<MailingList>, Fixnum, Hash)>] Array<MailingList> data, response status code and response headers
     def get_mailing_lists_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MailApi.get_mailing_lists ..."
@@ -358,7 +358,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdMailLists200Ok>')
+        :return_type => 'Array<MailingList>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MailApi#get_mailing_lists\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -374,7 +374,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdMailMailIdOk]
+    # @return [Evemail]
     def read_mail(character_id, mail_id, opts = {})
       data, _status_code, _headers = read_mail_with_http_info(character_id, mail_id, opts)
       return data
@@ -389,7 +389,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdMailMailIdOk, Fixnum, Hash)>] GetCharactersCharacterIdMailMailIdOk data, response status code and response headers
+    # @return [Array<(Evemail, Fixnum, Hash)>] Evemail data, response status code and response headers
     def read_mail_with_http_info(character_id, mail_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MailApi.read_mail ..."
@@ -428,7 +428,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdMailMailIdOk')
+        :return_type => 'Evemail')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MailApi#read_mail\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -510,7 +510,7 @@ module SwaggerClient
     # @param character_id An EVE character ID
     # @param [Hash] opts the optional parameters
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
-    # @option opts [PostCharactersCharacterIdMailLabelsLabel] :label Label to create
+    # @option opts [NewMailLabel] :label Label to create
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
@@ -525,7 +525,7 @@ module SwaggerClient
     # @param character_id An EVE character ID
     # @param [Hash] opts the optional parameters
     # @option opts [String] :datasource The server name you would like data from
-    # @option opts [PostCharactersCharacterIdMailLabelsLabel] :label Label to create
+    # @option opts [NewMailLabel] :label Label to create
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent

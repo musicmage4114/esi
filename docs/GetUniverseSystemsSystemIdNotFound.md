@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSystemsSystemIdNotFound
+# SwaggerClient::GetSystemByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

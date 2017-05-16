@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdSearchOk
+# SwaggerClient::CharacterSearchResult
 
 ## Properties
 Name | Type | Description | Notes

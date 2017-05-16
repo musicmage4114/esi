@@ -28,7 +28,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdIndustryJobs200Ok>]
+    # @return [Array<IndustryJob>]
     def get_industry_jobs(character_id, opts = {})
       data, _status_code, _headers = get_industry_jobs_with_http_info(character_id, opts)
       return data
@@ -43,7 +43,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdIndustryJobs200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdIndustryJobs200Ok> data, response status code and response headers
+    # @return [Array<(Array<IndustryJob>, Fixnum, Hash)>] Array<IndustryJob> data, response status code and response headers
     def get_industry_jobs_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: IndustryApi.get_industry_jobs ..."
@@ -81,7 +81,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdIndustryJobs200Ok>')
+        :return_type => 'Array<IndustryJob>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: IndustryApi#get_industry_jobs\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -94,7 +94,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetIndustryFacilities200Ok>]
+    # @return [Array<IndustryFacility>]
     def get_industry_facilities(opts = {})
       data, _status_code, _headers = get_industry_facilities_with_http_info(opts)
       return data
@@ -106,7 +106,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetIndustryFacilities200Ok>, Fixnum, Hash)>] Array<GetIndustryFacilities200Ok> data, response status code and response headers
+    # @return [Array<(Array<IndustryFacility>, Fixnum, Hash)>] Array<IndustryFacility> data, response status code and response headers
     def get_industry_facilities_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: IndustryApi.get_industry_facilities ..."
@@ -140,7 +140,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetIndustryFacilities200Ok>')
+        :return_type => 'Array<IndustryFacility>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: IndustryApi#get_industry_facilities\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -153,7 +153,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetIndustrySystems200Ok>]
+    # @return [Array<IndustrySystem>]
     def get_industry_systems(opts = {})
       data, _status_code, _headers = get_industry_systems_with_http_info(opts)
       return data
@@ -165,7 +165,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetIndustrySystems200Ok>, Fixnum, Hash)>] Array<GetIndustrySystems200Ok> data, response status code and response headers
+    # @return [Array<(Array<IndustrySystem>, Fixnum, Hash)>] Array<IndustrySystem> data, response status code and response headers
     def get_industry_systems_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: IndustryApi.get_industry_systems ..."
@@ -199,7 +199,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetIndustrySystems200Ok>')
+        :return_type => 'Array<IndustrySystem>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: IndustryApi#get_industry_systems\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsRegionIdHistoryUnprocessableEntity
+# SwaggerClient::GetMarketHistoryByIdUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

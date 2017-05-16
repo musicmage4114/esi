@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetsFleetIdWingsInternalServerError
+# SwaggerClient::GetWingsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

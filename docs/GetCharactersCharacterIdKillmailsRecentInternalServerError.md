@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdKillmailsRecentInternalServerError
+# SwaggerClient::GetCharacterRecentKillmailsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

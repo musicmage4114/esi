@@ -1,4 +1,4 @@
-# SwaggerClient::GetStatusOk
+# SwaggerClient::ServerStatus
 
 ## Properties
 Name | Type | Description | Notes

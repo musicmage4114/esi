@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStationsStationIdNotFound
+# SwaggerClient::GetStationByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

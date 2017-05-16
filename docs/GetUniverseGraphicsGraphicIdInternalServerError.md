@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseGraphicsGraphicIdInternalServerError
+# SwaggerClient::GetGameGraphicByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

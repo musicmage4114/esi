@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseGroupsGroupIdInternalServerError
+# SwaggerClient::GetItemGroupByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

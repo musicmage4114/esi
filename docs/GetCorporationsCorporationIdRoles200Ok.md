@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdRoles200Ok
+# SwaggerClient::CorporationMemberRole
 
 ## Properties
 Name | Type | Description | Notes

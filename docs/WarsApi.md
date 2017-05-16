@@ -64,7 +64,7 @@ No authorization required
 
 
 # **get_war_by_id**
-> GetWarsWarIdOk get_war_by_id(war_id, opts)
+> War get_war_by_id(war_id, opts)
 
 Get war information
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetWarsWarIdOk**](GetWarsWarIdOk.md)
+[**War**](War.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ No authorization required
 
 
 # **get_war_killmails**
-> Array&lt;GetWarsWarIdKillmails200Ok&gt; get_war_killmails(war_id, opts)
+> Array&lt;KillmailSummary&gt; get_war_killmails(war_id, opts)
 
 List kills for a war
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetWarsWarIdKillmails200Ok&gt;**](GetWarsWarIdKillmails200Ok.md)
+[**Array&lt;KillmailSummary&gt;**](KillmailSummary.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdShipInternalServerError
+# SwaggerClient::GetCurrentShipInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

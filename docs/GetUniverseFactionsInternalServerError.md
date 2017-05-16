@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseFactionsInternalServerError
+# SwaggerClient::GetFactionsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

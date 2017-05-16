@@ -1,4 +1,4 @@
-# SwaggerClient::BookmarkFolder
+# SwaggerClient::BookmarksFolder
 
 ## Properties
 Name | Type | Description | Notes

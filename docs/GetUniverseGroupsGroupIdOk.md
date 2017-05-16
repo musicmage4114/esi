@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseGroupsGroupIdOk
+# SwaggerClient::ItemGroup
 
 ## Properties
 Name | Type | Description | Notes

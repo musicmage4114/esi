@@ -144,7 +144,7 @@ nil (empty response body)
 
 
 # **get_mail**
-> Array&lt;GetCharactersCharacterIdMail200Ok&gt; get_mail(character_id, opts)
+> Array&lt;EvemailHeader&gt; get_mail(character_id, opts)
 
 Return mail headers
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdMail200Ok&gt;**](GetCharactersCharacterIdMail200Ok.md)
+[**Array&lt;EvemailHeader&gt;**](EvemailHeader.md)
 
 ### Authorization
 
@@ -210,7 +210,7 @@ Name | Type | Description  | Notes
 
 
 # **get_mail_labels**
-> GetCharactersCharacterIdMailLabelsOk get_mail_labels(character_id, opts)
+> MailLabel get_mail_labels(character_id, opts)
 
 Get mail labels and unread counts
 
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdMailLabelsOk**](GetCharactersCharacterIdMailLabelsOk.md)
+[**MailLabel**](MailLabel.md)
 
 ### Authorization
 
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 
 
 # **get_mailing_lists**
-> Array&lt;GetCharactersCharacterIdMailLists200Ok&gt; get_mailing_lists(character_id, opts)
+> Array&lt;MailingList&gt; get_mailing_lists(character_id, opts)
 
 Return mailing list subscriptions
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdMailLists200Ok&gt;**](GetCharactersCharacterIdMailLists200Ok.md)
+[**Array&lt;MailingList&gt;**](MailingList.md)
 
 ### Authorization
 
@@ -334,7 +334,7 @@ Name | Type | Description  | Notes
 
 
 # **read_mail**
-> GetCharactersCharacterIdMailMailIdOk read_mail(character_id, mail_id, opts)
+> Evemail read_mail(character_id, mail_id, opts)
 
 Return a mail
 
@@ -385,7 +385,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCharactersCharacterIdMailMailIdOk**](GetCharactersCharacterIdMailMailIdOk.md)
+[**Evemail**](Evemail.md)
 
 ### Authorization
 
@@ -419,7 +419,7 @@ api_instance = SwaggerClient::MailApi.new
 
 character_id = 56 # Integer | The sender's character ID
 
-mail = SwaggerClient::PostCharactersCharacterIdMailMail.new # PostCharactersCharacterIdMailMail | The mail to send
+mail = SwaggerClient::SentEvemail.new # SentEvemail | The mail to send
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -442,7 +442,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| The sender&#39;s character ID | 
- **mail** | [**PostCharactersCharacterIdMailMail**](PostCharactersCharacterIdMailMail.md)| The mail to send | 
+ **mail** | [**SentEvemail**](SentEvemail.md)| The mail to send | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
@@ -486,7 +486,7 @@ character_id = 56 # Integer | An EVE character ID
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  label: SwaggerClient::PostCharactersCharacterIdMailLabelsLabel.new, # PostCharactersCharacterIdMailLabelsLabel | Label to create
+  label: SwaggerClient::NewMailLabel.new, # NewMailLabel | Label to create
   token: "token_example", # String | Access token to use, if preferred over a header
   user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
   x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
@@ -507,7 +507,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| An EVE character ID | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
- **label** | [**PostCharactersCharacterIdMailLabelsLabel**](PostCharactersCharacterIdMailLabelsLabel.md)| Label to create | [optional] 
+ **label** | [**NewMailLabel**](NewMailLabel.md)| Label to create | [optional] 
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
  **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
@@ -548,7 +548,7 @@ api_instance = SwaggerClient::MailApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
-contents = SwaggerClient::PutCharactersCharacterIdMailMailIdContents.new # PutCharactersCharacterIdMailMailIdContents | Data used to update the mail
+contents = SwaggerClient::EvemailUpdate.new # EvemailUpdate | Data used to update the mail
 
 mail_id = 56 # Integer | An EVE mail ID
 
@@ -572,7 +572,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| An EVE character ID | 
- **contents** | [**PutCharactersCharacterIdMailMailIdContents**](PutCharactersCharacterIdMailMailIdContents.md)| Data used to update the mail | 
+ **contents** | [**EvemailUpdate**](EvemailUpdate.md)| Data used to update the mail | 
  **mail_id** | **Integer**| An EVE mail ID | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 

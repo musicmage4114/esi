@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_insurance_prices**
-> Array&lt;GetInsurancePrices200Ok&gt; get_insurance_prices(opts)
+> Array&lt;ShipInsurance&gt; get_insurance_prices(opts)
 
 List insurance levels
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetInsurancePrices200Ok&gt;**](GetInsurancePrices200Ok.md)
+[**Array&lt;ShipInsurance&gt;**](ShipInsurance.md)
 
 ### Authorization
 

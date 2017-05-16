@@ -174,7 +174,7 @@ No authorization required
 
 
 # **get_alliance_icon**
-> AllianceIcons get_alliance_icon(alliance_id, opts)
+> AllianceIcon get_alliance_icon(alliance_id, opts)
 
 Get alliance icon
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AllianceIcons**](AllianceIcons.md)
+[**AllianceIcon**](AllianceIcon.md)
 
 ### Authorization
 

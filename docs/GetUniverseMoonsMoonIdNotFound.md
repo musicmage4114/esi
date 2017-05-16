@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseMoonsMoonIdNotFound
+# SwaggerClient::GetMoonByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

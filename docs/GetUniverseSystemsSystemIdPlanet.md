@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSystemsSystemIdPlanet
+# SwaggerClient::PlanetSummary
 
 ## Properties
 Name | Type | Description | Notes

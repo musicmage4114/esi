@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdPlanetsPlanetIdInternalServerError
+# SwaggerClient::GetColonyInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

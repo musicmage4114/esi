@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdLoyaltyPointsForbidden
+# SwaggerClient::GetLoyaltyPointsAmountForbidden
 
 ## Properties
 Name | Type | Description | Notes

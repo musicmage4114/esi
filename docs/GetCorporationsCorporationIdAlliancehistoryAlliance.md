@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdAlliancehistoryAlliance
+# SwaggerClient::AllianceSummary
 
 ## Properties
 Name | Type | Description | Notes

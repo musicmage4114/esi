@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdKillmailsRecent200Ok
+# SwaggerClient::KillmailSummary
 
 ## Properties
 Name | Type | Description | Notes

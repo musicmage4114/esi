@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdNotFound
+# SwaggerClient::GetCorporationByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

@@ -27,7 +27,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdLoyaltyPoints200Ok>]
+    # @return [Array<LoyaltyPointsAmount>]
     def get_loyalty_points(character_id, opts = {})
       data, _status_code, _headers = get_loyalty_points_with_http_info(character_id, opts)
       return data
@@ -41,7 +41,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdLoyaltyPoints200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdLoyaltyPoints200Ok> data, response status code and response headers
+    # @return [Array<(Array<LoyaltyPointsAmount>, Fixnum, Hash)>] Array<LoyaltyPointsAmount> data, response status code and response headers
     def get_loyalty_points_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: LoyaltyApi.get_loyalty_points ..."
@@ -78,7 +78,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdLoyaltyPoints200Ok>')
+        :return_type => 'Array<LoyaltyPointsAmount>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: LoyaltyApi#get_loyalty_points\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -92,7 +92,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetLoyaltyStoresCorporationIdOffers200Ok>]
+    # @return [Array<LoyaltyOffer>]
     def get_loyalty_store_by_id(corporation_id, opts = {})
       data, _status_code, _headers = get_loyalty_store_by_id_with_http_info(corporation_id, opts)
       return data
@@ -105,7 +105,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetLoyaltyStoresCorporationIdOffers200Ok>, Fixnum, Hash)>] Array<GetLoyaltyStoresCorporationIdOffers200Ok> data, response status code and response headers
+    # @return [Array<(Array<LoyaltyOffer>, Fixnum, Hash)>] Array<LoyaltyOffer> data, response status code and response headers
     def get_loyalty_store_by_id_with_http_info(corporation_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: LoyaltyApi.get_loyalty_store_by_id ..."
@@ -141,7 +141,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetLoyaltyStoresCorporationIdOffers200Ok>')
+        :return_type => 'Array<LoyaltyOffer>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: LoyaltyApi#get_loyalty_store_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

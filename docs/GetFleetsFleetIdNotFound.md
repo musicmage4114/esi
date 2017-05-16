@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetsFleetIdNotFound
+# SwaggerClient::GetFleetNotFound
 
 ## Properties
 Name | Type | Description | Notes

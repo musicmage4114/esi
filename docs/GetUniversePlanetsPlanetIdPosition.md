@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniversePlanetsPlanetIdPosition
+# SwaggerClient::Coordinate
 
 ## Properties
 Name | Type | Description | Notes

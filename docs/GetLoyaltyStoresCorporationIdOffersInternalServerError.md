@@ -1,4 +1,4 @@
-# SwaggerClient::GetLoyaltyStoresCorporationIdOffersInternalServerError
+# SwaggerClient::GetLoyaltyStoreByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -40,7 +40,7 @@ describe 'PlanetaryInteractionApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdPlanets200Ok>]
+  # @return [Array<Colony>]
   describe 'get_colonies test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -57,14 +57,14 @@ describe 'PlanetaryInteractionApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCharactersCharacterIdPlanetsPlanetIdOk]
+  # @return [ColonyDetail]
   describe 'get_colony test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_schematic_by_id
+  # unit tests for get_schematic
   # Get schematic information
   # Get information on a planetary factory schematic  ---  Alternate route: &#x60;/v1/universe/schematics/{schematic_id}/&#x60;  Alternate route: &#x60;/legacy/universe/schematics/{schematic_id}/&#x60;  Alternate route: &#x60;/latest/universe/schematics/{schematic_id}/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param schematic_id A PI schematic ID
@@ -72,8 +72,8 @@ describe 'PlanetaryInteractionApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetUniverseSchematicsSchematicIdOk]
-  describe 'get_schematic_by_id test' do
+  # @return [Schematic]
+  describe 'get_schematic test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

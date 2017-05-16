@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdLoyaltyPoints200Ok
+# SwaggerClient::LoyaltyPointsAmount
 
 ## Properties
 Name | Type | Description | Notes

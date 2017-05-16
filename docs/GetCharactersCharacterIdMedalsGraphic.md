@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdMedalsGraphic
+# SwaggerClient::MedalGraphic
 
 ## Properties
 Name | Type | Description | Notes

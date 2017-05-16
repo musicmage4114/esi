@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdShipForbidden
+# SwaggerClient::GetCurrentShipForbidden
 
 ## Properties
 Name | Type | Description | Notes

@@ -25,7 +25,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetIncursions200Ok>]
+    # @return [Array<Incursion>]
     def get_incursions(opts = {})
       data, _status_code, _headers = get_incursions_with_http_info(opts)
       return data
@@ -37,7 +37,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetIncursions200Ok>, Fixnum, Hash)>] Array<GetIncursions200Ok> data, response status code and response headers
+    # @return [Array<(Array<Incursion>, Fixnum, Hash)>] Array<Incursion> data, response status code and response headers
     def get_incursions_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: IncursionsApi.get_incursions ..."
@@ -71,7 +71,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetIncursions200Ok>')
+        :return_type => 'Array<Incursion>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: IncursionsApi#get_incursions\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

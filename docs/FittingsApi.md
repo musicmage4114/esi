@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 
 # **add_fitting**
-> PostCharactersCharacterIdFittingsCreated add_fitting(character_id, opts)
+> CreatedFitting add_fitting(character_id, opts)
 
 Create fitting
 
@@ -158,7 +158,7 @@ character_id = 56 # Integer | ID for a character
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  fitting: SwaggerClient::PostCharactersCharacterIdFittingsFitting.new, # PostCharactersCharacterIdFittingsFitting | Details about the new fitting
+  fitting: SwaggerClient::NewFitting.new, # NewFitting | Details about the new fitting
   token: "token_example", # String | Access token to use, if preferred over a header
   user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
   x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
@@ -179,14 +179,14 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| ID for a character | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
- **fitting** | [**PostCharactersCharacterIdFittingsFitting**](PostCharactersCharacterIdFittingsFitting.md)| Details about the new fitting | [optional] 
+ **fitting** | [**NewFitting**](NewFitting.md)| Details about the new fitting | [optional] 
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
  **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
-[**PostCharactersCharacterIdFittingsCreated**](PostCharactersCharacterIdFittingsCreated.md)
+[**CreatedFitting**](CreatedFitting.md)
 
 ### Authorization
 

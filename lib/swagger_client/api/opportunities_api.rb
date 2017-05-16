@@ -27,9 +27,9 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdOpportunities200Ok>]
-    def get_character_completed_opportunities(character_id, opts = {})
-      data, _status_code, _headers = get_character_completed_opportunities_with_http_info(character_id, opts)
+    # @return [Array<CompletedOpportunity>]
+    def get_completed_opportunities(character_id, opts = {})
+      data, _status_code, _headers = get_completed_opportunities_with_http_info(character_id, opts)
       return data
     end
 
@@ -41,13 +41,13 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdOpportunities200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdOpportunities200Ok> data, response status code and response headers
-    def get_character_completed_opportunities_with_http_info(character_id, opts = {})
+    # @return [Array<(Array<CompletedOpportunity>, Fixnum, Hash)>] Array<CompletedOpportunity> data, response status code and response headers
+    def get_completed_opportunities_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_character_completed_opportunities ..."
+        @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_completed_opportunities ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling OpportunitiesApi.get_character_completed_opportunities" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling OpportunitiesApi.get_completed_opportunities" if character_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -78,9 +78,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdOpportunities200Ok>')
+        :return_type => 'Array<CompletedOpportunity>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: OpportunitiesApi#get_character_completed_opportunities\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OpportunitiesApi#get_completed_opportunities\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -152,7 +152,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetOpportunitiesGroupsGroupIdOk]
+    # @return [OpportunitiesGroup]
     def get_opportunities_group_by_id(group_id, opts = {})
       data, _status_code, _headers = get_opportunities_group_by_id_with_http_info(group_id, opts)
       return data
@@ -166,7 +166,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetOpportunitiesGroupsGroupIdOk, Fixnum, Hash)>] GetOpportunitiesGroupsGroupIdOk data, response status code and response headers
+    # @return [Array<(OpportunitiesGroup, Fixnum, Hash)>] OpportunitiesGroup data, response status code and response headers
     def get_opportunities_group_by_id_with_http_info(group_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_opportunities_group_by_id ..."
@@ -206,7 +206,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetOpportunitiesGroupsGroupIdOk')
+        :return_type => 'OpportunitiesGroup')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: OpportunitiesApi#get_opportunities_group_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -279,7 +279,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetOpportunitiesTasksTaskIdOk]
+    # @return [OpportunitiesTask]
     def get_opportunities_task_by_id(task_id, opts = {})
       data, _status_code, _headers = get_opportunities_task_by_id_with_http_info(task_id, opts)
       return data
@@ -292,7 +292,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetOpportunitiesTasksTaskIdOk, Fixnum, Hash)>] GetOpportunitiesTasksTaskIdOk data, response status code and response headers
+    # @return [Array<(OpportunitiesTask, Fixnum, Hash)>] OpportunitiesTask data, response status code and response headers
     def get_opportunities_task_by_id_with_http_info(task_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: OpportunitiesApi.get_opportunities_task_by_id ..."
@@ -328,7 +328,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetOpportunitiesTasksTaskIdOk')
+        :return_type => 'OpportunitiesTask')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: OpportunitiesApi#get_opportunities_task_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

@@ -1,4 +1,4 @@
-# SwaggerClient::PutFleetsFleetIdNewSettings
+# SwaggerClient::FleetNewSetting
 
 ## Properties
 Name | Type | Description | Notes

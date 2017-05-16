@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsGroupsMarketGroupIdInternalServerError
+# SwaggerClient::GetMarketGroupByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

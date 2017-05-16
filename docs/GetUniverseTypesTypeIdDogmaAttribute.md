@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseTypesTypeIdDogmaAttribute
+# SwaggerClient::DogmaAttributeValue
 
 ## Properties
 Name | Type | Description | Notes

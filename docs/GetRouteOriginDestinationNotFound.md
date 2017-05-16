@@ -1,4 +1,4 @@
-# SwaggerClient::GetRouteOriginDestinationNotFound
+# SwaggerClient::GetRouteNotFound
 
 ## Properties
 Name | Type | Description | Notes

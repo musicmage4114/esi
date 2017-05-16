@@ -1,4 +1,4 @@
-# SwaggerClient::CloneInfo
+# SwaggerClient::CloneSummary
 
 ## Properties
 Name | Type | Description | Notes

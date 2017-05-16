@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdStructuresCurrentVul
+# SwaggerClient::CurrentVulnerability
 
 ## Properties
 Name | Type | Description | Notes

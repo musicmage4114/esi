@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStationsStationIdOk
+# SwaggerClient::Station
 
 ## Properties
 Name | Type | Description | Notes
@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **name** | **String** | name string | 
 **office_rental_cost** | **Float** | office_rental_cost number | 
 **owner** | **Integer** | ID of the corporation that controls this station | [optional] 
-**position** | [**GetUniverseStationsStationIdPosition**](GetUniverseStationsStationIdPosition.md) |  | [optional] 
+**position** | [**Coordinate**](Coordinate.md) |  | [optional] 
 **race_id** | **Integer** | race_id integer | [optional] 
 **reprocessing_efficiency** | **Float** | reprocessing_efficiency number | 
 **reprocessing_stations_take** | **Float** | reprocessing_stations_take number | 

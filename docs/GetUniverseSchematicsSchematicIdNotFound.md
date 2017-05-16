@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseSchematicsSchematicIdNotFound
+# SwaggerClient::GetSchematicNotFound
 
 ## Properties
 Name | Type | Description | Notes

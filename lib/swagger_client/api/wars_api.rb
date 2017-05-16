@@ -88,7 +88,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetWarsWarIdOk]
+    # @return [War]
     def get_war_by_id(war_id, opts = {})
       data, _status_code, _headers = get_war_by_id_with_http_info(war_id, opts)
       return data
@@ -101,7 +101,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetWarsWarIdOk, Fixnum, Hash)>] GetWarsWarIdOk data, response status code and response headers
+    # @return [Array<(War, Fixnum, Hash)>] War data, response status code and response headers
     def get_war_by_id_with_http_info(war_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: WarsApi.get_war_by_id ..."
@@ -137,7 +137,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetWarsWarIdOk')
+        :return_type => 'War')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: WarsApi#get_war_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -152,7 +152,7 @@ module SwaggerClient
     # @option opts [Integer] :page Which page to query, starting at 1, 2000 killmails per page. (default to 1)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetWarsWarIdKillmails200Ok>]
+    # @return [Array<KillmailSummary>]
     def get_war_killmails(war_id, opts = {})
       data, _status_code, _headers = get_war_killmails_with_http_info(war_id, opts)
       return data
@@ -166,7 +166,7 @@ module SwaggerClient
     # @option opts [Integer] :page Which page to query, starting at 1, 2000 killmails per page.
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetWarsWarIdKillmails200Ok>, Fixnum, Hash)>] Array<GetWarsWarIdKillmails200Ok> data, response status code and response headers
+    # @return [Array<(Array<KillmailSummary>, Fixnum, Hash)>] Array<KillmailSummary> data, response status code and response headers
     def get_war_killmails_with_http_info(war_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: WarsApi.get_war_killmails ..."
@@ -203,7 +203,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetWarsWarIdKillmails200Ok>')
+        :return_type => 'Array<KillmailSummary>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: WarsApi#get_war_killmails\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

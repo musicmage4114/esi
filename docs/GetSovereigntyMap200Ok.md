@@ -1,4 +1,4 @@
-# SwaggerClient::GetSovereigntyMap200Ok
+# SwaggerClient::SystemSovereignty
 
 ## Properties
 Name | Type | Description | Notes

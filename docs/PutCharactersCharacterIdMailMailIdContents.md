@@ -1,4 +1,4 @@
-# SwaggerClient::PutCharactersCharacterIdMailMailIdContents
+# SwaggerClient::EvemailUpdate
 
 ## Properties
 Name | Type | Description | Notes

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_wallets**
-> Array&lt;GetCharactersCharacterIdWallets200Ok&gt; get_wallets(character_id, opts)
+> Array&lt;Wallet&gt; get_wallets(character_id, opts)
 
 List wallets and balances
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdWallets200Ok&gt;**](GetCharactersCharacterIdWallets200Ok.md)
+[**Array&lt;Wallet&gt;**](Wallet.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# SwaggerClient::GetMarketsPrices200Ok
+# SwaggerClient::MarketPrice
 
 ## Properties
 Name | Type | Description | Notes

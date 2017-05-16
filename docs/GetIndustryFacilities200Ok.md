@@ -1,4 +1,4 @@
-# SwaggerClient::GetIndustryFacilities200Ok
+# SwaggerClient::IndustryFacility
 
 ## Properties
 Name | Type | Description | Notes

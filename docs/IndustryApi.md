@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **get_industry_jobs**
-> Array&lt;GetCharactersCharacterIdIndustryJobs200Ok&gt; get_industry_jobs(character_id, opts)
+> Array&lt;IndustryJob&gt; get_industry_jobs(character_id, opts)
 
 List character industry jobs
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetCharactersCharacterIdIndustryJobs200Ok&gt;**](GetCharactersCharacterIdIndustryJobs200Ok.md)
+[**Array&lt;IndustryJob&gt;**](IndustryJob.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 
 # **get_industry_facilities**
-> Array&lt;GetIndustryFacilities200Ok&gt; get_industry_facilities(opts)
+> Array&lt;IndustryFacility&gt; get_industry_facilities(opts)
 
 List industry facilities
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetIndustryFacilities200Ok&gt;**](GetIndustryFacilities200Ok.md)
+[**Array&lt;IndustryFacility&gt;**](IndustryFacility.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 
 
 # **get_industry_systems**
-> Array&lt;GetIndustrySystems200Ok&gt; get_industry_systems(opts)
+> Array&lt;IndustrySystem&gt; get_industry_systems(opts)
 
 List solar system cost indices
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetIndustrySystems200Ok&gt;**](GetIndustrySystems200Ok.md)
+[**Array&lt;IndustrySystem&gt;**](IndustrySystem.md)
 
 ### Authorization
 

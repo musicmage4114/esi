@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdLocationInternalServerError
+# SwaggerClient::GetCharacterLocationInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

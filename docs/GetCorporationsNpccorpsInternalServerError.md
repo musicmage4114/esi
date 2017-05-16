@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsNpccorpsInternalServerError
+# SwaggerClient::GetNpcCorporationsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

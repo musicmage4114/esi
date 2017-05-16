@@ -27,7 +27,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdOrders200Ok>]
+    # @return [Array<PersonalMarketOrder>]
     def get_character_market_orders(character_id, opts = {})
       data, _status_code, _headers = get_character_market_orders_with_http_info(character_id, opts)
       return data
@@ -41,7 +41,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdOrders200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdOrders200Ok> data, response status code and response headers
+    # @return [Array<(Array<PersonalMarketOrder>, Fixnum, Hash)>] Array<PersonalMarketOrder> data, response status code and response headers
     def get_character_market_orders_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MarketApi.get_character_market_orders ..."
@@ -78,7 +78,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdOrders200Ok>')
+        :return_type => 'Array<PersonalMarketOrder>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MarketApi#get_character_market_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -152,7 +152,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response (default to en-us)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetMarketsGroupsMarketGroupIdOk]
+    # @return [MarketGroup]
     def get_market_group_by_id(market_group_id, opts = {})
       data, _status_code, _headers = get_market_group_by_id_with_http_info(market_group_id, opts)
       return data
@@ -166,7 +166,7 @@ module SwaggerClient
     # @option opts [String] :language Language to use in the response
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetMarketsGroupsMarketGroupIdOk, Fixnum, Hash)>] GetMarketsGroupsMarketGroupIdOk data, response status code and response headers
+    # @return [Array<(MarketGroup, Fixnum, Hash)>] MarketGroup data, response status code and response headers
     def get_market_group_by_id_with_http_info(market_group_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MarketApi.get_market_group_by_id ..."
@@ -206,7 +206,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetMarketsGroupsMarketGroupIdOk')
+        :return_type => 'MarketGroup')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MarketApi#get_market_group_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -219,7 +219,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetMarketsPrices200Ok>]
+    # @return [Array<MarketPrice>]
     def get_market_prices(opts = {})
       data, _status_code, _headers = get_market_prices_with_http_info(opts)
       return data
@@ -231,7 +231,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetMarketsPrices200Ok>, Fixnum, Hash)>] Array<GetMarketsPrices200Ok> data, response status code and response headers
+    # @return [Array<(Array<MarketPrice>, Fixnum, Hash)>] Array<MarketPrice> data, response status code and response headers
     def get_market_prices_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MarketApi.get_market_prices ..."
@@ -265,7 +265,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetMarketsPrices200Ok>')
+        :return_type => 'Array<MarketPrice>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MarketApi#get_market_prices\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -280,9 +280,9 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetMarketsRegionIdHistory200Ok>]
-    def get_region_market_history_by_id(region_id, type_id, opts = {})
-      data, _status_code, _headers = get_region_market_history_by_id_with_http_info(region_id, type_id, opts)
+    # @return [Array<RegionPriceHistory>]
+    def get_market_history_by_id(region_id, type_id, opts = {})
+      data, _status_code, _headers = get_market_history_by_id_with_http_info(region_id, type_id, opts)
       return data
     end
 
@@ -294,15 +294,15 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetMarketsRegionIdHistory200Ok>, Fixnum, Hash)>] Array<GetMarketsRegionIdHistory200Ok> data, response status code and response headers
-    def get_region_market_history_by_id_with_http_info(region_id, type_id, opts = {})
+    # @return [Array<(Array<RegionPriceHistory>, Fixnum, Hash)>] Array<RegionPriceHistory> data, response status code and response headers
+    def get_market_history_by_id_with_http_info(region_id, type_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: MarketApi.get_region_market_history_by_id ..."
+        @api_client.config.logger.debug "Calling API: MarketApi.get_market_history_by_id ..."
       end
       # verify the required parameter 'region_id' is set
-      fail ArgumentError, "Missing the required parameter 'region_id' when calling MarketApi.get_region_market_history_by_id" if region_id.nil?
+      fail ArgumentError, "Missing the required parameter 'region_id' when calling MarketApi.get_market_history_by_id" if region_id.nil?
       # verify the required parameter 'type_id' is set
-      fail ArgumentError, "Missing the required parameter 'type_id' when calling MarketApi.get_region_market_history_by_id" if type_id.nil?
+      fail ArgumentError, "Missing the required parameter 'type_id' when calling MarketApi.get_market_history_by_id" if type_id.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -333,9 +333,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetMarketsRegionIdHistory200Ok>')
+        :return_type => 'Array<RegionPriceHistory>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: MarketApi#get_region_market_history_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: MarketApi#get_market_history_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -350,7 +350,7 @@ module SwaggerClient
     # @option opts [Integer] :type_id Return orders only for this type
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetMarketsRegionIdOrders200Ok>]
+    # @return [Array<ViewableMarketOrder>]
     def get_region_market_orders(order_type, region_id, opts = {})
       data, _status_code, _headers = get_region_market_orders_with_http_info(order_type, region_id, opts)
       return data
@@ -366,7 +366,7 @@ module SwaggerClient
     # @option opts [Integer] :type_id Return orders only for this type
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetMarketsRegionIdOrders200Ok>, Fixnum, Hash)>] Array<GetMarketsRegionIdOrders200Ok> data, response status code and response headers
+    # @return [Array<(Array<ViewableMarketOrder>, Fixnum, Hash)>] Array<ViewableMarketOrder> data, response status code and response headers
     def get_region_market_orders_with_http_info(order_type, region_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MarketApi.get_region_market_orders ..."
@@ -411,7 +411,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetMarketsRegionIdOrders200Ok>')
+        :return_type => 'Array<ViewableMarketOrder>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MarketApi#get_region_market_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -427,7 +427,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetMarketsStructuresStructureId200Ok>]
+    # @return [Array<ViewableMarketOrder>]
     def get_structure_market_orders(structure_id, opts = {})
       data, _status_code, _headers = get_structure_market_orders_with_http_info(structure_id, opts)
       return data
@@ -442,7 +442,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetMarketsStructuresStructureId200Ok>, Fixnum, Hash)>] Array<GetMarketsStructuresStructureId200Ok> data, response status code and response headers
+    # @return [Array<(Array<ViewableMarketOrder>, Fixnum, Hash)>] Array<ViewableMarketOrder> data, response status code and response headers
     def get_structure_market_orders_with_http_info(structure_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MarketApi.get_structure_market_orders ..."
@@ -480,7 +480,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetMarketsStructuresStructureId200Ok>')
+        :return_type => 'Array<ViewableMarketOrder>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MarketApi#get_structure_market_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

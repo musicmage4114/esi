@@ -1,4 +1,4 @@
-# SwaggerClient::GetFleetsFleetIdMembersInternalServerError
+# SwaggerClient::GetFleetMembersInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

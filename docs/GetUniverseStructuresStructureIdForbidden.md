@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseStructuresStructureIdForbidden
+# SwaggerClient::GetStructureByIdForbidden
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseConstellationsConstellationIdNotFound
+# SwaggerClient::GetConstellationByIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

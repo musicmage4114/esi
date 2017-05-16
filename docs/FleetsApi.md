@@ -212,7 +212,7 @@ nil (empty response body)
 
 
 # **get_fleet**
-> GetFleetsFleetIdOk get_fleet(fleet_id, opts)
+> Fleet get_fleet(fleet_id, opts)
 
 Get fleet information
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetFleetsFleetIdOk**](GetFleetsFleetIdOk.md)
+[**Fleet**](Fleet.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 
 
 # **get_fleet_members**
-> Array&lt;GetFleetsFleetIdMembers200Ok&gt; get_fleet_members(fleet_id, opts)
+> Array&lt;FleetMember&gt; get_fleet_members(fleet_id, opts)
 
 Get fleet members
 
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetFleetsFleetIdMembers200Ok&gt;**](GetFleetsFleetIdMembers200Ok.md)
+[**Array&lt;FleetMember&gt;**](FleetMember.md)
 
 ### Authorization
 
@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
 
 
 # **get_wings**
-> Array&lt;GetFleetsFleetIdWings200Ok&gt; get_wings(fleet_id, opts)
+> Array&lt;Wing&gt; get_wings(fleet_id, opts)
 
 Get fleet wings
 
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Array&lt;GetFleetsFleetIdWings200Ok&gt;**](GetFleetsFleetIdWings200Ok.md)
+[**Array&lt;Wing&gt;**](Wing.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ api_instance = SwaggerClient::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-invitation = SwaggerClient::PostFleetsFleetIdMembersInvitation.new # PostFleetsFleetIdMembersInvitation | Details of the invitation
+invitation = SwaggerClient::FleetInvitation.new # FleetInvitation | Details of the invitation
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -444,7 +444,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **Integer**| ID for a fleet | 
- **invitation** | [**PostFleetsFleetIdMembersInvitation**](PostFleetsFleetIdMembersInvitation.md)| Details of the invitation | 
+ **invitation** | [**FleetInvitation**](FleetInvitation.md)| Details of the invitation | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
@@ -466,7 +466,7 @@ nil (empty response body)
 
 
 # **create_wing**
-> PostFleetsFleetIdWingsCreated create_wing(fleet_id, opts)
+> CreatedWing create_wing(fleet_id, opts)
 
 Create fleet wing
 
@@ -514,7 +514,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PostFleetsFleetIdWingsCreated**](PostFleetsFleetIdWingsCreated.md)
+[**CreatedWing**](CreatedWing.md)
 
 ### Authorization
 
@@ -528,7 +528,7 @@ Name | Type | Description  | Notes
 
 
 # **create_squad**
-> PostFleetsFleetIdWingsWingIdSquadsCreated create_squad(fleet_id, wing_id, opts)
+> CreatedSquad create_squad(fleet_id, wing_id, opts)
 
 Create fleet squad
 
@@ -579,7 +579,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PostFleetsFleetIdWingsWingIdSquadsCreated**](PostFleetsFleetIdWingsWingIdSquadsCreated.md)
+[**CreatedSquad**](CreatedSquad.md)
 
 ### Authorization
 
@@ -613,7 +613,7 @@ api_instance = SwaggerClient::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-new_settings = SwaggerClient::PutFleetsFleetIdNewSettings.new # PutFleetsFleetIdNewSettings | What to update for this fleet
+new_settings = SwaggerClient::FleetNewSetting.new # FleetNewSetting | What to update for this fleet
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -635,7 +635,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **Integer**| ID for a fleet | 
- **new_settings** | [**PutFleetsFleetIdNewSettings**](PutFleetsFleetIdNewSettings.md)| What to update for this fleet | 
+ **new_settings** | [**FleetNewSetting**](FleetNewSetting.md)| What to update for this fleet | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
@@ -679,7 +679,7 @@ fleet_id = 789 # Integer | ID for a fleet
 
 member_id = 56 # Integer | The character ID of a member in this fleet
 
-movement = SwaggerClient::PutFleetsFleetIdMembersMemberIdMovement.new # PutFleetsFleetIdMembersMemberIdMovement | Details of the invitation
+movement = SwaggerClient::FleetMemberMovement.new # FleetMemberMovement | Details of the invitation
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
@@ -702,7 +702,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **Integer**| ID for a fleet | 
  **member_id** | **Integer**| The character ID of a member in this fleet | 
- **movement** | [**PutFleetsFleetIdMembersMemberIdMovement**](PutFleetsFleetIdMembersMemberIdMovement.md)| Details of the invitation | 
+ **movement** | [**FleetMemberMovement**](FleetMemberMovement.md)| Details of the invitation | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
  **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
@@ -744,7 +744,7 @@ api_instance = SwaggerClient::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-naming = SwaggerClient::PutFleetsFleetIdSquadsSquadIdNaming.new # PutFleetsFleetIdSquadsSquadIdNaming | New name of the squad
+naming = SwaggerClient::NewSquadName.new # NewSquadName | New name of the squad
 
 squad_id = 789 # Integer | The squad to rename
 
@@ -768,7 +768,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **Integer**| ID for a fleet | 
- **naming** | [**PutFleetsFleetIdSquadsSquadIdNaming**](PutFleetsFleetIdSquadsSquadIdNaming.md)| New name of the squad | 
+ **naming** | [**NewSquadName**](NewSquadName.md)| New name of the squad | 
  **squad_id** | **Integer**| The squad to rename | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 
@@ -811,7 +811,7 @@ api_instance = SwaggerClient::FleetsApi.new
 
 fleet_id = 789 # Integer | ID for a fleet
 
-naming = SwaggerClient::PutFleetsFleetIdWingsWingIdNaming.new # PutFleetsFleetIdWingsWingIdNaming | New name of the wing
+naming = SwaggerClient::NewWingName.new # NewWingName | New name of the wing
 
 wing_id = 789 # Integer | The wing to rename
 
@@ -835,7 +835,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **Integer**| ID for a fleet | 
- **naming** | [**PutFleetsFleetIdWingsWingIdNaming**](PutFleetsFleetIdWingsWingIdNaming.md)| New name of the wing | 
+ **naming** | [**NewWingName**](NewWingName.md)| New name of the wing | 
  **wing_id** | **Integer**| The wing to rename | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **token** | **String**| Access token to use, if preferred over a header | [optional] 

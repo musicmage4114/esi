@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniversePlanetsPlanetIdInternalServerError
+# SwaggerClient::GetPlanetByIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

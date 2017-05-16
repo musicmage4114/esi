@@ -1,4 +1,4 @@
-# SwaggerClient::GetCharactersCharacterIdOpportunities200Ok
+# SwaggerClient::CompletedOpportunity
 
 ## Properties
 Name | Type | Description | Notes

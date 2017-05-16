@@ -1,12 +1,12 @@
-# SwaggerClient::GetWarsWarIdOk
+# SwaggerClient::War
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**aggressor** | [**GetWarsWarIdAggressor**](GetWarsWarIdAggressor.md) |  | [optional] 
-**allies** | [**Array&lt;GetWarsWarIdAlly&gt;**](GetWarsWarIdAlly.md) | allied corporations or alliances, each object contains either corporation_id or alliance_id | [optional] 
+**aggressor** | [**WarAggressor**](WarAggressor.md) |  | [optional] 
+**allies** | [**Array&lt;WarAlly&gt;**](WarAlly.md) | allied corporations or alliances, each object contains either corporation_id or alliance_id | [optional] 
 **declared** | **DateTime** | Time that the war was declared | 
-**defender** | [**GetWarsWarIdDefender**](GetWarsWarIdDefender.md) |  | [optional] 
+**defender** | [**WarDefender**](WarDefender.md) |  | [optional] 
 **finished** | **DateTime** | Time the war ended and shooting was no longer allowed | [optional] 
 **id** | **Integer** | ID of the specified war | 
 **mutual** | **BOOLEAN** | Was the war declared mutual by both parties | 

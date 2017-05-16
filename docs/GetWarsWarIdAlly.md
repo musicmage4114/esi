@@ -1,4 +1,4 @@
-# SwaggerClient::GetWarsWarIdAlly
+# SwaggerClient::WarAlly
 
 ## Properties
 Name | Type | Description | Notes

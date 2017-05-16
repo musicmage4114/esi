@@ -1,4 +1,4 @@
-# SwaggerClient::GetOpportunitiesGroupsGroupIdOk
+# SwaggerClient::OpportunitiesGroup
 
 ## Properties
 Name | Type | Description | Notes

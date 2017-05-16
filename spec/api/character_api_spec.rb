@@ -39,7 +39,7 @@ describe 'CharacterApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCharactersCharacterIdOk]
+  # @return [Character]
   describe 'get_character_by_id test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -118,7 +118,7 @@ describe 'CharacterApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdMedals200Ok>]
+  # @return [Array<CharacterMedal>]
   describe 'get_character_medals test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -133,7 +133,7 @@ describe 'CharacterApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [GetCharactersCharacterIdPortraitOk]
+  # @return [CharacterPortrait]
   describe 'get_character_portrait test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
@@ -149,14 +149,14 @@ describe 'CharacterApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersCharacterIdStandings200Ok>]
+  # @return [Array<CharacterStanding>]
   describe 'get_character_standings test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_character_names
+  # unit tests for get_character_name
   # Get character names
   # Resolve a set of character IDs to character names  ---  Alternate route: &#x60;/v1/characters/names/&#x60;  Alternate route: &#x60;/legacy/characters/names/&#x60;  Alternate route: &#x60;/latest/characters/names/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param character_ids A comma separated list of character IDs
@@ -164,14 +164,14 @@ describe 'CharacterApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<GetCharactersNames200Ok>]
-  describe 'get_character_names test' do
+  # @return [Array<CharacterName>]
+  describe 'get_character_name test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_characters_affiliation_by_id
+  # unit tests for get_character_affiliation
   # Character affiliation
   # Bulk lookup of character IDs to corporation, alliance and faction  ---  Alternate route: &#x60;/v1/characters/affiliation/&#x60;  Alternate route: &#x60;/legacy/characters/affiliation/&#x60;  Alternate route: &#x60;/latest/characters/affiliation/&#x60;   ---  This route is cached for up to 3600 seconds
   # @param characters The character IDs to fetch affiliations for
@@ -179,14 +179,14 @@ describe 'CharacterApi' do
   # @option opts [String] :datasource The server name you would like data from
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<PostCharactersAffiliation200Ok>]
-  describe 'get_characters_affiliation_by_id test' do
+  # @return [Array<CharacterAffiliation>]
+  describe 'get_character_affiliation test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for calculate_cspa_charge
+  # unit tests for calculate_cspa
   # Calculate a CSPA charge cost
   # Takes a source character ID in the url and a set of target character ID&#39;s in the body, returns a CSPA charge cost  ---  Alternate route: &#x60;/v3/characters/{character_id}/cspa/&#x60;  Alternate route: &#x60;/legacy/characters/{character_id}/cspa/&#x60;  Alternate route: &#x60;/latest/characters/{character_id}/cspa/&#x60; 
   # @param character_id An EVE character ID
@@ -196,8 +196,8 @@ describe 'CharacterApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [PostCharactersCharacterIdCspaCreated]
-  describe 'calculate_cspa_charge test' do
+  # @return [CspaCharge]
+  describe 'calculate_cspa test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

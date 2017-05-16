@@ -1,4 +1,4 @@
-# SwaggerClient::GetCorporationsCorporationIdRolesInternalServerError
+# SwaggerClient::GetCorporationRolesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

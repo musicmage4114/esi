@@ -56,7 +56,7 @@ describe 'BookmarksApi' do
   # @option opts [String] :token Access token to use, if preferred over a header
   # @option opts [String] :user_agent Client identifier, takes precedence over headers
   # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-  # @return [Array<BookmarkFolder>]
+  # @return [Array<BookmarksFolder>]
   describe 'get_character_bookmarks_folders test' do
     it "should work" do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

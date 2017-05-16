@@ -26,7 +26,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdOk]
+    # @return [Character]
     def get_character_by_id(character_id, opts = {})
       data, _status_code, _headers = get_character_by_id_with_http_info(character_id, opts)
       return data
@@ -39,7 +39,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdOk, Fixnum, Hash)>] GetCharactersCharacterIdOk data, response status code and response headers
+    # @return [Array<(Character, Fixnum, Hash)>] Character data, response status code and response headers
     def get_character_by_id_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CharacterApi.get_character_by_id ..."
@@ -75,7 +75,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdOk')
+        :return_type => 'Character')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CharacterApi#get_character_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -351,7 +351,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdMedals200Ok>]
+    # @return [Array<CharacterMedal>]
     def get_character_medals(character_id, opts = {})
       data, _status_code, _headers = get_character_medals_with_http_info(character_id, opts)
       return data
@@ -365,7 +365,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdMedals200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdMedals200Ok> data, response status code and response headers
+    # @return [Array<(Array<CharacterMedal>, Fixnum, Hash)>] Array<CharacterMedal> data, response status code and response headers
     def get_character_medals_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CharacterApi.get_character_medals ..."
@@ -402,7 +402,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdMedals200Ok>')
+        :return_type => 'Array<CharacterMedal>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CharacterApi#get_character_medals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -416,7 +416,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [GetCharactersCharacterIdPortraitOk]
+    # @return [CharacterPortrait]
     def get_character_portrait(character_id, opts = {})
       data, _status_code, _headers = get_character_portrait_with_http_info(character_id, opts)
       return data
@@ -429,7 +429,7 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(GetCharactersCharacterIdPortraitOk, Fixnum, Hash)>] GetCharactersCharacterIdPortraitOk data, response status code and response headers
+    # @return [Array<(CharacterPortrait, Fixnum, Hash)>] CharacterPortrait data, response status code and response headers
     def get_character_portrait_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CharacterApi.get_character_portrait ..."
@@ -465,7 +465,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'GetCharactersCharacterIdPortraitOk')
+        :return_type => 'CharacterPortrait')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CharacterApi#get_character_portrait\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -480,7 +480,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersCharacterIdStandings200Ok>]
+    # @return [Array<CharacterStanding>]
     def get_character_standings(character_id, opts = {})
       data, _status_code, _headers = get_character_standings_with_http_info(character_id, opts)
       return data
@@ -494,7 +494,7 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersCharacterIdStandings200Ok>, Fixnum, Hash)>] Array<GetCharactersCharacterIdStandings200Ok> data, response status code and response headers
+    # @return [Array<(Array<CharacterStanding>, Fixnum, Hash)>] Array<CharacterStanding> data, response status code and response headers
     def get_character_standings_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: CharacterApi.get_character_standings ..."
@@ -531,7 +531,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersCharacterIdStandings200Ok>')
+        :return_type => 'Array<CharacterStanding>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CharacterApi#get_character_standings\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
@@ -545,9 +545,9 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<GetCharactersNames200Ok>]
-    def get_character_names(character_ids, opts = {})
-      data, _status_code, _headers = get_character_names_with_http_info(character_ids, opts)
+    # @return [Array<CharacterName>]
+    def get_character_name(character_ids, opts = {})
+      data, _status_code, _headers = get_character_name_with_http_info(character_ids, opts)
       return data
     end
 
@@ -558,15 +558,15 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<GetCharactersNames200Ok>, Fixnum, Hash)>] Array<GetCharactersNames200Ok> data, response status code and response headers
-    def get_character_names_with_http_info(character_ids, opts = {})
+    # @return [Array<(Array<CharacterName>, Fixnum, Hash)>] Array<CharacterName> data, response status code and response headers
+    def get_character_name_with_http_info(character_ids, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CharacterApi.get_character_names ..."
+        @api_client.config.logger.debug "Calling API: CharacterApi.get_character_name ..."
       end
       # verify the required parameter 'character_ids' is set
-      fail ArgumentError, "Missing the required parameter 'character_ids' when calling CharacterApi.get_character_names" if character_ids.nil?
+      fail ArgumentError, "Missing the required parameter 'character_ids' when calling CharacterApi.get_character_name" if character_ids.nil?
       if character_ids.length < 1
-        fail ArgumentError, 'invalid value for "character_ids" when calling CharacterApi.get_character_names, number of items must be greater than or equal to 1.'
+        fail ArgumentError, 'invalid value for "character_ids" when calling CharacterApi.get_character_name, number of items must be greater than or equal to 1.'
       end
 
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
@@ -599,9 +599,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<GetCharactersNames200Ok>')
+        :return_type => 'Array<CharacterName>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CharacterApi#get_character_names\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CharacterApi#get_character_name\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -613,9 +613,9 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from (default to tranquility)
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<PostCharactersAffiliation200Ok>]
-    def get_characters_affiliation_by_id(characters, opts = {})
-      data, _status_code, _headers = get_characters_affiliation_by_id_with_http_info(characters, opts)
+    # @return [Array<CharacterAffiliation>]
+    def get_character_affiliation(characters, opts = {})
+      data, _status_code, _headers = get_character_affiliation_with_http_info(characters, opts)
       return data
     end
 
@@ -626,13 +626,13 @@ module SwaggerClient
     # @option opts [String] :datasource The server name you would like data from
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(Array<PostCharactersAffiliation200Ok>, Fixnum, Hash)>] Array<PostCharactersAffiliation200Ok> data, response status code and response headers
-    def get_characters_affiliation_by_id_with_http_info(characters, opts = {})
+    # @return [Array<(Array<CharacterAffiliation>, Fixnum, Hash)>] Array<CharacterAffiliation> data, response status code and response headers
+    def get_character_affiliation_with_http_info(characters, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CharacterApi.get_characters_affiliation_by_id ..."
+        @api_client.config.logger.debug "Calling API: CharacterApi.get_character_affiliation ..."
       end
       # verify the required parameter 'characters' is set
-      fail ArgumentError, "Missing the required parameter 'characters' when calling CharacterApi.get_characters_affiliation_by_id" if characters.nil?
+      fail ArgumentError, "Missing the required parameter 'characters' when calling CharacterApi.get_character_affiliation" if characters.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -662,9 +662,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'Array<PostCharactersAffiliation200Ok>')
+        :return_type => 'Array<CharacterAffiliation>')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CharacterApi#get_characters_affiliation_by_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CharacterApi#get_character_affiliation\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -678,9 +678,9 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [PostCharactersCharacterIdCspaCreated]
-    def calculate_cspa_charge(character_id, characters, opts = {})
-      data, _status_code, _headers = calculate_cspa_charge_with_http_info(character_id, characters, opts)
+    # @return [CspaCharge]
+    def calculate_cspa(character_id, characters, opts = {})
+      data, _status_code, _headers = calculate_cspa_with_http_info(character_id, characters, opts)
       return data
     end
 
@@ -693,15 +693,15 @@ module SwaggerClient
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(PostCharactersCharacterIdCspaCreated, Fixnum, Hash)>] PostCharactersCharacterIdCspaCreated data, response status code and response headers
-    def calculate_cspa_charge_with_http_info(character_id, characters, opts = {})
+    # @return [Array<(CspaCharge, Fixnum, Hash)>] CspaCharge data, response status code and response headers
+    def calculate_cspa_with_http_info(character_id, characters, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: CharacterApi.calculate_cspa_charge ..."
+        @api_client.config.logger.debug "Calling API: CharacterApi.calculate_cspa ..."
       end
       # verify the required parameter 'character_id' is set
-      fail ArgumentError, "Missing the required parameter 'character_id' when calling CharacterApi.calculate_cspa_charge" if character_id.nil?
+      fail ArgumentError, "Missing the required parameter 'character_id' when calling CharacterApi.calculate_cspa" if character_id.nil?
       # verify the required parameter 'characters' is set
-      fail ArgumentError, "Missing the required parameter 'characters' when calling CharacterApi.calculate_cspa_charge" if characters.nil?
+      fail ArgumentError, "Missing the required parameter 'characters' when calling CharacterApi.calculate_cspa" if characters.nil?
       if opts[:'datasource'] && !['tranquility', 'singularity'].include?(opts[:'datasource'])
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
@@ -732,9 +732,9 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'PostCharactersCharacterIdCspaCreated')
+        :return_type => 'CspaCharge')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: CharacterApi#calculate_cspa_charge\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CharacterApi#calculate_cspa\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

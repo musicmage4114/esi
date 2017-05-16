@@ -1,4 +1,4 @@
-# SwaggerClient::GetUniverseRaces200Ok
+# SwaggerClient::Race
 
 ## Properties
 Name | Type | Description | Notes
