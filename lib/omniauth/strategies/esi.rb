@@ -2,7 +2,7 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class Esi < OmniAuth::Strategies::Oauth2
+    class Esi < OmniAuth::Strategies::OAuth2
       option :name, 'esi'
       
       option :client_options, site: 'https://login.eveonline.com'
