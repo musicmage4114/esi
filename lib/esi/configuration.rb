@@ -124,7 +124,7 @@ module Esi
     def initialize
       @scheme = 'https'
       @host = 'esi.tech.ccp.is'
-      @base_path = '/dev'
+      @base_path = '/'
       @api_key = {}
       @api_key_prefix = {}
       @timeout = 0

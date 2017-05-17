@@ -74,7 +74,7 @@ end
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://esi.tech.ccp.is/dev*
+All URIs are relative to *https://esi.tech.ccp.is/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

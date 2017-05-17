@@ -1,6 +1,6 @@
 # Esi::UniverseApi
 
-All URIs are relative to *https://esi.tech.ccp.is/dev*
+All URIs are relative to *https://esi.tech.ccp.is/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
