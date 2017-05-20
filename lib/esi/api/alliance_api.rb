@@ -46,7 +46,7 @@ module Esi
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       # resource path
-      local_var_path = "/alliances/".sub('{format}','json')
+      local_var_path = "v1/alliances/".sub('{format}','json')
 
       # query parameters
       query_params = {}
@@ -109,7 +109,7 @@ module Esi
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       # resource path
-      local_var_path = "/alliances/{alliance_id}/".sub('{format}','json').sub('{' + 'alliance_id' + '}', alliance_id.to_s)
+      local_var_path = "v2/alliances/{alliance_id}/".sub('{format}','json').sub('{' + 'alliance_id' + '}', alliance_id.to_s)
 
       # query parameters
       query_params = {}
@@ -172,7 +172,7 @@ module Esi
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       # resource path
-      local_var_path = "/alliances/{alliance_id}/corporations/".sub('{format}','json').sub('{' + 'alliance_id' + '}', alliance_id.to_s)
+      local_var_path = "v1/alliances/{alliance_id}/corporations/".sub('{format}','json').sub('{' + 'alliance_id' + '}', alliance_id.to_s)
 
       # query parameters
       query_params = {}
@@ -235,7 +235,7 @@ module Esi
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       # resource path
-      local_var_path = "/alliances/{alliance_id}/icons/".sub('{format}','json').sub('{' + 'alliance_id' + '}', alliance_id.to_s)
+      local_var_path = "v1/alliances/{alliance_id}/icons/".sub('{format}','json').sub('{' + 'alliance_id' + '}', alliance_id.to_s)
 
       # query parameters
       query_params = {}
@@ -302,7 +302,7 @@ module Esi
         fail ArgumentError, 'invalid value for "datasource", must be one of tranquility, singularity'
       end
       # resource path
-      local_var_path = "/alliances/names/".sub('{format}','json')
+      local_var_path = "v1/alliances/names/".sub('{format}','json')
 
       # query parameters
       query_params = {}
