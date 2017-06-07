@@ -210,7 +210,7 @@ Name | Type | Description  | Notes
 
 
 # **get_mail_labels**
-> MailLabel get_mail_labels(character_id, opts)
+> MailLabelSummary get_mail_labels(character_id, opts)
 
 Get mail labels and unread counts
 
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**MailLabel**](MailLabel.md)
+[**MailLabelSummary**](MailLabelSummary.md)
 
 ### Authorization
 

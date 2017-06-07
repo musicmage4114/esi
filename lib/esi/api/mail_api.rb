@@ -241,7 +241,7 @@ module Esi
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [MailLabel]
+    # @return [MailLabelSummary]
     def get_mail_labels(character_id, opts = {})
       data, _status_code, _headers = get_mail_labels_with_http_info(character_id, opts)
       return data
@@ -255,7 +255,7 @@ module Esi
     # @option opts [String] :token Access token to use, if preferred over a header
     # @option opts [String] :user_agent Client identifier, takes precedence over headers
     # @option opts [String] :x_user_agent Client identifier, takes precedence over User-Agent
-    # @return [Array<(MailLabel, Fixnum, Hash)>] MailLabel data, response status code and response headers
+    # @return [Array<(MailLabelSummary, Fixnum, Hash)>] MailLabelSummary data, response status code and response headers
     def get_mail_labels_with_http_info(character_id, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: MailApi.get_mail_labels ..."
@@ -292,7 +292,7 @@ module Esi
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'MailLabel')
+        :return_type => 'MailLabelSummary')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: MailApi#get_mail_labels\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

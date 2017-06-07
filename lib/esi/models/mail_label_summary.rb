@@ -13,7 +13,7 @@ require 'date'
 
 module Esi
   # label object
-  class MailLabelSummary
+  class MailLabel
     # color string
     attr_accessor :color
 

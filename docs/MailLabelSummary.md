@@ -1,4 +1,4 @@
-# Esi::MailLabelSummary
+# Esi::MailLabel
 
 ## Properties
 Name | Type | Description | Notes

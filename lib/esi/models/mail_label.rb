@@ -13,7 +13,7 @@ require 'date'
 
 module Esi
   # 200 ok object
-  class MailLabel
+  class MailLabelSummary
     # labels array
     attr_accessor :labels
 
@@ -32,7 +32,7 @@ module Esi
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'labels' => :'Array<MailLabelSummary>',
+        :'labels' => :'Array<MailLabel>',
         :'total_unread_count' => :'Integer'
       }
     end
